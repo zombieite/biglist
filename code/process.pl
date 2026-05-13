@@ -551,11 +551,11 @@ sub generate_qr_codes {
 sub make_doc {
     my ( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx ) = @_;
 
-    # Build a Pandoc-flavored Markdown file with page breaks
+    # Build a Pandoc md file
     my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
     open my $md, '>', $md_path or die "Can't write $md_path: $!";
 
-    # .md breaks that can be understood by pandoc and translated into word breaks
+    # md breaks that can be understood by pandoc and translated into docx breaks
     my $line_break = "  \n";
     my $page_break = "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
 
@@ -567,11 +567,11 @@ sub make_doc {
     print $md "Copyright © 2026 John Binns${line_break}All rights reserved${line_break}wastelandfirebird\@gmail.com${line_break}youtube.com/wastelandfirebird${line_break}wastelandfirebird.com${line_break}";
     print $md $page_break;
 
-    # Dedication
+    # Dedication page
     print $md "In 1987, Angel Delgadillo saved Route 66.${line_break}In 2006, Pixar's Cars saved Route 66.${line_break}2026 is the Centennial of Route 66.${line_break}Who will save it now, if not you and me?${line_break}";
     print $md $page_break;
 
-    # Introduction
+    # Introduction pages
     print $md qq|
 Prepare to be inspired
 ${line_break}
