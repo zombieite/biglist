@@ -455,13 +455,11 @@ sub main {
     my $qr_pad     = 3;
     my $qr_dir     = './data/qr_codes/';
     my $qr_dir_abs = abs_path($qr_dir) // $qr_dir;
+    my $qrs        = [];
     my $out_docx   = './data/wasteland_firebirds_big_list-base.docx';
 
     set_up_output_dir($output_dir);
     generate_qr_codes( $addresses, $output_dir );
-
-    # Input: address text file (one address per line)
-    my $out_csv = './data/addresses_and_qr_locations.csv';
 
     # QR filename pattern:
     # - If your files are like 001.png ... 434.png, set:
@@ -498,37 +496,6 @@ sub main {
         die "Duplicate QR files for '$num':\n  kept: $qr_for_num{$num}\n" . join( "", map { "  dup:  $_\n" } @{ $dupes_for_num{$num} } );
     }
 
-    # 2) Read addresses + write CSV rows
-    open $out, '>', $out_csv or die "Can't write $out_csv: $!";
-
-    print $out "address,qr_image\n";
-
-    my $line_no = 0;
-    for my $addr (@$addresses) {
-        $line_no++;
-        $addr =~ s/\R\z//;    # chomp
-
-        # If blank lines should still count toward numbering, DO NOT skip them.
-        # If you want to skip blanks, uncomment the next line, but be aware it shifts numbering:
-        # next if $addr =~ /^\s*$/;
-
-        my $idx = $qr_start_ind + ( $line_no - 1 );
-        my $num = sprintf( "%0*d", $qr_pad, $idx );    # "001", "002", ...
-
-        my $qr_path = $qr_for_num{$num} // '';
-
-        if ( !$qr_path ) {
-            my $msg = "Missing QR PNG for line $line_no (expected leading number '$num')\n";
-            die $msg;
-        }
-
-        print $out csv_escape($addr) . "," . csv_escape($qr_path) . "\n";
-    }
-
-    close $out or die "Error closing $out_csv: $!";
-
-    print "Wrote CSV: $out_csv\n";
-
     # How line 1 maps to file number: line 1 => 001_*.png, line 268 => 268_*.png, etc.
     my $qr_start = 1;    # change if needed (placeholder)
 
@@ -540,21 +507,6 @@ sub main {
 
     # If a QR is missing: 1 = die, 0 = warn and leave blank
     my $die_on_missing = 1;
-
-    sub ensure_dir {
-        my ($d) = @_;
-        -d $d or mkdir $d or die "Can't mkdir $d: $!";
-    }
-
-    sub md_escape {
-        my ($s) = @_;
-        $s //= '';
-        $s =~ s/\R/ /g;                             # collapse newlines
-        $s =~ s/^\s+|\s+$//g;                       # trim
-                                                    # Minimal escaping for markdown:
-        $s =~ s/([\\`*_{}\[\]()#+\-.!|>])/\\$1/g;
-        return $s;
-    }
 
     # Build a Pandoc-flavored Markdown file with page breaks
     ensure_dir($work_dir);
@@ -686,12 +638,27 @@ ${line_break}
 
 }
 
+sub ensure_dir {
+    my ($d) = @_;
+    -d $d or mkdir $d or die "Can't mkdir $d: $!";
+}
+
+sub md_escape {
+    my ($s) = @_;
+    $s //= '';
+    $s =~ s/\R/ /g;                             # collapse newlines
+    $s =~ s/^\s+|\s+$//g;                       # trim
+                                                # Minimal escaping for markdown:
+    $s =~ s/([\\`*_{}\[\]()#+\-.!|>])/\\$1/g;
+    return $s;
+}
+
 sub csv_escape {
     my ($s) = @_;
     $s //= '';
-    $s =~ s/\R/ /g;          # collapse any stray newlines
-    $s =~ s/^\s+|\s+$//g;    # trim
-                             # Quote if it contains comma, quote, or leading/trailing spaces
+    $s =~ s/\R/ /g;                             # collapse any stray newlines
+    $s =~ s/^\s+|\s+$//g;                       # trim
+                                                # Quote if it contains comma, quote, or leading/trailing spaces
     if ( $s =~ /[",]/ ) {
         $s =~ s/"/""/g;
         return qq("$s");
