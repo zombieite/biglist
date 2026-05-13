@@ -447,7 +447,6 @@ sub main {
         "Santa Monica Pier, 200 Santa Monica Pier, Santa Monica, CA 90401",
     ];
 
-    my $qr_output_dir = './data/qr_codes';
     my $dh;
     my $in;
     my $out;
@@ -461,9 +460,9 @@ sub main {
     my $qr_start     = 1;
     my $qr_width     = '4.0in';
 
-    set_up_qr_output_dir($qr_output_dir);
+    set_up_qr_dir($qr_dir);
     ensure_dir($work_dir);
-    my $qrs = generate_qr_codes( $addresses, $qr_output_dir );
+    my $qrs = generate_qr_codes( $addresses, $qr_dir );
     make_doc( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx );
 
     print "Open DOCX in Pages.\nClick Document, Section, uncheck Left and Right are Different.\nClick Document, Document, Footer. Then go to the footer and click it and Insert Page Number. Do any other needed tweaks then export PDF.\n";
@@ -497,7 +496,7 @@ sub csv_escape {
     return $s;
 }
 
-sub set_up_qr_output_dir {
+sub set_up_qr_dir {
     my ($output_dir) = @_;
     unless ( -d $output_dir ) {
         make_path($output_dir)
