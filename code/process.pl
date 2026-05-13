@@ -6,6 +6,7 @@ use URI::Escape qw(uri_escape_utf8);
 use File::Path  qw(make_path);
 use File::Basename;
 use Cwd qw(abs_path);
+use Data::Dumper;
 
 sub main {
 
@@ -451,65 +452,21 @@ sub main {
     my $dh;
     my $in;
     my $out;
-    my $work_dir   = './data';
-    my $qr_pad     = 3;
-    my $qr_dir     = './data/qr_codes/';
-    my $qr_dir_abs = abs_path($qr_dir) // $qr_dir;
-    my $qrs        = [];
-    my $out_docx   = './data/wasteland_firebirds_big_list-base.docx';
-
-    set_up_output_dir($output_dir);
-    generate_qr_codes( $addresses, $output_dir );
-
-    # QR filename pattern:
-    # - If your files are like 001.png ... 434.png, set:
+    my $work_dir     = './data';
+    my $qr_pad       = 3;
+    my $qr_dir       = './data/qr_codes/';
+    my $qr_dir_abs   = abs_path($qr_dir) // $qr_dir;
+    my $out_docx     = './data/wasteland_firebirds_big_list-base.docx';
     my $qr_ext       = 'png';
     my $qr_start_ind = 1;
+    my $qr_start     = 1;
+    my $qr_width     = '4.0in';
 
-    # If your QR files are like "qr_001.png" or "QR-001.png", set prefix/suffix:
-    my $qr_prefix = '';    # e.g. 'qr_'
-    my $qr_suffix = '';    # e.g. '' or '_code'
-
-    # If you already have exact filenames but not predictable, you can later swap
-    # this logic out for a lookup table.
-
-    # 1) Index QR directory by leading 3 digits
-    my %qr_for_num;       # "268" -> "/abs/path/to/268_Whatever.png"
-    my %dupes_for_num;    # track duplicates
-
-    opendir( $dh, $qr_dir ) or die "Can't open QR directory '$qr_dir': $!";
-    while ( my $f = readdir($dh) ) {
-        next if $f eq '.' || $f eq '..';
-
-        # Match: 3 digits at start, then underscore, then anything, ending .png (case-insensitive)
-        # Example: 268_Newkirk_Ghost_Town_Newkirk_NM_.png
-        next unless $f =~ /^(\d{3})_.+\.png\z/i;
-
-        my $num  = $1;                                       # keep as 3-digit string
-        my $full = File::Spec->catfile( $qr_dir_abs, $f );
-        $qr_for_num{$num} = $full;
-    }
-    closedir($dh);
-
-    # Die if duplicates (same leading number)
-    for my $num ( sort keys %dupes_for_num ) {
-        die "Duplicate QR files for '$num':\n  kept: $qr_for_num{$num}\n" . join( "", map { "  dup:  $_\n" } @{ $dupes_for_num{$num} } );
-    }
-
-    # How line 1 maps to file number: line 1 => 001_*.png, line 268 => 268_*.png, etc.
-    my $qr_start = 1;    # change if needed (placeholder)
-
-    # Image sizing in the DOCX (pandoc understands inches, cm, mm).
-    my $qr_width = '4.0in';
-
-    # Where to put QR relative to address is handled by the reference.docx styles.
-    # This script outputs: Address text, blank line, QR image, page break.
-
-    # If a QR is missing: 1 = die, 0 = warn and leave blank
-    my $die_on_missing = 1;
+    set_up_output_dir($output_dir);
+    ensure_dir($work_dir);
+    my $qrs = generate_qr_codes( $addresses, $output_dir );
 
     # Build a Pandoc-flavored Markdown file with page breaks
-    ensure_dir($work_dir);
     my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
 
     open my $md, '>', $md_path or die "Can't write $md_path: $!";
@@ -574,45 +531,25 @@ ${line_break}
 |;
     print $md $page_break;
 
-    my $line_num = 0;
+    my $qr_num = 0;
     for my $addr (@$addresses) {
-        $line_num++;
         $addr =~ s/\R\z//;    # chomp
-
-        # DO NOT skip blank lines unless you're sure your numbering isn't line-based.
-        # If you want to skip blank lines, you must also adjust how you pick the QR number.
-        # next if $addr =~ /^\s*$/;
-
-        my $idx = $qr_start + ( $line_num - 1 );
-        my $num = sprintf( "%0*d", $qr_pad, $idx );    # "001", "268", ...
-
-        my $qr_path = $qr_for_num{$num} // '';
-
-        if ( !$qr_path ) {
-            my $msg = "Missing QR PNG for line $line_num (expected leading number '$num')\n";
-            die $msg if $die_on_missing;
-            warn $msg;
+        my $qr_path = File::Spec->catfile($qr_dir, $qrs->[$qr_num]);
+        if ( !-f $qr_path ) {
+            die "Missing QR file for '$qr_num': " . Dumper($qrs);
         }
 
         # Address (as plain paragraph). If you want it to be, say, a big bold title,
         # define a style in reference.docx and switch to it later via a pandoc Lua filter.
         print $md md_escape($addr), "\n\n";
 
-        # QR image
-        if ($qr_path) {
-
-            # Pandoc supports attribute syntax: {width=...}
-            print $md "![]($qr_path){width=$qr_width}\n\n";
-
-            # If you prefer height:
-            # print $md "![]($qr_path){height=$qr_height}\n\n";
-        }
-        else {
-            print $md "\n";    # leave blank spot if missing
-        }
+        # Pandoc supports attribute syntax: {width=...}
+        print $md "![]($qr_path){width=$qr_width}\n\n";
 
         # Page break
         print $md $page_break;
+
+        $qr_num++;
     }
 
     close $md or die "Error closing $md_path: $!";
@@ -621,8 +558,6 @@ ${line_break}
     # Make a DOCX that matches the POD template (margins, page size, headers/footers, fonts, etc).
     # Pandoc calls this a "reference docx".
     my $reference_docx = './data/wasteland_firebirds_big_list-template.docx';
-
-    ensure_dir($work_dir);
 
     #    Convert Markdown -> DOCX using reference.docx for layout
     #    This is the key: reference_docx defines page size/margins/fonts like your POD template.
@@ -690,6 +625,7 @@ sub set_up_output_dir {
 sub generate_qr_codes {
     my ( $addresses, $output_dir ) = @_;
     my $count = 0;
+    my $qrs;
     for my $address (@$addresses) {
         chomp $address;
 
@@ -745,12 +681,15 @@ sub generate_qr_codes {
 
             close $img_fh;
 
-            print "[$count] Saved: $filename\n";
+            #print "[$count] Saved: $filename\n";
+
+            push( @$qrs, $filename );
         }
         else {
             print "[$count] Error generating QR code for: $address\n";
         }
     }
+    return $qrs;
 }
 
 main();
