@@ -20,19 +20,13 @@ sub main {
     my $qr_dir_abs    = abs_path($qr_dir) // $qr_dir;
     my $out_docx      = './data/wasteland_firebirds_big_list-base.docx';
 
-    clean_out_old_qr_codes($output_dir);
+    set_up_output_dir($output_dir);
 
     # Check if input file exists
     unless ( -e $addresses_txt ) {
         print
 "Error: Could not find '$addresses_txt'. Please create it with one address per line.\n";
         return;
-    }
-
-    # Create output directory if it doesn't exist
-    unless ( -d $output_dir ) {
-        make_path($output_dir)
-          or die "Failed to create directory $output_dir: $!";
     }
 
     print "Reading addresses from $addresses_txt...\n";
@@ -382,8 +376,13 @@ sub csv_escape {
     return $s;
 }
 
-sub clean_out_old_qr_codes {
+sub set_up_output_dir {
     my ($output_dir) = @_;
+    # Create output directory if it doesn't exist
+    unless ( -d $output_dir ) {
+        make_path($output_dir)
+          or die "Failed to create directory $output_dir: $!";
+    }
     # clean out old QR codes if present
     mkdir $output_dir;
     opendir( my $dh, $output_dir ) or die "Can't open $output_dir: $!";
