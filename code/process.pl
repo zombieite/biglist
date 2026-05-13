@@ -9,7 +9,6 @@ use Cwd qw(abs_path);
 use Data::Dumper;
 
 sub main {
-
     my $addresses = [
         "Art Institute of Chicago, 111 S Michigan Ave, Chicago, IL 60603",
         "Cloud Gate, 201 E Randolph St, Chicago, IL 60602",
@@ -465,13 +464,10 @@ sub main {
     set_up_qr_output_dir($qr_output_dir);
     ensure_dir($work_dir);
     my $qrs = generate_qr_codes( $addresses, $qr_output_dir );
-    make_doc($addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx);
+    make_doc( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx );
 
-    print "Wrote DOCX: $out_docx\n";
-    print "Next: open DOCX in Pages.\nClick Document, Section, uncheck Left and Right are Different.\nClick Document, Document, Footer. Then go to the footer and click it and Insert Page Number. Do any other needed tweaks then export PDF.\n";
-
+    print "Open DOCX in Pages.\nClick Document, Section, uncheck Left and Right are Different.\nClick Document, Document, Footer. Then go to the footer and click it and Insert Page Number. Do any other needed tweaks then export PDF.\n";
     system( 'open', $out_docx );
-
 }
 
 sub ensure_dir {
@@ -484,7 +480,6 @@ sub md_escape {
     $s //= '';
     $s =~ s/\R/ /g;                             # collapse newlines
     $s =~ s/^\s+|\s+$//g;                       # trim
-                                                # Minimal escaping for markdown:
     $s =~ s/([\\`*_{}\[\]()#+\-.!|>])/\\$1/g;
     return $s;
 }
@@ -504,8 +499,6 @@ sub csv_escape {
 
 sub set_up_qr_output_dir {
     my ($output_dir) = @_;
-
-    # Create output directory if it doesn't exist
     unless ( -d $output_dir ) {
         make_path($output_dir)
           or die "Failed to create directory $output_dir: $!";
@@ -529,27 +522,21 @@ sub generate_qr_codes {
     my $qrs;
     for my $address (@$addresses) {
         chomp $address;
-
-        # Skip empty lines
-        next unless $address =~ /\S/;
-
         $count++;
 
-        # 1. Create the Google Maps URL
+        # Create the Google Maps URL
         # uri_escape handles spaces and special characters
         my $query    = uri_escape_utf8($address);
         my $maps_url = "https://www.google.com/maps/search/?api=1&query=$query";
 
-        # 2. Generate the QR Code
+        # Generate the QR Code
         # Ecc => 1 is Error Correction Level L (Low)
         # ModuleSize controls the pixel size of the blocks
         my $qrobj = GD::Barcode::QRcode->new( $maps_url, { Ecc => 1, ModuleSize => 4 } );
-
         print "$maps_url\n";
-
         if ($qrobj) {
 
-            # 3. Create a safe filename
+            # Create a safe filename
             # Remove characters that are unsafe for filenames
             my $safe_name = $address;
             $safe_name =~ s/[^a-zA-Z0-9_\- ]//g;
@@ -557,12 +544,9 @@ sub generate_qr_codes {
 
             # Limit length to avoid filesystem errors
             $safe_name = substr( $safe_name, 0, 30 );
-
             my $filename = sprintf( "%03d_%s.png", $count, $safe_name );
             my $filepath = "$output_dir/$filename";
-
-            open my $img_fh, '>', $filepath
-              or die "Could not open '$filepath' for writing: $!";
+            open my $img_fh, '>', $filepath or die "Could not open '$filepath' for writing: $!";
             binmode $img_fh;
 
             # Adding some padding to left or right side, alternating
@@ -579,26 +563,21 @@ sub generate_qr_codes {
             $canvas->copy( $qr, $pad, 0, 0, 0, $w, $h );
             $canvas->rectangle( 0, 0, $w + $w - 1, $h - 1, $black );
             print $img_fh $canvas->png();
-
             close $img_fh;
-
-            #print "[$count] Saved: $filename\n";
-
             push( @$qrs, $filename );
         }
         else {
-            print "[$count] Error generating QR code for: $address\n";
+            die "[$count] Error generating QR code for: $address\n";
         }
     }
     return $qrs;
 }
 
 sub make_doc {
-    my ($addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx) = @_;
+    my ( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx ) = @_;
 
     # Build a Pandoc-flavored Markdown file with page breaks
     my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
-
     open my $md, '>', $md_path or die "Can't write $md_path: $!";
 
     # .md breaks that can be understood by pandoc and translated into word breaks
@@ -660,11 +639,10 @@ No one paid to be in this book. This book is nothing more than a list of places 
 ${line_break}
 |;
     print $md $page_break;
-
     my $qr_num = 0;
     for my $addr (@$addresses) {
         $addr =~ s/\R\z//;    # chomp
-        my $qr_path = File::Spec->catfile($qr_dir, $qrs->[$qr_num]);
+        my $qr_path = File::Spec->catfile( $qr_dir, $qrs->[$qr_num] );
         if ( !-f $qr_path ) {
             die "Missing QR file for '$qr_num': " . Dumper($qrs);
         }
@@ -678,10 +656,8 @@ ${line_break}
 
         # Page break
         print $md $page_break;
-
         $qr_num++;
     }
-
     close $md or die "Error closing $md_path: $!";
 
     # Your print-on-demand formatting is controlled by this DOCX.
@@ -692,10 +668,8 @@ ${line_break}
     #    Convert Markdown -> DOCX using reference.docx for layout
     #    This is the key: reference_docx defines page size/margins/fonts like your POD template.
     my @cmd = ( 'pandoc', $md_path, '-o', $out_docx, '--reference-doc=' . $reference_docx, );
-
     print "Running:\n  " . join( ' ', map { /\s/ ? qq("$_") : $_ } @cmd ) . "\n";
     system(@cmd) == 0 or die "pandoc failed (exit " . ( $? >> 8 ) . ")\n";
 }
-
 main();
 
