@@ -7,14 +7,22 @@ use File::Path  qw(make_path);
 use File::Basename;
 use Cwd qw(abs_path);
 
-my $input_file = './data/addresses.txt';
-my $output_dir = './data/qr_codes';
-
 sub main {
+
+    my $output_dir = './data/qr_codes';
+    my $dh;
+    my $in;
+    my $out;
+    my $addresses_txt = './data/addresses.txt';
+    my $work_dir      = './data';
+    my $qr_pad        = 3;    # 3 digits to represent total number of locations
+    my $qr_dir        = './data/qr_codes/';
+    my $qr_dir_abs    = abs_path($qr_dir) // $qr_dir;
+    my $out_docx      = './data/wasteland_firebirds_big_list-base.docx';
 
     # clean out old QR codes if present
     mkdir $output_dir;
-    opendir( my $dh, $output_dir ) or die "Can't open $output_dir: $!";
+    opendir( $dh, $output_dir ) or die "Can't open $output_dir: $!";
     while ( my $file = readdir($dh) ) {
         next if $file eq '.' or $file eq '..';
         my $path = "$output_dir/$file";
@@ -24,9 +32,9 @@ sub main {
     closedir($dh);
 
     # Check if input file exists
-    unless ( -e $input_file ) {
+    unless ( -e $addresses_txt ) {
         print
-"Error: Could not find '$input_file'. Please create it with one address per line.\n";
+"Error: Could not find '$addresses_txt'. Please create it with one address per line.\n";
         return;
     }
 
@@ -36,10 +44,10 @@ sub main {
           or die "Failed to create directory $output_dir: $!";
     }
 
-    print "Reading addresses from $input_file...\n";
+    print "Reading addresses from $addresses_txt...\n";
 
-    open my $fh, '<:encoding(UTF-8)', $input_file
-      or die "Could not open '$input_file': $!";
+    open my $fh, '<:encoding(UTF-8)', $addresses_txt
+      or die "Could not open '$addresses_txt': $!";
 
     my $count = 0;
 
@@ -110,49 +118,25 @@ sub main {
     print "\nDone! Check the '$output_dir' folder for your codes.\n";
 
     # Input: address text file (one address per line)
-    my $addresses_txt = './data/addresses.txt';
-    my $out_csv       = './data/addresses_and_qr_locations.csv';
-
-    # Folder containing QR images
-    my $qr_dir = './data/qr_codes/';
+    my $out_csv = './data/addresses_and_qr_locations.csv';
 
     # QR filename pattern:
     # - If your files are like 001.png ... 434.png, set:
-    my $qr_ext         = 'png';
-    my $qr_pad         = 3;       # 3 => 001, 002, ...
-    my $qr_start_index = 1;
+    my $qr_ext       = 'png';
+    my $qr_start_ind = 1;
 
     # If your QR files are like "qr_001.png" or "QR-001.png", set prefix/suffix:
-    my $qr_prefix = '';           # e.g. 'qr_'
-    my $qr_suffix = '';           # e.g. '' or '_code'
+    my $qr_prefix = '';    # e.g. 'qr_'
+    my $qr_suffix = '';    # e.g. '' or '_code'
 
    # If you already have exact filenames but not predictable, you can later swap
    # this logic out for a lookup table.
-
-    # ----------------------------
-    # END USER CONFIG
-    # ----------------------------
-
-    sub csv_escape {
-        my ($s) = @_;
-        $s //= '';
-        $s =~ s/\R/ /g;          # collapse any stray newlines
-        $s =~ s/^\s+|\s+$//g;    # trim
-            # Quote if it contains comma, quote, or leading/trailing spaces
-        if ( $s =~ /[",]/ ) {
-            $s =~ s/"/""/g;
-            return qq("$s");
-        }
-        return $s;
-    }
 
     # 1) Index QR directory by leading 3 digits
     my %qr_for_num;       # "268" -> "/abs/path/to/268_Whatever.png"
     my %dupes_for_num;    # track duplicates
 
-    my $qr_dir_abs = abs_path($qr_dir) // $qr_dir;
-
-    opendir( my $dh, $qr_dir ) or die "Can't open QR directory '$qr_dir': $!";
+    opendir( $dh, $qr_dir ) or die "Can't open QR directory '$qr_dir': $!";
     while ( my $f = readdir($dh) ) {
         next if $f eq '.' || $f eq '..';
 
@@ -173,8 +157,8 @@ sub main {
     }
 
     # 2) Read addresses + write CSV rows
-    open my $in,  '<', $addresses_txt or die "Can't open $addresses_txt: $!";
-    open my $out, '>', $out_csv       or die "Can't write $out_csv: $!";
+    open $in,  '<', $addresses_txt or die "Can't open $addresses_txt: $!";
+    open $out, '>', $out_csv       or die "Can't write $out_csv: $!";
 
     print $out "address,qr_image\n";
 
@@ -187,8 +171,8 @@ sub main {
 # If you want to skip blanks, uncomment the next line, but be aware it shifts numbering:
 # next if $addr =~ /^\s*$/;
 
-        my $idx = $qr_start_index + ( $line_no - 1 );
-        my $num = sprintf( "%0*d", $qr_pad, $idx );     # "001", "002", ...
+        my $idx = $qr_start_ind + ( $line_no - 1 );
+        my $num = sprintf( "%0*d", $qr_pad, $idx );    # "001", "002", ...
 
         my $qr_path = $qr_for_num{$num} // '';
 
@@ -206,13 +190,8 @@ sub main {
 
     print "Wrote CSV: $out_csv\n";
 
-    my $addresses_txt = './data/addresses.txt';
-    my $qr_dir        = './data/qr_codes';
-    my $work_dir      = './data';
-
 # How line 1 maps to file number: line 1 => 001_*.png, line 268 => 268_*.png, etc.
-    my $qr_start_index = 1;    # change if needed (placeholder)
-    my $qr_pad         = 3;    # 3-digit numbers
+    my $qr_start = 1;    # change if needed (placeholder)
 
     # Image sizing in the DOCX (pandoc understands inches, cm, mm).
     my $qr_width = '4.0in';
@@ -239,10 +218,8 @@ sub main {
     }
 
     # Index QR directory by leading 3 digits
-    my %qr_for_num;
-    my $qr_dir_abs = abs_path($qr_dir) // $qr_dir;
 
-    opendir( my $dh, $qr_dir ) or die "Can't open QR directory '$qr_dir': $!";
+    opendir( $dh, $qr_dir ) or die "Can't open QR directory '$qr_dir': $!";
     while ( my $f = readdir($dh) ) {
         next if $f eq '.' || $f eq '..';
         next unless $f =~ /^(\d{3})_.+\.png\z/i;    # 268_Something.png
@@ -263,7 +240,7 @@ sub main {
     ensure_dir($work_dir);
     my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
 
-    open my $in, '<', $addresses_txt or die "Can't open $addresses_txt: $!";
+    open $in,    '<', $addresses_txt or die "Can't open $addresses_txt: $!";
     open my $md, '>', $md_path       or die "Can't write $md_path: $!";
 
    # .md breaks that can be understood by pandoc and translated into word breaks
@@ -330,23 +307,23 @@ ${line_break}
 |;
     print $md $page_break;
 
-    my $line_no = 0;
+    my $line_num = 0;
     while ( my $addr = <$in> ) {
-        $line_no++;
+        $line_num++;
         $addr =~ s/\R\z//;    # chomp
 
 # DO NOT skip blank lines unless you're sure your numbering isn't line-based.
 # If you want to skip blank lines, you must also adjust how you pick the QR number.
 # next if $addr =~ /^\s*$/;
 
-        my $idx = $qr_start_index + ( $line_no - 1 );
-        my $num = sprintf( "%0*d", $qr_pad, $idx );     # "001", "268", ...
+        my $idx = $qr_start + ( $line_num - 1 );
+        my $num = sprintf( "%0*d", $qr_pad, $idx );    # "001", "268", ...
 
         my $qr_path = $qr_for_num{$num} // '';
 
         if ( !$qr_path ) {
             my $msg =
-"Missing QR PNG for line $line_no (expected leading number '$num')\n";
+"Missing QR PNG for line $line_num (expected leading number '$num')\n";
             die $msg if $die_on_missing;
             warn $msg;
         }
@@ -375,16 +352,12 @@ ${line_break}
     close $in or die "Error closing $addresses_txt: $!";
     close $md or die "Error closing $md_path: $!";
 
-    my $out_docx = './data/wasteland_firebirds_big_list-base.docx';
-    my $work_dir = './data';
-
 # Your print-on-demand formatting is controlled by this DOCX.
 # Make a DOCX that matches the POD template (margins, page size, headers/footers, fonts, etc).
 # Pandoc calls this a "reference docx".
     my $reference_docx = './data/wasteland_firebirds_big_list-template.docx';
 
     ensure_dir($work_dir);
-    my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
 
 #    Convert Markdown -> DOCX using reference.docx for layout
 #    This is the key: reference_docx defines page size/margins/fonts like your POD template.
@@ -403,6 +376,19 @@ ${line_break}
 
     system( 'open', $out_docx );
 
+}
+
+sub csv_escape {
+    my ($s) = @_;
+    $s //= '';
+    $s =~ s/\R/ /g;          # collapse any stray newlines
+    $s =~ s/^\s+|\s+$//g;    # trim
+        # Quote if it contains comma, quote, or leading/trailing spaces
+    if ( $s =~ /[",]/ ) {
+        $s =~ s/"/""/g;
+        return qq("$s");
+    }
+    return $s;
 }
 
 main();
