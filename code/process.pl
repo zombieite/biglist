@@ -469,8 +469,8 @@ sub ensure_dir {
 sub md_escape {
     my ($s) = @_;
     $s //= '';
-    $s =~ s/\R/ /g;                             # collapse newlines
-    $s =~ s/^\s+|\s+$//g;                       # trim
+    $s =~ s/\R/ /g;
+    $s =~ s/^\s+|\s+$//g;
     $s =~ s/([\\`*_{}\[\]()#+\-.!|>])/\\$1/g;
     return $s;
 }
