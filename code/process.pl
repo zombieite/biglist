@@ -20,16 +20,7 @@ sub main {
     my $qr_dir_abs    = abs_path($qr_dir) // $qr_dir;
     my $out_docx      = './data/wasteland_firebirds_big_list-base.docx';
 
-    # clean out old QR codes if present
-    mkdir $output_dir;
-    opendir( $dh, $output_dir ) or die "Can't open $output_dir: $!";
-    while ( my $file = readdir($dh) ) {
-        next if $file eq '.' or $file eq '..';
-        my $path = "$output_dir/$file";
-        next if -d $path;    # skip subdirectories
-        unlink($path) or warn "Couldn't delete $path: $!";
-    }
-    closedir($dh);
+    clean_out_old_qr_codes($output_dir);
 
     # Check if input file exists
     unless ( -e $addresses_txt ) {
@@ -389,6 +380,20 @@ sub csv_escape {
         return qq("$s");
     }
     return $s;
+}
+
+sub clean_out_old_qr_codes {
+    my ($output_dir) = @_;
+    # clean out old QR codes if present
+    mkdir $output_dir;
+    opendir( my $dh, $output_dir ) or die "Can't open $output_dir: $!";
+    while ( my $file = readdir($dh) ) {
+        next if $file eq '.' or $file eq '..';
+        my $path = "$output_dir/$file";
+        next if -d $path;    # skip subdirectories
+        unlink($path) or warn "Couldn't delete $path: $!";
+    }
+    closedir($dh);
 }
 
 main();
