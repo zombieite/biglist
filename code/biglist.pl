@@ -9,16 +9,20 @@ use Cwd qw(abs_path);
 use Data::Dumper;
 
 sub main {
-    my $addresses = [
+
+    # md breaks that can be understood by pandoc and translated into docx breaks
+    my $line_break = "  \n";
+    my $page_break = "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
+    my $addresses  = [
         {
             name    => "Art Institute of Chicago",
             address => "111 S Michigan Ave, Chicago, IL 60603",
             blurb   => qq|Monet was surprised and overjoyed to wake up every day, like a puppy. His every stroke contains frivolity. He used to say, "I like to paint as a bird sings." Viewing a Monet is an active process. You can't properly appreciate a Monet while seated. You have to approach the painting, then step back, then look away, then look back. A work by Monet is a three dimensional object, just as much a sculpture as a painting. Van Gogh was a better artist, but Monet had more fun.|
         },
         { name => "Cloud Gate",                                              address => "201 E Randolph St, Chicago, IL 60602",                                                     blurb => qq|This is a mirrored, bean-shaped sculpture. Be sure to walk under it.| },
-        { name => "Historic Illinois US 66 Route Signage",                   address => "E Adams St & S Michigan Ave, Chicago, IL",                                                 blurb => qq|| },
-        { name => "Lou Mitchell's",                                          address => "565 W Jackson Blvd, Chicago, IL 60661",                                                    blurb => qq|| },
-        { name => "Lulu's Hot Dogs",                                         address => "1000 S Leavitt St, Chicago, IL 60612",                                                     blurb => qq|| },
+        { name => "Historic Illinois US 66 Route Signage",                   address => "E Adams St & S Michigan Ave, Chicago, IL",                                                 blurb => qq|There's a sign or two, there's a plaque, and if you look down at the crosswalk you might see a small linoleum mosaic embedded into the asphalt.| },
+        { name => "Lou Mitchell's",                                          address => "565 W Jackson Blvd, Chicago, IL 60661",                                                    blurb => qq|The breakfasts here are magnificent.| },
+        { name => "Lulu's Hot Dogs",                                         address => "1000 S Leavitt St, Chicago, IL 60612",                                                     blurb => qq|You can't eat everything you see on the Route. I still haven't eaten here. Whether you eat at these places or not, stop in, say hello, and drop a tip in the jar.\n\nThe food itself doesn't matter, anyway. Places like this will always be on the list because they are beautiful, quirky, and old.| },
         { name => "Steak 'n Egger",                                          address => "5647 Ogden Ave, Cicero, IL 60804",                                                         blurb => qq|| },
         { name => "Henry's Drive-In",                                        address => "6031 Ogden Ave, Cicero, IL 60804",                                                         blurb => qq|| },
         { name => "Cigars & Stripes BBQ Lounge",                             address => "6715 Ogden Ave, Berwyn, IL 60402",                                                         blurb => qq|| },
@@ -459,7 +463,7 @@ sub main {
     set_up_qr_dir($qr_dir);
     ensure_dir($work_dir);
     my $qrs = generate_qr_codes( $addresses, $qr_dir );
-    make_doc( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx );
+    make_doc( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx, $line_break, $page_break );
 
     print "Open DOCX in Pages.\nClick Document, Section, uncheck Left and Right are Different.\nClick Document, Document, Footer. Then go to the footer and click it and Insert Page Number. Do any other needed tweaks then export PDF.\n";
     system( 'open', $out_docx );
@@ -468,15 +472,6 @@ sub main {
 sub ensure_dir {
     my ($d) = @_;
     -d $d or mkdir $d or die "Can't mkdir $d: $!";
-}
-
-sub md_escape {
-    my ($s) = @_;
-    $s //= '';
-    $s =~ s/\R/ /g;
-    $s =~ s/^\s+|\s+$//g;
-    $s =~ s/([\\`*_{}\[\]()#+\-.!|>])/\\$1/g;
-    return $s;
 }
 
 sub set_up_qr_dir {
@@ -557,15 +552,11 @@ sub generate_qr_codes {
 }
 
 sub make_doc {
-    my ( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx ) = @_;
+    my ( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx, $line_break, $page_break ) = @_;
 
     # Build a Pandoc md file
     my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
     open my $md, '>', $md_path or die "Can't write $md_path: $!";
-
-    # md breaks that can be understood by pandoc and translated into docx breaks
-    my $line_break = "  \n";
-    my $page_break = "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
 
     # Title page
     print $md "Wasteland Firebird's Big List${line_break}of the Best Things On Route 66${line_break}by Wasteland Firebird (John Binns)${line_break}Second Edition Summer 2026 Centennial${line_break}";
@@ -634,16 +625,16 @@ ${line_break}
 
         # Address (as plain paragraph). If you want it to be, say, a big bold title},
         # define a style in reference.docx and switch to it later via a pandoc Lua filter.
-        print $md md_escape($place_name), "\n\n";
+        print $md "$place_name\n";
         print $md $line_break;
-        print $md md_escape($address), "\n\n";
+        print $md "$address\n";
 
         # Pandoc supports attribute syntax: {width=...}
-        print $md "![]($qr_path){width=$qr_width}\n\n";
+        print $md "![]($qr_path){width=$qr_width}\n";
         print $md $line_break;
 
         if ($blurb) {
-            print $md md_escape($blurb), "\n\n";
+            print $md "$blurb\n";
             print $md $line_break;
         }
 
