@@ -465,106 +465,7 @@ sub main {
     set_up_qr_output_dir($qr_output_dir);
     ensure_dir($work_dir);
     my $qrs = generate_qr_codes( $addresses, $qr_output_dir );
-
-    # Build a Pandoc-flavored Markdown file with page breaks
-    my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
-
-    open my $md, '>', $md_path or die "Can't write $md_path: $!";
-
-    # .md breaks that can be understood by pandoc and translated into word breaks
-    my $line_break = "  \n";
-    my $page_break = "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
-
-    # Title page
-    print $md "Wasteland Firebird's Big List${line_break}of the Best Things On Route 66${line_break}by Wasteland Firebird (John Binns)${line_break}Second Edition Summer 2026 Centennial${line_break}";
-    print $md $page_break;
-
-    # Copyright page
-    print $md "Copyright © 2026 John Binns${line_break}All rights reserved${line_break}wastelandfirebird\@gmail.com${line_break}youtube.com/wastelandfirebird${line_break}wastelandfirebird.com${line_break}";
-    print $md $page_break;
-
-    # Dedication
-    print $md "In 1987, Angel Delgadillo saved Route 66.${line_break}In 2006, Pixar's Cars saved Route 66.${line_break}2026 is the Centennial of Route 66.${line_break}Who will save it now, if not you and me?${line_break}";
-    print $md $page_break;
-
-    # Introduction
-    print $md qq|
-Prepare to be inspired
-${line_break}
-On July 4, 1976, I wasn't even four years old. But, that year, I learned a big word. Bicentennial. Everyone was saying it so much. How could I not have learned it? "Bicentennial." It was spoken with such obvious reverence that my young ears paid attention.
-${line_break}
-Fifty years later, I am the one speaking reverence to young ears. Are you paying attention?
-${line_break}
-Say it with me. "Semiquincentennial." Do any three-year-olds know that word? How many adults know it? Semiquincentennial.
-${line_break}
-Semi means half, quin means five, cent means hundred, ennial means years. The United States of America has now existed for half of 500 years.
-${line_break}
-I was hoping for another Freedom Train, a Wagon Train Pilgrimage, NYC's Operation Sail, TV shows, special coins, special edition cars, fireworks, air shows, car shows, parades, and red-white-and-blue everything. A few of those things are happening, but something has definitely changed in the last fifty years. The reverence is gone.
-${line_break}
-When I discovered that Route 66 would have its Centennial in the same year as America's Semiquincentennial, I went to work. I had to do something to bring that reverence back.
-${line_break}
-I traveled Route 66 four times. I made a bunch of YouTube videos about it. I took a lot of notes. I drew up flyers for a free event I was calling The Great Route 66 Centennial Convergence. I made t-shirts and keychains based on hand-drawn art. I commissioned miniature "Muffler Man" action figures of myself. I promoted this event so much that I was kicked off of Facebook forever for being a "spammer."
-${line_break}
-Most importantly, I created the First Edition of this book. Like the t-shirts, keychains, and action figures, the First Edition was never for sale. It was free for Convergence participants. There are still a few copies floating around out there.
-${line_break}
-The Great Route 66 Centennial Convergence came to an end on April 30, 2026. But people kept asking for copies of the book. So here it is. The Second Edition. You can buy it at wastelandfirebird.com. You might still manage to find a free copy, if you look hard enough. I always tell people to check the Route 66 of Chenoa IL Roadside Attraction Tourist Info booth. You never know what you might find in that thing.
-${line_break}
-Will there ever be another Convergence? I'll put it this way. I'll be traveling Route 66 as much as I can for the rest of my life. I'd be delighted if you, your friends, and your family, found me, followed me, and asked me questions, all along the way. But pay attention to my answers. And pay attention to my reverence.
-${line_break}
-Route 66 has always represented the American Dream. If we save Route 66, we save the American Dream. If we save the American Dream, we save America. If we save America, we save the world. Because the American Dream is not just America's dream. It's everyone's dream.
-${line_break}
-|;
-    print $md $page_break;
-
-    # How to use this book
-    print $md qq|
-How to use this book
-${line_break}
-This book is a list of QR codes that represent online directions to each of my favorite places on Route 66. You can scan these QR codes with your phone by pointing the phone's camera at them. If you scan every QR code, and visit every place in this book, you will approximately follow Route 66. There is no app that you need to download.
-${line_break}
-If you want to follow Route 66 more exactly, you'll need to do more research. But be aware that there never was a single "Route 66." There have always been many "alignments" (alternate routes). And nowadays, much of what used to be known as "Route 66" consists of potholed roads, dirt roads, private roads, government roads, and dead ends. If you want to explore all of it, you'd better give yourself at least a year.
-${line_break}
-Some of the passport-style books you'll find on the Route require small businesses to pay thousands of dollars for the privilege of being advertised in those books. I'm not saying that's a bad thing. I'm just saying it's something you should know. Many businesses along the Route have custom rubber "passport stamps." I've left an empty space beside all of the QR codes for those stamps, if you want to use them to mark your progress. You could also use those spaces for notes, signatures, stickers, or just big checkmarks.
-${line_break}
-No one paid to be in this book. This book is nothing more than a list of places and people that I love.
-${line_break}
-|;
-    print $md $page_break;
-
-    my $qr_num = 0;
-    for my $addr (@$addresses) {
-        $addr =~ s/\R\z//;    # chomp
-        my $qr_path = File::Spec->catfile($qr_dir, $qrs->[$qr_num]);
-        if ( !-f $qr_path ) {
-            die "Missing QR file for '$qr_num': " . Dumper($qrs);
-        }
-
-        # Address (as plain paragraph). If you want it to be, say, a big bold title,
-        # define a style in reference.docx and switch to it later via a pandoc Lua filter.
-        print $md md_escape($addr), "\n\n";
-
-        # Pandoc supports attribute syntax: {width=...}
-        print $md "![]($qr_path){width=$qr_width}\n\n";
-
-        # Page break
-        print $md $page_break;
-
-        $qr_num++;
-    }
-
-    close $md or die "Error closing $md_path: $!";
-
-    # Your print-on-demand formatting is controlled by this DOCX.
-    # Make a DOCX that matches the POD template (margins, page size, headers/footers, fonts, etc).
-    # Pandoc calls this a "reference docx".
-    my $reference_docx = './data/wasteland_firebirds_big_list-template.docx';
-
-    #    Convert Markdown -> DOCX using reference.docx for layout
-    #    This is the key: reference_docx defines page size/margins/fonts like your POD template.
-    my @cmd = ( 'pandoc', $md_path, '-o', $out_docx, '--reference-doc=' . $reference_docx, );
-
-    print "Running:\n  " . join( ' ', map { /\s/ ? qq("$_") : $_ } @cmd ) . "\n";
-    system(@cmd) == 0 or die "pandoc failed (exit " . ( $? >> 8 ) . ")\n";
+    make_doc($addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx);
 
     print "Wrote DOCX: $out_docx\n";
     print "Next: open DOCX in Pages.\nClick Document, Section, uncheck Left and Right are Different.\nClick Document, Document, Footer. Then go to the footer and click it and Insert Page Number. Do any other needed tweaks then export PDF.\n";
@@ -690,6 +591,110 @@ sub generate_qr_codes {
         }
     }
     return $qrs;
+}
+
+sub make_doc {
+    my ($addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx) = @_;
+
+    # Build a Pandoc-flavored Markdown file with page breaks
+    my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
+
+    open my $md, '>', $md_path or die "Can't write $md_path: $!";
+
+    # .md breaks that can be understood by pandoc and translated into word breaks
+    my $line_break = "  \n";
+    my $page_break = "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
+
+    # Title page
+    print $md "Wasteland Firebird's Big List${line_break}of the Best Things On Route 66${line_break}by Wasteland Firebird (John Binns)${line_break}Second Edition Summer 2026 Centennial${line_break}";
+    print $md $page_break;
+
+    # Copyright page
+    print $md "Copyright © 2026 John Binns${line_break}All rights reserved${line_break}wastelandfirebird\@gmail.com${line_break}youtube.com/wastelandfirebird${line_break}wastelandfirebird.com${line_break}";
+    print $md $page_break;
+
+    # Dedication
+    print $md "In 1987, Angel Delgadillo saved Route 66.${line_break}In 2006, Pixar's Cars saved Route 66.${line_break}2026 is the Centennial of Route 66.${line_break}Who will save it now, if not you and me?${line_break}";
+    print $md $page_break;
+
+    # Introduction
+    print $md qq|
+Prepare to be inspired
+${line_break}
+On July 4, 1976, I wasn't even four years old. But, that year, I learned a big word. Bicentennial. Everyone was saying it so much. How could I not have learned it? "Bicentennial." It was spoken with such obvious reverence that my young ears paid attention.
+${line_break}
+Fifty years later, I am the one speaking reverence to young ears. Are you paying attention?
+${line_break}
+Say it with me. "Semiquincentennial." Do any three-year-olds know that word? How many adults know it? Semiquincentennial.
+${line_break}
+Semi means half, quin means five, cent means hundred, ennial means years. The United States of America has now existed for half of 500 years.
+${line_break}
+I was hoping for another Freedom Train, a Wagon Train Pilgrimage, NYC's Operation Sail, TV shows, special coins, special edition cars, fireworks, air shows, car shows, parades, and red-white-and-blue everything. A few of those things are happening, but something has definitely changed in the last fifty years. The reverence is gone.
+${line_break}
+When I discovered that Route 66 would have its Centennial in the same year as America's Semiquincentennial, I went to work. I had to do something to bring that reverence back.
+${line_break}
+I traveled Route 66 four times. I made a bunch of YouTube videos about it. I took a lot of notes. I drew up flyers for a free event I was calling The Great Route 66 Centennial Convergence. I made t-shirts and keychains based on hand-drawn art. I commissioned miniature "Muffler Man" action figures of myself. I promoted this event so much that I was kicked off of Facebook forever for being a "spammer."
+${line_break}
+Most importantly, I created the First Edition of this book. Like the t-shirts, keychains, and action figures, the First Edition was never for sale. It was free for Convergence participants. There are still a few copies floating around out there.
+${line_break}
+The Great Route 66 Centennial Convergence came to an end on April 30, 2026. But people kept asking for copies of the book. So here it is. The Second Edition. You can buy it at wastelandfirebird.com. You might still manage to find a free copy, if you look hard enough. I always tell people to check the Route 66 of Chenoa IL Roadside Attraction Tourist Info booth. You never know what you might find in that thing.
+${line_break}
+Will there ever be another Convergence? I'll put it this way. I'll be traveling Route 66 as much as I can for the rest of my life. I'd be delighted if you, your friends, and your family, found me, followed me, and asked me questions, all along the way. But pay attention to my answers. And pay attention to my reverence.
+${line_break}
+Route 66 has always represented the American Dream. If we save Route 66, we save the American Dream. If we save the American Dream, we save America. If we save America, we save the world. Because the American Dream is not just America's dream. It's everyone's dream.
+${line_break}
+|;
+    print $md $page_break;
+
+    # How to use this book
+    print $md qq|
+How to use this book
+${line_break}
+This book is a list of QR codes that represent online directions to each of my favorite places on Route 66. You can scan these QR codes with your phone by pointing the phone's camera at them. If you scan every QR code, and visit every place in this book, you will approximately follow Route 66. There is no app that you need to download.
+${line_break}
+If you want to follow Route 66 more exactly, you'll need to do more research. But be aware that there never was a single "Route 66." There have always been many "alignments" (alternate routes). And nowadays, much of what used to be known as "Route 66" consists of potholed roads, dirt roads, private roads, government roads, and dead ends. If you want to explore all of it, you'd better give yourself at least a year.
+${line_break}
+Some of the passport-style books you'll find on the Route require small businesses to pay thousands of dollars for the privilege of being advertised in those books. I'm not saying that's a bad thing. I'm just saying it's something you should know. Many businesses along the Route have custom rubber "passport stamps." I've left an empty space beside all of the QR codes for those stamps, if you want to use them to mark your progress. You could also use those spaces for notes, signatures, stickers, or just big checkmarks.
+${line_break}
+No one paid to be in this book. This book is nothing more than a list of places and people that I love.
+${line_break}
+|;
+    print $md $page_break;
+
+    my $qr_num = 0;
+    for my $addr (@$addresses) {
+        $addr =~ s/\R\z//;    # chomp
+        my $qr_path = File::Spec->catfile($qr_dir, $qrs->[$qr_num]);
+        if ( !-f $qr_path ) {
+            die "Missing QR file for '$qr_num': " . Dumper($qrs);
+        }
+
+        # Address (as plain paragraph). If you want it to be, say, a big bold title,
+        # define a style in reference.docx and switch to it later via a pandoc Lua filter.
+        print $md md_escape($addr), "\n\n";
+
+        # Pandoc supports attribute syntax: {width=...}
+        print $md "![]($qr_path){width=$qr_width}\n\n";
+
+        # Page break
+        print $md $page_break;
+
+        $qr_num++;
+    }
+
+    close $md or die "Error closing $md_path: $!";
+
+    # Your print-on-demand formatting is controlled by this DOCX.
+    # Make a DOCX that matches the POD template (margins, page size, headers/footers, fonts, etc).
+    # Pandoc calls this a "reference docx".
+    my $reference_docx = './data/wasteland_firebirds_big_list-template.docx';
+
+    #    Convert Markdown -> DOCX using reference.docx for layout
+    #    This is the key: reference_docx defines page size/margins/fonts like your POD template.
+    my @cmd = ( 'pandoc', $md_path, '-o', $out_docx, '--reference-doc=' . $reference_docx, );
+
+    print "Running:\n  " . join( ' ', map { /\s/ ? qq("$_") : $_ } @cmd ) . "\n";
+    system(@cmd) == 0 or die "pandoc failed (exit " . ( $? >> 8 ) . ")\n";
 }
 
 main();
