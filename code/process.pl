@@ -475,19 +475,6 @@ sub md_escape {
     return $s;
 }
 
-sub csv_escape {
-    my ($s) = @_;
-    $s //= '';
-    $s =~ s/\R/ /g;                             # collapse any stray newlines
-    $s =~ s/^\s+|\s+$//g;                       # trim
-                                                # Quote if it contains comma, quote, or leading/trailing spaces
-    if ( $s =~ /[",]/ ) {
-        $s =~ s/"/""/g;
-        return qq("$s");
-    }
-    return $s;
-}
-
 sub set_up_qr_dir {
     my ($output_dir) = @_;
     unless ( -d $output_dir ) {
