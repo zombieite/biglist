@@ -9,22 +9,10 @@ use Cwd qw(abs_path);
 
 sub main {
 
-    my $output_dir = './data/qr_codes';
-    my $dh;
-    my $in;
-    my $out;
-    my $work_dir   = './data';
-    my $qr_pad     = 3;        # 3 digits to represent total number of locations
-    my $qr_dir     = './data/qr_codes/';
-    my $qr_dir_abs = abs_path($qr_dir) // $qr_dir;
-    my $out_docx   = './data/wasteland_firebirds_big_list-base.docx';
-
-    set_up_output_dir($output_dir);
-
     my $addresses = [
         "Art Institute of Chicago, 111 S Michigan Ave, Chicago, IL 60603",
         "Cloud Gate, 201 E Randolph St, Chicago, IL 60602",
-"Historic Illinois US 66 Route Signage, E Adams St & S Michigan Ave, Chicago, IL",
+        "Historic Illinois US 66 Route Signage, E Adams St & S Michigan Ave, Chicago, IL",
         "Lou Mitchell's, 565 W Jackson Blvd, Chicago, IL 60661",
         "Lulu's Hot Dogs, 1000 S Leavitt St, Chicago, IL 60612",
         "Steak 'n Egger, 5647 Ogden Ave, Cicero, IL 60804",
@@ -49,14 +37,14 @@ sub main {
         "Route 66 Association of Illinois, 110 W Howard St, Pontiac, IL 61764",
         "Pontiac Oakland Auto Museum, 205 N Mill St, Pontiac, IL 61764",
         "Wally's, 1 Holiday Rd, Pontiac, IL 61764",
-"Route 66 of Chenoa Roadside Attraction & Tourist Info, P7RC+C3, Chenoa IL 61726",
+        "Route 66 of Chenoa Roadside Attraction & Tourist Info, P7RC+C3, Chenoa IL 61726",
         "Lexington Route 66 Memory Lane, Parade Rd, Lexington, IL 61753",
         "The Shake Shack, 512 W Main St, Lexington, IL 61753",
         "Sprague's Super Service Station, 305 Pine St, Normal, IL 61761",
         "Carl's Ice Cream Factory, 1700 W College Ave, Normal, IL 61761",
         "Funks Grove Pure Maple Sirup Farm, Funks Grove Township, IL 61754",
         "Pinball Paradise, 102 E Morgan St, McLean, IL 61754",
-"Arcadia: America's Playable Arcade Museum, 107 S Hamilton St, McLean, IL 61754",
+        "Arcadia: America's Playable Arcade Museum, 107 S Hamilton St, McLean, IL 61754",
         "Country-Aire Restaurant, 606 E South St, Atlanta, IL 61723",
         "American Giants Museum, 100 SW St, Atlanta, IL 61723",
         "Hot Dog Muffler Man, 112 SW Arch St, Atlanta, IL 61723",
@@ -64,12 +52,12 @@ sub main {
         "Wild Hare Cafe, 104 Governor Oglesby St, Elkhart, IL 62634",
         "The Old Station, 117 Elm St, Williamsville, IL 62693",
         "Outkast Tattoo Studio, 2828 N Peoria Rd, Springfield, IL 62702",
-"Illinois State Fair Route 66 Experience, 801 E Sangamon Ave, Springfield, IL 62702",
-"Route 66 Hotel & Conference Center, 625 E St Joseph St, Springfield, IL 62703",
+        "Illinois State Fair Route 66 Experience, 801 E Sangamon Ave, Springfield, IL 62702",
+        "Route 66 Hotel & Conference Center, 625 E St Joseph St, Springfield, IL 62703",
         "Shea's Filling Station, 2075 N Peoria Rd, Springfield, IL 62702",
         "Maid-Rite, 118 N Pasfield St, Springfield, IL 62702",
         "Pharmacy Gallery & Art Space, 623 E Adams St, Springfield, IL 62701",
-"Springfield Southeast High School, 2350 E Ash St, Springfield, IL 62703",
+        "Springfield Southeast High School, 2350 E Ash St, Springfield, IL 62703",
         "Mel-O-Cream Donuts, 217 E Laurel St, Springfield, IL 62704",
         "Ace Sign Co., 2540 S 1st St, Springfield, IL 62704",
         "Charlie Parker's Diner, 700 W North St, Springfield, IL 62704",
@@ -77,7 +65,7 @@ sub main {
         "Pinky Elephant with Martini, 2723 S 6th St, Springfield, IL 62703",
         "Cozy Dog, 2935 S 6th St, Springfield, IL 62703",
         "Curve Inn, 3219 S 6th St, Springfield, IL 62703",
-"Route 66 Motorheads Bar and Grill, 600 Toronto Rd, Springfield, IL 62711",
+        "Route 66 Motorheads Bar and Grill, 600 Toronto Rd, Springfield, IL 62711",
         "Sangamo Brewing, 109 E Mulberry St, Chatham, IL 62629",
         "Chatham Railroad Museum, 100 N State St, Chatham, IL 62629",
         "Illinois Brick Road, 4995–4790 Snell Rd, Auburn, IL 62615",
@@ -89,11 +77,11 @@ sub main {
         "Rt 66 Skyview Drive-In, 1500 Old Rte 66 N, Litchfield, IL 62056",
         "Niehaus Cycle Sales, 718 Old Rte 66 N, Litchfield, IL 62056",
         "The Ariston Cafe, 413 Old Rte 66 N, Litchfield, IL 62056",
-"Litchfield Museum & Route 66 Welcome Center, 334 Old Rte 66 N, Litchfield, IL 62056",
+        "Litchfield Museum & Route 66 Welcome Center, 334 Old Rte 66 N, Litchfield, IL 62056",
         "Soulsby Service Station, 710 W 1st St, Mt Olive, IL 62069",
         "Henry's Rabbit Ranch, 1107 Historic Old Rte 66, Staunton, IL 62088",
         "DeCamp Station, 8767 State Rte 4, Staunton, IL 62088",
-"Pink Elephant Antique Mall, 908 Veterans Memorial Dr, Livingston, IL 62058",
+        "Pink Elephant Antique Mall, 908 Veterans Memorial Dr, Livingston, IL 62058",
         "Route 66 Creamery, 11 S Old Rte 66, Hamel, IL 62046",
         "Weezy's, 108 Old Rte 66, Hamel, IL 62046",
         "Wildey Theatre, 252 N Main St, Edwardsville, IL 62025",
@@ -113,7 +101,7 @@ sub main {
         "The Malt Shop, 1751 Smizer Station Rd, Fenton, MO 63026",
         "Route 66 State Park, 97 N Outer Rd, Eureka, MO 63025",
         "Campbell's Service, 18625 Historic Rte 66, Pacific, MO 63069",
-"Red Cedar Inn Museum and Visitor Center, 1047 E Osage St, Pacific, MO 63069",
+        "Red Cedar Inn Museum and Visitor Center, 1047 E Osage St, Pacific, MO 63069",
         "2827 MO-100, Villa Ridge, MO 63089",
         "Old Sunset Motel, 976 Osage Villa Ct, Villa Ridge, MO 63089",
         "Creative Chainsaw Carvings, 151 State Rte W, Sullivan, MO 63080",
@@ -121,10 +109,10 @@ sub main {
         "Shamrock Court Motel, 101 Shamrock, Sullivan, MO 63080",
         "Missouri Hick Barbeque, 913 E Washington Blvd, Cuba, MO 65453",
         "Wagon Wheel Motel, 901 E Washington Blvd, Cuba, MO 65453",
-"Weir on 66 / Rich's Famous Burgers, 102 W Washington St, Cuba, MO 65453",
+        "Weir on 66 / Rich's Famous Burgers, 102 W Washington St, Cuba, MO 65453",
         "Fanning Outpost Rocking Chair, 5957 State Hwy ZZ, Cuba, MO 65453",
         "Mule Trading Post, 11160 Dillon Outer Rd, Rolla, MO 65401",
-"John's Modern Cabins on Route 66, 11107 Arlington Outer Rd, Newburg, MO 65550",
+        "John's Modern Cabins on Route 66, 11107 Arlington Outer Rd, Newburg, MO 65550",
         "Arlington, Arlington, MO 65550",
         "Devil's Elbow Bridge, Big Piney River, Devils Elbow, MO 65457",
         "Uranus Fudge Factory, 14400 State Hwy Z, St. Robert, MO 65584",
@@ -133,7 +121,7 @@ sub main {
         "Old Stagecoach Stop, 106 N Lynn St, Waynesville, MO 65583",
         "Route 66 Gasconade Bridge, Richland, MO 65556",
         "Munger Moss Motel, 1336 U.S. Rt 66, Lebanon, MO 65536",
-"Smokin' Jones BBQ / Wrink's Market, 135 Wrinkle Ave, Lebanon, MO 65536",
+        "Smokin' Jones BBQ / Wrink's Market, 135 Wrinkle Ave, Lebanon, MO 65536",
         "Taylor's Dairy Joy, 1205 U.S. Rte 66, Lebanon, MO 65536",
         "The Manor House Inn, 505 E Elm St, Lebanon, MO 65536",
         "Route 66 Museum, 915 S Jefferson Ave, Lebanon, MO 65536",
@@ -141,12 +129,12 @@ sub main {
         "Redmon's Candy Factory, 330 Pine St, Phillipsburg, MO 65722",
         "Buc-ee's, 3284 N Mulroy Rd, Springfield, MO 65803",
         "Andy's Frozen Custard, 2119 N Glenstone Ave, Springfield, MO 65803",
-"Best Western Route 66 Rail Haven, 203 S Glenstone Ave, Springfield, MO 65802",
+        "Best Western Route 66 Rail Haven, 203 S Glenstone Ave, Springfield, MO 65802",
         "Steak 'n Shake, 1158 E St Louis St, Springfield, MO 65802",
         "Gillioz Theatre, 325 Park Central E, Springfield, MO 65806",
-"History Museum on the Square, 154 Park Central Square, Springfield, MO 65806",
+        "History Museum on the Square, 154 Park Central Square, Springfield, MO 65806",
         "1984 Arcade, 400 S Jefferson Ave, Springfield, MO 65806",
-"Rogue Barber Co. & D's Wax Factory, 639 W Walnut St, Springfield, MO 65806",
+        "Rogue Barber Co. & D's Wax Factory, 639 W Walnut St, Springfield, MO 65806",
         "College Street Cafe, 1622 W College St, Springfield, MO 65806",
         "Route 66 Car Museum, 1634 W College St, Springfield, MO 65806",
         "Rockwood Motor Court, 2200 W College St, Springfield, MO 65806",
@@ -164,12 +152,12 @@ sub main {
         "Granny Shaffer's Restaurant, 2728 N Rangeline Rd, Joplin, MO 64801",
         "Royale Cinema Lounge, 715 E Broadway St, Joplin, MO 64801",
         "Wilder's Steakhouse, 1216 S Main St, Joplin, MO 64801",
-"Cars on the Route Kan-O-Tex Service Station, 199 N Main St, Galena, KS 66739",
+        "Cars on the Route Kan-O-Tex Service Station, 199 N Main St, Galena, KS 66739",
         "Gearhead Curios, 520 Main St, Galena, KS 66739",
         "Galena Mining & Historical Museum, 319 W 7th St, Galena, KS 66739",
         "Old Riverton Store, 7109 KS-66, Riverton, KS 66770",
         "Rainbow Bridge, SE Beasley Rd, Baxter Springs, KS 66713",
-"Baxter Springs Heritage Center & Museum, 740 East Ave, Baxter Springs, KS 66713",
+        "Baxter Springs Heritage Center & Museum, 740 East Ave, Baxter Springs, KS 66713",
         "Route 66 Visitors Center, 940 Military Ave, Baxter Springs, KS 66713",
         "Dallas' Dairyette, 103 N Main St, Quapaw, OK 74363",
         "Dairy King, 100 N Main St, Commerce, OK 74339",
@@ -179,12 +167,12 @@ sub main {
         "Clanton's Cafe, 319 E Illinois Ave, Vinita, OK 74301",
         "Crosstar Flag and Tag Museum, 103 S Central Ave, Afton, OK 74331",
         "Center Theater, 124 S Wilson St, Vinita, OK 74301",
-"Vinita Antique Mall on Route 66 & Jefferson Highway, 127 S Wilson St, Vinita, OK 74301",
+        "Vinita Antique Mall on Route 66 & Jefferson Highway, 127 S Wilson St, Vinita, OK 74301",
         "Hi-Way Cafe and Western Motel, 437918 US-60, Vinita, OK 74301",
         "Underground Pedestrian Mural, 600 Walnut St, Chelsea, OK 74016",
         "Ed Galloway's Totem Pole Park, 21300 OK-28A, Chelsea, OK 74016",
         "Annie's Diner, 12015 Poplar St, Claremore, OK 74017",
-"J.M. Davis Arms & Historical Museum, 330 N JM Davis Blvd, Claremore, OK 74017",
+        "J.M. Davis Arms & Historical Museum, 330 N JM Davis Blvd, Claremore, OK 74017",
         "Blue Whale of Catoosa, 2600 OK-66, Catoosa, OK 74015",
         "Tally's Good Food Cafe, 1102 S Yale Ave, Tulsa, OK 74112",
         "Golden Driller Statue, 4145 E 21st St, Tulsa, OK 74114",
@@ -222,7 +210,7 @@ sub main {
         "Arcadia Round Barn, 107 OK-66, Arcadia, OK 73007",
         "Pops 66, 660 OK-66, Arcadia, OK 73007",
         "1889 Territorial School, 124 E 2nd St, Edmond, OK 73034",
-"Bricktown Entertainment District, 111 S Mickey Mantle Dr, Oklahoma City, OK 73104",
+        "Bricktown Entertainment District, 111 S Mickey Mantle Dr, Oklahoma City, OK 73104",
         "Classen Inn, 820 N Classen Blvd, Oklahoma City, OK 73106",
         "Tower Theatre, 425 NW 23rd St, Oklahoma City, OK 73103",
         "Gold Dome Bank Building, 1112 NW 23rd St, Oklahoma City, OK 73106",
@@ -237,7 +225,7 @@ sub main {
         "Indian Trading Post, 825 S Walbaum Rd, Calumet, OK 73014",
         "Bridgeport Bridge, US-281, Hinton, OK 73047",
         "Gloria's Restaurant, 104 E Main St, Hydro, OK 73048",
-"Lucille's Historic Highway Gas Station, U.S. Route 66, Hydro, OK 73048",
+        "Lucille's Historic Highway Gas Station, U.S. Route 66, Hydro, OK 73048",
         "Jerry's Diner, 1000 E Main St, Weatherford, OK 73096",
         "Centennial Park, N Broadway St, Weatherford, OK 73096",
         "The Glancy Motel, 217 W Gary Blvd, Clinton, OK 73601",
@@ -245,13 +233,13 @@ sub main {
         "Foss, Foss, OK 73647",
         "Canute, Canute, OK 73626",
         "Flamingo Inn, 2000 W 3rd St, Elk City, OK 73644",
-"National Route 66 & Transportation Museum, 2717 W 3rd St, Elk City, OK 73644",
+        "National Route 66 & Transportation Museum, 2717 W 3rd St, Elk City, OK 73644",
         "Sandhill Curiosity Shop, 201 S Sheb Wooley Ave, Erick, OK 73645",
         "Sam's Town on 66, 401 W Roger Miller Blvd, Erick, OK 73645",
         "West Winds Motel, 617 W Roger Miller Blvd, Erick, OK 73645",
         "U-Drop Inn Cafe, 105 E 12th St Shamrock TX, 79079",
         "Devil's Rope Barbed Wire Museum, 100 Kingsley St, McLean, TX 79057",
-"Restored 1929 Route 66 Gas Station, 212 First St, McLean, TX 79057 and 66 Super Service Station, 3rd Ave, Alanreed, TX 79057",
+        "Restored 1929 Route 66 Gas Station, 212 First St, McLean, TX 79057 and 66 Super Service Station, 3rd Ave, Alanreed, TX 79057",
         "Leaning Tower of Texas, Groom, TX 79039",
         "Buc-ee's, 9900 E I-40, Amarillo, TX 79118",
         "The Big Texan Steak Ranch & Brewery, 7701 I-40, Amarillo, TX 79118",
@@ -269,30 +257,30 @@ sub main {
         "Milburn-Price Culture Museum, 1005 Coke St, Vega, TX 79092",
         "Mama Jo's Pies & Sweets, 922 E Main St, Vega, TX 79092",
         "Midpoint Cafe and Gift Shop, 305 Historic Rte 66, Adrian, TX 79001",
-"Dream Maker Station Route 66 Souvenir & Gift Shop, 307 U.S. Rte 66, Adrian, TX 79001",
+        "Dream Maker Station Route 66 Souvenir & Gift Shop, 307 U.S. Rte 66, Adrian, TX 79001",
         "Glenrio TX Ghost Town, I-40BL, Hereford, TX 79045",
-"Russell's Truck & Travel Center, 1583 Frontage Rd 4132, Glenrio, NM 88434",
+        "Russell's Truck & Travel Center, 1583 Frontage Rd 4132, Glenrio, NM 88434",
         "World's Largest Flip Flop, 602 Route 66, San Jon, NM 88434",
         "Palomino Motel, 1215 E Rte 66 Blvd, Tucumcari, NM 88401",
         "Watson's BBQ, 502 S Lake St, Tucumcari, NM 88401",
         "Del's Restaurant, 1202 U.S. Rte 66, Tucumcari, NM 88401",
         "Tristar Inn Xpress, 1302 W Rte 66 Blvd, Tucumcari, NM 88401",
         "Roadrunner Lodge Motel, 1023 E Rte 66 Blvd, Tucumcari, NM 88401",
-"Golden Dragon Chinese Restaurant, 1006 E Rte 66 Blvd, Tucumcari, NM 88401",
+        "Golden Dragon Chinese Restaurant, 1006 E Rte 66 Blvd, Tucumcari, NM 88401",
         "TeePee Curios, 924 E Rte 66 Blvd, Tucumcari, NM 88401",
         "Blue Swallow Motel, 815 E Rte 66 Blvd, Tucumcari, NM 88401",
         "Motel Safari, 722 E Rte 66 Blvd, Tucumcari, NM 88401",
         "Tucumcari Historical Museum, 416 S Adams St, Tucumcari, NM 88401",
-"Mesalands Dinosaur Museum & Natural Sciences Laboratory, 222 E Laughlin Ave, Tucumcari, NM 88401",
+        "Mesalands Dinosaur Museum & Natural Sciences Laboratory, 222 E Laughlin Ave, Tucumcari, NM 88401",
         "La Cita, 820 S 1st St, Tucumcari, NM 88401",
         "Blake's Lotaburger, 2523 S 1st St, Tucumcari, NM 88401",
         "Tucumcari Automotive, 401 W Tucumcari Blvd, Tucumcari, NM 88401, USA",
         "Ranch House Cafe, 1017 W Tucumcari Blvd, Tucumcari, NM 88401",
         "Route 66 Monument, 1500 U.S. Rte 66, Tucumcari, NM 88401",
-"Historic Newkirk post office, gas station & store, Emerald Rd, Cuervo, NM 88417",
+        "Historic Newkirk post office, gas station & store, Emerald Rd, Cuervo, NM 88417",
         "Cuervo Ghost Town, Cuervo, NM 88417",
         "Route 66 Auto Museum, 2463 Historic Rte 66, Santa Rosa, NM 88435",
-"Old Rio Pecos Ranch Truck Terminal, 2358 U.S. Rte 66, Santa Rosa, NM 88435",
+        "Old Rio Pecos Ranch Truck Terminal, 2358 U.S. Rte 66, Santa Rosa, NM 88435",
         "Sun & Sand Restaurant, 2050 U.S. Rte 66, Santa Rosa, NM 88435",
         "Pecos Theatre, 219 S 4th St, Santa Rosa, NM 88435",
         "Bowlin's Flying C Ranch, Exit 234, I-40, Encino, NM 88321",
@@ -314,10 +302,10 @@ sub main {
         "Dog House Drive In, 1216 Central Ave NW, Albuquerque, NM 87102",
         "El Vado Motel, 2500 Central Ave SW, Albuquerque, NM 87104",
         "Golden Pride, 5231 Central Ave NW, Albuquerque, NM 87105",
-"Western View Steak Diner & House, 6411 Central Ave NW, Albuquerque, NM 87105",
-"Westward Ho Motel, 4C25+X7, 7500 Central Ave SW, Albuquerque, NM 87121",
-"Cafe 66 New Mexican Restaurant, 9200 Central Ave SW, Albuquerque, NM 87121",
-"Enchanted Trails RV Park & Trading Post, 14305 Central Ave NW, Albuquerque, NM 87121",
+        "Western View Steak Diner & House, 6411 Central Ave NW, Albuquerque, NM 87105",
+        "Westward Ho Motel, 4C25+X7, 7500 Central Ave SW, Albuquerque, NM 87121",
+        "Cafe 66 New Mexican Restaurant, 9200 Central Ave SW, Albuquerque, NM 87121",
+        "Enchanted Trails RV Park & Trading Post, 14305 Central Ave NW, Albuquerque, NM 87121",
         "Rio Puerco Bridge, 14311 Central Ave NW, Albuquerque, NM 87121",
         "Old Route 66 Road, 2702–2780 Old Rte 66 Rd, New Laguna, NM 87038",
         "Budville Trading Post, HC 77 Box 1A, Seama, NM 87007",
@@ -343,7 +331,7 @@ sub main {
         "Old Landfill Site, 34.89166, -110.14122",
         "Wigwam Motel, 811 W Hopi Dr, Holbrook, AZ 86025",
         "Geronimo Trading Post, 5372 Geronimo Rd, Joseph City, AZ 86032",
-"Here It Is Jack Rabbit Trading Post, 3386 U.S. Rte 66, Joseph City, AZ 86032",
+        "Here It Is Jack Rabbit Trading Post, 3386 U.S. Rte 66, Joseph City, AZ 86032",
         "Falcon Restaurant & Lounge, 1113 E 3rd St, Winslow, AZ 86047",
         "Earl's Route 66 Motor Court, 512 E 3rd St, Winslow, AZ 86047",
         "La Posada Hotel, 303 E 2nd St, Winslow, AZ 86047",
@@ -357,7 +345,7 @@ sub main {
         "Americana Motor Hotel, 2650 E Rte 66, Flagstaff, AZ 86004",
         "Route 66 Dog Haus, 1302 E Rte 66, Flagstaff, AZ 86001",
         "Flagstaff Visitor Center, 1 E Rte 66, Flagstaff, AZ 86001",
-"J. Lawrence Walkup Skydome, 1705 S San Francisco St, Flagstaff, AZ 86001",
+        "J. Lawrence Walkup Skydome, 1705 S San Francisco St, Flagstaff, AZ 86001",
         "Galaxy Diner, 931 W Rte 66, Flagstaff, AZ 86001",
         "Old Route 66 Parks Store, 12963 Old Rte 66 Ste 50340, Parks, AZ 86018",
         "Bearizona Wildlife Park, 1500 E Rte 66, Williams, AZ 86046",
@@ -369,7 +357,7 @@ sub main {
         "Arizona 9 Motor Hotel, 315 W Rte 66, Williams, AZ 86046",
         "Hi-Line Motel Sign, 127 Lewis Ave, Ash Fork, AZ 86320",
         "Ash Fork Route 66 Museum, 901 Old Rte 66, Ash Fork, AZ 86320",
-"Aztec Motel & Creative Space, 22200 Historic Rte 66, Seligman, AZ 86337",
+        "Aztec Motel & Creative Space, 22200 Historic Rte 66, Seligman, AZ 86337",
         "Delgadillo's Snow Cap, 301 AZ-66, Seligman, AZ 86337",
         "Route 66 Road Relics, 22255 W Old Highway 66, Seligman, AZ 86337",
         "Rusty Bolt, 22345 W Old Highway 66, Seligman, AZ 86337",
@@ -397,11 +385,11 @@ sub main {
         "Guardian Lion East, National Trails Hwy, Amboy, CA 92304",
         "Guardian Lion West, National Trails Hwy, Amboy, CA 92304",
         "Roy's Motel & Cafe, 87520 National Trails Hwy, Amboy, CA 92304",
-"Former Whiting Brothers Gas Station, 68517 County Rd 66, Ludlow, CA 92338",
+        "Former Whiting Brothers Gas Station, 68517 County Rd 66, Ludlow, CA 92338",
         "Ludlow Cafe, 68315 National Trails Hwy, Ludlow, CA 92338",
-"Whiting Brothers Service / Tony's Spaghetti Building, 46756 National Trails Hwy, Newberry Springs, CA 92365",
+        "Whiting Brothers Service / Tony's Spaghetti Building, 46756 National Trails Hwy, Newberry Springs, CA 92365",
         "Bagdad Cafe, 46548 National Trails Hwy, Newberry Springs, CA 92365",
-"Sand-Swallowed Abandoned Homes, Newberry Rd & Palma Vista Rd, Newberry Springs, CA 92365",
+        "Sand-Swallowed Abandoned Homes, Newberry Rd & Palma Vista Rd, Newberry Springs, CA 92365",
         "The Barn, 44560 National Trails Hwy, Newberry Springs, CA 92365",
         "The Russian House, 35421 County Rd 66, Daggett, CA 92327",
         "Desert Market, 35596 Santa Fe St, Daggett, CA 92327",
@@ -420,22 +408,22 @@ sub main {
         "Mojave River Valley Museum, 270 E Virginia Way, Barstow, CA 92311",
         "Harvey House, 685 N 1st Ave, Barstow, CA 92311",
         "20 Mule Team Museum, 26962 Twenty Mule Team Rd, Boron, CA 93516",
-"Elmer's Bottle Tree Ranch, 24266 National Trails Hwy, Oro Grande, CA 92368",
+        "Elmer's Bottle Tree Ranch, 24266 National Trails Hwy, Oro Grande, CA 92368",
         "Emma Jean's Holland Burger Cafe, 17143 N D St, Victorville, CA 92394",
         "California Route 66 Museum, 16825 D St, Victorville, CA 92395",
         "Santa Fe Trading Company, 15464 7th St, Victorville, CA 92395",
-"First Original McDonald's Museum, 1398 N E St, San Bernardino, CA 92405",
+        "First Original McDonald's Museum, 1398 N E St, San Bernardino, CA 92405",
         "Mitla Cafe, 602 N Mt Vernon Ave, San Bernardino, CA 92411",
         "Wigwam Village Motel, 2728 Foothill Blvd, San Bernardino, CA 92410",
-"Cucamonga Service Station, 9670 Foothill Blvd, Rancho Cucamonga, CA 91730",
+        "Cucamonga Service Station, 9670 Foothill Blvd, Rancho Cucamonga, CA 91730",
         "The Sycamore Inn, 8318 Foothill Blvd, Rancho Cucamonga, CA 91730",
-"Magic Lamp Inn Restaurant, 8189 Foothill Blvd, Rancho Cucamonga, CA 91730",
+        "Magic Lamp Inn Restaurant, 8189 Foothill Blvd, Rancho Cucamonga, CA 91730",
         "The Donut Man, 915 E Route 66, Glendora, CA 91741",
         "690 E Foothill Blvd, Azusa, CA 91702",
         "Windmill Denny's, 7 E Huntington Dr, Arcadia, CA 91006",
         "Saga Motor Hotel, 1633 E Colorado Blvd, Pasadena, CA 91106",
         "Shakers, 601 Fair Oaks Ave, South Pasadena, CA 91030",
-"Fair Oaks Pharmacy & Soda Fountain, 1526 Mission St, South Pasadena, CA 91030",
+        "Fair Oaks Pharmacy & Soda Fountain, 1526 Mission St, South Pasadena, CA 91030",
         "Rialto Theatre, 1023 Fair Oaks Ave, South Pasadena, CA 91030",
         "Galco's Old World Grocery, 5702 York Blvd, Los Angeles, CA 90042",
         "Highland Park Bowl, 5621 N Figueroa St, Los Angeles, CA 90042",
@@ -459,70 +447,18 @@ sub main {
         "Santa Monica Pier, 200 Santa Monica Pier, Santa Monica, CA 90401",
     ];
 
-    my $count = 0;
+    my $output_dir = './data/qr_codes';
+    my $dh;
+    my $in;
+    my $out;
+    my $work_dir   = './data';
+    my $qr_pad     = 3;
+    my $qr_dir     = './data/qr_codes/';
+    my $qr_dir_abs = abs_path($qr_dir) // $qr_dir;
+    my $out_docx   = './data/wasteland_firebirds_big_list-base.docx';
 
-    for my $address (@$addresses) {
-        chomp $address;
-
-        # Skip empty lines
-        next unless $address =~ /\S/;
-
-        $count++;
-
-        # 1. Create the Google Maps URL
-        # uri_escape handles spaces and special characters
-        my $query    = uri_escape_utf8($address);
-        my $maps_url = "https://www.google.com/maps/search/?api=1&query=$query";
-
-        # 2. Generate the QR Code
-        # Ecc => 1 is Error Correction Level L (Low)
-        # ModuleSize controls the pixel size of the blocks
-        my $qrobj =
-          GD::Barcode::QRcode->new( $maps_url, { Ecc => 1, ModuleSize => 4 } );
-
-        print "$maps_url\n";
-
-        if ($qrobj) {
-
-            # 3. Create a safe filename
-            # Remove characters that are unsafe for filenames
-            my $safe_name = $address;
-            $safe_name =~ s/[^a-zA-Z0-9_\- ]//g;
-            $safe_name =~ s/ /_/g;
-
-            # Limit length to avoid filesystem errors
-            $safe_name = substr( $safe_name, 0, 30 );
-
-            my $filename = sprintf( "%03d_%s.png", $count, $safe_name );
-            my $filepath = "$output_dir/$filename";
-
-            open my $img_fh, '>', $filepath
-              or die "Could not open '$filepath' for writing: $!";
-            binmode $img_fh;
-
-            # Adding some padding to left or right side, alternating
-            my $qr = $qrobj->plot();
-            my ( $w, $h ) = $qr->getBounds();
-            my $pad = 0;
-            if ( $count % 2 == 1 ) {
-                $pad = $w;
-            }
-            my $canvas = GD::Image->new( $w + $w, $h );
-            my $white  = $canvas->colorAllocate( 255, 255, 255 );
-            my $black  = $canvas->colorAllocate( 0,   0,   0 );
-            $canvas->filledRectangle( 0, 0, $w + $pad, $h, $white );
-            $canvas->copy( $qr, $pad, 0, 0, 0, $w, $h );
-            $canvas->rectangle( 0, 0, $w + $w - 1, $h - 1, $black );
-            print $img_fh $canvas->png();
-
-            close $img_fh;
-
-            print "[$count] Saved: $filename\n";
-        }
-        else {
-            print "[$count] Error generating QR code for: $address\n";
-        }
-    }
+    set_up_output_dir($output_dir);
+    generate_qr_codes( $addresses, $output_dir );
 
     # Input: address text file (one address per line)
     my $out_csv = './data/addresses_and_qr_locations.csv';
@@ -536,8 +472,8 @@ sub main {
     my $qr_prefix = '';    # e.g. 'qr_'
     my $qr_suffix = '';    # e.g. '' or '_code'
 
-   # If you already have exact filenames but not predictable, you can later swap
-   # this logic out for a lookup table.
+    # If you already have exact filenames but not predictable, you can later swap
+    # this logic out for a lookup table.
 
     # 1) Index QR directory by leading 3 digits
     my %qr_for_num;       # "268" -> "/abs/path/to/268_Whatever.png"
@@ -547,20 +483,19 @@ sub main {
     while ( my $f = readdir($dh) ) {
         next if $f eq '.' || $f eq '..';
 
-# Match: 3 digits at start, then underscore, then anything, ending .png (case-insensitive)
-# Example: 268_Newkirk_Ghost_Town_Newkirk_NM_.png
+        # Match: 3 digits at start, then underscore, then anything, ending .png (case-insensitive)
+        # Example: 268_Newkirk_Ghost_Town_Newkirk_NM_.png
         next unless $f =~ /^(\d{3})_.+\.png\z/i;
 
-        my $num  = $1;    # keep as 3-digit string
+        my $num  = $1;                                       # keep as 3-digit string
         my $full = File::Spec->catfile( $qr_dir_abs, $f );
         $qr_for_num{$num} = $full;
     }
     closedir($dh);
 
-    # Warn about duplicates (same leading number)
+    # Die if duplicates (same leading number)
     for my $num ( sort keys %dupes_for_num ) {
-        warn "Duplicate QR files for '$num':\n  kept: $qr_for_num{$num}\n"
-          . join( "", map { "  dup:  $_\n" } @{ $dupes_for_num{$num} } );
+        die "Duplicate QR files for '$num':\n  kept: $qr_for_num{$num}\n" . join( "", map { "  dup:  $_\n" } @{ $dupes_for_num{$num} } );
     }
 
     # 2) Read addresses + write CSV rows
@@ -573,9 +508,9 @@ sub main {
         $line_no++;
         $addr =~ s/\R\z//;    # chomp
 
-# If blank lines should still count toward numbering, DO NOT skip them.
-# If you want to skip blanks, uncomment the next line, but be aware it shifts numbering:
-# next if $addr =~ /^\s*$/;
+        # If blank lines should still count toward numbering, DO NOT skip them.
+        # If you want to skip blanks, uncomment the next line, but be aware it shifts numbering:
+        # next if $addr =~ /^\s*$/;
 
         my $idx = $qr_start_ind + ( $line_no - 1 );
         my $num = sprintf( "%0*d", $qr_pad, $idx );    # "001", "002", ...
@@ -583,8 +518,7 @@ sub main {
         my $qr_path = $qr_for_num{$num} // '';
 
         if ( !$qr_path ) {
-            my $msg =
-"Missing QR PNG for line $line_no (expected leading number '$num')\n";
+            my $msg = "Missing QR PNG for line $line_no (expected leading number '$num')\n";
             die $msg;
         }
 
@@ -595,14 +529,14 @@ sub main {
 
     print "Wrote CSV: $out_csv\n";
 
-# How line 1 maps to file number: line 1 => 001_*.png, line 268 => 268_*.png, etc.
+    # How line 1 maps to file number: line 1 => 001_*.png, line 268 => 268_*.png, etc.
     my $qr_start = 1;    # change if needed (placeholder)
 
     # Image sizing in the DOCX (pandoc understands inches, cm, mm).
     my $qr_width = '4.0in';
 
-  # Where to put QR relative to address is handled by the reference.docx styles.
-  # This script outputs: Address text, blank line, QR image, page break.
+    # Where to put QR relative to address is handled by the reference.docx styles.
+    # This script outputs: Address text, blank line, QR image, page break.
 
     # If a QR is missing: 1 = die, 0 = warn and leave blank
     my $die_on_missing = 1;
@@ -615,31 +549,12 @@ sub main {
     sub md_escape {
         my ($s) = @_;
         $s //= '';
-        $s =~ s/\R/ /g;          # collapse newlines
-        $s =~ s/^\s+|\s+$//g;    # trim
-                                 # Minimal escaping for markdown:
+        $s =~ s/\R/ /g;                             # collapse newlines
+        $s =~ s/^\s+|\s+$//g;                       # trim
+                                                    # Minimal escaping for markdown:
         $s =~ s/([\\`*_{}\[\]()#+\-.!|>])/\\$1/g;
         return $s;
     }
-
-    # Index QR directory by leading 3 digits
-
-    opendir( $dh, $qr_dir ) or die "Can't open QR directory '$qr_dir': $!";
-    while ( my $f = readdir($dh) ) {
-        next if $f eq '.' || $f eq '..';
-        next unless $f =~ /^(\d{3})_.+\.png\z/i;    # 268_Something.png
-        my $num  = $1;
-        my $full = File::Spec->catfile( $qr_dir_abs, $f );
-
-        # If duplicates exist for same leading number, keep the first and warn.
-        if ( exists $qr_for_num{$num} ) {
-            warn
-"Duplicate QR for $num:\n  kept: $qr_for_num{$num}\n  dup:  $full\n";
-            next;
-        }
-        $qr_for_num{$num} = $full;
-    }
-    closedir($dh);
 
     # Build a Pandoc-flavored Markdown file with page breaks
     ensure_dir($work_dir);
@@ -647,24 +562,20 @@ sub main {
 
     open my $md, '>', $md_path or die "Can't write $md_path: $!";
 
-   # .md breaks that can be understood by pandoc and translated into word breaks
+    # .md breaks that can be understood by pandoc and translated into word breaks
     my $line_break = "  \n";
-    my $page_break =
-      "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
+    my $page_break = "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
 
     # Title page
-    print $md
-"Wasteland Firebird's Big List${line_break}of the Best Things On Route 66${line_break}by Wasteland Firebird (John Binns)${line_break}Second Edition Summer 2026 Centennial${line_break}";
+    print $md "Wasteland Firebird's Big List${line_break}of the Best Things On Route 66${line_break}by Wasteland Firebird (John Binns)${line_break}Second Edition Summer 2026 Centennial${line_break}";
     print $md $page_break;
 
     # Copyright page
-    print $md
-"Copyright © 2026 John Binns${line_break}All rights reserved${line_break}wastelandfirebird\@gmail.com${line_break}youtube.com/wastelandfirebird${line_break}wastelandfirebird.com${line_break}";
+    print $md "Copyright © 2026 John Binns${line_break}All rights reserved${line_break}wastelandfirebird\@gmail.com${line_break}youtube.com/wastelandfirebird${line_break}wastelandfirebird.com${line_break}";
     print $md $page_break;
 
     # Dedication
-    print $md
-"In 1987, Angel Delgadillo saved Route 66.${line_break}In 2006, Pixar's Cars saved Route 66.${line_break}2026 is the Centennial of Route 66.${line_break}Who will save it now, if not you and me?${line_break}";
+    print $md "In 1987, Angel Delgadillo saved Route 66.${line_break}In 2006, Pixar's Cars saved Route 66.${line_break}2026 is the Centennial of Route 66.${line_break}Who will save it now, if not you and me?${line_break}";
     print $md $page_break;
 
     # Introduction
@@ -716,9 +627,9 @@ ${line_break}
         $line_num++;
         $addr =~ s/\R\z//;    # chomp
 
-# DO NOT skip blank lines unless you're sure your numbering isn't line-based.
-# If you want to skip blank lines, you must also adjust how you pick the QR number.
-# next if $addr =~ /^\s*$/;
+        # DO NOT skip blank lines unless you're sure your numbering isn't line-based.
+        # If you want to skip blank lines, you must also adjust how you pick the QR number.
+        # next if $addr =~ /^\s*$/;
 
         my $idx = $qr_start + ( $line_num - 1 );
         my $num = sprintf( "%0*d", $qr_pad, $idx );    # "001", "268", ...
@@ -726,14 +637,13 @@ ${line_break}
         my $qr_path = $qr_for_num{$num} // '';
 
         if ( !$qr_path ) {
-            my $msg =
-"Missing QR PNG for line $line_num (expected leading number '$num')\n";
+            my $msg = "Missing QR PNG for line $line_num (expected leading number '$num')\n";
             die $msg if $die_on_missing;
             warn $msg;
         }
 
-# Address (as plain paragraph). If you want it to be, say, a big bold title,
-# define a style in reference.docx and switch to it later via a pandoc Lua filter.
+        # Address (as plain paragraph). If you want it to be, say, a big bold title,
+        # define a style in reference.docx and switch to it later via a pandoc Lua filter.
         print $md md_escape($addr), "\n\n";
 
         # QR image
@@ -755,27 +665,22 @@ ${line_break}
 
     close $md or die "Error closing $md_path: $!";
 
-# Your print-on-demand formatting is controlled by this DOCX.
-# Make a DOCX that matches the POD template (margins, page size, headers/footers, fonts, etc).
-# Pandoc calls this a "reference docx".
+    # Your print-on-demand formatting is controlled by this DOCX.
+    # Make a DOCX that matches the POD template (margins, page size, headers/footers, fonts, etc).
+    # Pandoc calls this a "reference docx".
     my $reference_docx = './data/wasteland_firebirds_big_list-template.docx';
 
     ensure_dir($work_dir);
 
-#    Convert Markdown -> DOCX using reference.docx for layout
-#    This is the key: reference_docx defines page size/margins/fonts like your POD template.
-    my @cmd = (
-        'pandoc', $md_path, '-o', $out_docx,
-        '--reference-doc=' . $reference_docx,
-    );
+    #    Convert Markdown -> DOCX using reference.docx for layout
+    #    This is the key: reference_docx defines page size/margins/fonts like your POD template.
+    my @cmd = ( 'pandoc', $md_path, '-o', $out_docx, '--reference-doc=' . $reference_docx, );
 
-    print "Running:\n  "
-      . join( ' ', map { /\s/ ? qq("$_") : $_ } @cmd ) . "\n";
+    print "Running:\n  " . join( ' ', map { /\s/ ? qq("$_") : $_ } @cmd ) . "\n";
     system(@cmd) == 0 or die "pandoc failed (exit " . ( $? >> 8 ) . ")\n";
 
     print "Wrote DOCX: $out_docx\n";
-    print
-"Next: open DOCX in Pages.\nClick Document, Section, uncheck Left and Right are Different.\nClick Document, Document, Footer. Then go to the footer and click it and Insert Page Number. Do any other needed tweaks then export PDF.\n";
+    print "Next: open DOCX in Pages.\nClick Document, Section, uncheck Left and Right are Different.\nClick Document, Document, Footer. Then go to the footer and click it and Insert Page Number. Do any other needed tweaks then export PDF.\n";
 
     system( 'open', $out_docx );
 
@@ -786,7 +691,7 @@ sub csv_escape {
     $s //= '';
     $s =~ s/\R/ /g;          # collapse any stray newlines
     $s =~ s/^\s+|\s+$//g;    # trim
-        # Quote if it contains comma, quote, or leading/trailing spaces
+                             # Quote if it contains comma, quote, or leading/trailing spaces
     if ( $s =~ /[",]/ ) {
         $s =~ s/"/""/g;
         return qq("$s");
@@ -813,6 +718,72 @@ sub set_up_output_dir {
         unlink($path) or warn "Couldn't delete $path: $!";
     }
     closedir($dh);
+}
+
+sub generate_qr_codes {
+    my ( $addresses, $output_dir ) = @_;
+    my $count = 0;
+    for my $address (@$addresses) {
+        chomp $address;
+
+        # Skip empty lines
+        next unless $address =~ /\S/;
+
+        $count++;
+
+        # 1. Create the Google Maps URL
+        # uri_escape handles spaces and special characters
+        my $query    = uri_escape_utf8($address);
+        my $maps_url = "https://www.google.com/maps/search/?api=1&query=$query";
+
+        # 2. Generate the QR Code
+        # Ecc => 1 is Error Correction Level L (Low)
+        # ModuleSize controls the pixel size of the blocks
+        my $qrobj = GD::Barcode::QRcode->new( $maps_url, { Ecc => 1, ModuleSize => 4 } );
+
+        print "$maps_url\n";
+
+        if ($qrobj) {
+
+            # 3. Create a safe filename
+            # Remove characters that are unsafe for filenames
+            my $safe_name = $address;
+            $safe_name =~ s/[^a-zA-Z0-9_\- ]//g;
+            $safe_name =~ s/ /_/g;
+
+            # Limit length to avoid filesystem errors
+            $safe_name = substr( $safe_name, 0, 30 );
+
+            my $filename = sprintf( "%03d_%s.png", $count, $safe_name );
+            my $filepath = "$output_dir/$filename";
+
+            open my $img_fh, '>', $filepath
+              or die "Could not open '$filepath' for writing: $!";
+            binmode $img_fh;
+
+            # Adding some padding to left or right side, alternating
+            my $qr = $qrobj->plot();
+            my ( $w, $h ) = $qr->getBounds();
+            my $pad = 0;
+            if ( $count % 2 == 1 ) {
+                $pad = $w;
+            }
+            my $canvas = GD::Image->new( $w + $w, $h );
+            my $white  = $canvas->colorAllocate( 255, 255, 255 );
+            my $black  = $canvas->colorAllocate( 0,   0,   0 );
+            $canvas->filledRectangle( 0, 0, $w + $pad, $h, $white );
+            $canvas->copy( $qr, $pad, 0, 0, 0, $w, $h );
+            $canvas->rectangle( 0, 0, $w + $w - 1, $h - 1, $black );
+            print $img_fh $canvas->png();
+
+            close $img_fh;
+
+            print "[$count] Saved: $filename\n";
+        }
+        else {
+            print "[$count] Error generating QR code for: $address\n";
+        }
+    }
 }
 
 main();
