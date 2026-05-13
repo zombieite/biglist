@@ -447,9 +447,6 @@ sub main {
         "Santa Monica Pier, 200 Santa Monica Pier, Santa Monica, CA 90401",
     ];
 
-    my $dh;
-    my $in;
-    my $out;
     my $work_dir = './data';
     my $qr_dir   = './data/qr_codes/';
     my $out_docx = './data/wasteland_firebirds_big_list-base.docx';
