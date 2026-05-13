@@ -37,12 +37,12 @@ sub main {
         {
             name    => "Lulu's Hot Dogs",
             address => "1000 S Leavitt St, Chicago, IL 60612",
-            blurb   => qq|You won't be able to eat everything you see on the Route. I still haven't eaten here. Whether you eat at these places or not, stop in, say hello, and drop a tip in the jar. The food itself doesn't matter, anyway. I put things on this list because they are beautiful, quirky, old, luxurious, or delicious. They don't have to be all of those things at once.|
+            blurb   => qq|You won't be able to eat everything you see on the Route. I still haven't eaten here. Whether you eat at these places or not, stop in, say hello, and drop a tip in the jar. The food itself doesn't matter. I put things on this list because they are beautiful, quirky, old, luxurious, or delicious. They don't have to be all of those things at once.|
         },
         {
             name    => "Steak 'n Egger",
             address => "5647 Ogden Ave, Cicero, IL 60804",
-            blurb   => qq|There never was, and never will be, another century like the Twentieth. One day, historians will speak of "The Twentieth Century" the way we today speak of "The Renaissance," or "The Enlightenment."|
+            blurb   => qq||
         },
         {
             name    => "Henry's Drive-In",
@@ -57,23 +57,22 @@ sub main {
         {
             name    => "Dell Rhea's Chicken Basket",
             address => "645 Joliet Rd, Willowbrook, IL 60527",
-            blurb   => qq|See what I mean, when I say you can't eat everything you see? How many restaurants have we passed already, six?
-Go in and leave them a tip anyway.|
+            blurb   => qq|See what I mean, when I say you can't eat everything you see? How many restaurants have we passed already, six? Go in and leave them a tip anyway.|
         },
         {
             name    => "White Fence Farm Restaurant",
             address => "1376 Joliet Rd, Romeoville, IL 60446",
-            blurb   => qq|In the Twentieth Century we figured out more stuff than we had figured out in the entire hundred thousand years that preceded it. Sure, there was fire, the wheel, agriculture, domestication, spoken language, written language, and the printing press. But that ain't much to figure out in a hundred thousand years.|
+            blurb   => qq||
         },
         {
             name    => "Old Joliet Prison",
             address => "1125 Collins St, Joliet, IL 60432",
-            blurb   => qq|This is the prison seen at the beginning of the film The Blues Brothers.|
+            blurb   => qq|We can't talk about Joliet Prison without talking about The Blues Brothers. That film is an archive of Americana. The music in that film spanned the entire Twentieth Century. Cab Calloway started making music in 1927, one year after Route 66 came into being. Due to swift advances in music and communication technology, the Twentieth Century spawned a new genre of music in every single decade.|
         },
         {
             name    => "Rialto Square Theatre",
             address => "102 N Chicago St, Joliet, IL 60432",
-            blurb   => qq|In the Twentieth Century, we had horses, cars, airplanes, and space travel, all in the same century. My grandfather saw it all. By the time we got to the moon landing, he refused to believe it was real. He wasn't a conspiracy theorist. His brain just couldn't grasp that such a thing was possible.|
+            blurb   => qq|Look at all the light bulbs on these old theaters.|
         },
         {
             name    => "Blues Brothers Copmobile",
@@ -88,7 +87,7 @@ Go in and leave them a tip anyway.|
         {
             name    => "Gemini Giant",
             address => "201 Bridge St, Wilmington, IL 60481",
-            blurb   => qq||
+            blurb   => qq|Another Muffler Man. Get out and get a close look at his metal-flake suit.|
         },
         {
             name    => "Polk-A-Dot Drive In",
@@ -103,7 +102,7 @@ Go in and leave them a tip anyway.|
         {
             name    => "80s Car Museum",
             address => "316 W Waupansie St, Dwight, IL 60420",
-            blurb   => qq||
+            blurb   => qq|In the 80s, we were pretty sure that modern cars would not be loved and preserved like cars from the glory days of the 50s, 60s, and 70s were. Safety and fuel economy were making cars boring. Or at least, that's what we thought. Nowadays, these cars seem quirky and fun compared to the nondescript blobs that silently and cleanly traverse the interstates that parallel Route 66.|
         },
         {
             name    => "Gothic Church Dwight Townhall",
@@ -128,67 +127,62 @@ Go in and leave them a tip anyway.|
         {
             name    => "Route 66 Association of Illinois",
             address => "110 W Howard St, Pontiac, IL 61764",
-            blurb   => qq||
+            blurb   => qq|Bob Waldmire was a Route 66 artist. His name is one of the names you should learn and remember during this trip. His orange Volkswagen bus is here. His "Land Yacht" school bus is also here, sometimes. In 2024, by sheer chance, I ended up here right on one of the days that the bus was here and the interior was open to the public. I put some video up on YouTube. Search for "Wasteland Firebird Route 66."|
         },
         {
             name    => "Pontiac Oakland Auto Museum",
             address => "205 N Mill St, Pontiac, IL 61764",
-            blurb   => qq||
+            blurb   => qq|My name is Wasteland Firebird because I own a 1975 Pontiac Firebird Trans Am, and I drive it around in the wasteland. I came here from an alternate timeline where a near-apocalyptic event happened in the year 1981. I came here to tell you that you don't know how good you have it.|
         },
         {
             name    => "Wally's",
             address => "1 Holiday Rd, Pontiac, IL 61764",
-            blurb   => qq||
+            blurb   => qq|The first couple of times that I saw this place, I drove right by it. I figured there was no way it could be as good as Buc-ee's. Don't make the same mistake I did.|
         },
         {
             name    => "Route 66 of Chenoa Roadside Attraction & Tourist Info",
             address => "P7RC+C3, Chenoa IL 61726",
-            blurb   => qq||
+            blurb   => qq|This is just a little closet full of flyers. But every time I come by, I make sure to stop and populate it with flyers, books, or art. Don't just consume, create. Leave something here for future travelers. There's a little sign in here that says you're supposed to call a number for permission to leave stuff here. I've never called it. Ask forgiveness, not permission.|
         },
         {
             name    => "Lexington Route 66 Memory Lane",
             address => "Parade Rd, Lexington, IL 61753",
-            blurb   => qq||
+            blurb   => qq|Entropy cannot be stopped. The Route is crumbling before our eyes. There are some nostalgic signs here. But this section used to be covered in beautiful trees. Now it's just a bare stretch of road. I got some video of this spot with all of its trees back in 2024, you can find it on my YouTube channel.|
         },
         {
             name    => "The Shake Shack",
             address => "512 W Main St, Lexington, IL 61753",
-            blurb   => qq||
+            blurb   => qq|I'm pretty sure I had some fried corn nuggets here. Corn nuggets are my favorite bit of semi-obscure American food. If this place is closed, don't worry, you'll have another chance or two to try fried corn nuggets on this trip.|
         },
         {
             name    => "Sprague's Super Service Station",
             address => "305 Pine St, Normal, IL 61761",
-            blurb   => qq||
+            blurb   => qq|Just knock if it's dark out when you arrive. There might still be someone there.|
         },
         {
             name    => "Carl's Ice Cream Factory",
             address => "1700 W College Ave, Normal, IL 61761",
-            blurb   => qq||
+            blurb   => qq|Two muffler People of unmatched size live here. I refer to them as Small Carl and Large Marge.|
         },
         {
             name    => "Funks Grove Pure Maple Sirup Farm",
             address => "Funks Grove Township, IL 61754",
-            blurb   => qq||
-        },
-        {
-            name    => "Pinball Paradise",
-            address => "102 E Morgan St, McLean, IL 61754",
-            blurb   => qq||
+            blurb   => qq|When traveling, you might think you have little need for maple syrup. But think a little harder. Most restaurants give you the fake stuff nowadays. Wouldn't it be good to have your own supply of the good stuff? And what if you run out of coolant or wiper fluid? I'm sure syrup would work fine for that. You can also just buy a really small piece of candy made out of syrup.|
         },
         {
             name    => "Arcadia: America's Playable Arcade Museum",
             address => "107 S Hamilton St, McLean, IL 61754",
-            blurb   => qq||
+            blurb   => qq|I'm an expert at those Ms. Pac Man machines where they flip a switch or swap a chip that makes Ms. Pac Man go extra fast. Be sure to check out the pinball place across the street, too.|
         },
         {
             name    => "Country-Aire Restaurant",
             address => "606 E South St, Atlanta, IL 61723",
-            blurb   => qq||
+            blurb   => qq|A Muffler Woman with a pie lives here.|
         },
         {
             name    => "American Giants Museum",
             address => "100 SW St, Atlanta, IL 61723",
-            blurb   => qq||
+            blurb   => qq|Not all of Route 66 is crumbling. Some of it is being revived. This place is a museum of Muffler People. Joel Baker is another name you should know. He's been obsessed with these giants for his entire life. He researches, finds, buys, restores, and sells them. And he makes YouTube videos about the whole process. Some of the giants at this museum belong to him.|
         },
         {
             name    => "Hot Dog Muffler Man",
@@ -218,12 +212,12 @@ Go in and leave them a tip anyway.|
         {
             name    => "Illinois State Fair Route 66 Experience",
             address => "801 E Sangamon Ave, Springfield, IL 62702",
-            blurb   => qq||
+            blurb   => qq|Go at night. Drive around it. Some gates are sometimes closed, other gates are sometimes open. There is a custom brick here from Wasteland Firebird.|
         },
         {
             name    => "Route 66 Hotel & Conference Center",
             address => "625 E St Joseph St, Springfield, IL 62703",
-            blurb   => qq||
+            blurb   => qq|There is a secret hidden behind the mirror in Room 163. Find out more by searching for "Room Attack" on Wasteland Firebird's YouTube channel.|
         },
         {
             name    => "Shea's Filling Station",
@@ -238,12 +232,12 @@ Go in and leave them a tip anyway.|
         {
             name    => "Pharmacy Gallery & Art Space",
             address => "623 E Adams St, Springfield, IL 62701",
-            blurb   => qq||
+            blurb   => qq|They tell me there's a Bob Waldmire exhibit here, Fridays and Saturdays in 2026.|
         },
         {
             name    => "Springfield Southeast High School",
             address => "2350 E Ash St, Springfield, IL 62703",
-            blurb   => qq||
+            blurb   => qq|Go here to find the Spartan Viking Muffler Man.|
         },
         {
             name    => "Mel-O-Cream Donuts",
@@ -253,7 +247,7 @@ Go in and leave them a tip anyway.|
         {
             name    => "Ace Sign Co.",
             address => "2540 S 1st St, Springfield, IL 62704",
-            blurb   => qq||
+            blurb   => qq|This place is pretty nondescript on the outside. They really do make signs here. But there's also a sign museum. I still need to visit this place when it's open.|
         },
         {
             name    => "Charlie Parker's Diner",
@@ -268,22 +262,17 @@ Go in and leave them a tip anyway.|
         {
             name    => "Pinky Elephant with Martini",
             address => "2723 S 6th St, Springfield, IL 62703",
-            blurb   => qq||
+            blurb   => qq|For some reason, Route 66 has a fascination with pink elephants. This isn't the only one.|
         },
         {
             name    => "Cozy Dog",
             address => "2935 S 6th St, Springfield, IL 62703",
-            blurb   => qq||
-        },
-        {
-            name    => "Curve Inn",
-            address => "3219 S 6th St, Springfield, IL 62703",
-            blurb   => qq||
+            blurb   => qq|This place is still owned by the Waldmire family. Bob Waldmire's works are all over the walls. You might even find a book or a flyer by Wasteland Firebird on the flyer rack.|
         },
         {
             name    => "Route 66 Motorheads Bar and Grill",
             address => "600 Toronto Rd, Springfield, IL 62711",
-            blurb   => qq||
+            blurb   => qq|Big Ron the extra-big Muffler Man is here.|
         },
         {
             name    => "Sangamo Brewing",
@@ -298,7 +287,7 @@ Go in and leave them a tip anyway.|
         {
             name    => "Illinois Brick Road",
             address => "4995–4790 Snell Rd, Auburn, IL 62615",
-            blurb   => qq||
+            blurb   => qq|The road is made of bricks. Old, original Route 66 bricks.|
         },
         {
             name    => "Sly Fox Bookstore",
@@ -318,7 +307,7 @@ Go in and leave them a tip anyway.|
         {
             name    => "Turkey Tracks on Route 66",
             address => "26618–27306 Donaldson Rd, Girard, IL 62640",
-            blurb   => qq||
+            blurb   => qq|A bird ran through the wet concrete, and its footprints are still there. Look for a small sign and a white square on the road.|
         },
         {
             name    => "Carlinvilla Motel",
@@ -348,12 +337,12 @@ Go in and leave them a tip anyway.|
         {
             name    => "Soulsby Service Station",
             address => "710 W 1st St, Mt Olive, IL 62069",
-            blurb   => qq||
+            blurb   => qq|When I first saw this place, I stood outside and enjoyed the fact that it existed. Then I turned and walked away. But my traveling companion tried the door, and found it open. You're free to walk around alone in here. It's a profound experience, knowing that someone you don't know trusts you, and knowing that they put all of this here for you.|
         },
         {
             name    => "Henry's Rabbit Ranch",
             address => "1107 Historic Old Rte 66, Staunton, IL 62088",
-            blurb   => qq||
+            blurb   => qq|At some point you're going to figure out that not everything on this list is still open for business. Whether it's open or not is not the point. We're lucky that these places still exist at all.|
         },
         {
             name    => "DeCamp Station",
@@ -363,12 +352,12 @@ Go in and leave them a tip anyway.|
         {
             name    => "Pink Elephant Antique Mall",
             address => "908 Veterans Memorial Dr, Livingston, IL 62058",
-            blurb   => qq||
+            blurb   => qq|I told you there'd be more pink elephants. There's a wild collection of Muffler People and other Muffler Species here. Maybe even some Muffler Aliens.|
         },
         {
             name    => "Route 66 Creamery",
             address => "11 S Old Rte 66, Hamel, IL 62046",
-            blurb   => qq||
+            blurb   => qq|I've stopped here on two separate occasions, and met two completely different sets of employees. But they all had something in common. The employees here the most pure, kind, well-adjusted, hard-working young people I've ever met. Hamel Illinois is America at its best.|
         },
         {
             name    => "Weezy's",
@@ -2326,6 +2315,8 @@ ${line_break}
     # How to use this book
     print $md qq|
 How to use this book
+${line_break}
+I don't include any images of the locations mentioned in this book. That's intentional. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're just supposed to get into it.
 ${line_break}
 This book is a list of QR codes that represent online directions to each of my favorite places on Route 66. You can scan these QR codes with your phone by pointing the phone's camera at them. If you scan every QR code, and visit every place in this book, you will approximately follow Route 66. There is no app that you need to download.
 ${line_break}
