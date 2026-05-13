@@ -450,15 +450,10 @@ sub main {
     my $dh;
     my $in;
     my $out;
-    my $work_dir     = './data';
-    my $qr_pad       = 3;
-    my $qr_dir       = './data/qr_codes/';
-    my $qr_dir_abs   = abs_path($qr_dir) // $qr_dir;
-    my $out_docx     = './data/wasteland_firebirds_big_list-base.docx';
-    my $qr_ext       = 'png';
-    my $qr_start_ind = 1;
-    my $qr_start     = 1;
-    my $qr_width     = '4.0in';
+    my $work_dir = './data';
+    my $qr_dir   = './data/qr_codes/';
+    my $out_docx = './data/wasteland_firebirds_big_list-base.docx';
+    my $qr_width = '4.0in';
 
     set_up_qr_dir($qr_dir);
     ensure_dir($work_dir);
