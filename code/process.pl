@@ -503,19 +503,15 @@ sub generate_qr_codes {
         $count++;
 
         # Create the Google Maps URL
-        # uri_escape handles spaces and special characters
         my $query    = uri_escape_utf8($address);
         my $maps_url = "https://www.google.com/maps/search/?api=1&query=$query";
 
-        # Generate the QR Code
-        # Ecc => 1 is Error Correction Level L (Low)
-        # ModuleSize controls the pixel size of the blocks
+        # Generate the QR Code, Ecc => 1 is Error Correction Level L (Low), ModuleSize controls the pixel size of the blocks
         my $qrobj = GD::Barcode::QRcode->new( $maps_url, { Ecc => 1, ModuleSize => 4 } );
         print "$maps_url\n";
         if ($qrobj) {
 
             # Create a safe filename
-            # Remove characters that are unsafe for filenames
             my $safe_name = $address;
             $safe_name =~ s/[^a-zA-Z0-9_\- ]//g;
             $safe_name =~ s/ /_/g;
