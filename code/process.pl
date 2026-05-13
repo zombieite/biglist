@@ -10,8 +10,8 @@ use Data::Dumper;
 
 sub main {
     my $addresses = [
-        { name => "Art Institute of Chicago",                                address => "111 S Michigan Ave, Chicago, IL 60603" },
-        { name => "Cloud Gate",                                              address => "201 E Randolph St, Chicago, IL 60602" },
+        { name => "Art Institute of Chicago", address => "111 S Michigan Ave, Chicago, IL 60603" },
+        { name => "Cloud Gate",                                              address => "201 E Randolph St, Chicago, IL 60602", blurb => "This is a mirrored, bean-shaped sculpture. Be sure to walk under it." },
         { name => "Historic Illinois US 66 Route Signage",                   address => "E Adams St & S Michigan Ave, Chicago, IL" },
         { name => "Lou Mitchell's",                                          address => "565 W Jackson Blvd, Chicago, IL 60661" },
         { name => "Lulu's Hot Dogs",                                         address => "1000 S Leavitt St, Chicago, IL 60612" },
@@ -622,6 +622,7 @@ ${line_break}
     for my $address_hashref (@$addresses) {
         my $place_name = $address_hashref->{name};
         my $address    = $address_hashref->{address};
+        my $blurb      = $address_hashref->{blurb};
         my $qr_path    = File::Spec->catfile( $qr_dir, $qrs->[$qr_num] );
         if ( !-f $qr_path ) {
             die "Missing QR file for '$qr_num': " . Dumper($qrs);
@@ -635,6 +636,12 @@ ${line_break}
 
         # Pandoc supports attribute syntax: {width=...}
         print $md "![]($qr_path){width=$qr_width}\n\n";
+        print $md $line_break;
+
+        if ($blurb) {
+            print $md md_escape($blurb), "\n\n";
+            print $md $line_break;
+        }
 
         # Page break
         print $md $page_break;
