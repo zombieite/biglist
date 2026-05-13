@@ -11,9 +11,9 @@ use Cwd qw(abs_path);
 # USER CONFIG (edit these)
 # ----------------------------
 
-my $addresses_txt   = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/2026-edition002/data/addresses.txt';          
-my $qr_dir          = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/2026-edition002/data/qr_codes';              
-my $work_dir        = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/2026-edition002/data';
+my $addresses_txt   = './data/addresses.txt';          
+my $qr_dir          = './data/qr_codes';              
+my $work_dir        = './data';
 
 # How line 1 maps to file number: line 1 => 001_*.png, line 268 => 268_*.png, etc.
 my $qr_start_index  = 1;   # change if needed (placeholder)

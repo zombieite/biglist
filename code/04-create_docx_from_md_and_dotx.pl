@@ -6,12 +6,12 @@ use open qw(:std :encoding(UTF-8));
 use File::Spec;
 use Cwd qw(abs_path);
 
-my $out_docx        = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/2026-edition002/data/wasteland_firebirds_big_list-base.docx';
-my $work_dir        = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/2026-edition002/data';
+my $out_docx        = './data/wasteland_firebirds_big_list-base.docx';
+my $work_dir        = './data';
 # Your print-on-demand formatting is controlled by this DOCX.
 # Make a DOCX that matches the POD template (margins, page size, headers/footers, fonts, etc).
 # Pandoc calls this a "reference docx".
-my $reference_docx  = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/2026-edition002/data/wasteland_firebirds_big_list-template.docx';
+my $reference_docx  = './data/wasteland_firebirds_big_list-template.docx';
 
 sub ensure_dir {
   my ($d) = @_;

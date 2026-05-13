@@ -7,9 +7,9 @@ use File::Path  qw(make_path);
 use File::Basename;
 
 my $input_file =
-'/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/2026-edition002/data/addresses.txt';
+'./data/addresses.txt';
 my $output_dir =
-'/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/2026-edition002/data/qr_codes';
+'./data/qr_codes';
 
 sub main {
 

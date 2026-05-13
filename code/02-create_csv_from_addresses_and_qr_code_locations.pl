@@ -16,11 +16,11 @@ use Cwd qw(abs_path);
 # ----------------------------
 
 # Input: address text file (one address per line)
-my $addresses_txt = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/2026-edition002/data/addresses.txt';
-my $out_csv = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/2026-edition002/data/addresses_and_qr_locations.csv';
+my $addresses_txt = './data/addresses.txt';
+my $out_csv = './data/addresses_and_qr_locations.csv';
 
 # Folder containing QR images
-my $qr_dir = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/2026-edition002/data/qr_codes/';
+my $qr_dir = './data/qr_codes/';
 
 # QR filename pattern:
 # - If your files are like 001.png ... 434.png, set:
