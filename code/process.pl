@@ -448,7 +448,7 @@ sub main {
         "Santa Monica Pier, 200 Santa Monica Pier, Santa Monica, CA 90401",
     ];
 
-    my $output_dir = './data/qr_codes';
+    my $qr_output_dir = './data/qr_codes';
     my $dh;
     my $in;
     my $out;
@@ -462,9 +462,9 @@ sub main {
     my $qr_start     = 1;
     my $qr_width     = '4.0in';
 
-    set_up_output_dir($output_dir);
+    set_up_qr_output_dir($qr_output_dir);
     ensure_dir($work_dir);
-    my $qrs = generate_qr_codes( $addresses, $output_dir );
+    my $qrs = generate_qr_codes( $addresses, $qr_output_dir );
 
     # Build a Pandoc-flavored Markdown file with page breaks
     my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
@@ -601,7 +601,7 @@ sub csv_escape {
     return $s;
 }
 
-sub set_up_output_dir {
+sub set_up_qr_output_dir {
     my ($output_dir) = @_;
 
     # Create output directory if it doesn't exist
