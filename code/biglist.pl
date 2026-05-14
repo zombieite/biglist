@@ -17,2079 +17,2030 @@ sub main {
         {
             name    => "Art Institute of Chicago",
             address => "111 S Michigan Ave, Chicago, IL 60603",
-            blurb   => qq|Monet was surprised and overjoyed to wake up every day, like a puppy. His every stroke contains frivolity. He used to say, "I like to paint as a bird sings." Viewing a Monet is an active process. You can't properly appreciate a Monet while seated. You have to approach the painting, then step back, then look away, then look back. A work by Monet is a three dimensional object, just as much a sculpture as a painting. Van Gogh was a better artist, but Monet had more fun.|
+            blurb   => qq|Monet was surprised and overjoyed to wake up every day, like a puppy. His every stroke contains frivolity. He used to say, "I like to paint as a bird sings." Viewing a Monet is an active process. You can't properly appreciate a Monet while seated. You have to approach the painting, then step back, then look away, then look back. A work by Monet is a three dimensional object, just as much a sculpture as a painting. Van Gogh was a better artist, but Monet had more fun.|,
         },
         {
             name    => "Cloud Gate",
             address => "201 E Randolph St, Chicago, IL 60602",
-            blurb   => qq|This is a mirrored, bean-shaped sculpture. Be sure to walk under it.|
+            blurb   => qq|This is a mirrored, bean-shaped sculpture. Be sure to walk under it.|,
         },
         {
             name    => "Historic Illinois US 66 Route Signage",
             address => "E Adams St & S Michigan Ave, Chicago, IL",
-            blurb   => qq|There's a sign or two, there's a plaque, and if you look down at the crosswalk you might see a small linoleum mosaic embedded into the asphalt.|
+            blurb   => qq|There's a sign or two, there's a plaque, and if you look down at the crosswalk you might see a small linoleum mosaic embedded into the asphalt.|,
         },
         {
             name    => "Lou Mitchell's",
             address => "565 W Jackson Blvd, Chicago, IL 60661",
-            blurb   => qq|The breakfasts here are magnificent.|
+            blurb   => qq|The breakfasts here are magnificent.|,
         },
         {
             name    => "Lulu's Hot Dogs",
             address => "1000 S Leavitt St, Chicago, IL 60612",
-            blurb   => qq|You won't be able to eat everything you see on the Route. I still haven't eaten here. Whether you eat at these places or not, stop in, say hello, and drop a tip in the jar. The food itself doesn't matter. I put things on this list because they are beautiful, quirky, old, luxurious, or delicious. They don't have to be all of those things at once.|
+            blurb   => qq|You won't be able to eat everything you see on the Route. I still haven't eaten here. Whether you eat at these places or not, stop in, say hello, and drop a tip in the jar. The food itself doesn't matter. I put things on this list because they are beautiful, quirky, old, luxurious, or delicious. They don't have to be all of those things at once.|,
         },
         {
             name    => "Steak 'n Egger",
             address => "5647 Ogden Ave, Cicero, IL 60804",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Henry's Drive-In",
             address => "6031 Ogden Ave, Cicero, IL 60804",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Cigars & Stripes BBQ Lounge",
             address => "6715 Ogden Ave, Berwyn, IL 60402",
-            blurb   => qq|There is a "Muffler Man" here, the first of many. It's important that you learn what a Muffler Man is. These are giant, human-shaped fiberglass sculptures. They dotted the landscape of midcentury America. They sometimes held mufflers in their hands. Some are old, some are new. Wait till you see Atlanta, Illinois and Tulsa, Oklahoma. |
+            blurb   => qq|There is a "Muffler Man" here, the first of many. It's important that you learn what a Muffler Man is. These are giant, human-shaped fiberglass sculptures. They dotted the landscape of midcentury America. They sometimes held mufflers in their hands. Some are old, some are new. Wait till you see Atlanta, Illinois and Tulsa, Oklahoma. |,
         },
         {
             name    => "Dell Rhea's Chicken Basket",
             address => "645 Joliet Rd, Willowbrook, IL 60527",
-            blurb   => qq|See what I mean, when I say you can't eat everything you see? How many restaurants have we passed already, six? Go in and leave them a tip anyway.|
+            blurb   => qq|See what I mean, when I say you can't eat everything you see? How many restaurants have we passed already, six? Go in and leave them a tip anyway.|,
         },
         {
             name    => "White Fence Farm Restaurant",
             address => "1376 Joliet Rd, Romeoville, IL 60446",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Old Joliet Prison",
             address => "1125 Collins St, Joliet, IL 60432",
-            blurb   => qq|We can't talk about Joliet Prison without talking about The Blues Brothers. That film is an archive of Americana. The music in that film spanned the entire Twentieth Century. Cab Calloway started making music in 1927, one year after Route 66 came into being. Due to swift advances in music and communication technology, the Twentieth Century spawned a new genre of music in every single decade.|
+            blurb   => qq|We can't talk about Joliet Prison without talking about The Blues Brothers. That film is an archive of Americana. The music in that film spanned the entire Twentieth Century. Cab Calloway started making music in 1927, one year after Route 66 came into being. Due to swift advances in music and communication technology, the Twentieth Century spawned a new genre of music in every single decade.|,
         },
         {
             name    => "Rialto Square Theatre",
             address => "102 N Chicago St, Joliet, IL 60432",
-            blurb   => qq|Look at all the light bulbs on these old theaters.|
+            blurb   => qq|Look at all the light bulbs on these old theaters.|,
         },
         {
             name    => "Blues Brothers Copmobile",
             address => "2410 S Chicago St, Joliet, IL 60436",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Art on 66",
             address => "208 N Water St, Wilmington, IL 60481",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Gemini Giant",
             address => "201 Bridge St, Wilmington, IL 60481",
-            blurb   => qq|Another Muffler Man. Get out and get a close look at his metal-flake suit.|
+            blurb   => qq|Another Muffler Man. Get out and get a close look at his metal-flake suit.|,
         },
         {
             name    => "Polk-A-Dot Drive In",
             address => "222 N Front St, Braidwood, IL 60408",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Shop on Route 66",
             address => "315 N Center St, Gardner, IL 60424",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "80s Car Museum",
             address => "316 W Waupansie St, Dwight, IL 60420",
-            blurb   => qq|In the 80s, we were pretty sure that modern cars would not be loved and preserved like cars from the glory days of the 50s, 60s, and 70s were. Safety and fuel economy were making cars boring. Or at least, that's what we thought. Nowadays, these cars seem quirky and fun compared to the nondescript blobs that silently and cleanly traverse the interstates that parallel Route 66.|
+            blurb   => qq|In the 80s, we were pretty sure that modern cars would not be loved and preserved like cars from the glory days of the 50s, 60s, and 70s were. Safety and fuel economy were making cars boring. Or at least, that's what we thought. Nowadays, these cars seem quirky and fun compared to the nondescript blobs that silently and cleanly traverse the interstates that parallel Route 66.|,
         },
         {
             name    => "Gothic Church Dwight Townhall",
             address => "201 N Franklin St, Dwight, IL 60420",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Dwight Coin Laundry",
             address => "404 W Waupansie St, Dwight, IL 60420",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Ambler's Texaco Gas Station",
             address => "W Waupansie St, Dwight, IL 60420",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Standard Oil Gas Station",
             address => "400 S West St, Odell, IL 60460",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Route 66 Association of Illinois",
             address => "110 W Howard St, Pontiac, IL 61764",
-            blurb   => qq|Bob Waldmire was a Route 66 artist. His name is one of the names you should learn and remember during this trip. His orange Volkswagen bus is here. His "Land Yacht" school bus is also here, sometimes. In 2024, by sheer chance, I ended up here right on one of the days that the bus was here and the interior was open to the public. I put some video up on YouTube. Search for "Wasteland Firebird Route 66."|
+            blurb   => qq|Bob Waldmire was a Route 66 artist. His name is one of the names you should learn and remember during this trip. His orange Volkswagen bus is here. His "Land Yacht" school bus is also here, sometimes. In 2024, by sheer chance, I ended up here right on one of the days that the bus was here and the interior was open to the public. I put some video up on YouTube. Search for "Wasteland Firebird Route 66."|,
         },
         {
             name    => "Pontiac Oakland Auto Museum",
             address => "205 N Mill St, Pontiac, IL 61764",
-            blurb   => qq|My name is Wasteland Firebird because I own a 1975 Pontiac Firebird Trans Am, and I drive it around in the wasteland. I came here from an alternate timeline where a near-apocalyptic event happened in the year 1981. I came here to tell you that you don't know how good you have it.|
+            blurb   => qq|My name is Wasteland Firebird because I own a 1975 Pontiac Firebird Trans Am, and I drive it around in the wasteland. I came here from an alternate timeline where a near-apocalyptic event happened in the year 1981. I came here to tell you that you don't know how good you have it.|,
         },
         {
             name    => "Wally's",
             address => "1 Holiday Rd, Pontiac, IL 61764",
-            blurb   => qq|The first couple of times that I saw this place, I drove right by it. I figured there was no way it could be as good as Buc-ee's. Don't make the same mistake I did.|
+            blurb   => qq|The first couple of times that I saw this place, I drove right by it. I figured there was no way it could be as good as Buc-ee's. Don't make the same mistake I did.|,
         },
         {
             name    => "Route 66 of Chenoa Roadside Attraction & Tourist Info",
             address => "P7RC+C3, Chenoa IL 61726",
-            blurb   => qq|This is just a little closet full of flyers. But every time I come by, I make sure to stop and populate it with flyers, books, or art. Don't just consume, create. Leave something here for future travelers. There's a little sign in here that says you're supposed to call a number for permission to leave stuff here. I've never called it. Ask forgiveness, not permission.|
+            blurb   => qq|This is just a little closet full of flyers. But every time I come by, I make sure to stop and populate it with flyers, books, or art. Don't just consume, create. Leave something here for future travelers. There's a little sign in here that says you're supposed to call a number for permission to leave stuff here. I've never called it. Ask forgiveness, not permission.|,
         },
         {
             name    => "Lexington Route 66 Memory Lane",
             address => "Parade Rd, Lexington, IL 61753",
-            blurb   => qq|Entropy cannot be stopped. The Route is crumbling before our eyes. There are some nostalgic signs here. But this section used to be covered in beautiful trees. Now it's just a bare stretch of road. I got some video of this spot with all of its trees back in 2024, you can find it on my YouTube channel.|
+            blurb   => qq|Entropy cannot be stopped. The Route is crumbling before our eyes. There are some nostalgic signs here. But this section used to be covered in beautiful trees. Now it's just a bare stretch of road. I got some video of this spot with all of its trees back in 2024, you can find it on my YouTube channel.|,
         },
         {
             name    => "The Shake Shack",
             address => "512 W Main St, Lexington, IL 61753",
-            blurb   => qq|I'm pretty sure I had some fried corn nuggets here. Corn nuggets are my favorite bit of semi-obscure American food. If this place is closed, don't worry, you'll have another chance or two to try fried corn nuggets on this trip.|
+            blurb   => qq|I'm pretty sure I had some fried corn nuggets here. Corn nuggets are my favorite bit of semi-obscure American food. If this place is closed, don't worry, you'll have another chance or two to try fried corn nuggets on this trip.|,
         },
         {
             name    => "Sprague's Super Service Station",
             address => "305 Pine St, Normal, IL 61761",
-            blurb   => qq|Just knock if it's dark out when you arrive. There might still be someone there.|
+            blurb   => qq|Just knock if it's dark out when you arrive. There might still be someone there.|,
         },
         {
             name    => "Carl's Ice Cream Factory",
             address => "1700 W College Ave, Normal, IL 61761",
-            blurb   => qq|Two muffler People of unmatched size live here. I refer to them as Small Carl and Large Marge.|
+            blurb   => qq|Two muffler People of unmatched size live here. I refer to them as Small Carl and Large Marge.|,
         },
         {
             name    => "Funks Grove Pure Maple Sirup Farm",
             address => "Funks Grove Township, IL 61754",
-            blurb   => qq|When traveling, you might think you have little need for maple syrup. But think a little harder. Most restaurants give you the fake stuff nowadays. Wouldn't it be good to have your own supply of the good stuff? And what if you run out of coolant or wiper fluid? I'm sure syrup would work fine for that. You can also just buy a really small piece of candy made out of syrup.|
+            blurb   => qq|When traveling, you might think you have little need for maple syrup. But think a little harder. Most restaurants give you the fake stuff nowadays. Wouldn't it be good to have your own supply of the good stuff? And what if you run out of coolant or wiper fluid? I'm sure syrup would work fine for that. You can also just buy a really small piece of candy made out of syrup.|,
         },
         {
             name    => "Arcadia: America's Playable Arcade Museum",
             address => "107 S Hamilton St, McLean, IL 61754",
-            blurb   => qq|I'm an expert at those Ms. Pac Man machines where they flip a switch or swap a chip that makes Ms. Pac Man go extra fast. Be sure to check out the pinball place across the street, too.|
+            blurb   => qq|I'm an expert at those Ms. Pac Man machines where they flip a switch or swap a chip that makes Ms. Pac Man go extra fast. Be sure to check out the pinball place across the street, too.|,
         },
         {
             name    => "Country-Aire Restaurant",
             address => "606 E South St, Atlanta, IL 61723",
-            blurb   => qq|A Muffler Woman with a pie lives here.|
+            blurb   => qq|A Muffler Woman with a pie lives here.|,
         },
         {
             name    => "American Giants Museum",
             address => "100 SW St, Atlanta, IL 61723",
-            blurb   => qq|Not all of Route 66 is crumbling. Some of it is being revived. This place is a museum of Muffler People. Joel Baker is another name you should know. He's been obsessed with these giants for his entire life. He researches, finds, buys, restores, and sells them. And he makes YouTube videos about the whole process. Some of the giants at this museum belong to him.|
+            blurb   => qq|Not all of Route 66 is crumbling. Some of it is being revived. This place is a museum of Muffler People. Joel Baker is another name you should know. He's been obsessed with these giants for his entire life. He researches, finds, buys, restores, and sells them. And he makes YouTube videos about the whole process. Some of the giants at this museum belong to him.|,
         },
         {
             name    => "Hot Dog Muffler Man",
             address => "112 SW Arch St, Atlanta, IL 61723",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Mill Museum on Route 66",
             address => "738 S Washington St, Lincoln, IL 62656",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Wild Hare Cafe",
             address => "104 Governor Oglesby St, Elkhart, IL 62634",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Old Station",
             address => "117 Elm St, Williamsville, IL 62693",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Outkast Tattoo Studio",
             address => "2828 N Peoria Rd, Springfield, IL 62702",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Illinois State Fair Route 66 Experience",
             address => "801 E Sangamon Ave, Springfield, IL 62702",
-            blurb   => qq|Go at night. Drive around it. Some gates are sometimes closed, other gates are sometimes open. There is a custom brick here from Wasteland Firebird.|
+            blurb   => qq|Go at night. Drive around it. Some gates are sometimes closed, other gates are sometimes open. There is a custom brick here from Wasteland Firebird.|,
         },
         {
             name    => "Route 66 Hotel & Conference Center",
             address => "625 E St Joseph St, Springfield, IL 62703",
-            blurb   => qq|There is a secret hidden behind the mirror in Room 163. Find out more by searching for "Room Attack" on Wasteland Firebird's YouTube channel.|
+            blurb   => qq|There is a secret hidden behind the mirror in Room 163. Find out more by searching for "Room Attack" on Wasteland Firebird's YouTube channel.|,
         },
         {
             name    => "Shea's Filling Station",
             address => "2075 N Peoria Rd, Springfield, IL 62702",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Maid-Rite",
             address => "118 N Pasfield St, Springfield, IL 62702",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Pharmacy Gallery & Art Space",
             address => "623 E Adams St, Springfield, IL 62701",
-            blurb   => qq|They tell me there's a Bob Waldmire exhibit here, Fridays and Saturdays in 2026.|
+            blurb   => qq|They tell me there's a Bob Waldmire exhibit here, Fridays and Saturdays in 2026.|,
         },
         {
             name    => "Springfield Southeast High School",
             address => "2350 E Ash St, Springfield, IL 62703",
-            blurb   => qq|Go here to find the Spartan Viking Muffler Man.|
+            blurb   => qq|Go here to find the Spartan Viking Muffler Man.|,
         },
         {
             name    => "Mel-O-Cream Donuts",
             address => "217 E Laurel St, Springfield, IL 62704",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Ace Sign Co.",
             address => "2540 S 1st St, Springfield, IL 62704",
-            blurb   => qq|This place is pretty nondescript on the outside. They really do make signs here. But there's also a sign museum. I still need to visit this place when it's open.|
+            blurb   => qq|This place is pretty nondescript on the outside. They really do make signs here. But there's also a sign museum. I still need to visit this place when it's open.|,
         },
         {
             name    => "Charlie Parker's Diner",
             address => "700 W North St, Springfield, IL 62704",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Lauterbach Muffler Man",
             address => "1569 Wabash Ave, Springfield, IL 62704",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Pinky Elephant with Martini",
             address => "2723 S 6th St, Springfield, IL 62703",
-            blurb   => qq|For some reason, Route 66 has a fascination with pink elephants. This isn't the only one.|
+            blurb   => qq|For some reason, Route 66 has a fascination with pink elephants. This isn't the only one.|,
         },
         {
             name    => "Cozy Dog",
             address => "2935 S 6th St, Springfield, IL 62703",
-            blurb   => qq|This place is still owned by the Waldmire family. Bob Waldmire's works are all over the walls. You might even find a book or a flyer by Wasteland Firebird on the flyer rack.|
+            blurb   => qq|This place is still owned by the Waldmire family. Bob Waldmire's works are all over the walls. You might even find a book or a flyer by Wasteland Firebird on the flyer rack.|,
         },
         {
             name    => "Route 66 Motorheads Bar and Grill",
             address => "600 Toronto Rd, Springfield, IL 62711",
-            blurb   => qq|Big Ron the extra-big Muffler Man is here.|
+            blurb   => qq|Big Ron the extra-big Muffler Man is here.|,
         },
         {
             name    => "Sangamo Brewing",
             address => "109 E Mulberry St, Chatham, IL 62629",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Chatham Railroad Museum",
             address => "100 N State St, Chatham, IL 62629",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Illinois Brick Road",
             address => "4995–4790 Snell Rd, Auburn, IL 62615",
-            blurb   => qq|The road is made of bricks. Old, original Route 66 bricks.|
+            blurb   => qq|The road is made of bricks. Old, original Route 66 bricks.|,
         },
         {
             name    => "Sly Fox Bookstore",
             address => "123 N Springfield St, Virden, IL 62690",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Doc's Just Off 66",
             address => "133 S 2nd St, Girard, IL 62640",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Whirl A Whip",
             address => "309 S 3rd St, Girard, IL 62640",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Turkey Tracks on Route 66",
             address => "26618–27306 Donaldson Rd, Girard, IL 62640",
-            blurb   => qq|A bird ran through the wet concrete, and its footprints are still there. Look for a small sign and a white square on the road.|
+            blurb   => qq|A bird ran through the wet concrete, and its footprints are still there. Look for a small sign and a white square on the road.|,
         },
         {
             name    => "Carlinvilla Motel",
             address => "18891 State Rte 4, Carlinville, IL 62626",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Rt 66 Skyview Drive-In",
             address => "1500 Old Rte 66 N, Litchfield, IL 62056",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Niehaus Cycle Sales",
             address => "718 Old Rte 66 N, Litchfield, IL 62056",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Ariston Cafe",
             address => "413 Old Rte 66 N, Litchfield, IL 62056",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Litchfield Museum & Route 66 Welcome Center",
             address => "334 Old Rte 66 N, Litchfield, IL 62056",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Soulsby Service Station",
             address => "710 W 1st St, Mt Olive, IL 62069",
-            blurb   => qq|When I first saw this place, I stood outside and enjoyed the fact that it existed. Then I turned and walked away. But my traveling companion tried the door, and found it open. You're free to walk around alone in here. It's a profound experience, knowing that someone you don't know trusts you, and knowing that they put all of this here for you.|
+            blurb   => qq|When I first saw this place, I stood outside and enjoyed the fact that it existed. Then I turned and walked away. But my traveling companion tried the door, and found it open. You're free to walk around alone in here. It's a profound experience, knowing that someone you don't know trusts you, and knowing that they put all of this here for you.|,
         },
         {
             name    => "Henry's Rabbit Ranch",
             address => "1107 Historic Old Rte 66, Staunton, IL 62088",
-            blurb   => qq|At some point you're going to figure out that not everything on this list is still open for business. Whether it's open or not is not the point. We're lucky that these places still exist at all.|
+            blurb   => qq|At some point you're going to figure out that not everything on this list is still open for business. Whether it's open or not is not the point. We're lucky that these places still exist at all.|,
         },
         {
             name    => "DeCamp Station",
             address => "8767 State Rte 4, Staunton, IL 62088",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Pink Elephant Antique Mall",
             address => "908 Veterans Memorial Dr, Livingston, IL 62058",
-            blurb   => qq|I told you there'd be more pink elephants. There's a wild collection of Muffler People and other Muffler Species here. Maybe even some Muffler Aliens.|
+            blurb   => qq|I told you there'd be more pink elephants. There's a wild collection of Muffler People and other Muffler Species here. Maybe even some Muffler Aliens.|,
         },
         {
             name    => "Route 66 Creamery",
             address => "11 S Old Rte 66, Hamel, IL 62046",
-            blurb   => qq|I've stopped here on two separate occasions, and met two completely different sets of employees. But they all had something in common. The employees here the most pure, kind, well-adjusted, hard-working young people I've ever met. Hamel Illinois is America at its best.|
+            blurb   => qq|I've stopped here on two separate occasions, and met two completely different sets of employees. But they all had something in common. The employees here the most pure, kind, well-adjusted, hard-working young people I've ever met. Hamel Illinois is America at its best.|,
         },
         {
             name    => "Weezy's",
             address => "108 Old Rte 66, Hamel, IL 62046",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Wildey Theatre",
             address => "252 N Main St, Edwardsville, IL 62025",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "West End Service Station",
             address => "620 St Louis St, Edwardsville, IL 62025",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Luna Cafe",
             address => "201 E Chain of Rocks Rd, Granite City, IL 62040",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Old Chain of Rocks Bridge",
             address => "10820 Riverview Dr, St. Louis, MO 63137",
-            blurb   => qq|Nowadays you don't drive it. But you can go for a walk across it.|
+            blurb   => qq|Nowadays you don't drive it. But you can go for a walk across it.|,
         },
         {
             name    => "O'Brien Tire & Auto Care",
             address => "3924 Nameoki Rd, Granite City, IL 62040",
-            blurb   => qq|Earl the Mechanic Muffler Man is here. And when was the last time you had your oil changed?|
+            blurb   => qq|Earl the Mechanic Muffler Man is here. And when was the last time you had your oil changed?|,
         },
         {
             name    => "Mr. Twist Ice Cream",
             address => "2649 Madison Ave, Granite City, IL 62040",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "It's Electric Neon Sign Park",
             address => "1300 19th St, Granite City, IL 62040",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Rusty the Muffler Man",
             address => "614 Niedringhaus Ave, Granite City, IL 62040",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Crown Candy Kitchen",
             address => "1401 St Louis Ave, St. Louis, MO 63106",
-            blurb   => qq|This place is all about fat and sugar.|
+            blurb   => qq|This place is all about fat and sugar.|,
         },
         {
             name    => "Chili Mac's Diner",
             address => "510 Pine St, St. Louis, MO 63101",
-            blurb   => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was this idea that people got into their heads, the idea that god wanted the Europeans to spread out into America. I really don't think that any supernatural being cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make the best country on Earth.|
+            blurb   => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was this idea that people got into their heads, the idea that god wanted the Europeans to spread out into America. I really don't think that any supernatural being cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make the best country on Earth.|,
         },
         {
             name    => "Neon Museum of St. Louis",
             address => "3537 Chouteau Ave, St. Louis, MO 63103",
-            blurb   => qq|When I say the USA is the best country on Earth, you might reply that I'm biased since I was born in the USA. But I've traveled the world and I've spent a lot of time doing my best to overcome my biases. I truly and firmly believe that America has things about it that make it exceptional.|
+            blurb   => qq|When I say the USA is the best country on Earth, you might reply that I'm biased since I was born in the USA. But I've traveled the world and I've spent a lot of time doing my best to overcome my biases. I truly and firmly believe that America has things about it that make it exceptional.|,
         },
         {
             name    => "Ted Drewes Frozen Custard",
             address => "6726 Chippewa St, St. Louis, MO 63109",
-            blurb   => qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or didn't know. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream.|
+            blurb   => qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or didn't know. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream.|,
         },
         {
             name    => "Wally's",
             address => "950 Assembly Pkwy, Fenton, MO 63026",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Malt Shop",
             address => "1751 Smizer Station Rd, Fenton, MO 63026",
-            blurb   => qq|Don't ever just order a milkshake. Always ask for a malt. For some reason malts are slowly being forgotten. They're harder to find now. The "malt" is just powdered barley extract but it adds a great bit of flavor.|
+            blurb   => qq|Don't ever just order a milkshake. Always ask for a malt. For some reason malts are slowly being forgotten. They're harder to find now. The "malt" is just powdered barley extract but it adds a great bit of flavor.|,
         },
         {
             name    => "Route 66 State Park",
             address => "97 N Outer Rd, Eureka, MO 63025",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Campbell's Service",
             address => "18625 Historic Rte 66, Pacific, MO 63069",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Red Cedar Inn Museum and Visitor Center",
             address => "1047 E Osage St, Pacific, MO 63069",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Gardenway Motel sign",
             address => "2827 MO-100, Villa Ridge, MO 63089",
-            blurb   => qq|It's just a sign now. But oh, what a sign it is.|
+            blurb   => qq|It's just a sign now. But oh, what a sign it is.|,
         },
         {
             name    => "Old Sunset Motel",
             address => "976 Osage Villa Ct, Villa Ridge, MO 63089",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Creative Chainsaw Carvings",
             address => "151 State Rte W, Sullivan, MO 63080",
-            blurb   => qq|She's kept this place open in memory of her husband who died many years ago. Ask her about him. You will never forget her story.|
+            blurb   => qq|She's kept this place open in memory of her husband who died many years ago. Ask her about him. You will never forget her story.|,
         },
         {
             name    => "Meramec Caverns",
             address => "1135 Hwy W, Sullivan, MO 63080",
-            blurb   => qq|Some people go for the nature stuff. I'm more into the midcentury Americana. But I figured this place was obligatory, so I went. I didn't expect to walk out in tears. Not only is the place gorgeous, but at the end, they project a patriotic short film about America on the cavern walls.|
+            blurb   => qq|Some people go for the nature stuff. I'm more into the midcentury Americana. But I figured this place was obligatory, so I went. I didn't expect to walk out in tears. Not only is the place gorgeous, but at the end, they project a patriotic short film about America on the cavern walls.|,
         },
         {
             name    => "Shamrock Court Motel",
             address => "101 Shamrock, Sullivan, MO 63080",
-            blurb   => qq|Newly restored by Roamin' Rich Dinkela.|
+            blurb   => qq|Newly restored by Roamin' Rich Dinkela.|,
         },
         {
             name    => "Missouri Hick Barbeque",
             address => "913 E Washington Blvd, Cuba, MO 65453",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Wagon Wheel Motel",
             address => "901 E Washington Blvd, Cuba, MO 65453",
-            blurb   => qq|You can hear the neon sign buzz on and off. This property is now owned by the magnificent steward known as Roamin' Rich Dinkela.|
+            blurb   => qq|You can hear the neon sign buzz on and off. This property is now owned by the magnificent steward known as Roamin' Rich Dinkela.|,
         },
         {
             name    => "Weir on 66 / Rich's Famous Burgers",
             address => "102 W Washington St, Cuba, MO 65453",
-            blurb   => qq|This building has been many things throughout the years, but what matters is that it's still here. Go in and buy some of whatever it is they're selling these days.|
+            blurb   => qq|This building has been many things throughout the years, but what matters is that it's still here. Go in and buy some of whatever it is they're selling these days.|,
         },
         {
             name    => "Fanning Outpost Rocking Chair",
             address => "5957 State Hwy ZZ, Cuba, MO 65453",
-            blurb   => qq|Say hi to Fluffy the cat for me. If you pet her long enough, she'll climb into your lap.|
+            blurb   => qq|Say hi to Fluffy the cat for me. If you pet her long enough, she'll climb into your lap.|,
         },
         {
             name    => "Mule Trading Post",
             address => "11160 Dillon Outer Rd, Rolla, MO 65401",
-            blurb   => qq|I'm not claiming this place is open. I'm just claiming it's worth stopping at. Check out those signs.|
+            blurb   => qq|I'm not claiming this place is open. I'm just claiming it's worth stopping at. Check out those signs.|,
         },
         {
             name    => "John's Modern Cabins",
             address => "11107 Arlington Outer Rd, Newburg, MO 65550",
-            blurb   => qq|Entropy cannot be stopped. We can only delay it for a while. |
+            blurb   => qq|Entropy cannot be stopped. We can only delay it for a while. |,
         },
         {
             name    => "Devil's Elbow Bridge",
             address => "Big Piney River, Devils Elbow, MO 65457",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Uranus Fudge Factory",
             address => "14400 State Hwy Z, St. Robert, MO 65584",
-            blurb   => qq|My notes describe the giant here as the "Mega Mayor Patriot Golfer Muffler Man." I'm not sure I got his name right, but go take a look and tell me that name doesn't fit him. Here's a tip. If you pronounce it YER-uh-nuss you'll ruin all of their jokes.|
+            blurb   => qq|My notes describe the giant here as the "Mega Mayor Patriot Golfer Muffler Man." I'm not sure I got his name right, but go take a look and tell me that name doesn't fit him. Here's a tip. If you pronounce it YER-uh-nuss you'll ruin all of their jokes.|,
         },
         {
             name    => "Route 66 Diner",
             address => "126 St. Robert Blvd, St. Robert, MO 65584",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Route 66 Neon Sign Park",
             address => "133 Reed Pkwy, St. Robert, MO 65584",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Old Stagecoach Stop",
             address => "106 N Lynn St, Waynesville, MO 65583",
-            blurb   => qq|It's not just a building. It's the oldest building in the USA.|
+            blurb   => qq|It's not just a building. It's the oldest building in the USA.|,
         },
         {
             name    => "Route 66 Gasconade Bridge",
             address => "Richland, MO 65556",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Munger Moss Motel",
             address => "1336 U.S. Rt 66, Lebanon, MO 65536",
-            blurb   => qq|The organization that is restoring the sign is different from the organization that runs the motel, and the motel isn't exactly a motel because it's more like apartments, but they tell me that might be changing, and maybe you can stay here like it's a motel again. I dunno, just go look at the sign.|
+            blurb   => qq|The organization that is restoring the sign is different from the organization that runs the motel, and the motel isn't exactly a motel because it's more like apartments, but they tell me that might be changing, and maybe you can stay here like it's a motel again. I dunno, just go look at the sign.|,
         },
         {
             name    => "Smokin' Jones BBQ / Wrink's Market",
             address => "135 Wrinkle Ave, Lebanon, MO 65536",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Taylor's Dairy Joy",
             address => "1205 U.S. Rte 66, Lebanon, MO 65536",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Manor House Inn",
             address => "505 E Elm St, Lebanon, MO 65536",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Route 66 Museum",
             address => "915 S Jefferson Ave, Lebanon, MO 65536",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Boswell Park Camp Joy",
             address => "51 Drury Ln, Lebanon, MO 65536",
-            blurb   => qq|I'm not here to tell you what things are. I'm here to tell you where to go. Ask questions, read plaques, or just drive by and enjoy.|
+            blurb   => qq|I'm not here to tell you what things are. I'm here to tell you where to go. Ask questions, read plaques, or just drive by and enjoy.|,
         },
         {
             name    => "Redmon's Candy Factory",
             address => "330 Pine St, Phillipsburg, MO 65722",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Buc-ee's",
             address => "3284 N Mulroy Rd, Springfield, MO 65803",
             blurb   => qq|Ah, here we are. Buc-ee's started in Texas but now has many locations. The company has only existed since 1982, but I'm sure that in 2082, future Route travelers will consider this place a magnificent historical landmark.
-Buc-ee's is privately held, so they can focus on customer happiness without worrying about short-term shareholder profits.|
+Buc-ee's is privately held, so they can focus on customer happiness without worrying about short-term shareholder profits.|,
         },
         {
             name    => "Andy's Frozen Custard",
             address => "2119 N Glenstone Ave, Springfield, MO 65803",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Best Western Route 66 Rail Haven",
             address => "203 S Glenstone Ave, Springfield, MO 65802",
-            blurb   => qq|They have a gorgeous old sign here.|
+            blurb   => qq|They have a gorgeous old sign here.|,
         },
         {
             name    => "Steak 'n Shake",
             address => "1158 E St Louis St, Springfield, MO 65802",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Gillioz Theatre",
             address => "325 Park Central E, Springfield, MO 65806",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "History Museum on the Square",
             address => "154 Park Central Square, Springfield, MO 65806",
-            blurb   => qq|Some museums on the Route have flat images blown up so big you can see the pixels, and that's all they have. I call these "flat museums." They're funded with multi-million dollar taxpayer-funded grants, while the Route's legacy small businesses are dying. This museum has something better. Here you can find the original telegram from Cyrus Avery declaring on April 30, 1926, that the Route would be known as "66."|
+            blurb   => qq|Some museums on the Route have flat images blown up so big you can see the pixels, and that's all they have. I call these "flat museums." They're funded with multi-million dollar taxpayer-funded grants, while the Route's legacy small businesses are dying. This museum has something better. Here you can find the original telegram from Cyrus Avery declaring on April 30, 1926, that the Route would be known as "66."|,
         },
         {
             name    => "1984 Arcade",
             address => "400 S Jefferson Ave, Springfield, MO 65806",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Rogue Barber Co. & D's Wax Factory",
             address => "639 W Walnut St, Springfield, MO 65806",
-            blurb   => qq|It's a historic building. If you don't have any hair on your head, go in and get something waxed.|
+            blurb   => qq|It's a historic building. If you don't have any hair on your head, go in and get something waxed.|,
         },
         {
             name    => "College Street Cafe",
             address => "1622 W College St, Springfield, MO 65806",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Route 66 Car Museum",
             address => "1634 W College St, Springfield, MO 65806",
-            blurb   => qq|I heard this place might close soon. Enjoy it while you can.|
+            blurb   => qq|I heard this place might close soon. Enjoy it while you can.|,
         },
         {
             name    => "Rockwood Motor Court",
             address => "2200 W College St, Springfield, MO 65806",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Route 66 KOA Holiday",
             address => "5775 W Farm Rd 140, Springfield, MO 65802",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Gary's Gay Parita Sinclair",
             address => "21118 Old 66, Ash Grove, MO 65604",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Spencer Station",
             address => "19720 Lawrence 2062, Miller, MO 65707",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Red Oak II",
             address => "12275 Kafir Rd, Carthage, MO 64836",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Boots Court Motel",
             address => "125 S Garrison Ave, Carthage, MO 64836",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "66 Drive In",
             address => "17231 Old 66 Blvd, Carthage, MO 64836",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "SuperTam on 66",
             address => "221 W Main St, Carterville, MO 64835",
-            blurb   => qq|Some places have been many things through the years, but they're usually only one thing at a time. This place is many things at a time. Something about Superman and ice cream.|
+            blurb   => qq|Some places have been many things through the years, but they're usually only one thing at a time. This place is many things at a time. Something about Superman and ice cream.|,
         },
         {
             name    => "Route 66 Center",
             address => "112 W Broadway St, Webb City, MO 64870",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Granny Shaffer's Restaurant",
             address => "2728 N Rangeline Rd, Joplin, MO 64801",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Royale Cinema Lounge",
             address => "715 E Broadway St, Joplin, MO 64801",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Wilder's Steakhouse",
             address => "1216 S Main St, Joplin, MO 64801",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Cars on the Route Kan-O-Tex Service Station",
             address => "199 N Main St, Galena, KS 66739",
-            blurb   => qq|The vehicular inspiration for Tow Mater, the tow truck from Pixar's Cars, is here.|
+            blurb   => qq|The vehicular inspiration for Tow Mater, the tow truck from Pixar's Cars, is here.|,
         },
         {
             name    => "Gearhead Curios",
             address => "520 Main St, Galena, KS 66739",
-            blurb   => qq|If we see the journey down Route 66 as a story, we're one-third of the way through. Breaking into Act II. The hero accepts the call to adventure! Things are about to get weird. Route 66 is not really a road anymore. Nowadays, Route 66 is a collective project to preserve, restore, and revive the art, architecture, and history of midcentury America. Aaron Perry from Gearhead Curios understands this far better than most.|
+            blurb   => qq|If we see the journey down Route 66 as a story, we're one-third of the way through. Breaking into Act II. The hero accepts the call to adventure! Things are about to get weird. Route 66 is not really a road anymore. Nowadays, Route 66 is a collective project to preserve, restore, and revive the art, architecture, and history of midcentury America. Aaron Perry from Gearhead Curios understands this far better than most.|,
         },
         {
             name    => "Galena Mining & Historical Museum",
             address => "319 W 7th St, Galena, KS 66739",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Old Riverton Store",
             address => "7109 KS-66, Riverton, KS 66770",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Rainbow Bridge",
             address => "SE Beasley Rd, Baxter Springs, KS 66713",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Baxter Springs Heritage Center & Museum",
             address => "740 East Ave, Baxter Springs, KS 66713",
-            blurb   => qq|I haven't actually checked this place out yet, but I've seen photos of a freaky painting of a gunfight that lives here. I gotta see this one in person sometime.|
+            blurb   => qq|I haven't actually checked this place out yet, but I've seen photos of a freaky painting of a gunfight that lives here. I gotta see this one in person sometime.|,
         },
         {
             name    => "Route 66 Visitors Center",
             address => "940 Military Ave, Baxter Springs, KS 66713",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Dallas' Dairyette",
             address => "103 N Main St, Quapaw, OK 74363",
-            blurb   => qq|In my video "Route 66 from Carthage to Catoosa, April 16, 2025," I asked six middle-school students if they'd ever heard of the American Dream. They all said no. I hope that was because they're like fish who don't know that they're swimming in something called "water." Even so, we must teach the next generation not to take prosperity for granted. Poverty and suffering is humanity's default state. Wealth and happiness is a rare exception in human history.|
+            blurb   => qq|In my video "Route 66 from Carthage to Catoosa, April 16, 2025," I asked six middle-school students if they'd ever heard of the American Dream. They all said no. I hope that was because they're like fish who don't know that they're swimming in something called "water." Even so, we must teach the next generation not to take prosperity for granted. Poverty and suffering is humanity's default state. Wealth and happiness is a rare exception in human history.|,
         },
         {
             name    => "Dairy King",
             address => "100 N Main St, Commerce, OK 74339",
             blurb   =>
-qq|The current owners took over this place in 1980 and I don't think their prices have been updated since. Last time I was here, the lady accidentally charged me $2.50 for an $8.50 order. When I pointed out the error, she used a calculator to determine the amount I still had left to pay. But if I'm ever lucky enough to reach her age, I'll be satisfied if I have half of her mental acuity. Her elderly son gets up every day at 3am to run 10 miles, and he rides around in the only car ever offered with a factory flame job: a Chrysler PT Cruiser.|
+qq|The current owners took over this place in 1980 and I don't think their prices have been updated since. Last time I was here, the lady accidentally charged me $2.50 for an $8.50 order. When I pointed out the error, she used a calculator to determine the amount I still had left to pay. But if I'm ever lucky enough to reach her age, I'll be satisfied if I have half of her mental acuity. Her elderly son gets up every day at 3am to run 10 miles, and he rides around in the only car ever offered with a factory flame job: a Chrysler PT Cruiser.|,
         },
         {
             name    => "Waylan's Ku-Ku",
             address => "915 N Main St, Miami, OK 74354",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Coleman Theater",
             address => "103 N Main St, Miami, OK 74354",
-            blurb   => qq|It's a gorgeous, old, zillion-dollar theater in the middle of nowhere.|
+            blurb   => qq|It's a gorgeous, old, zillion-dollar theater in the middle of nowhere.|,
         },
         {
             name    => "Route 66 Sidewalk Hwy",
             address => "S 540 Rd, Miami, OK 74354",
-            blurb   => qq|I wouldn't recommend actually driving down this piece of original road, but go take a look at it.|
+            blurb   => qq|I wouldn't recommend actually driving down this piece of original road, but go take a look at it.|,
         },
         {
             name    => "Crosstar Flag and Tag Museum",
             address => "103 S Central Ave, Afton, OK 74331",
-            blurb   => qq|Some things are better left unexplained.|
+            blurb   => qq|Some things are better left unexplained.|,
         },
         {
             name    => "Clanton's Cafe",
             address => "319 E Illinois Ave, Vinita, OK 74301",
-            blurb   => qq|I haven't tried the food here yet, but any restaurant with a giant sign that just says "EAT" on it gets to be in this book.|
+            blurb   => qq|I haven't tried the food here yet, but any restaurant with a giant sign that just says "EAT" on it gets to be in this book.|,
         },
         {
             name    => "Center Theater",
             address => "124 S Wilson St, Vinita, OK 74301",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Vinita Antique Mall on Route 66 & Jefferson Highway",
             address => "127 S Wilson St, Vinita, OK 74301",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Hi-Way Cafe and Western Motel",
             address => "437918 US-60, Vinita, OK 74301",
-            blurb   => qq|Big Bill the Muffler Man, the Big Indian, and Big Al the Chef are all here.|
+            blurb   => qq|Big Bill the Muffler Man, the Big Indian, and Big Al the Chef are all here.|,
         },
         {
             name    => "Ed Galloway's Totem Pole Park",
             address => "21300 OK-28A, Chelsea, OK 74016",
-            blurb   => qq|One man's weird way of paying tribute to the First Nations peoples of the Americas.|
+            blurb   => qq|One man's weird way of paying tribute to the First Nations peoples of the Americas.|,
         },
         {
             name    => "Annie's Diner",
             address => "12015 Poplar St, Claremore, OK 74017",
-            blurb   => qq|It's closed now, but I did get some good corn nuggets here once.|
+            blurb   => qq|It's closed now, but I did get some good corn nuggets here once.|,
         },
         {
             name    => "J.M. Davis Arms & Historical Museum",
             address => "330 N JM Davis Blvd, Claremore, OK 74017",
-            blurb   => qq|If you're visiting from some un-American place where you can't have guns, be sure to check this place out. You'll be sick of guns by the time you leave.|
+            blurb   => qq|If you're visiting from some un-American place where you can't have guns, be sure to check this place out. You'll be sick of guns by the time you leave.|,
         },
         {
             name    => "Blue Whale of Catoosa",
             address => "2600 OK-66, Catoosa, OK 74015",
-            blurb   => qq|It's a big blue whale. It looks good at night. It might still be under renovation, but you can see it from the road.|
+            blurb   => qq|It's a big blue whale. It looks good at night. It might still be under renovation, but you can see it from the road.|,
         },
         {
             name    => "Tally's Good Food Cafe",
             address => "1102 S Yale Ave, Tulsa, OK 74112",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Campbell Hotel",
             address => "2636 E 11th St, Tulsa, OK 74104",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Ike's Chili",
             address => "1503 E 11th St, Tulsa, OK 74120",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Buck Atom's Cosmic Curios on 66",
             address => "1347 E 11th St, Tulsa, OK 74120",
-            blurb   => qq|Mary Beth Babcock is another name you should remember. She's at the center of the modern-day Route 66 revival. She's the dreamer behind the long strip of Muffler Men in Tulsa now known as the Land of the Giants. Buck Atom. Stella Atom. Cowboy Bob. Rosie the Riveter. Meadow Gold Mack.|
+            blurb   => qq|Mary Beth Babcock is another name you should remember. She's at the center of the modern-day Route 66 revival. She's the dreamer behind the long strip of Muffler Men in Tulsa now known as the Land of the Giants. Buck Atom. Stella Atom. Cowboy Bob. Rosie the Riveter. Meadow Gold Mack.|,
         },
         {
             name    => "Buck's Vintage",
             address => "1317 E 11th St, Tulsa, OK 74120",
-            blurb   => qq|A carefully curated collection of the coolest vintage stuff you'll ever find. Wasteland Firebird placed an engraved brick at the base of Cowboy Bob.|
+            blurb   => qq|A carefully curated collection of the coolest vintage stuff you'll ever find. Wasteland Firebird placed an engraved brick at the base of Cowboy Bob.|,
         },
         {
             name    => "Meadow Gold Mack",
             address => "1306 E 11th St, Tulsa, OK 74120",
-            blurb   => qq|Great work from local artists.|
+            blurb   => qq|Great work from local artists.|,
         },
         {
             name    => "Toynbee Tile",
             address => "E 6th St & S Boston Ave, Tulsa, OK 74103",
-            blurb   => qq|Cross in the crosswalk, looking down at the ground. There is a small linoleum mosaic embedded in the asphalt. These were the first linoleum asphalt mosaics. They have been mysteriously appearing since the early 80s.|
+            blurb   => qq|Cross in the crosswalk, looking down at the ground. There is a small linoleum mosaic embedded in the asphalt. These were the first linoleum asphalt mosaics. They have been mysteriously appearing since the early 80s.|,
         },
         {
             name    => "Cyrus Avery Centennial Plaza",
             address => "Southwest Blvd, Tulsa, OK 74127",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Route 66 Neon Sign Park",
             address => "1450 Southwest Blvd, Tulsa, OK 74107",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Route 66 Historical Village",
             address => "3770 Southwest Blvd, Tulsa, OK 74107",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Ollie's Station",
             address => "4070 Southwest Blvd, Tulsa, OK 74107",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Roller Dome",
             address => "9661 New Sapulpa Rd, Sapulpa, OK 74066",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Happy Burger",
             address => "215 N Mission St, Sapulpa, OK 74066",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Gasoline Alley Classics",
             address => "24 N Main St, Sapulpa, OK 74066",
-            blurb   => qq|There's a friendly competition going on between Michael Jones of Gasoline Alley Classics and Aaron Perry of Gearhead Curios to have the best bathroom on Route 66. Everyone agrees that the third best is Buc-ee's.|
+            blurb   => qq|There's a friendly competition going on between Michael Jones of Gasoline Alley Classics and Aaron Perry of Gearhead Curios to have the best bathroom on Route 66. Everyone agrees that the third best is Buc-ee's.|,
         },
         {
             name    => "Heart of Route 66 Auto Museum",
             address => "13 Sahoma Lake Rd, Sapulpa, OK 74066",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Rock Creek Bridge",
             address => "W Ozark Trail, Sapulpa, OK 74066",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "J's Country Kitchen",
             address => "31 Oak St, Kellyville, OK 74136",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Bristow Train Depot and Museum",
             address => "1 Railroad Pl, Bristow, OK 74010",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Rock Cafe",
             address => "114 W Main St, Stroud, OK 74079",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Route 66 Spirit of America Museum",
             address => "220 W Main St, Stroud, OK 74079",
-            blurb   => qq|If you've been searching for the American Dream, you just found it.|
+            blurb   => qq|If you've been searching for the American Dream, you just found it.|,
         },
         {
             name    => "Skyliner Motel",
             address => "717 W Main St, Stroud, OK 74079",
-            blurb   => qq|During The Great Route 66 Centennial Convergence, we sold out this place for the first time since its recent renovation.|
+            blurb   => qq|During The Great Route 66 Centennial Convergence, we sold out this place for the first time since its recent renovation.|,
         },
         {
             name    => "Route 66 Bowl",
             address => "920 E 1st St, Chandler, OK 74834",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "McJerry's Route 66 Gallery",
             address => "306 Manvel Ave, Chandler, OK 74834",
-            blurb   => qq|I think Jerry McClanahan might have written some little guide book for Route 66, but the real reason to stop here is his amazing painting 666 EXPRESS.|
+            blurb   => qq|I think Jerry McClanahan might have written some little guide book for Route 66, but the real reason to stop here is his amazing painting 666 EXPRESS.|,
         },
         {
             name    => "Westfall Phillips 66 Station",
             address => "701 Manvel Ave, Chandler, OK 74834",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Seaba Station Motorcycle Museum",
             address => "336992 E OK-66, Warwick, OK 74881",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "John's Place Museum",
             address => "13441 OK-66, Arcadia, OK 73007",
-            blurb   => qq|I haven't made it here yet, but I've heard good things about it.|
+            blurb   => qq|I haven't made it here yet, but I've heard good things about it.|,
         },
         {
             name    => "Chicken Shack",
             address => "212 OK-66, Arcadia, OK 73007",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Arcadia Round Barn",
             address => "107 OK-66, Arcadia, OK 73007",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Pops 66",
             address => "660 OK-66, Arcadia, OK 73007",
-            blurb   => qq|I'm a connoisseur of soda pop, and I highly recommend this place. If you don't know what to try, I'd suggest a Moxie. If you think it tastes like medicine, that's because it originally was medicine. And if you think moxie is a cool word to name a soda after, you've got it backwards. The soda came first.|
+            blurb   => qq|I'm a connoisseur of soda pop, and I highly recommend this place. If you don't know what to try, I'd suggest a Moxie. If you think it tastes like medicine, that's because it originally was medicine. And if you think moxie is a cool word to name a soda after, you've got it backwards. The soda came first.|,
         },
         {
             name    => "1889 Territorial School",
             address => "124 E 2nd St, Edmond, OK 73034",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Tower Theatre",
             address => "425 NW 23rd St, Oklahoma City, OK 73103",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Milk Bottle Grocery",
             address => "2426 N Classen Blvd, Oklahoma City, OK 73106",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Lake Overholser Bridge",
             address => "8703–8709 Overholser Dr, Bethany, OK 73008",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Lakeview Market",
             address => "9025 N Overholser Dr, Yukon, OK 73099",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Yukon Mill & Grain Co.",
             address => "Yukon, OK 73099",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Sid's Diner",
             address => "300 S Choctaw Ave, El Reno, OK 73036",
-            blurb   => qq|Get the onion burger. If this place is busy, closed, or just too hip for you, try Jobe's down the street.|
+            blurb   => qq|Get the onion burger. If this place is busy, closed, or just too hip for you, try Jobe's down the street.|,
         },
         {
             name    => "The Filling Station",
             address => "120 S Choctaw Ave, El Reno, OK 73036",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Jobe's Country Boy Drive-In",
             address => "1220 Sunset Dr, El Reno, OK 73036",
-            blurb   => qq|Get the onion burger.|
+            blurb   => qq|Get the onion burger.|,
         },
         {
             name    => "Flat Giants Display",
             address => "10000 E 1020 Rd, Calumet, OK 73014",
-            blurb   => qq|A three-dimensional display would certainly have been better than this two-dimensional display, but this two-dimensional display is far, far better than a one-dimensional display would have been. So be thankful for the dimensions you've got.|
+            blurb   => qq|A three-dimensional display would certainly have been better than this two-dimensional display, but this two-dimensional display is far, far better than a one-dimensional display would have been. So be thankful for the dimensions you've got.|,
         },
         {
             name    => "Indian Trading Post",
             address => "825 S Walbaum Rd, Calumet, OK 73014",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Bridgeport Bridge",
             address => "US-281, Hinton, OK 73047",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Lucille's Historic Highway Gas Station",
             address => "U.S. Route 66, Hydro, OK 73048",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Centennial Park",
             address => "N Broadway St, Weatherford, OK 73096",
-            blurb   => qq|There is an astronaut Muffler Man here.|
+            blurb   => qq|There is an astronaut Muffler Man here.|,
         },
         {
             name    => "The Glancy Motel",
             address => "217 W Gary Blvd, Clinton, OK 73601",
-            blurb   => qq|You can't stay here, but you can look at what's left, and imagine what it was like to stay here.|
+            blurb   => qq|You can't stay here, but you can look at what's left, and imagine what it was like to stay here.|,
         },
         {
             name    => "Oklahoma Route 66 Museum",
             address => "2229 W Gary Blvd, Clinton, OK 73601",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Foss",
             address => "Foss, OK 73647",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Canute",
             address => "Canute, OK 73626",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Flamingo Inn",
             address => "2000 W 3rd St, Elk City, OK 73644",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "National Route 66 & Transportation Museum",
             address => "2717 W 3rd St, Elk City, OK 73644",
-            blurb   => qq|I wouldn't exactly call this a good museum. But it's a weird museum. And weird is good, right?|
+            blurb   => qq|I wouldn't exactly call this a good museum. But it's a weird museum. And weird is good, right?|,
         },
         {
             name    => "Sandhill Curiosity Shop",
             address => "201 S Sheb Wooley Ave, Erick, OK 73645",
-            blurb   => qq|Harley Russell is here. He was the human side of the inspiration for the vehicular character Tow Mater from Pixar's Cars. They had to make a few changes to his personality, because it was a movie for kids.|
+            blurb   => qq|Harley Russell is here. He was the human side of the inspiration for the vehicular character Tow Mater from Pixar's Cars. They had to make a few changes to his personality, because it was a movie for kids.|,
         },
         {
             name    => "Sam's Town on 66",
             address => "401 W Roger Miller Blvd, Erick, OK 73645",
-            blurb   => qq|When we were here, a dirty-encrusted man came down the street, handed us bags of fresh pecans still in their shells, then walked away. Maybe that was Sam?|
+            blurb   => qq|When we were here, a dirty-encrusted man came down the street, handed us bags of fresh pecans still in their shells, then walked away. Maybe that was Sam?|,
         },
         {
             name    => "West Winds Motel",
             address => "617 W Roger Miller Blvd, Erick, OK 73645",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "U-Drop Inn Cafe",
             address => "105 E 12th St Shamrock TX, 79079",
-            blurb   => qq|There is a message made of hand-cut plastic letters embedded into the asphalt in front of this building.|
+            blurb   => qq|There is a message made of hand-cut plastic letters embedded into the asphalt in front of this building.|,
         },
         {
             name    => "Devil's Rope Barbed Wire Museum",
             address => "100 Kingsley St, McLean, TX 79057",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Restored 1929 Route 66 Gas Station",
             address => "212 First St, McLean, TX 79057",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Kaiser's Super Service Station",
             address => "35.21219, -100.73465",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Leaning Tower of Texas",
             address => "Groom, TX 79039",
-            blurb   => qq|Why is it leaning? I dunno, it was probably aliens.|
+            blurb   => qq|Why is it leaning? I dunno, it was probably aliens.|,
         },
         {
             name    => "Buc-ee's",
             address => "9900 E I-40, Amarillo, TX 79118",
-            blurb   => qq|If you want to try something weird and American, something that even a lot of Americans haven't tried, look for a Chick-O-Stick. Peanut butter and toasted coconut, no chocolate. Fresh ones are better, so buy them from a high-traffic business like Buc-ee's. If they're crunchy, they're fresh. If they're chewy or sticky, they're stale.|
+            blurb   => qq|If you want to try something weird and American, something that even a lot of Americans haven't tried, look for a Chick-O-Stick. Peanut butter and toasted coconut, no chocolate. Fresh ones are better, so buy them from a high-traffic business like Buc-ee's. If they're crunchy, they're fresh. If they're chewy or sticky, they're stale.|,
         },
         {
             name    => "The Big Texan Steak Ranch & Brewery",
             address => "7701 I-40, Amarillo, TX 79118",
-            blurb   => qq|Some places are just a gimmick, and that's fine. But this gimmick is also a great motel and the food is some of the best food on the entire Route. If you can stay in Amarillo long enough to eat here twice, do it. Some say The Big Texan is not actually on Route 66. I say the Big Texan is like the Eiffel Tower. If I were passing two blocks away from it, I'd make a point to stop by and check it out.|
+            blurb   => qq|Some places are just a gimmick, and that's fine. But this gimmick is also a great motel and the food is some of the best food on the entire Route. If you can stay in Amarillo long enough to eat here twice, do it. Some say The Big Texan is not actually on Route 66. I say the Big Texan is like the Eiffel Tower. If I were passing two blocks away from it, I'd make a point to stop by and check it out.|,
         },
         {
             name    => "Slug Bug Ranch",
             address => "1415 Sunrise Dr, Amarillo, TX 79104",
-            blurb   => qq|A miniature version of the Cadillac Ranch. Bring some spray paint. You're allowed to paint the cars.|
+            blurb   => qq|A miniature version of the Cadillac Ranch. Bring some spray paint. You're allowed to paint the cars.|,
         },
         {
             name    => "Texas Route 66 Visitor Center",
             address => "1900 SW 6th Ave, Amarillo, TX 79106",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Elmo's Drive Inn",
             address => "2618 SW 3rd Ave, Amarillo, TX 79106",
-            blurb   => qq||
+            blurb   => qq|I thought this beautiful old joint was abandoned, but when I pulled in, friendly people appeared and came up to my car, ready to help. I'd just eaten, but I gave them enough money to buy free food for the next three customers.|,
         },
         {
             name    => "Lile Art Gallery",
             address => "2719 SW 6th Ave, Amarillo, TX 79106",
-            blurb   => qq||
+            blurb   => qq|In the old car factories in Detroit, paint used to build up in layers on the walls in the areas where they painted the cars. You could chip pieces off and polish them into beautiful multicolored "stones" called "Fordite." Spray paint builds up on the cars at the Cadillac Ranch, too. Bob Lile harvests this paint to create "Cadillite" jewelry.|,
         },
         {
             name    => "Smokey Joe's",
             address => "2903 SW 6th Ave, Amarillo, TX 79106",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "GoldenLight Cafe & Cantina",
             address => "2906 SW 6th Ave, Amarillo, TX 79106",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Texas Ivy Antiques",
             address => "3511 SW 6th Ave, Amarillo, TX 79106",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Handle Bar and Grill",
             address => "3514 SW 6th Ave, Amarillo, TX 79106",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Meme's Cafe",
             address => "3700 SW 6th Ave, Amarillo, TX",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "2nd Amendment Cowboy Muffler Man",
             address => "2601 Hope Rd, Amarillo, TX",
-            blurb   => qq||
+            blurb   => qq|Just beside the Cadillac Ranch, there's a Muffler Man with opinions about what an awesome document the Bill of Rights is.|,
         },
         {
             name    => "Cadillac Ranch",
             address => "13651 I-40 Frontage Rd, Amarillo, TX 79124",
-            blurb   => qq||
+            blurb   => qq|If you see nothing else on Route 66, see this. Bring spray paint. You're allowed to paint the cars.
+There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         },
         {
             name    => "Milburn-Price Culture Museum",
             address => "1005 Coke St, Vega, TX 79092",
-            blurb   => qq||
+            blurb   => qq|The best places defy description. The first time I visited, I made a recording of my ten-step philosophy of life via a telephone booth. The second time I visited, I held a tarantula in my hands. The third time I visited, I mentioned that my pocket knife had been stolen, and the owner gifted me one from his huge stash. What is it you're actually supposed to be doing here? I still haven't figured that out.|,
         },
         {
             name    => "Mama Jo's Pies & Sweets",
             address => "922 E Main St, Vega, TX 79092",
-            blurb   => qq||
+            blurb   => qq|I'm always looking for a good piece of cherry pie. That was meant to be taken literally but I guess you can take it figuratively if that amuses you.|,
         },
         {
             name    => "Midpoint Cafe and Gift Shop",
             address => "305 Historic Rte 66, Adrian, TX 79001",
-            blurb   => qq||
+            blurb   => qq|You're at the midpoint of Route 66. The two most crucial points in a story are the midpoint (halfway through the story) and the all-is-lost moment (two-thirds of the way through the story). The midpoint and the all-is-lost moment tend to mirror each other. Things seem good now. But the story isn't over. Things are about to take a turn.|,
         },
         {
             name    => "Dream Maker Station Route 66 Souvenir & Gift Shop",
             address => "307 U.S. Rte 66, Adrian, TX 79001",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Glenrio TX Ghost Town",
             address => "I-40BL, Hereford, TX 79045",
-            blurb   => qq||
+            blurb   => qq|The first ghost town on the list. See what I mean about the story taking a turn?|,
         },
         {
             name    => "Russell's Truck & Travel Center",
             address => "1583 Frontage Rd 4132, Glenrio, NM 88434",
-            blurb   => qq||
+            blurb   => qq|It looks pretty much like a normal gas station, but go inside, and be delighted.|,
         },
         {
             name    => "World's Largest Flip Flop",
             address => "602 Route 66, San Jon, NM 88434",
-            blurb   => qq||
+            blurb   => qq|A dream is something real that exists only in the mind of a lazy person. The World's Largest Flip Flop was once just a dream. Now it is real.|,
         },
         {
             name    => "Palomino Motel",
             address => "1215 E Rte 66 Blvd, Tucumcari, NM 88401",
-            blurb   => qq||
+            blurb   => qq|Tucumcari is the closest you can come to experiencing Route 66 as it was in the old days. Everything in Tucumcari is old and vintage.|,
         },
         {
             name    => "Watson's BBQ",
             address => "502 S Lake St, Tucumcari, NM 88401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Del's Restaurant",
             address => "1202 U.S. Rte 66, Tucumcari, NM 88401",
-            blurb   => qq||
-        },
-        {
-            name    => "Tristar Inn Xpress",
-            address => "1302 W Rte 66 Blvd, Tucumcari, NM 88401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Roadrunner Lodge Motel",
             address => "1023 E Rte 66 Blvd, Tucumcari, NM 88401",
-            blurb   => qq||
-        },
-        {
-            name    => "Golden Dragon Chinese Restaurant",
-            address => "1006 E Rte 66 Blvd, Tucumcari, NM 88401",
-            blurb   => qq||
+            blurb   => qq|Does Tucumcari need and deserve a mass infusion of cash? Yes, but the money should only be used for preservation. Nothing new should be added.|,
         },
         {
             name    => "TeePee Curios",
             address => "924 E Rte 66 Blvd, Tucumcari, NM 88401",
-            blurb   => qq||
+            blurb   => qq|I really do buy very few antiques and souvenirs. If I buy something, the place must be really good. I bought a beautiful vintage New Mexico road runner license plate here.|,
         },
         {
             name    => "Blue Swallow Motel",
             address => "815 E Rte 66 Blvd, Tucumcari, NM 88401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Motel Safari",
             address => "722 E Rte 66 Blvd, Tucumcari, NM 88401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Tucumcari Historical Museum",
             address => "416 S Adams St, Tucumcari, NM 88401",
-            blurb   => qq||
-        },
-        {
-            name    => "Mesalands Dinosaur Museum & Natural Sciences Laboratory",
-            address => "222 E Laughlin Ave, Tucumcari, NM 88401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "La Cita",
             address => "820 S 1st St, Tucumcari, NM 88401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Blake's Lotaburger",
             address => "2523 S 1st St, Tucumcari, NM 88401",
-            blurb   => qq||
-        },
-        {
-            name    => "Tucumcari Automotive",
-            address => "401 W Tucumcari Blvd, Tucumcari, NM 88401, USA",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Ranch House Cafe",
             address => "1017 W Tucumcari Blvd, Tucumcari, NM 88401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
-            name    => "Route 66 Monument",
-            address => "1500 U.S. Rte 66, Tucumcari, NM 88401",
-            blurb   => qq||
-        },
-        {
-            name    => "Historic Newkirk post office",
-            address => "gas station & store, Emerald Rd, Cuervo, NM 88417",
-            blurb   => qq||
+            name    => "Tristar Inn Xpress",
+            address => "1302 W Rte 66 Blvd, Tucumcari, NM 88401",
+            blurb   => qq|Room 118 has a secret hidden behind the mirror. Search for "Room Attack" on Wasteland Firebird's YouTube channel if you want to know more.|,
         },
         {
             name    => "Cuervo Ghost Town",
             address => "Cuervo, NM 88417",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Route 66 Auto Museum",
             address => "2463 Historic Rte 66, Santa Rosa, NM 88435",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Old Rio Pecos Ranch Truck Terminal",
             address => "2358 U.S. Rte 66, Santa Rosa, NM 88435",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Sun & Sand Restaurant",
             address => "2050 U.S. Rte 66, Santa Rosa, NM 88435",
-            blurb   => qq||
-        },
-        {
-            name    => "Pecos Theatre",
-            address => "219 S 4th St, Santa Rosa, NM 88435",
-            blurb   => qq||
+            blurb   => qq|Last time I came through, the most beautiful sign on Route 66 was lying on the ground, destroyed by rust, wind, and entropy. Just one year before, I'd seen it standing, proud and tall. It's ok to cry. Not just for the sign. For all of Route 66. For everyone who's come and gone. For the American Dream that's been all but forgotten.|,
         },
         {
             name    => "Bowlin's Flying C Ranch",
             address => "Exit 234, I-40, Encino, NM 88321",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Clines Corners Travel Center",
             address => "Clines Corners, NM 87056",
-            blurb   => qq||
+            blurb   => qq|This successful business has cheap apartments on-site and good paying jobs. It would be a great place for a young person to get started building their own American Dream. It's a bit desolate, but no one said it would be easy. If you know a young person who's "failed to launch," (still living with their parents in their twenties or thirties) offer to buy them a bus ticket to Clines Corners.|,
         },
         {
             name    => "Sal & Inez's Service Station",
             address => "421 U.S. Rte 66, Moriarty, NM 87035",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Country Friends Antiques",
             address => "1005 Old U.S. Rte 66, Moriarty, NM 87035",
-            blurb   => qq||
+            blurb   => qq|This place features a rare sputnik-style Roto-Sphere sign on top of the building.|,
         },
         {
             name    => "Tinkertown Museum",
             address => "121 Sandia Crest Rd, Sandia Park, NM 87047",
-            blurb   => qq||
+            blurb   => qq|One man built this place while the rest of us were watching television.|,
         },
         {
             name    => "Bow & Arrow Lodge",
             address => "8300 Central Ave SE, Albuquerque, NM 87108",
-            blurb   => qq||
+            blurb   => qq|The works of Vince Gilligan, set in Albuquerque, ranked: 1. Pluribus (the most important battle humanity has ever fought). 2. Better Call Saul (watch it before Breaking Bad, it's better, and it's a prequel anyway). 3. Breaking Bad.|,
         },
         {
-            name    => "Loma Verde Motel",
+            name    => "Loma Verde Motel sign",
             address => "7503 Central Ave NE, Albuquerque, NM 87108",
-            blurb   => qq||
-        },
-        {
-            name    => "May Cafe",
-            address => "111 Louisiana Blvd SE, Albuquerque, NM 87108",
-            blurb   => qq||
-        },
-        {
-            name    => "Hurricane's Cafe",
-            address => "4330 Lomas Blvd NE, Albuquerque, NM 87110",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Hotel Zazz",
             address => "3711 Central Ave NE, Albuquerque, NM 87108",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "M'tucci's Bar Roma",
             address => "3222 Central Ave SE, Albuquerque, NM 87106",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Frontier Restaurant",
             address => "2400 Central Ave SE, Albuquerque, NM 87106",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "66 Diner",
             address => "1405 Central Ave NE, Albuquerque, NM 87106",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Imperial",
             address => "701 Central Ave NE, Albuquerque, NM 87102",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Kimo Theatre",
             address => "423 Central Ave NW, Albuquerque, NM 87102",
-            blurb   => qq||
-        },
-        {
-            name    => "Lindy's Diner",
-            address => "500 Central Ave SW, Albuquerque, NM 87102",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Dog House Drive In",
             address => "1216 Central Ave NW, Albuquerque, NM 87102",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "El Vado Motel",
             address => "2500 Central Ave SW, Albuquerque, NM 87104",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Golden Pride",
             address => "5231 Central Ave NW, Albuquerque, NM 87105",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Western View Steak Diner & House",
             address => "6411 Central Ave NW, Albuquerque, NM 87105",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Westward Ho Motel",
-            address => "4C25+X7, 7500 Central Ave SW, Albuquerque, NM 87121",
-            blurb   => qq||
+            address => "35.07757, -106.71915",
+            blurb   => qq||,
         },
         {
-            name    => "Cafe 66 New Mexican Restaurant",
-            address => "9200 Central Ave SW, Albuquerque, NM 87121",
-            blurb   => qq||
-        },
-        {
-            name    => "Enchanted Trails RV Park & Trading Post",
-            address => "14305 Central Ave NW, Albuquerque, NM 87121",
-            blurb   => qq||
+            name    => "Route 66 Visitor Center",
+            address => "12300 Central Ave SW, Albuquerque, NM 87121",
+            blurb   => qq||,
         },
         {
             name    => "Rio Puerco Bridge",
             address => "14311 Central Ave NW, Albuquerque, NM 87121",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Old Route 66 Road",
             address => "2702–2780 Old Rte 66 Rd, New Laguna, NM 87038",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Budville Trading Post",
             address => "HC 77 Box 1A, Seama, NM 87007",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Villa de Cubero Trading Post",
             address => "1406 NM 124, Casa Blanca, NM 87007",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Ruins of Whiting Brothers Gas Station",
             address => "San Fidel, NM 87049",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "New Mexico Mining Museum",
             address => "100 Iron Ave, Grants, NM 87020",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Old Bluewater Motel",
             address => "2331 NM-122, Bluewater, NM 87005",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Bowlin's Bluewater Outpost",
             address => "136 Main St, Bluewater, NM 87005",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Thoreau",
             address => "Thoreau, NM 87323",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Phillips 66",
             address => "101 U.S. Rte 66, Continental Divide, NM 87312",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Fort Wingate Army Depot",
             address => "506 U.S. Rte 66, Church Rock, NM 87311",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Earl's Family Restaurant",
             address => "1400 E Hwy 66, Gallup, NM 87301",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Historic El Rancho Hotel",
             address => "1000 E Hwy 66, Gallup, NM 87301",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "John's Used Cars",
             address => "416 W Coal Ave, Gallup, NM 87301",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Yellowhorse Trading Post",
             address => "I-40 Exit 359, Lupton, AZ 86508",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Fort Courage & Pancake House",
             address => "Houck, AZ 86506",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Querino Canyon Bridge",
             address => "Querino Dirt Rd, Houck, AZ 86506",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Dotch Windsor's Painted Desert Trading Post",
             address => "Chambers, AZ 86502",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Petrified Forest National Park",
             address => "Petrified Forest, AZ 86028",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Stewart's Petrified Wood Shop",
             address => "Washboard Rd, Holbrook, AZ 86025",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Knife City Outlet",
             address => "7699 Sun Valley Rd, Sun Valley, AZ 86029",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "El Rancho Restaurant & Motel",
             address => "867 Navajo Blvd, Holbrook, AZ 86025",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Old Landfill Site",
             address => "34.89166, -110.14122",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Wigwam Motel",
             address => "811 W Hopi Dr, Holbrook, AZ 86025",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Geronimo Trading Post",
             address => "5372 Geronimo Rd, Joseph City, AZ 86032",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Here It Is Jack Rabbit Trading Post",
             address => "3386 U.S. Rte 66, Joseph City, AZ 86032",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Falcon Restaurant & Lounge",
             address => "1113 E 3rd St, Winslow, AZ 86047",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Earl's Route 66 Motor Court",
             address => "512 E 3rd St, Winslow, AZ 86047",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "La Posada Hotel",
             address => "303 E 2nd St, Winslow, AZ 86047",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Route 66 Delta Motel",
             address => "2141 W 3rd St, Winslow, AZ 86047",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Meteor City Trading Post",
             address => "40440 Interstate 40 WB, Winslow, AZ 86047",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Meteor Crater Natural Landmark",
             address => "Meteor Crater Rd, AZ 86047",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Two Guns",
             address => "AZ",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Twin Arrows Trading Post Ruins",
             address => "East of Flagstaff, AZ 86004",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Canyon Padre Bridge",
             address => "35.16233, -111.28736",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Walnut Canyon Bridge",
             address => "Townsend-Winona Rd, Winona, AZ",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Americana Motor Hotel",
             address => "2650 E Rte 66, Flagstaff, AZ 86004",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Route 66 Dog Haus",
             address => "1302 E Rte 66, Flagstaff, AZ 86001",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Flagstaff Visitor Center",
             address => "1 E Rte 66, Flagstaff, AZ 86001",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "J. Lawrence Walkup Skydome",
             address => "1705 S San Francisco St, Flagstaff, AZ 86001",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Galaxy Diner",
             address => "931 W Rte 66, Flagstaff, AZ 86001",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Old Route 66 Parks Store",
             address => "12963 Old Rte 66 Ste 50340, Parks, AZ 86018",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Bearizona Wildlife Park",
             address => "1500 E Rte 66, Williams, AZ 86046",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Rod's Steak House",
             address => "301 E Historic Rte 66, Williams, AZ 86046",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Pete's Route 66 Gas Station Museum",
             address => "101 E Rte 66, Williams, AZ 86046",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Historic Grand Canyon Hotel",
             address => "145 Historic Rte 66, Williams, AZ 86046",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Williams Visitor Center",
             address => "200 W Railroad Ave, Williams, AZ 86046",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Cruiser's Route 66 Cafe",
             address => "233 W Rte 66, Williams, AZ 86046",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Arizona 9 Motor Hotel",
             address => "315 W Rte 66, Williams, AZ 86046",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Hi-Line Motel Sign",
             address => "127 Lewis Ave, Ash Fork, AZ 86320",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Ash Fork Route 66 Museum",
             address => "901 Old Rte 66, Ash Fork, AZ 86320",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Aztec Motel & Creative Space",
             address => "22200 Historic Rte 66, Seligman, AZ 86337",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Delgadillo's Snow Cap",
             address => "301 AZ-66, Seligman, AZ 86337",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Route 66 Road Relics",
             address => "22255 W Old Highway 66, Seligman, AZ 86337",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Rusty Bolt",
             address => "22345 W Old Highway 66, Seligman, AZ 86337",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Supai Motel",
             address => "22450 AZ-66, Seligman, AZ 86337",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Roadkill Cafe",
             address => "22830 W AZ-66, Seligman, AZ 86337",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Grand Canyon Caverns",
             address => "AZ-66, Peach Springs, AZ 86434",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Frontier Motel Cafe",
             address => "16118 Historic Rte 66, Valentine, AZ 86437",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Old 76 Station",
             address => "12526 Historic Rte 66, Valentine, AZ 86437",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Hackberry General Store",
             address => "11255 AZ-66, Kingman, AZ 86411",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Arcadia Lodge",
             address => "909 E Andy Devine Ave, Kingman, AZ 86401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "TNT Auto Center",
             address => "535 E Andy Devine Ave, Kingman, AZ 86401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Kingman Railroad Museum",
             address => "402 E Andy Devine Ave, Kingman, AZ 86401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Sirens Cafe & Custom Catering",
             address => "419 Beale St, Kingman, AZ 86401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Hotel Beale",
             address => "331 E Andy Devine Ave, Kingman, AZ 86401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Tin Can Alley",
             address => "211 E Andy Devine Ave, Kingman, AZ 86401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Mr. D'z Route 66 Diner",
             address => "105 E Andy Devine Ave, Kingman, AZ 86401",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Cool Springs Station",
             address => "8275 Oatman Rd, Golden Valley, AZ 86413",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Oatman",
             address => "Oatman, AZ 86433",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Scenic Overlook",
             address => "34.97246, -114.41793",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Claypool & Co",
             address => "719 W Broadway St, Needles, CA 92363",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Needles Regional Museum",
             address => "929 Front St, Needles, CA 92363",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Wagon Wheel Restaurant",
             address => "2420 Needles Hwy, Needles, CA 92363",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Goffs Schoolhouse",
             address => "37198 Lanfair Rd, Essex, CA 92332",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Historic Road Runner's Retreat",
             address => "Chambless, CA 92304",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Guardian Lion East",
             address => "National Trails Hwy, Amboy, CA 92304",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Guardian Lion West",
             address => "National Trails Hwy, Amboy, CA 92304",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Roy's Motel & Cafe",
             address => "87520 National Trails Hwy, Amboy, CA 92304",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Former Whiting Brothers Gas Station",
             address => "68517 County Rd 66, Ludlow, CA 92338",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Ludlow Cafe",
             address => "68315 National Trails Hwy, Ludlow, CA 92338",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Whiting Brothers Service / Tony's Spaghetti Building",
             address => "46756 National Trails Hwy, Newberry Springs, CA 92365",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Bagdad Cafe",
             address => "46548 National Trails Hwy, Newberry Springs, CA 92365",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Sand-Swallowed Abandoned Homes",
             address => "Newberry Rd & Palma Vista Rd, Newberry Springs, CA 92365",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Barn",
             address => "44560 National Trails Hwy, Newberry Springs, CA 92365",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Russian House",
             address => "35421 County Rd 66, Daggett, CA 92327",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Desert Market",
             address => "35596 Santa Fe St, Daggett, CA 92327",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Daggett Garage",
             address => "35565 Santa Fe St, Daggett, CA 92327",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Daggett Historical Museum",
             address => "33703 2nd St, Daggett, CA 92327",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Penny's Diner",
             address => "35450 Yermo Rd, Yermo, CA 92398",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Peggy Sue's 50's Diner",
             address => "35654 Yermo Rd, Yermo, CA 92398",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Liberty Sculpture Park",
             address => "37570 Yermo Rd, Yermo, CA 92398",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "EddieWorld",
             address => "36017 Calico Rd, Yermo, CA 92398",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Thrift & More",
             address => "457 W Yermo Rd, Yermo, CA 92398",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Original Del Taco Location",
             address => "38434 E Yermo Rd, Yermo, CA 92398",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Calico Ghost Town",
             address => "Calico, CA 92311",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Skyline Drive-In Theater",
             address => "31175 Old Hwy 58, Barstow, CA",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Pit Stop Bar & Grill",
             address => "560 Victor St, Barstow, CA 92311",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Barstow Train McDonald's",
             address => "1611 E Main St, Barstow, CA 92311",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Mojave River Valley Museum",
             address => "270 E Virginia Way, Barstow, CA 92311",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Harvey House",
             address => "685 N 1st Ave, Barstow, CA 92311",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "20 Mule Team Museum",
             address => "26962 Twenty Mule Team Rd, Boron, CA 93516",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Elmer's Bottle Tree Ranch",
             address => "24266 National Trails Hwy, Oro Grande, CA 92368",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Emma Jean's Holland Burger Cafe",
             address => "17143 N D St, Victorville, CA 92394",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "California Route 66 Museum",
             address => "16825 D St, Victorville, CA 92395",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Santa Fe Trading Company",
             address => "15464 7th St, Victorville, CA 92395",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "First Original McDonald's Museum",
             address => "1398 N E St, San Bernardino, CA 92405",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Mitla Cafe",
             address => "602 N Mt Vernon Ave, San Bernardino, CA 92411",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Wigwam Village Motel",
             address => "2728 Foothill Blvd, San Bernardino, CA 92410",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Cucamonga Service Station",
             address => "9670 Foothill Blvd, Rancho Cucamonga, CA 91730",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Sycamore Inn",
             address => "8318 Foothill Blvd, Rancho Cucamonga, CA 91730",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Magic Lamp Inn Restaurant",
             address => "8189 Foothill Blvd, Rancho Cucamonga, CA 91730",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Donut Man",
             address => "915 E Route 66, Glendora, CA 91741",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "690 E Foothill Blvd",
             address => "Azusa, CA 91702",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Windmill Denny's",
             address => "7 E Huntington Dr, Arcadia, CA 91006",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Saga Motor Hotel",
             address => "1633 E Colorado Blvd, Pasadena, CA 91106",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Shakers",
             address => "601 Fair Oaks Ave, South Pasadena, CA 91030",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Fair Oaks Pharmacy & Soda Fountain",
             address => "1526 Mission St, South Pasadena, CA 91030",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Rialto Theatre",
             address => "1023 Fair Oaks Ave, South Pasadena, CA 91030",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Galco's Old World Grocery",
             address => "5702 York Blvd, Los Angeles, CA 90042",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Highland Park Bowl",
             address => "5621 N Figueroa St, Los Angeles, CA 90042",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "La Fuente Restaurant",
             address => "5552 N Figueroa St, Los Angeles, CA 90042",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Cielito Lindo",
             address => "E-23 Olvera St, Los Angeles, CA 90012",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Million Dollar Theater",
             address => "307 S Broadway, Los Angeles, CA 90013",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Clifton's",
             address => "648 S Broadway, Los Angeles, CA 90014",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Orpheum Theatre",
             address => "842 S Broadway, Los Angeles, CA 90014",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The United Theater on Broadway",
             address => "929 S Broadway, Los Angeles, CA 90015",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Petersen Automotive Museum",
             address => "6060 Wilshire Blvd, Los Angeles, CA 90036",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Tesla Diner",
             address => "7001 Santa Monica Blvd, Los Angeles, CA 90038",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "The Formosa",
             address => "7156 Santa Monica Blvd, West Hollywood, CA 90046",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Irv's Burgers",
             address => "7998 Santa Monica Blvd, West Hollywood, CA 90046",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Barney's Beanery",
             address => "8447 Santa Monica Blvd, West Hollywood, CA 90069",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Tail O' the Pup",
             address => "8512 Santa Monica Blvd, West Hollywood, CA 90069",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "NORMS Restaurant",
             address => "470 N La Cienega Blvd, West Hollywood, CA 90048",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Edelweiss Chocolates",
             address => "444 N Canon Dr, Beverly Hills, CA 90210",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Cafe 50's",
             address => "11623 Santa Monica Blvd, Los Angeles, CA 90025",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Mel's Drive-In",
             address => "1670 Lincoln Blvd, Santa Monica, CA 90404",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Cal Mar Hotel Suites",
             address => "220 California Ave, Santa Monica, CA 90403",
-            blurb   => qq||
+            blurb   => qq||,
         },
         {
             name    => "Santa Monica Pier",
             address => "200 Santa Monica Pier, Santa Monica, CA 90401",
-            blurb   => qq||
+            blurb   => qq||,
         },
     ];
     my $work_dir = './data';
@@ -2206,7 +2157,7 @@ sub make_doc {
     print $md $page_break;
 
     # Introduction pages
-    print $md qq|
+    print $md qq|,
 Prepare to be inspired
 ${line_break}
 On July 4, 1976, I wasn't even four years old. But, that year, I learned a big word. Bicentennial. Everyone was saying it so much. How could I not have learned it? "Bicentennial." It was spoken with such obvious reverence that my young ears paid attention.
@@ -2235,7 +2186,7 @@ ${line_break}
     print $md $page_break;
 
     # How to use this book
-    print $md qq|
+    print $md qq|,
 How to use this book
 ${line_break}
 I don't include any images of the locations mentioned in this book. I barely include any descriptions. That's intentional. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're just supposed to get into it.
