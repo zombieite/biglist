@@ -382,12 +382,12 @@ sub main {
         {
             name    => "Old Chain of Rocks Bridge",
             address => "10820 Riverview Dr, St. Louis, MO 63137",
-            blurb   => qq||
+            blurb   => qq|Nowadays you don't drive it. But you can go for a walk across it.|
         },
         {
             name    => "O'Brien Tire & Auto Care",
             address => "3924 Nameoki Rd, Granite City, IL 62040",
-            blurb   => qq||
+            blurb   => qq|Earl the Mechanic Muffler Man is here. And when was the last time you had your oil changed?|
         },
         {
             name    => "Mr. Twist Ice Cream",
@@ -400,34 +400,29 @@ sub main {
             blurb   => qq||
         },
         {
-            name    => "614 Niedringhaus Ave",
-            address => "Granite City, IL 62040",
+            name    => "Rusty the Muffler Man",
+            address => "614 Niedringhaus Ave, Granite City, IL 62040",
             blurb   => qq||
         },
         {
             name    => "Crown Candy Kitchen",
             address => "1401 St Louis Ave, St. Louis, MO 63106",
-            blurb   => qq||
+            blurb   => qq|This place is all about fat and sugar.|
         },
         {
-            name    => "Skate King Roller Rink",
-            address => "2700 Kienlen Ave, St. Louis, MO 63121",
-            blurb   => qq||
-        },
-        {
-            name    => "The Gateway Arch",
-            address => "St. Louis, MO 63102",
-            blurb   => qq||
+            name    => "Chili Mac's Diner",
+            address => "510 Pine St, St. Louis, MO 63101",
+            blurb   => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was this idea that people got into their heads, the idea that god wanted the Europeans to spread out into America. I really don't think that any supernatural being cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make the best country on Earth.|
         },
         {
             name    => "Neon Museum of St. Louis",
             address => "3537 Chouteau Ave, St. Louis, MO 63103",
-            blurb   => qq||
+            blurb   => qq|When I say the USA is the best country on Earth, you might reply that I'm biased since I was born in the USA. But I've traveled the world and I've spent a lot of time doing my best to overcome my biases. I truly and firmly believe that America has things about it that make it exceptional.|
         },
         {
             name    => "Ted Drewes Frozen Custard",
             address => "6726 Chippewa St, St. Louis, MO 63109",
-            blurb   => qq||
+            blurb   => qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or didn't know. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream.|
         },
         {
             name    => "Wally's",
@@ -437,7 +432,7 @@ sub main {
         {
             name    => "The Malt Shop",
             address => "1751 Smizer Station Rd, Fenton, MO 63026",
-            blurb   => qq||
+            blurb   => qq|Don't ever just order a milkshake. Always ask for a malt. For some reason malts are slowly being forgotten. They're harder to find now. The "malt" is just powdered barley extract but it adds a great bit of flavor.|
         },
         {
             name    => "Route 66 State Park",
@@ -455,9 +450,9 @@ sub main {
             blurb   => qq||
         },
         {
-            name    => "2827 MO-100",
-            address => "Villa Ridge, MO 63089",
-            blurb   => qq||
+            name    => "Gardenway Motel sign",
+            address => "2827 MO-100, Villa Ridge, MO 63089",
+            blurb   => qq|It's just a sign now. But oh, what a sign it is.|
         },
         {
             name    => "Old Sunset Motel",
@@ -467,17 +462,17 @@ sub main {
         {
             name    => "Creative Chainsaw Carvings",
             address => "151 State Rte W, Sullivan, MO 63080",
-            blurb   => qq||
+            blurb   => qq|She's kept this place open in memory of her husband who died many years ago. Ask her about him. You will never forget her story.|
         },
         {
             name    => "Meramec Caverns",
             address => "1135 Hwy W, Sullivan, MO 63080",
-            blurb   => qq||
+            blurb   => qq|Some people go for the nature stuff. I'm more into the midcentury Americana. But I figured this place was obligatory, so I went. I didn't expect to walk out in tears. Not only is the place gorgeous, but at the end, they project a patriotic short film about America on the cavern walls.|
         },
         {
             name    => "Shamrock Court Motel",
             address => "101 Shamrock, Sullivan, MO 63080",
-            blurb   => qq||
+            blurb   => qq|Newly restored by Roamin' Rich Dinkela.|
         },
         {
             name    => "Missouri Hick Barbeque",
@@ -487,32 +482,27 @@ sub main {
         {
             name    => "Wagon Wheel Motel",
             address => "901 E Washington Blvd, Cuba, MO 65453",
-            blurb   => qq||
+            blurb   => qq|You can hear the neon sign buzz on and off. This property is now owned by the magnificent steward known as Roamin' Rich Dinkela.|
         },
         {
             name    => "Weir on 66 / Rich's Famous Burgers",
             address => "102 W Washington St, Cuba, MO 65453",
-            blurb   => qq||
+            blurb   => qq|This building has been many things throughout the years, but what matters is that it's still here. Go in and buy some of whatever it is they're selling these days.|
         },
         {
             name    => "Fanning Outpost Rocking Chair",
             address => "5957 State Hwy ZZ, Cuba, MO 65453",
-            blurb   => qq||
+            blurb   => qq|Say hi to Fluffy the cat for me. If you pet her long enough, she'll climb into your lap.|
         },
         {
             name    => "Mule Trading Post",
             address => "11160 Dillon Outer Rd, Rolla, MO 65401",
-            blurb   => qq||
+            blurb   => qq|I'm not claiming this place is open. I'm just claiming it's worth stopping at. Check out those signs.|
         },
         {
-            name    => "John's Modern Cabins on Route 66",
+            name    => "John's Modern Cabins",
             address => "11107 Arlington Outer Rd, Newburg, MO 65550",
-            blurb   => qq||
-        },
-        {
-            name    => "Arlington",
-            address => "Arlington, MO 65550",
-            blurb   => qq||
+            blurb   => qq|Entropy cannot be stopped. We can only delay it for a while. |
         },
         {
             name    => "Devil's Elbow Bridge",
@@ -522,7 +512,7 @@ sub main {
         {
             name    => "Uranus Fudge Factory",
             address => "14400 State Hwy Z, St. Robert, MO 65584",
-            blurb   => qq||
+            blurb   => qq|My notes describe the giant here as the "Mega Mayor Patriot Golfer Muffler Man." I'm not sure I got his name right, but go take a look and tell me that name doesn't fit him. Here's a tip. If you pronounce it YER-uh-nuss you'll ruin all of their jokes.|
         },
         {
             name    => "Route 66 Diner",
@@ -537,7 +527,7 @@ sub main {
         {
             name    => "Old Stagecoach Stop",
             address => "106 N Lynn St, Waynesville, MO 65583",
-            blurb   => qq||
+            blurb   => qq|It's not just a building. It's the oldest building in the USA.|
         },
         {
             name    => "Route 66 Gasconade Bridge",
@@ -547,7 +537,7 @@ sub main {
         {
             name    => "Munger Moss Motel",
             address => "1336 U.S. Rt 66, Lebanon, MO 65536",
-            blurb   => qq||
+            blurb   => qq|The organization that is restoring the sign is different from the organization that runs the motel, and the motel isn't exactly a motel because it's more like apartments, but they tell me that might be changing, and maybe you can stay here like it's a motel again. I dunno, just go look at the sign.|
         },
         {
             name    => "Smokin' Jones BBQ / Wrink's Market",
@@ -2316,11 +2306,13 @@ ${line_break}
     print $md qq|
 How to use this book
 ${line_break}
-I don't include any images of the locations mentioned in this book. That's intentional. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're just supposed to get into it.
+I don't include any images of the locations mentioned in this book. I barely include any descriptions. That's intentional. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're just supposed to get into it.
 ${line_break}
 This book is a list of QR codes that represent online directions to each of my favorite places on Route 66. You can scan these QR codes with your phone by pointing the phone's camera at them. If you scan every QR code, and visit every place in this book, you will approximately follow Route 66. There is no app that you need to download.
 ${line_break}
 If you want to follow Route 66 more exactly, you'll need to do more research. But be aware that there never was a single "Route 66." There have always been many "alignments" (alternate routes). And nowadays, much of what used to be known as "Route 66" consists of potholed roads, dirt roads, private roads, government roads, and dead ends. If you want to explore all of it, you'd better give yourself at least a year.
+${line_break}
+This book is laid out east-to-west. America's story goes east-to-west. Route 66 is the story of America. Driving west-to-east on Route 66 is like watching a movie backwards.
 ${line_break}
 Some of the passport-style books you'll find on the Route require small businesses to pay thousands of dollars for the privilege of being advertised in those books. I'm not saying that's a bad thing. I'm just saying it's something you should know. Many businesses along the Route have custom rubber "passport stamps." I've left an empty space beside all of the QR codes for those stamps, if you want to use them to mark your progress. You could also use those spaces for notes, signatures, stickers, or just big checkmarks.
 ${line_break}
