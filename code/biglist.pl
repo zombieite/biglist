@@ -562,7 +562,7 @@ sub main {
         {
             name    => "Boswell Park Camp Joy",
             address => "51 Drury Ln, Lebanon, MO 65536",
-            blurb   => qq||
+            blurb   => qq|I'm not here to tell you what things are. I'm here to tell you where to go. Ask questions, read plaques, or just drive by and enjoy.|
         },
         {
             name    => "Redmon's Candy Factory",
@@ -572,7 +572,8 @@ sub main {
         {
             name    => "Buc-ee's",
             address => "3284 N Mulroy Rd, Springfield, MO 65803",
-            blurb   => qq||
+            blurb   => qq|Ah, here we are. Buc-ee's started in Texas but now has many locations. The company has only existed since 1982, but I'm sure that in 2082, future Route travelers will consider this place a magnificent historical landmark.
+Buc-ee's is privately held, so they can focus on customer happiness without worrying about short-term shareholder profits.|
         },
         {
             name    => "Andy's Frozen Custard",
@@ -582,7 +583,7 @@ sub main {
         {
             name    => "Best Western Route 66 Rail Haven",
             address => "203 S Glenstone Ave, Springfield, MO 65802",
-            blurb   => qq||
+            blurb   => qq|They have a gorgeous old sign here.|
         },
         {
             name    => "Steak 'n Shake",
@@ -597,7 +598,7 @@ sub main {
         {
             name    => "History Museum on the Square",
             address => "154 Park Central Square, Springfield, MO 65806",
-            blurb   => qq||
+            blurb   => qq|Some museums on the Route have flat images blown up so big you can see the pixels, and that's all they have. I call these "flat museums." They're funded with multi-million dollar taxpayer-funded grants, while the Route's legacy small businesses are dying. This museum has something better. Here you can find the original telegram from Cyrus Avery declaring on April 30, 1926, that the Route would be known as "66."|
         },
         {
             name    => "1984 Arcade",
@@ -607,7 +608,7 @@ sub main {
         {
             name    => "Rogue Barber Co. & D's Wax Factory",
             address => "639 W Walnut St, Springfield, MO 65806",
-            blurb   => qq||
+            blurb   => qq|It's a historic building. If you don't have any hair on your head, go in and get something waxed.|
         },
         {
             name    => "College Street Cafe",
@@ -617,7 +618,7 @@ sub main {
         {
             name    => "Route 66 Car Museum",
             address => "1634 W College St, Springfield, MO 65806",
-            blurb   => qq||
+            blurb   => qq|I heard this place might close soon. Enjoy it while you can.|
         },
         {
             name    => "Rockwood Motor Court",
@@ -625,18 +626,8 @@ sub main {
             blurb   => qq||
         },
         {
-            name    => "Red's Giant Hamburg",
-            address => "2301 W Sunshine St, Springfield, MO 65807",
-            blurb   => qq||
-        },
-        {
             name    => "Route 66 KOA Holiday",
             address => "5775 W Farm Rd 140, Springfield, MO 65802",
-            blurb   => qq||
-        },
-        {
-            name    => "R & S Floral Factory Warehouse",
-            address => "9323 MO-266, Springfield, MO 65802",
             blurb   => qq||
         },
         {
@@ -660,11 +651,6 @@ sub main {
             blurb   => qq||
         },
         {
-            name    => "Whee Hill",
-            address => "699 Oak St, Carthage, MO 64836",
-            blurb   => qq||
-        },
-        {
             name    => "66 Drive In",
             address => "17231 Old 66 Blvd, Carthage, MO 64836",
             blurb   => qq||
@@ -672,7 +658,7 @@ sub main {
         {
             name    => "SuperTam on 66",
             address => "221 W Main St, Carterville, MO 64835",
-            blurb   => qq||
+            blurb   => qq|Some places have been many things through the years, but they're usually only one thing at a time. This place is many things at a time. Something about Superman and ice cream.|
         },
         {
             name    => "Route 66 Center",
@@ -697,12 +683,12 @@ sub main {
         {
             name    => "Cars on the Route Kan-O-Tex Service Station",
             address => "199 N Main St, Galena, KS 66739",
-            blurb   => qq||
+            blurb   => qq|The vehicular inspiration for Tow Mater, the tow truck from Pixar's Cars, is here.|
         },
         {
             name    => "Gearhead Curios",
             address => "520 Main St, Galena, KS 66739",
-            blurb   => qq||
+            blurb   => qq|If we see the journey down Route 66 as a story, we're one-third of the way through. Breaking into Act II. The hero accepts the call to adventure! Things are about to get weird. Route 66 is not really a road anymore. Nowadays, Route 66 is a collective project to preserve, restore, and revive the art, architecture, and history of midcentury America. Aaron Perry from Gearhead Curios understands this far better than most.|
         },
         {
             name    => "Galena Mining & Historical Museum",
@@ -722,7 +708,7 @@ sub main {
         {
             name    => "Baxter Springs Heritage Center & Museum",
             address => "740 East Ave, Baxter Springs, KS 66713",
-            blurb   => qq||
+            blurb   => qq|I haven't actually checked this place out yet, but I've seen photos of a freaky painting of a gunfight that lives here. I gotta see this one in person sometime.|
         },
         {
             name    => "Route 66 Visitors Center",
@@ -732,12 +718,12 @@ sub main {
         {
             name    => "Dallas' Dairyette",
             address => "103 N Main St, Quapaw, OK 74363",
-            blurb   => qq||
+            blurb   => qq|In my video "Route 66 from Carthage to Catoosa, April 16, 2025," I asked six middle-school students if they'd ever heard of the American Dream. They all said no. I hope that was because they're like fish who don't know that they're swimming in something called "water." Even so, we must teach the next generation not to take prosperity for granted. Poverty and suffering is humanity's default state. Wealth and happiness is a rare exception in human history.|
         },
         {
             name    => "Dairy King",
             address => "100 N Main St, Commerce, OK 74339",
-            blurb   => qq||
+            blurb   => qq|The current owners took over this place in 1980 and I don't think their prices have been updated since. Last time I was here, the lady accidentally charged me $2.50 for an $8.50 order. When I pointed out the error, she used a calculator to determine the amount I still had left to pay. But if I'm ever lucky enough to reach her age, I'll be satisfied if I have half of her mental acuity. Her elderly son gets up every day at 3am to run 10 miles, and he rides around in the only car ever offered with a factory flame job: a Chrysler PT Cruiser.|
         },
         {
             name    => "Waylan's Ku-Ku",
@@ -747,22 +733,22 @@ sub main {
         {
             name    => "Coleman Theater",
             address => "103 N Main St, Miami, OK 74354",
-            blurb   => qq||
+            blurb   => qq|It's a gorgeous, old, zillion-dollar theater in the middle of nowhere.|
         },
         {
             name    => "Route 66 Sidewalk Hwy",
             address => "S 540 Rd, Miami, OK 74354",
-            blurb   => qq||
-        },
-        {
-            name    => "Clanton's Cafe",
-            address => "319 E Illinois Ave, Vinita, OK 74301",
-            blurb   => qq||
+            blurb   => qq|I wouldn't recommend actually driving down this piece of original road, but go take a look at it.|
         },
         {
             name    => "Crosstar Flag and Tag Museum",
             address => "103 S Central Ave, Afton, OK 74331",
-            blurb   => qq||
+            blurb   => qq|Some things are better left unexplained.|
+        },
+        {
+            name    => "Clanton's Cafe",
+            address => "319 E Illinois Ave, Vinita, OK 74301",
+            blurb   => qq|I haven't tried the food here yet, but any restaurant with a giant sign that just says "EAT" on it gets to be in this book.|
         },
         {
             name    => "Center Theater",
@@ -777,32 +763,27 @@ sub main {
         {
             name    => "Hi-Way Cafe and Western Motel",
             address => "437918 US-60, Vinita, OK 74301",
-            blurb   => qq||
-        },
-        {
-            name    => "Underground Pedestrian Mural",
-            address => "600 Walnut St, Chelsea, OK 74016",
-            blurb   => qq||
+            blurb   => qq|Big Bill the Muffler Man, the Big Indian, and Big Al the Chef are all here.|
         },
         {
             name    => "Ed Galloway's Totem Pole Park",
             address => "21300 OK-28A, Chelsea, OK 74016",
-            blurb   => qq||
+            blurb   => qq|One man's weird way of paying tribute to the First Nations peoples of the Americas.|
         },
         {
             name    => "Annie's Diner",
             address => "12015 Poplar St, Claremore, OK 74017",
-            blurb   => qq||
+            blurb   => qq|It's closed now, but I did get some good corn nuggets here once.|
         },
         {
             name    => "J.M. Davis Arms & Historical Museum",
             address => "330 N JM Davis Blvd, Claremore, OK 74017",
-            blurb   => qq||
+            blurb   => qq|If you're visiting from some un-American place where you can't have guns, be sure to check this place out. You'll be sick of guns by the time you leave.|
         },
         {
             name    => "Blue Whale of Catoosa",
             address => "2600 OK-66, Catoosa, OK 74015",
-            blurb   => qq||
+            blurb   => qq|It's a big blue whale. It looks good at night. It might still be under renovation, but you can see it from the road.|
         },
         {
             name    => "Tally's Good Food Cafe",
@@ -810,23 +791,8 @@ sub main {
             blurb   => qq||
         },
         {
-            name    => "Golden Driller Statue",
-            address => "4145 E 21st St, Tulsa, OK 74114",
-            blurb   => qq||
-        },
-        {
             name    => "The Campbell Hotel",
             address => "2636 E 11th St, Tulsa, OK 74104",
-            blurb   => qq||
-        },
-        {
-            name    => "Circle Cinema",
-            address => "10 S Lewis Ave, Tulsa, OK 74104",
-            blurb   => qq||
-        },
-        {
-            name    => "The Outsiders House Museum",
-            address => "731 N St Louis Ave, Tulsa, OK 74106",
             blurb   => qq||
         },
         {
@@ -837,22 +803,22 @@ sub main {
         {
             name    => "Buck Atom's Cosmic Curios on 66",
             address => "1347 E 11th St, Tulsa, OK 74120",
-            blurb   => qq||
+            blurb   => qq|Mary Beth Babcock is another name you should remember. She's at the center of the modern-day Route 66 revival. She's the dreamer behind the long strip of Muffler Men in Tulsa now known as the Land of the Giants. Buck Atom. Stella Atom. Cowboy Bob. Rosie the Riveter. Meadow Gold Mack.|
         },
         {
             name    => "Buck's Vintage",
             address => "1317 E 11th St, Tulsa, OK 74120",
-            blurb   => qq||
+            blurb   => qq|A carefully curated collection of the coolest vintage stuff you'll ever find. Wasteland Firebird placed an engraved brick at the base of Cowboy Bob.|
         },
         {
             name    => "Meadow Gold Mack",
             address => "1306 E 11th St, Tulsa, OK 74120",
-            blurb   => qq||
+            blurb   => qq|Great work from local artists.|
         },
         {
-            name    => "Swirl 66",
-            address => "1802 S Cincinnati Ave, Tulsa, OK 74119",
-            blurb   => qq||
+            name    => "Toynbee Tile",
+            address => "E 6th St & S Boston Ave, Tulsa, OK 74103",
+            blurb   => qq|Cross in the crosswalk, looking down at the ground. There is a small linoleum mosaic embedded in the asphalt. These were the first linoleum asphalt mosaics. They have been mysteriously appearing since the early 80s.|
         },
         {
             name    => "Cyrus Avery Centennial Plaza",
@@ -880,11 +846,6 @@ sub main {
             blurb   => qq||
         },
         {
-            name    => "Dak's Market",
-            address => "309 N Mission St, Sapulpa, OK 74066",
-            blurb   => qq||
-        },
-        {
             name    => "Happy Burger",
             address => "215 N Mission St, Sapulpa, OK 74066",
             blurb   => qq||
@@ -892,7 +853,7 @@ sub main {
         {
             name    => "Gasoline Alley Classics",
             address => "24 N Main St, Sapulpa, OK 74066",
-            blurb   => qq||
+            blurb   => qq|There's a friendly competition going on between Michael Jones of Gasoline Alley Classics and Aaron Perry of Gearhead Curios to have the best bathroom on Route 66. Everyone agrees that the third best is Buc-ee's.|
         },
         {
             name    => "Heart of Route 66 Auto Museum",
@@ -910,11 +871,6 @@ sub main {
             blurb   => qq||
         },
         {
-            name    => "Bristow Route 66 Toy Museum",
-            address => "118 N Main St, Bristow, OK 74010",
-            blurb   => qq||
-        },
-        {
             name    => "Bristow Train Depot and Museum",
             address => "1 Railroad Pl, Bristow, OK 74010",
             blurb   => qq||
@@ -927,12 +883,12 @@ sub main {
         {
             name    => "Route 66 Spirit of America Museum",
             address => "220 W Main St, Stroud, OK 74079",
-            blurb   => qq||
+            blurb   => qq|If you've been searching for the American Dream, you just found it.|
         },
         {
             name    => "Skyliner Motel",
             address => "717 W Main St, Stroud, OK 74079",
-            blurb   => qq||
+            blurb   => qq|During The Great Route 66 Centennial Convergence, we sold out this place for the first time since its recent renovation.|
         },
         {
             name    => "Route 66 Bowl",
@@ -940,14 +896,9 @@ sub main {
             blurb   => qq||
         },
         {
-            name    => "Route 66 Interpretive Center",
-            address => "400 E 1st St, Chandler, OK 74834",
-            blurb   => qq||
-        },
-        {
             name    => "McJerry's Route 66 Gallery",
             address => "306 Manvel Ave, Chandler, OK 74834",
-            blurb   => qq||
+            blurb   => qq|I think Jerry McClanahan might have written some little guide book for Route 66, but the real reason to stop here is his amazing painting 666 EXPRESS.|
         },
         {
             name    => "Westfall Phillips 66 Station",
@@ -962,7 +913,7 @@ sub main {
         {
             name    => "John's Place Museum",
             address => "13441 OK-66, Arcadia, OK 73007",
-            blurb   => qq||
+            blurb   => qq|I haven't made it here yet, but I've heard good things about it.|
         },
         {
             name    => "Chicken Shack",
@@ -977,7 +928,7 @@ sub main {
         {
             name    => "Pops 66",
             address => "660 OK-66, Arcadia, OK 73007",
-            blurb   => qq||
+            blurb   => qq|I'm a connoisseur of soda pop, and I highly recommend this place. If you don't know what to try, I'd suggest a Moxie. If you think it tastes like medicine, that's because it originally was medicine. And if you think moxie is a cool word to name a soda after, you've got it backwards. The soda came first.|
         },
         {
             name    => "1889 Territorial School",
@@ -985,23 +936,8 @@ sub main {
             blurb   => qq||
         },
         {
-            name    => "Bricktown Entertainment District",
-            address => "111 S Mickey Mantle Dr, Oklahoma City, OK 73104",
-            blurb   => qq||
-        },
-        {
-            name    => "Classen Inn",
-            address => "820 N Classen Blvd, Oklahoma City, OK 73106",
-            blurb   => qq||
-        },
-        {
             name    => "Tower Theatre",
             address => "425 NW 23rd St, Oklahoma City, OK 73103",
-            blurb   => qq||
-        },
-        {
-            name    => "Gold Dome Bank Building",
-            address => "1112 NW 23rd St, Oklahoma City, OK 73106",
             blurb   => qq||
         },
         {
@@ -1027,7 +963,7 @@ sub main {
         {
             name    => "Sid's Diner",
             address => "300 S Choctaw Ave, El Reno, OK 73036",
-            blurb   => qq||
+            blurb   => qq|Get the onion burger. If this place is busy, closed, or just too hip for you, try Jobe's down the street.|
         },
         {
             name    => "The Filling Station",
@@ -1037,12 +973,12 @@ sub main {
         {
             name    => "Jobe's Country Boy Drive-In",
             address => "1220 Sunset Dr, El Reno, OK 73036",
-            blurb   => qq||
+            blurb   => qq|Get the onion burger.|
         },
         {
             name    => "Flat Giants Display",
             address => "10000 E 1020 Rd, Calumet, OK 73014",
-            blurb   => qq||
+            blurb   => qq|A three-dimensional display would certainly have been better than this two-dimensional display, but this two-dimensional display is far, far better than a one-dimensional display would have been. So be thankful for the dimensions you've got.|
         },
         {
             name    => "Indian Trading Post",
@@ -1055,29 +991,19 @@ sub main {
             blurb   => qq||
         },
         {
-            name    => "Gloria's Restaurant",
-            address => "104 E Main St, Hydro, OK 73048",
-            blurb   => qq||
-        },
-        {
             name    => "Lucille's Historic Highway Gas Station",
             address => "U.S. Route 66, Hydro, OK 73048",
             blurb   => qq||
         },
         {
-            name    => "Jerry's Diner",
-            address => "1000 E Main St, Weatherford, OK 73096",
-            blurb   => qq||
-        },
-        {
             name    => "Centennial Park",
             address => "N Broadway St, Weatherford, OK 73096",
-            blurb   => qq||
+            blurb   => qq|There is an astronaut Muffler Man here.|
         },
         {
             name    => "The Glancy Motel",
             address => "217 W Gary Blvd, Clinton, OK 73601",
-            blurb   => qq||
+            blurb   => qq|You can't stay here, but you can look at what's left, and imagine what it was like to stay here.|
         },
         {
             name    => "Oklahoma Route 66 Museum",
@@ -1102,17 +1028,17 @@ sub main {
         {
             name    => "National Route 66 & Transportation Museum",
             address => "2717 W 3rd St, Elk City, OK 73644",
-            blurb   => qq||
+            blurb   => qq|I wouldn't exactly call this a good museum. But it's a weird museum. And weird is good, right?|
         },
         {
             name    => "Sandhill Curiosity Shop",
             address => "201 S Sheb Wooley Ave, Erick, OK 73645",
-            blurb   => qq||
+            blurb   => qq|Harley Russell is here. He was the human side of the inspiration for the vehicular character Tow Mater from Pixar's Cars. They had to make a few changes to his personality, because it was a movie for kids.|
         },
         {
             name    => "Sam's Town on 66",
             address => "401 W Roger Miller Blvd, Erick, OK 73645",
-            blurb   => qq||
+            blurb   => qq|When we were here, a dirty-encrusted man came down the street, handed us bags of fresh pecans still in their shells, then walked away. Maybe that was Sam?|
         },
         {
             name    => "West Winds Motel",
@@ -1122,7 +1048,7 @@ sub main {
         {
             name    => "U-Drop Inn Cafe",
             address => "105 E 12th St Shamrock TX, 79079",
-            blurb   => qq||
+            blurb   => qq|There is a message made of hand-cut plastic letters embedded into the asphalt in front of this building.|
         },
         {
             name    => "Devil's Rope Barbed Wire Museum",
@@ -1131,7 +1057,12 @@ sub main {
         },
         {
             name    => "Restored 1929 Route 66 Gas Station",
-            address => "212 First St, McLean, TX 79057 and 66 Super Service Station, 3rd Ave, Alanreed, TX 79057",
+            address => "212 First St, McLean, TX 79057",
+            blurb   => qq||
+        },
+        {
+            name    => "Kaiser's Super Service Station",
+            address => "335.21219, -100.73465",
             blurb   => qq||
         },
         {
