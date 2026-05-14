@@ -1069,22 +1069,22 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Leaning Tower of Texas",
             address => "Groom, TX 79039",
-            blurb   => qq||
+            blurb   => qq|Why is it leaning? I dunno, it was probably aliens.|
         },
         {
             name    => "Buc-ee's",
             address => "9900 E I-40, Amarillo, TX 79118",
-            blurb   => qq||
+            blurb   => qq|If you want to try something weird and American, something that even a lot of Americans haven't tried, look for a Chick-O-Stick. Peanut butter and toasted coconut, no chocolate. Fresh ones are better, so buy them from a high-traffic business like Buc-ee's. If they're crunchy, they're fresh. If they're chewy or sticky, they're stale.|
         },
         {
             name    => "The Big Texan Steak Ranch & Brewery",
             address => "7701 I-40, Amarillo, TX 79118",
-            blurb   => qq||
+            blurb   => qq|Some places are just a gimmick, and that's fine. But this gimmick is also a great motel and the food is some of the best food on the entire Route. If you can stay in Amarillo long enough to eat here twice, do it. Some say The Big Texan is not actually on Route 66. I say the Big Texan is like the Eiffel Tower. If I were passing two blocks away from it, I'd make a point to stop by and check it out.|
         },
         {
             name    => "Slug Bug Ranch",
             address => "1415 Sunrise Dr, Amarillo, TX 79104",
-            blurb   => qq||
+            blurb   => qq|A miniature version of the Cadillac Ranch. Bring some spray paint. You're allowed to paint the cars.|
         },
         {
             name    => "Texas Route 66 Visitor Center",
