@@ -1685,14 +1685,15 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq||,
         },
         {
-            name    => "Historic Road Runner's Retreat",
-            address => "Chambless, CA 92304",
-            blurb   => qq||,
-        },
-        {
             name    => "Guardian Lion East",
             address => "National Trails Hwy, Amboy, CA 92304",
-            blurb   => qq||,
+            blurb   => qq|Anyone can spray paint a bridge overpass. Only a true genius can hand-carve two multi-ton lions out of marble, transport and install them with no one noticing, leave people confused, and make one of them disappear for the entire year of 2019 for some reason.|,
+        },
+        {
+            name    => "Road Runner's Retreat sign",
+            address => "Chambless, CA 92304",
+            blurb   =>
+qq|This one is out of order for a reason. If you've navigated the road closures and construction detours and made it to Guardian Lion East, you can probably find the Road Runner's Retreat sign. Head back the way you came, five miles east on 66. Do not make the left onto Kelbaker Rd. Instead, drive around the road closed signs. The road is in great condition all the way to the Retreat sign. Those road closed signs should really be moved back a couple miles. Beyond the Retreat sign, road conditions are anyone's guess. Recently restored, this sign even lights up sometimes in the evenings.|,
         },
         {
             name    => "Guardian Lion West",
@@ -1702,37 +1703,37 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Roy's Motel & Cafe",
             address => "87520 National Trails Hwy, Amboy, CA 92304",
-            blurb   => qq||,
+            blurb   => qq|The most iconic operating gas station on Route 66. They made a cake for The Great Route 66 Centennial Convergence. It had a picture of my face on it. Since they clearly and properly recognize my eminence and genius, I might also permit them to construct a Muffler Man in my image.|,
         },
         {
             name    => "Former Whiting Brothers Gas Station",
             address => "68517 County Rd 66, Ludlow, CA 92338",
-            blurb   => qq||,
+            blurb   => qq|People used to live and work in these buildings. They lived entire lives here.|,
         },
         {
             name    => "Ludlow Cafe",
             address => "68315 National Trails Hwy, Ludlow, CA 92338",
-            blurb   => qq||,
+            blurb   => qq|I've never made it to this place during business hours, but I'm still looking forward to it.|,
         },
         {
-            name    => "Whiting Brothers Service / Tony's Spaghetti Building",
+            name    => "Whiting Brothers Service and Tony's Spaghetti Building",
             address => "46756 National Trails Hwy, Newberry Springs, CA 92365",
-            blurb   => qq||,
+            blurb   => qq|Attachment leads to suffering.|,
         },
         {
             name    => "Bagdad Cafe",
             address => "46548 National Trails Hwy, Newberry Springs, CA 92365",
-            blurb   => qq||,
+            blurb   => qq|This place is beloved by weird German tourists because of the 1987 film Bagdad Cafe. That film is about weird German tourists finding their home-away-from-home at this place. Owner Andrea Pruett slept on a mattress on the floor here while rain dripped through the leaky roof. She did this to keep the place alive for you and me. She's no longer with us. Leave a tip in the jar.|,
         },
         {
             name    => "Sand-Swallowed Abandoned Homes",
             address => "Newberry Rd & Palma Vista Rd, Newberry Springs, CA 92365",
-            blurb   => qq||,
+            blurb   => qq|I haven't found these buildings yet, but they tell me you can find them just beyond this intersection. Don't drive in sand of any depth, unless you're prepared to get stuck.|,
         },
         {
             name    => "The Barn",
             address => "44560 National Trails Hwy, Newberry Springs, CA 92365",
-            blurb   => qq||,
+            blurb   => qq|Like Roy's Cafe, The Barn always treats me like the celebrity that I am. I'm sure they'll be nice to you peons, too.|,
         },
         {
             name    => "The Russian House",
@@ -1767,7 +1768,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Liberty Sculpture Park",
             address => "37570 Yermo Rd, Yermo, CA 92398",
-            blurb   => qq||,
+            blurb   => qq|Communism simply doesn't work. Capitalism creates inequality, but overall, it works best for everyone. World GDP sat still for all of human history. Then capitalism came along and made that graph look like a hockey stick.|,
         },
         {
             name    => "EddieWorld",
@@ -1802,7 +1803,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Barstow Train McDonald's",
             address => "1611 E Main St, Barstow, CA 92311",
-            blurb   => qq||,
+            blurb   => qq|It's just a McDonalds, but the dining rooms are made of real train cars.|,
         },
         {
             name    => "Mojave River Valley Museum",
@@ -1812,12 +1813,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Harvey House",
             address => "685 N 1st Ave, Barstow, CA 92311",
-            blurb   => qq||,
-        },
-        {
-            name    => "20 Mule Team Museum",
-            address => "26962 Twenty Mule Team Rd, Boron, CA 93516",
-            blurb   => qq||,
+            blurb   => qq|There is a tiny linoleum mosaic embedded in the asphalt on the road out in front of this place.|,
         },
         {
             name    => "Elmer's Bottle Tree Ranch",
@@ -1837,7 +1833,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Santa Fe Trading Company",
             address => "15464 7th St, Victorville, CA 92395",
-            blurb   => qq||,
+            blurb   => qq|This has been a family-owned business since forever. It used to be a gas station, then it was a candy store, now it's... whatever this is. They make their own pomegranate jelly, if that helps.|,
         },
         {
             name    => "First Original McDonald's Museum",
@@ -1857,7 +1853,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Cucamonga Service Station",
             address => "9670 Foothill Blvd, Rancho Cucamonga, CA 91730",
-            blurb   => qq||,
+            blurb   => qq|There might be a custom brick here from Wasteland Firebird and The Great Route 66 Centennial Convergence.|,
         },
         {
             name    => "The Sycamore Inn",
@@ -1867,72 +1863,82 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Magic Lamp Inn Restaurant",
             address => "8189 Foothill Blvd, Rancho Cucamonga, CA 91730",
-            blurb   => qq||,
+            blurb   => qq|This place has a strict dress code and no mobile phones are allowed. I hope my leather jacket covered in paint marker art summarizing my entire philosophy of life in ten simple principles is ok.|,
         },
         {
             name    => "The Donut Man",
             address => "915 E Route 66, Glendora, CA 91741",
-            blurb   => qq||,
-        },
-        {
-            name    => "690 E Foothill Blvd",
-            address => "Azusa, CA 91702",
-            blurb   => qq||,
+            blurb   => qq|My philosophy of life, principle #1:
+I AM CONSCIOUS.
+I know this for sure.|,
         },
         {
             name    => "Windmill Denny's",
             address => "7 E Huntington Dr, Arcadia, CA 91006",
-            blurb   => qq||,
+            blurb   => qq|My philosophy of life, principle #2:
+HAPPINESS IS GOOD.
+I know this for sure, too.|,
         },
         {
             name    => "Saga Motor Hotel",
             address => "1633 E Colorado Blvd, Pasadena, CA 91106",
-            blurb   => qq||,
+            blurb   => qq|My philosophy of life, principle #3:
+I CAN USUALLY TRUST MY SENSES.
+I have to either believe this, or choose not to function.|,
         },
         {
             name    => "Shakers",
             address => "601 Fair Oaks Ave, South Pasadena, CA 91030",
-            blurb   => qq||,
+            blurb   => qq|My philosophy of life, principle #4:
+THE LAWS OF NATURE ARE CONSISTENT.
+I have to either believe this, or choose not to function.|,
         },
         {
             name    => "Fair Oaks Pharmacy & Soda Fountain",
             address => "1526 Mission St, South Pasadena, CA 91030",
-            blurb   => qq||,
-        },
-        {
-            name    => "Rialto Theatre",
-            address => "1023 Fair Oaks Ave, South Pasadena, CA 91030",
-            blurb   => qq||,
+            blurb   => qq|My philosophy of life, principle #5:
+THE LAWS OF HUMAN NATURE ARE CONSISTENT.
+This implies that we can figure out some rules of ethics, virtue, and morality.|,
         },
         {
             name    => "Galco's Old World Grocery",
             address => "5702 York Blvd, Los Angeles, CA 90042",
-            blurb   => qq||,
+            blurb   => qq|My philosophy of life, principle #6:
+REASON IS HOW WE ACQUIRE KNOWLEDGE.
+Deductive logic, like math, and inductive reasoning, like science, are how we understand the universe and how we understand ourselves.|,
         },
         {
             name    => "Highland Park Bowl",
             address => "5621 N Figueroa St, Los Angeles, CA 90042",
-            blurb   => qq||,
+            blurb   => qq|My philosophy of life, principle #7:
+FREEDOM IS HOW WE ACHIEVE HAPPINESS.
+Most people agree that freedom makes them happy.|,
         },
         {
             name    => "La Fuente Restaurant",
             address => "5552 N Figueroa St, Los Angeles, CA 90042",
-            blurb   => qq||,
+            blurb   => qq|My philosophy of life, principle #8:
+ECONOMIC FREEDOM IS HOW WE ACHIEVE PROSPERITY.
+Capitalism works. I define capitalism as "economic freedom," not "cronyist plutocracy." I assure you, I hate cronyist plutocracy as much as anyone. Capitalism doesn't exist to hold poor people down. It exists to let brilliant people do brilliant things.|,
         },
         {
             name    => "Cielito Lindo",
             address => "E-23 Olvera St, Los Angeles, CA 90012",
-            blurb   => qq||,
+            blurb   => qq|My philosophy of life, principle #9:
+FREEDOM IS A POSITIVE-SUM GAME.
+If two people agree to some sort of exchange, or relationship, whether it's financial, or emotional, they do it because they both believe it will benefit them. Most of the time, they are both right. They do both benefit. That means that every transaction that happens makes the world a slightly better place.|,
         },
         {
             name    => "Million Dollar Theater",
             address => "307 S Broadway, Los Angeles, CA 90013",
-            blurb   => qq||,
+            blurb   => qq|My philosophy of life, principle #10:
+CREATE VALUE.
+It took me years to figure out a way to summarize my entire philosophy in a way that it would fit on a bumper sticker. If you gain nothing else from my existence in this universe, please take these two words with you and keep them handy in your mind. Steal these words, copy these words, say these words. Create value.|,
         },
         {
-            name    => "Clifton's",
+            name    => "Clifton's building",
             address => "648 S Broadway, Los Angeles, CA 90014",
-            blurb   => qq||,
+            blurb   => qq|This spot is described as the "real" end of Route 66. But for a climax to our Route 66 journey, and our Route 66 story, I think we can do better. Keep going, it's about to get good. The closing image of our story should mirror the opening image in some way.|,
         },
         {
             name    => "The Orpheum Theatre",
@@ -1947,12 +1953,12 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Petersen Automotive Museum",
             address => "6060 Wilshire Blvd, Los Angeles, CA 90036",
-            blurb   => qq||,
+            blurb   => qq|The best car museum on Earth.|,
         },
         {
             name    => "Tesla Diner",
             address => "7001 Santa Monica Blvd, Los Angeles, CA 90038",
-            blurb   => qq||,
+            blurb   => qq|Retrofuturistic like nothing you've ever seen before.|,
         },
         {
             name    => "The Formosa",
@@ -1972,37 +1978,32 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Tail O' the Pup",
             address => "8512 Santa Monica Blvd, West Hollywood, CA 90069",
-            blurb   => qq||,
+            blurb   => qq|I discovered this place when I was watching old episodes of The Rockford Files. They stopped here in the first episode. I had to know if it still existed. That led me to Alison Martino's social media community Vintage Los Angeles. She did a report on the place, as it was being restored and moved. I visited it here, in its new location, as soon as it opened. Pay attention, because there is a secret door around here somewhere.|,
         },
         {
             name    => "NORMS Restaurant",
             address => "470 N La Cienega Blvd, West Hollywood, CA 90048",
-            blurb   => qq||,
+            blurb   => qq|This is the oldest NORMS diner.|,
         },
         {
             name    => "Edelweiss Chocolates",
             address => "444 N Canon Dr, Beverly Hills, CA 90210",
-            blurb   => qq||,
-        },
-        {
-            name    => "Cafe 50's",
-            address => "11623 Santa Monica Blvd, Los Angeles, CA 90025",
-            blurb   => qq||,
+            blurb   => qq|Vintage Los Angeles led me here, too.|,
         },
         {
             name    => "Mel's Drive-In",
             address => "1670 Lincoln Blvd, Santa Monica, CA 90404",
-            blurb   => qq||,
+            blurb   => qq|The last great diner on Route 66.|,
         },
         {
             name    => "Cal Mar Hotel Suites",
             address => "220 California Ave, Santa Monica, CA 90403",
-            blurb   => qq||,
+            blurb   => qq|I have stayed in this midcentury masterpiece at least a dozen times. I highly recommend it.|,
         },
         {
             name    => "Santa Monica Pier",
-            address => "200 Santa Monica Pier, Santa Monica, CA 90401",
-            blurb   => qq||,
+            address => "Santa Monica, CA 90401",
+            blurb   => qq|There might be a small linoleum mosaic embedded in the asphalt at the crosswalk. The 66-To-Cali shack is the end of your journey. If you'd stopped at Clifton's, you would have missed out on this.|,
         },
     ];
     my $work_dir = './data';
