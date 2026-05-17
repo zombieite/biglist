@@ -15,6 +15,11 @@ sub main {
     my $page_break = "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
     my $addresses  = [
         {
+            name    => "Navy Pier",
+            address => "600 E Grand Ave, Chicago, IL 60611",
+            blurb   => qq|The new official beginning of Route 66. Some say it's ridiculous. The road itself never began here. I say it's perfect. The opening image of a story should be a bookend. A mirror for the closing image of the story. The story of Route 66 ends at a pier. Now it begins at a pier, too. The only thing here, so far, is a sign. Maybe someday I'll set up a little shack, and sell this book from it.|,
+        },
+        {
             name    => "Art Institute of Chicago",
             address => "111 S Michigan Ave, Chicago, IL 60603",
             blurb   => qq|Monet was surprised and overjoyed to wake up every day, like a puppy. His every stroke contains frivolity. He used to say, "I like to paint as a bird sings." Viewing a Monet is an active process. You can't properly appreciate a Monet while seated. You have to approach the painting, then step back, then look away, then look back. A work by Monet is a three dimensional object, just as much a sculpture as a painting. Van Gogh was a better artist, but Monet had more fun.|,
@@ -2108,7 +2113,7 @@ sub make_doc {
     open my $md, '>', $md_path or die "Can't write $md_path: $!";
 
     # Title page
-    print $md "Wasteland Firebird's Big List${line_break}of the Best Things On Route 66${line_break}by Wasteland Firebird (John Binns)${line_break}Second Edition Summer 2026 Centennial${line_break}";
+    print $md "Wasteland Firebird's Big List${line_break}of the Best Things On Route 66${line_break}by Wasteland Firebird (John Binns)${line_break}2026 Centennial Second Edition${line_break}";
     print $md $page_break;
 
     # Copyright page
@@ -2120,7 +2125,7 @@ sub make_doc {
     print $md $page_break;
 
     # Introduction pages
-    print $md qq|,
+    print $md qq|
 Prepare to be inspired
 ${line_break}
 On July 4, 1976, I wasn't even four years old. But, that year, I learned a big word. Bicentennial. Everyone was saying it so much. How could I not have learned it? "Bicentennial." It was spoken with such obvious reverence that my young ears paid attention.
@@ -2131,17 +2136,15 @@ Say it with me. "Semiquincentennial." Do any three-year-olds know that word? How
 ${line_break}
 Semi means half, quin means five, cent means hundred, ennial means years. The United States of America has now existed for half of 500 years.
 ${line_break}
-I was hoping for another Freedom Train, a Wagon Train Pilgrimage, NYC's Operation Sail, TV shows, special coins, special edition cars, fireworks, air shows, car shows, parades, and red-white-and-blue everything. A few of those things are happening, but something has definitely changed in the last fifty years. The reverence is gone.
+I was hoping for another Freedom Train, a Wagon Train Pilgrimage, NYC's Operation Sail, TV shows, special edition coins, special edition cars, fireworks, air shows, car shows, parades, and red-white-and-blue everything. A few of those things are happening, but something has definitely changed in the last fifty years. The reverence is gone.
 ${line_break}
-When I discovered that Route 66 would have its Centennial in the same year as America's Semiquincentennial, I went to work. I had to do something to bring that reverence back.
+When I discovered that Route 66 would have its Centennial in the same year as America's Semiquincentennial, I knew that I had to do something to bring that reverence back.
 ${line_break}
-I traveled Route 66 four times. I made a bunch of YouTube videos about it. I took a lot of notes. I drew up flyers for a free event I was calling The Great Route 66 Centennial Convergence. I made t-shirts and keychains based on hand-drawn art. I commissioned miniature "Muffler Man" action figures of myself. I promoted this event so much that I was kicked off of Facebook forever for being a "spammer."
+I traveled Route 66 four times. I made a lot of YouTube videos. I took a lot of notes. I set up a free Route 66 tour I called The Great Route 66 Centennial Convergence. I made flyers, t-shirts, and keychains based on my hand-drawn art. I commissioned miniature "Muffler Man" action figures of myself. I promoted the event so much that I was kicked off of Facebook forever for being a "spammer."
 ${line_break}
-Most importantly, I created the First Edition of this book. Like the t-shirts, keychains, and action figures, the First Edition was never for sale. It was free for Convergence participants. There are still a few copies floating around out there.
+And I created the first edition of this book. Like the t-shirts, keychains, and action figures, the first edition was never for sale. It was free for Convergence participants.
 ${line_break}
-The Great Route 66 Centennial Convergence came to an end on April 30, 2026. But people kept asking for copies of the book. So here it is. The Second Edition. You can buy it at wastelandfirebird.com. You might still manage to find a free copy, if you look hard enough. I always tell people to check the Route 66 of Chenoa IL Roadside Attraction Tourist Info booth. You never know what you might find in that thing.
-${line_break}
-Will there ever be another Convergence? I'll put it this way. I'll be traveling Route 66 as much as I can for the rest of my life. I'd be delighted if you, your friends, and your family, found me, followed me, and asked me questions, all along the way. But pay attention to my answers. And pay attention to my reverence.
+The Great Route 66 Centennial Convergence came to an end on April 30, 2026. But people kept asking for copies of the book. So here it is, with plenty of updates. You can buy this book at wastelandfirebird.com. You might still manage to get a copy of this book for free, if you look hard enough. Be sure to check the Route 66 of Chenoa IL Roadside Attraction Tourist Info booth. You never know what cool things people might leave there.
 ${line_break}
 Route 66 has always represented the American Dream. If we save Route 66, we save the American Dream. If we save the American Dream, we save America. If we save America, we save the world. Because the American Dream is not just America's dream. It's everyone's dream.
 ${line_break}
@@ -2152,17 +2155,19 @@ ${line_break}
     print $md qq|
 How to use this book
 ${line_break}
-I don't include any images of the locations mentioned in this book. I barely include any descriptions. That's intentional. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're just supposed to get into it.
+You can use this book on its own, or in conjunction with other guides.
 ${line_break}
-This book is a list of QR codes that represent online directions to each of my favorite places on Route 66. You can scan these QR codes with your phone by pointing the phone's camera at them. If you scan every QR code, and visit every place in this book, you will approximately follow Route 66. There is no app that you need to download.
+I barely include any images. I barely include any descriptions. That's intentional. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're supposed to be getting into it.
 ${line_break}
-If you want to follow Route 66 more exactly, you'll need to do more research. But be aware that there never was a single "Route 66." There have always been many "alignments" (alternate routes). And nowadays, much of what used to be known as "Route 66" consists of potholed roads, dirt roads, private roads, government roads, and dead ends. If you want to explore all of it, you'd better give yourself at least a year.
+This book is a list of addresses and QR codes that represent online directions to each of my favorite places on Route 66. You can enter each address manually into your navigation app. Or, you can scan the QR codes with your phone by pointing the phone's camera at them. If you visit every place in this book, you will be approximately following Route 66.
+${line_break}
+If you want to follow Route 66 more exactly, be aware that there never was a single "Route 66." There have always been many "alignments" (alternate routes). And nowadays, much of what used to be known as "Route 66" consists of potholed roads, dirt roads, private roads, government roads, and dead ends. If you want to explore every inch of every route that was ever known as "Route 66," you'd better give yourself at least a year.
 ${line_break}
 This book is laid out east-to-west. America's story goes east-to-west. Route 66 is the story of America. Driving west-to-east on Route 66 is like watching a movie backwards.
 ${line_break}
-Some of the passport-style books you'll find on the Route require small businesses to pay thousands of dollars for the privilege of being advertised in those books. I'm not saying that's a bad thing. I'm just saying it's something you should know. Many businesses along the Route have custom rubber "passport stamps." I've left an empty space beside all of the QR codes for those stamps, if you want to use them to mark your progress. You could also use those spaces for notes, signatures, stickers, or just big checkmarks.
+Many businesses along the Route have custom rubber stamps. I've left an empty space beside all of the QR codes for these stamps. You could also use those spaces for notes, signatures, stickers, or just big checkmarks. 
 ${line_break}
-No one paid to be in this book. This book is nothing more than a list of places and people that I love.
+Be aware that some of the "passport" books you'll find on the Route require small businesses to pay thousands of dollars for the privilege of being advertised in those books. No one paid to be in this book. This book is nothing more than a list of places and people that I love.
 ${line_break}
 |;
     print $md $page_break;
