@@ -2052,6 +2052,7 @@ sub generate_qr_codes {
     my ( $addresses, $output_dir ) = @_;
     my $count = 0;
     my $qrs;
+    my $past_midpoint = 0;
     for my $address_hashref (@$addresses) {
         my $place_name = $address_hashref->{name};
         my $address    = $address_hashref->{address};
@@ -2065,7 +2066,7 @@ sub generate_qr_codes {
         my $query    = uri_escape_utf8($address);
         my $maps_url = "https://www.google.com/maps/search/?api=1&query=$query";
 
-        # Generate the QR Code, Ecc => 1 is Error Correction Level L (Low), ModuleSize controls the pixel size of the blocks
+        # Generate the QR codes, Ecc => 1 is Error Correction Level L (Low), ModuleSize controls the pixel size of the blocks
         my $qrobj = GD::Barcode::QRcode->new( $maps_url, { Ecc => 1, ModuleSize => 4 } );
         print "$maps_url\n";
         if ($qrobj) {
@@ -2086,9 +2087,16 @@ sub generate_qr_codes {
             my $qr = $qrobj->plot();
             my ( $w, $h ) = $qr->getBounds();
             my $pad = 0;
-            if ( $count % 2 == 1 ) {
+
+            # Getting past the midpoint of the book, we want to switch the alternation.
+            # That's because we add an extra unnumbered midpoint page to the book.
+            if ( ( ( $count % 2 == 1 ) && ( !$past_midpoint ) ) || ( ( $count % 2 == 0 ) && ($past_midpoint) ) ) {
                 $pad = $w;
             }
+            if ( $place_name eq 'Midpoint Cafe and Gift Shop' ) {
+                $past_midpoint = 1;
+            }
+
             my $canvas = GD::Image->new( $w + $w, $h );
             my $white  = $canvas->colorAllocate( 255, 255, 255 );
             my $black  = $canvas->colorAllocate( 0,   0,   0 );
@@ -2098,9 +2106,7 @@ sub generate_qr_codes {
 
             # Label in blank area
             my $text = "Stamp / sticker / signature";
-
             my $font = gdTinyFont;
-
             my $text_x;
             if ( $pad == 0 ) {
 
@@ -2108,14 +2114,12 @@ sub generate_qr_codes {
                 $text_x = $w + 5;
             }
             else {
-
                 # QR on right, blank area on left
                 $text_x = 5;
             }
-
             my $text_y = 5;
-
             $canvas->string( $font, $text_x, $text_y, $text, $black );
+
             print $img_fh $canvas->png();
             close $img_fh;
             push( @$qrs, $filename );
@@ -2216,6 +2220,12 @@ ${line_break}
         if ($blurb) {
             print $md "$blurb\n";
             print $md $line_break;
+        }
+
+        # Here's where we insert the bonus midpoint page that causes the QR codes to change their alternation pattern above
+        if ( $place_name eq 'Midpoint Cafe and Gift Shop' ) {
+            print $md $page_break;
+            print $md "Midpoint bonus page!\n";
         }
 
         # Page break
