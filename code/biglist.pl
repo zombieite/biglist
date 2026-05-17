@@ -17,32 +17,32 @@ sub main {
         {
             name    => "Navy Pier",
             address => "600 E Grand Ave, Chicago, IL 60611",
-            blurb   => qq|The new official beginning of Route 66. Some say it's ridiculous. The road itself never began here. I say it's perfect. The opening image of a story should be a bookend. A mirror for the closing image of the story. The story of Route 66 ends at a pier. Now it begins at a pier, too. The only thing here, so far, is a sign. Maybe someday I'll set up a little shack, and sell this book from it.|,
+            blurb   => qq|The new official beginning of Route 66. Some say it's ridiculous. The road itself never began here. I say it's perfect. The opening image of a story should be a bookend, a mirror for the closing image of the story. The story of Route 66 ends at a pier. Now it begins at a pier, too. Maybe someday I'll set up a little shack here, and sell this book from it.|,
+        },
+        {
+            name    => "Cloud Gate mirrored bean sculpture",
+            address => "201 E Randolph St, Chicago, IL 60602",
+            blurb   => qq|Most people who travel Route 66 will only travel it once. So pay attention to the story that the road tells you.|,
         },
         {
             name    => "Art Institute of Chicago",
             address => "111 S Michigan Ave, Chicago, IL 60603",
-            blurb   => qq|Monet was surprised and overjoyed to wake up every day, like a puppy. His every stroke contains frivolity. He used to say, "I like to paint as a bird sings." Viewing a Monet is an active process. You can't properly appreciate a Monet while seated. You have to approach the painting, then step back, then look away, then look back. A work by Monet is a three dimensional object, just as much a sculpture as a painting. Van Gogh was a better artist, but Monet had more fun.|,
+            blurb   => qq|Monet's every stroke contains frivolity. He used to say, "I like to paint as a bird sings." Viewing a Monet is an active process. You can't properly appreciate a Monet while seated. You have to approach the painting, then step back, then look away, then look back. A work by Monet is a three dimensional object, just as much a sculpture as a painting. Van Gogh was a better artist, but Monet had more fun.|,
         },
         {
-            name    => "Cloud Gate",
-            address => "201 E Randolph St, Chicago, IL 60602",
-            blurb   => qq|This is a mirrored, bean-shaped sculpture. Be sure to walk under it.|,
-        },
-        {
-            name    => "Historic Illinois US 66 Route Signage",
+            name    => "Historic Route 66 signs and plaque",
             address => "E Adams St & S Michigan Ave, Chicago, IL",
-            blurb   => qq|There's a sign or two, there's a plaque, and if you look down at the crosswalk you might see a small linoleum mosaic embedded into the asphalt.|,
+            blurb   => qq|As you listen to the story of the road, you're also writing your own story. And you're the main character! Stand up tall, proud, and curious. You've been waiting your whole life for this day. A good story can change you. A good story can change the world.|,
         },
         {
             name    => "Lou Mitchell's",
             address => "565 W Jackson Blvd, Chicago, IL 60661",
-            blurb   => qq|The breakfasts here are magnificent.|,
+            blurb   => qq|Route 66 is more than just a road. It's more than just a fun vacation. Route 66 represents the idea of going West in search of a better life. Route 66 represents the American Dream.|,
         },
         {
             name    => "Lulu's Hot Dogs",
             address => "1000 S Leavitt St, Chicago, IL 60612",
-            blurb   => qq|You won't be able to eat everything you see on the Route. I still haven't eaten here. Whether you eat at these places or not, stop in, say hello, and drop a tip in the jar. The food itself doesn't matter. I put things on this list because they are beautiful, quirky, old, luxurious, or delicious. They don't have to be all of those things at once.|,
+            blurb   => qq|You won't be able to eat everything you see on the Route. I still haven't eaten here. Whether you eat at these places or not, stop in, say hello, and drop a tip in the jar. The food itself doesn't always matter. I put places on this list because they are beautiful, quirky, old, luxurious, or delicious. They don't have to be all of those things at once.|,
         },
         {
             name    => "Steak 'n Egger",
@@ -824,7 +824,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Toynbee Tile",
             address => "E 6th St & S Boston Ave, Tulsa, OK 74103",
-            blurb   => qq|Cross in the crosswalk, looking down at the ground. There is a small linoleum mosaic embedded in the asphalt. These were the first linoleum asphalt mosaics. They have been mysteriously appearing since the early 80s.|,
+            blurb   => qq|Cross in the crosswalks, looking down at the ground. There is a small linoleum mosaic embedded in the asphalt. Mosaics like these have been mysteriously appearing since the early 80s.|,
         },
         {
             name    => "Cyrus Avery Centennial Plaza",
@@ -2008,7 +2008,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
         {
             name    => "Santa Monica Pier",
             address => "Santa Monica, CA 90401",
-            blurb   => qq|There might be a small linoleum mosaic embedded in the asphalt at the crosswalk. The 66-To-Cali shack is the end of your journey. If you'd stopped at Clifton's, you would have missed out on this.|,
+            blurb   => qq|There is a small linoleum mosaic embedded in the asphalt at the crosswalk. The 66-To-Cali shack is the end of your journey.|,
         },
     ];
     my $work_dir = './data';
@@ -2171,6 +2171,7 @@ Be aware that some of the "passport" books you'll find on the Route require smal
 ${line_break}
 |;
     print $md $page_break;
+
     my $qr_num = 0;
     for my $address_hashref (@$addresses) {
         my $place_name = $address_hashref->{name};
@@ -2182,7 +2183,7 @@ ${line_break}
         }
 
         # Address (as plain paragraph). If you want it to be, say, a big bold title},
-        # define a style in reference.docx and switch to it later via a pandoc Lua filter.
+        # define a style in reference.docx and use it via a pandoc Lua filter.
         print $md "$place_name\n";
         print $md $line_break;
         print $md "$address\n";
@@ -2199,17 +2200,21 @@ ${line_break}
         print $md $page_break;
         $qr_num++;
     }
+
+    # Conclusion
+    print $md qq|
+Create value. Create value for people who pay you. That's work. Create value for people who don't pay you. That's kindness. Create value for people you like. That's friendship. Create value for people you don't like. That's self-preservation. Most of all, create value for yourself. That's happiness.
+${line_break}
+|;
+    print $md $page_break;
+
     close $md or die "Error closing $md_path: $!";
 
-    # Your print-on-demand formatting is controlled by this DOCX.
-    # Make a DOCX that matches the POD template (margins, page size, headers/footers, fonts, etc).
-    # Pandoc calls this a "reference docx".
+    # Use a DOCX that matches the print on demand template (margins, page size, headers/footers, fonts, etc).
+    # Pandoc will use this as a reference.
     my $reference_docx = './data/wasteland_firebirds_big_list-template.docx';
-
-    #    Convert Markdown -> DOCX using reference.docx for layout
-    #    This is the key: reference_docx defines page size/margins/fonts like your POD template.
     my @cmd = ( 'pandoc', $md_path, '-o', $out_docx, '--reference-doc=' . $reference_docx, );
     print "Running:\n  " . join( ' ', map { /\s/ ? qq("$_") : $_ } @cmd ) . "\n";
-    system(@cmd) == 0 or die "pandoc failed (exit " . ( $? >> 8 ) . ")\n";
+    system(@cmd) == 0 or die "pandoc failed";
 }
 main();
