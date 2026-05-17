@@ -33,7 +33,7 @@ sub main {
         {
             name    => "Historic Route 66 signs and plaque",
             address => "E Adams St & S Michigan Ave, Chicago, IL",
-            blurb   => qq|As you listen to the story of the road, you're also writing your own story. And you're the main character! Stand up tall, proud, and curious. You've been waiting your whole life for this day. A good story can change you. A good story can change the world.|,
+            blurb   => qq|As you listen to the story of the road, you're also writing your own story. And you're the main character! Stand up tall, proud, and curious. You've been waiting your whole life for this day. A good story can change you. A good story can change the world. So write us a good story.|,
         },
         {
             name    => "Lou Mitchell's",
