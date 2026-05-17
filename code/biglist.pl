@@ -2053,9 +2053,18 @@ sub generate_qr_codes {
             my ( $w, $h ) = $qr->getBounds();
             my $pad = 0;
 
-            # Getting past the midpoint of the book, we want to switch the alternation.
-            # That's because we add an extra unnumbered midpoint page to the book.
-            if ( ( ( $count % 2 == 1 ) && ( !$past_midpoint ) ) || ( ( $count % 2 == 0 ) && ($past_midpoint) ) ) {
+            # Sometimes the locations start on the right side, sometimes the left. And,
+            # getting past the midpoint of the book, we want to switch the alternation.
+            # That's because we add an extra unnumbered bonus midpoint page with a photo.
+            my $LEFT_SIDE        = 0;
+            my $RIGHT_SIDE       = 1;
+            my $side_to_start_on = $RIGHT_SIDE;    # adjust as needed
+            if (                                   #
+                ( ( $count % 2 == $side_to_start_on ) && ( !$past_midpoint ) )
+                ||                                 #
+                ( ( $count % 2 == !$side_to_start_on ) && ($past_midpoint) )
+              )
+            {
                 $pad = $w;
             }
             if ( $place_name eq 'Midpoint Cafe and Gift Shop' ) {
@@ -2070,7 +2079,7 @@ sub generate_qr_codes {
             $canvas->rectangle( 0, 0, $w + $w - 1, $h - 1, $black );
 
             # Label in blank area
-            my $text = "Stamp / sticker / signature";
+            my $text = "STAMP / STICKER / SIGNATURE";
             my $font = gdTinyFont;
             my $text_x;
             if ( $pad == 0 ) {
