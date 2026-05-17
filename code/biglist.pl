@@ -1,6 +1,7 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
+use GD qw(gdTinyFont);
 use GD::Barcode::QRcode;
 use URI::Escape qw(uri_escape_utf8);
 use File::Path  qw(make_path);
@@ -2094,6 +2095,27 @@ sub generate_qr_codes {
             $canvas->filledRectangle( 0, 0, $w + $pad, $h, $white );
             $canvas->copy( $qr, $pad, 0, 0, 0, $w, $h );
             $canvas->rectangle( 0, 0, $w + $w - 1, $h - 1, $black );
+
+            # Label in blank area
+            my $text = "Stamp/sticker/signature";
+
+            my $font = gdTinyFont;
+
+            my $text_x;
+            if ( $pad == 0 ) {
+
+                # QR on left, blank area on right
+                $text_x = $w + 5;
+            }
+            else {
+
+                # QR on right, blank area on left
+                $text_x = 5;
+            }
+
+            my $text_y = 5;
+
+            $canvas->string( $font, $text_x, $text_y, $text, $black );
             print $img_fh $canvas->png();
             close $img_fh;
             push( @$qrs, $filename );
