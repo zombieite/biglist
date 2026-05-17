@@ -973,11 +973,6 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq|Get the onion burger. If this place is busy, closed, or just too hip for you, try Jobe's down the street.|,
         },
         {
-            name    => "The Filling Station",
-            address => "120 S Choctaw Ave, El Reno, OK 73036",
-            blurb   => qq||,
-        },
-        {
             name    => "Jobe's Country Boy Drive-In",
             address => "1220 Sunset Dr, El Reno, OK 73036",
             blurb   => qq|Get the onion burger.|,
@@ -1777,11 +1772,6 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq||,
         },
         {
-            name    => "Pit Stop Bar & Grill",
-            address => "560 Victor St, Barstow, CA 92311",
-            blurb   => qq||,
-        },
-        {
             name    => "Barstow Train McDonald's",
             address => "1611 E Main St, Barstow, CA 92311",
             blurb   => qq|It's just a McDonalds, but the dining rooms are made of real train cars.|,
@@ -2173,19 +2163,20 @@ ${line_break}
 |;
     print $md $page_break;
 
-    my $qr_num = 0;
+    my $place_number = 0;    # Use this as zero-based array index first
     for my $address_hashref (@$addresses) {
         my $place_name = $address_hashref->{name};
         my $address    = $address_hashref->{address};
         my $blurb      = $address_hashref->{blurb};
-        my $qr_path    = File::Spec->catfile( $qr_dir, $qrs->[$qr_num] );
+        my $qr_path    = File::Spec->catfile( $qr_dir, $qrs->[$place_number] );
         if ( !-f $qr_path ) {
-            die "Missing QR file for '$qr_num': " . Dumper($qrs);
+            die "Missing QR file for '$place_number': " . Dumper($qrs);
         }
+        $place_number++;    # After incrementing, we can use this as a human-readable counter starting with one
 
         # Address (as plain paragraph). If you want it to be, say, a big bold title},
         # define a style in reference.docx and use it via a pandoc Lua filter.
-        print $md "$place_name\n";
+        print $md "$place_number: $place_name\n";
         print $md $line_break;
         print $md "$address\n";
 
@@ -2205,7 +2196,6 @@ ${line_break}
 
         # Page break
         print $md $page_break;
-        $qr_num++;
     }
 
     # Conclusion
