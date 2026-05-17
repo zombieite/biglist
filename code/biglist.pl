@@ -2083,7 +2083,6 @@ sub generate_qr_codes {
             my $font = gdTinyFont;
             my $text_x;
             if ( $pad == 0 ) {
-
                 # QR on left, blank area on right
                 $text_x = $w + 5;
             }
