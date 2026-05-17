@@ -1993,7 +1993,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
     print "Go to the footer and click it and Insert Page Number, ignoring the wrong start number.\n";
     print "Click Document, Section, Page Number, Start At.\n";
 	print "Add new sections for every state. Update the footer with the state name. You should only need to update it once for the entire section. Make page numbering continue from previous section.";
-    print "At Midpoint, add a new section break and restart page numbering as above, fixing the start number. Afterward, go back to using Contine From Previous Section.\n";
+    print "At Midpoint, add a new section break and restart page numbering as above, fixing the start number. Afterward, go back to using Continue From Previous Section.\n";
     print "Under Format, Body, Style, Font, choose Garamond. There is a gear icon also, bring character spacing in by 1%.";
 	print "Fix justification to be both left and right.\n";
     print "Add photos to the beginning, midpoint, and end.\n";
