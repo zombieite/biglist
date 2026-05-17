@@ -2083,6 +2083,7 @@ sub generate_qr_codes {
             my $font = gdTinyFont;
             my $text_x;
             if ( $pad == 0 ) {
+
                 # QR on left, blank area on right
                 $text_x = $w + 5;
             }
@@ -2092,6 +2093,17 @@ sub generate_qr_codes {
             }
             my $text_y = 5;
             $canvas->string( $font, $text_x, $text_y, $text, $black );
+
+            # Draw a little arrow
+            my $arrow_x = $text_x + ( length($text) * 5 ) + 3;
+            my $arrow_y = $text_y + 1;
+
+            # shaft
+            $canvas->line( $arrow_x + 2, $arrow_y, $arrow_x + 2, $arrow_y + 4, $black );
+
+            # arrowhead
+            $canvas->line( $arrow_x,     $arrow_y + 3, $arrow_x + 2, $arrow_y + 5, $black );
+            $canvas->line( $arrow_x + 4, $arrow_y + 3, $arrow_x + 2, $arrow_y + 5, $black );
 
             print $img_fh $canvas->png();
             close $img_fh;
