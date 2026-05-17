@@ -1909,7 +1909,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
         {
             name    => "Clifton's building",
             address => "648 S Broadway, Los Angeles, CA 90014",
-            blurb   => qq|This spot is described as the "real" end of Route 66. But for a climax to our Route 66 journey, and our Route 66 story, I think we can do better. Keep going, it's about to get good. The closing image of our story should mirror the opening image in some way.|,
+            blurb   => qq|This spot is described as the "real" end of Route 66. But for a climax to our Route 66 story, I think we can do better. Keep going, it's about to get good.|,
         },
         {
             name    => "The Orpheum Theatre",
@@ -1985,7 +1985,12 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
     ensure_dir($work_dir);
     my $qrs = generate_qr_codes( $addresses, $qr_dir );
     make_doc( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx, $line_break, $page_break );
-    print "Open DOCX in Pages.\nClick Document, Section, uncheck Left and Right are Different.\nClick Document, Document, Footer. Then go to the footer and click it and Insert Page Number. Do any other needed tweaks then export PDF.\n";
+    print "Open DOCX in Pages.\n";
+    print "Click Document, Section, uncheck Left and Right are Different.\n";
+    print "Click Document, Document, Footer. Then go to the footer and click it and Insert Page Number.\n";
+    print "Under Format, Body, Style, Font, choose Garamond. There is a gear icon also, bring character spacing in by 1%.";
+    print "Add photos to the beginning, midpoint, and end.\n";
+    print "Do any other needed tweaks. Export PDF.\n";
     system( 'open', $out_docx );
 }
 
