@@ -1989,7 +1989,9 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
     print "Click Document, Section, uncheck Left and Right are Different.\n";
     print "Click Document, Document, Footer. Then go to the footer and click it and Insert Page Number.\n";
     print "Under Format, Body, Style, Font, choose Garamond. There is a gear icon also, bring character spacing in by 1%.";
+	print "Fix justification to be both left and right.\n";
     print "Add photos to the beginning, midpoint, and end.\n";
+	print "Mess with footers and Sections to get the page numbering to start and stop correctly.\n";
     print "Do any other needed tweaks. Export PDF.\n";
     system( 'open', $out_docx );
 }
