@@ -21,9 +21,24 @@ sub main {
             blurb   => qq|The new official beginning of Route 66. Some say it's ridiculous. The road itself never began here. I say it's perfect. The opening image of a story should be a bookend, a mirror for the closing image of the story. The story of Route 66 ends at a pier. Now it begins at a pier, too. Maybe someday I'll set up a little shack here, and sell this book from it.|,
         },
         {
+            name    => "Billy Goat Tavern",
+            address => "Lower 430 North, N Michigan Ave, Chicago, IL 60611",
+            blurb   => qq||,
+        },
+        {
+            name    => "Ohio House Motel",
+            address => "600 N La Salle Dr, Chicago, IL 60654",
+            blurb   => qq|Room 110 has a hidden secret behind the mirror. Find out more by searching for "Room Attack" on Wasteland Firebird's YouTube channel.|,
+        },
+        {
             name    => "Cloud Gate mirrored bean sculpture",
             address => "201 E Randolph St, Chicago, IL 60602",
             blurb   => qq|Most people who travel Route 66 will only travel it once. So pay attention to the story that the road tells you.|,
+        },
+        {
+            name    => "Chicago Athletic Association Unbound Collection by Hyatt",
+            address => "12 S Michigan Ave, Chicago, IL 60603",
+            blurb   => qq|A cool, luxurious, renovated old hotel that has retained some of its sports club roots.|,
         },
         {
             name    => "Art Institute of Chicago",
@@ -730,7 +745,7 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
             name    => "Dairy King",
             address => "100 N Main St, Commerce, OK 74339",
             blurb   =>
-qq|The current owners took over this place in 1980 and I don't think their prices have been updated since. Last time I was here, the lady accidentally charged me $2.50 for an $8.50 order. When I pointed out the error, she used a calculator to determine the amount I still had left to pay. But if I'm ever lucky enough to reach her age, I'll be satisfied if I have half of her mental acuity. Her elderly son gets up every day at 3am to run 10 miles, and he rides around in the only car ever offered with a factory flame job: a Chrysler PT Cruiser.|,
+qq|The current owners took over this place in 1980 and I don't think their prices have been updated since. Last time I was here, the lady accidentally charged me \$2.50 for an \$8.50 order. When I pointed out the error, she used a calculator to determine the amount I still had left to pay. But if I'm ever lucky enough to reach her age, I'll be satisfied if I have half of her mental acuity. Her elderly son gets up every day at 3am to run 10 miles, and he rides around in the only car ever offered with a factory flame job: a Chrysler PT Cruiser.|,
         },
         {
             name    => "Waylan's Ku-Ku",
@@ -1981,24 +1996,26 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
     my $qr_dir   = './data/qr_codes/';
     my $out_docx = './data/wasteland_firebirds_big_list-base.docx';
     my $qr_width = '4.0in';
+    my $qrs      = [];
+    my $links    = [];
     set_up_qr_dir($qr_dir);
     ensure_dir($work_dir);
-    my $qrs = generate_qr_codes( $addresses, $qr_dir );
-    make_doc( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx, $line_break, $page_break );
+    generate_qr_codes_and_links( $addresses, $qr_dir, $qrs, $links );
+    make_doc( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $line_break, $page_break );
     print "Open DOCX in Pages.\n";
-	print "Manually choose a new font for all of the place names and addresses.\n";
+    print "Manually choose a new font for all of the place names and addresses.\n";
     print "Click Document, Document, Footer to add a footer.\n";
     print "Click Document, Section, uncheck Left and Right are Different.\n";
     print "Click Document, Section, uncheck Match Previous Section.\n";
-	print "In the document itself, click where you want to insert a section break (where you want page numbering to start/restart), then click Insert, Section Break.\n";
+    print "In the document itself, click where you want to insert a section break (where you want page numbering to start/restart), then click Insert, Section Break.\n";
     print "Go to the footer and click it and Insert Page Number, ignoring the wrong start number.\n";
     print "Click Document, Section, Page Number, Start At.\n";
-	print "Add new sections for every state. Update the footer with the state name. You should only need to update it once for the entire section. Make page numbering continue from previous section.";
+    print "Add new sections for every state. Update the footer with the state name. You should only need to update it once for the entire section. Make page numbering continue from previous section.";
     print "At Midpoint, add a new section break and restart page numbering as above, fixing the start number. Afterward, go back to using Continue From Previous Section.\n";
     print "Under Format, Body, Style, Font, choose Garamond. There is a gear icon also, bring character spacing in by 1%.";
-	print "Fix justification to be both left and right.\n";
+    print "Fix justification to be both left and right.\n";
     print "Add photos to the beginning, midpoint, and end.\n";
-	print "Mess with footers and Sections to get the page numbering to start and stop correctly.\n";
+    print "Mess with footers and Sections to get the page numbering to start and stop correctly.\n";
     print "Do any other needed tweaks. Export PDF.\n";
     system( 'open', $out_docx );
 }
@@ -2027,10 +2044,9 @@ sub set_up_qr_dir {
     closedir($dh);
 }
 
-sub generate_qr_codes {
-    my ( $addresses, $output_dir ) = @_;
-    my $count = 0;
-    my $qrs;
+sub generate_qr_codes_and_links {
+    my ( $addresses, $output_dir, $qrs, $links ) = @_;
+    my $count         = 0;
     my $past_midpoint = 0;
     for my $address_hashref (@$addresses) {
         my $place_name = $address_hashref->{name};
@@ -2121,7 +2137,8 @@ sub generate_qr_codes {
 
             print $img_fh $canvas->png();
             close $img_fh;
-            push( @$qrs, $filename );
+            push( @$qrs,   $filename );
+            push( @$links, $maps_url );
         }
         else {
             die "[$count] Error generating QR code for: $address\n";
@@ -2131,11 +2148,37 @@ sub generate_qr_codes {
 }
 
 sub make_doc {
-    my ( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx, $line_break, $page_break ) = @_;
+    my ( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $line_break, $page_break ) = @_;
 
-    # Build a Pandoc md file
+    # Build a Pandoc md file and an html file for the website
     my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
-    open my $md, '>', $md_path or die "Can't write $md_path: $!";
+    open my $md, '>', $md_path or die "Can't write '$md_path': $!";
+    my $html_path = File::Spec->catfile( $work_dir, 'index.html' );
+    open my $html, '>', $html_path or die "Can't write '$html_path': $!";
+
+    # Website header
+    my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
+    $year += 1900;
+    my @month_abbrevs = qw(JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC);
+    my $month_abbrev  = $month_abbrevs[$mon];
+    $mon += 1;
+    for my $unit ( $mon, $mday, $hour, $min, $sec ) { $unit = sprintf( '%02d', $unit ); }
+    print $html qq|
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasteland Firebird's Big List of the Best Things On Route 66</title>
+    <link rel="icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/biglist.css">
+</head>
+<body>
+<h1>Wasteland Firebird's Big List of the Best Things On Route 66</h1>
+<h2>A curious guide to the American Dream, updated twice yearly from the road</h2>
+<h3>Last updated $year-$month_abbrev-$mday</h3>
+<ol>
+|;
 
     # Title page
     print $md "Wasteland Firebird's Big List${line_break}of the Best Things On Route 66${line_break}by Wasteland Firebird (John Binns)${line_break}2026 Centennial Second Edition${line_break}";
@@ -2186,9 +2229,11 @@ I barely include any images. I barely include any descriptions. That's intention
 ${line_break}
 This book is a list of addresses and QR codes that represent online directions to each of my favorite places on Route 66. You can enter each address manually into your navigation app. Or, you can scan the QR codes with your phone by pointing the phone's camera at them. If you visit every place in this book, you will be approximately following Route 66.
 ${line_break}
-If you want to follow Route 66 more exactly, be aware that there never was a single "Route 66." There have always been many "alignments" (alternate routes). And nowadays, much of what used to be known as "Route 66" consists of potholed roads, dirt roads, private roads, government roads, and dead ends. If you want to explore every inch of every route that was ever known as "Route 66," you'd better give yourself at least a year.
+If you want to follow Route 66 more exactly, be aware that there never was a single "Route 66." There have always been many "alignments" (alternate routes). And nowadays, much of what used to be known as "Route 66" consists of potholed roads, dirt roads, private roads, government roads, and dead ends.
 ${line_break}
-This book is laid out east-to-west. America's story goes east-to-west. Route 66 is the story of America. Driving west-to-east on Route 66 is like watching a movie backwards.
+If you're using nothing but this book, you could explore the Route in a week or two. But I'd recommend taking at least three weeks. If you want to explore every inch of every route that was ever known as "Route 66," you'd better give yourself several months.
+${line_break}
+This book is laid out east-to-west. That's the direction America's story goes. Route 66 is the story of America. Driving west-to-east on Route 66 is like watching a movie backwards.
 ${line_break}
 Many businesses along the Route have custom rubber stamps. I've left an empty space beside all of the QR codes for these stamps. You could also use those spaces for notes, signatures, stickers, or just big checkmarks. 
 ${line_break}
@@ -2197,7 +2242,7 @@ ${line_break}
 |;
     print $md $page_break;
 
-    my $place_number = 0;    # Use this as zero-based array index first
+    my $place_number = 0;    # Use this as zero-based array index for now
     for my $address_hashref (@$addresses) {
         my $place_name = $address_hashref->{name};
         my $address    = $address_hashref->{address};
@@ -2206,7 +2251,25 @@ ${line_break}
         if ( !-f $qr_path ) {
             die "Missing QR file for '$place_number': " . Dumper($qrs);
         }
-        $place_number++;    # After incrementing, we can use this as a human-readable counter starting with one
+
+        # Website
+
+        print $html qq|
+    <li>
+        <div class="place">
+            <div class="place-name">
+                $place_name
+            </div>
+            <div class="place-address">
+                <a href="$links->[$place_number]">$address</a>
+            </div>
+        </div>
+    </li>
+|;
+
+        $place_number++;    # Now that we have incremented this, we can use it below as a human-readable counter starting at one
+
+        # Book
 
         # Address (as plain paragraph). If you want it to be, say, a big bold title},
         # define a style in reference.docx and use it via a pandoc Lua filter.
@@ -2239,7 +2302,14 @@ ${line_break}
 |;
     print $md $page_break;
 
-    close $md or die "Error closing $md_path: $!";
+    print $html qq|
+</ol>
+</body>
+</html>
+|;
+
+    close $html or die "Error closing $html_path: $!";
+    close $md   or die "Error closing $md_path: $!";
 
     # Use a DOCX that matches the print on demand template (margins, page size, headers/footers, fonts, etc).
     # Pandoc will use this as a reference.
