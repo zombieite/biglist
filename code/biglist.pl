@@ -983,11 +983,6 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq|Get the onion burger.|,
         },
         {
-            name    => "Flat Giants Display",
-            address => "10000 E 1020 Rd, Calumet, OK 73014",
-            blurb   => qq|A three-dimensional display would certainly have been better than this two-dimensional display, but this two-dimensional display is far, far better than a one-dimensional display would have been. So be thankful for the dimensions you've got.|,
-        },
-        {
             name    => "Indian Trading Post",
             address => "825 S Walbaum Rd, Calumet, OK 73014",
             blurb   => qq||,
@@ -1003,44 +998,24 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
-            name    => "Centennial Park",
+            name    => "The Big Astronaut",
             address => "N Broadway St, Weatherford, OK 73096",
-            blurb   => qq|There is an astronaut Muffler Man here.|,
+            blurb   => qq|In the Twentieth Century, we traveled by horses, cars, airplanes, and space rockets, all in the same century. My grandfather saw it all. By the time we got to the moon landing, he refused to believe it was real. He wasn't a conspiracy theorist. His brain just couldn't grasp that such a thing was possible.|,
         },
         {
             name    => "The Glancy Motel",
             address => "217 W Gary Blvd, Clinton, OK 73601",
-            blurb   => qq|You can't stay here, but you can look at what's left, and imagine what it was like to stay here.|,
-        },
-        {
-            name    => "Oklahoma Route 66 Museum",
-            address => "2229 W Gary Blvd, Clinton, OK 73601",
-            blurb   => qq||,
-        },
-        {
-            name    => "Foss",
-            address => "Foss, OK 73647",
-            blurb   => qq||,
-        },
-        {
-            name    => "Canute",
-            address => "Canute, OK 73626",
-            blurb   => qq||,
-        },
-        {
-            name    => "Flamingo Inn",
-            address => "2000 W 3rd St, Elk City, OK 73644",
-            blurb   => qq||,
+            blurb   => qq|There never was, and never will be, another century like the Twentieth. One day, historians will speak of "The Twentieth Century" the way we today speak of "The Renaissance," or "The Enlightenment."|,
         },
         {
             name    => "National Route 66 & Transportation Museum",
             address => "2717 W 3rd St, Elk City, OK 73644",
-            blurb   => qq|I wouldn't exactly call this a good museum. But it's a weird museum. And weird is good, right?|,
+            blurb   => qq|It's a weird museum. But weird is good, right?|,
         },
         {
             name    => "Sandhill Curiosity Shop",
             address => "201 S Sheb Wooley Ave, Erick, OK 73645",
-            blurb   => qq|Harley Russell is here. He was the human side of the inspiration for the vehicular character Tow Mater from Pixar's Cars. They had to make a few changes to his personality, because it was a movie for kids.|,
+            blurb   => qq|Harley Russell is here. He was the human inspiration for the vehicular character Tow Mater from Pixar's Cars. They had to make a few changes to his personality, because it was a movie for kids.|,
         },
         {
             name    => "Sam's Town on 66",
