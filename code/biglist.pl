@@ -2092,12 +2092,12 @@ sub generate_qr_codes {
             my $canvas = GD::Image->new( $w + $w, $h );
             my $white  = $canvas->colorAllocate( 255, 255, 255 );
             my $black  = $canvas->colorAllocate( 0,   0,   0 );
-            $canvas->filledRectangle( 0, 0, $w + $pad, $h, $white );
+            $canvas->filledRectangle( 0, 0, $w + $w, $h, $white );
             $canvas->copy( $qr, $pad, 0, 0, 0, $w, $h );
             $canvas->rectangle( 0, 0, $w + $w - 1, $h - 1, $black );
 
             # Label in blank area
-            my $text = "Stamp/sticker/signature";
+            my $text = "Stamp / sticker / signature";
 
             my $font = gdTinyFont;
 
