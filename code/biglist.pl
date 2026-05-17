@@ -1986,6 +1986,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
     my $qrs = generate_qr_codes( $addresses, $qr_dir );
     make_doc( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx, $line_break, $page_break );
     print "Open DOCX in Pages.\n";
+	print "Manually choose a new font for all of the place names and addresses.\n";
     print "Click Document, Document, Footer to add a footer.\n";
     print "Click Document, Section, uncheck Left and Right are Different.\n";
     print "Click Document, Section, uncheck Match Previous Section.\n";
