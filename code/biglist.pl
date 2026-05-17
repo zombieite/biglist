@@ -1986,8 +1986,14 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
     my $qrs = generate_qr_codes( $addresses, $qr_dir );
     make_doc( $addresses, $qrs, $work_dir, $qr_dir, $qr_width, $out_docx, $line_break, $page_break );
     print "Open DOCX in Pages.\n";
+    print "Click Document, Document, Footer to add a footer.\n";
     print "Click Document, Section, uncheck Left and Right are Different.\n";
-    print "Click Document, Document, Footer. Then go to the footer and click it and Insert Page Number.\n";
+    print "Click Document, Section, uncheck Match Previous Section.\n";
+	print "In the document itself, click where you want to insert a section break (where you want page numbering to start/restart), then click Insert, Section Break.\n";
+    print "Go to the footer and click it and Insert Page Number, ignoring the wrong start number.\n";
+    print "Click Document, Section, Page Number, Start At.\n";
+	print "Add new sections for every state. Update the footer with the state name. You should only need to update it once for the entire section. Make page numbering continue from previous section.";
+    print "At Midpoint, add a new section break and restart page numbering as above, fixing the start number. Afterward, go back to using Contine From Previous Section.\n";
     print "Under Format, Body, Style, Font, choose Garamond. There is a gear icon also, bring character spacing in by 1%.";
 	print "Fix justification to be both left and right.\n";
     print "Add photos to the beginning, midpoint, and end.\n";
@@ -2203,7 +2209,7 @@ ${line_break}
 
         # Address (as plain paragraph). If you want it to be, say, a big bold title},
         # define a style in reference.docx and use it via a pandoc Lua filter.
-        print $md "$place_number: $place_name\n";
+        print $md "$place_name\n";
         print $md $line_break;
         print $md "$address\n";
 
