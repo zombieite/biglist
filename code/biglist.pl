@@ -2213,7 +2213,7 @@ ${line_break}
     # Use a DOCX that matches the print on demand template (margins, page size, headers/footers, fonts, etc).
     # Pandoc will use this as a reference.
     my $reference_docx = './data/wasteland_firebirds_big_list-template.docx';
-    my @cmd = ( 'pandoc', $md_path, '-o', $out_docx, '--reference-doc=' . $reference_docx, );
+    my @cmd            = ( 'pandoc', $md_path, '-o', $out_docx, '--reference-doc=' . $reference_docx, );
     print "Running:\n  " . join( ' ', map { /\s/ ? qq("$_") : $_ } @cmd ) . "\n";
     system(@cmd) == 0 or die "pandoc failed";
 }
