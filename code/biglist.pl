@@ -1993,15 +1993,16 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
         },
     ];
     my $work_dir = './data';
-    my $qr_dir   = './data/qr_codes/';
-    my $out_docx = './data/wasteland_firebirds_big_list-base.docx';
+    my $qr_dir   = File::Spec->catfile( $work_dir, 'qr_codes/' );
+    my $out_docx = File::Spec->catfile( $work_dir, 'wasteland_firebirds_big_list-base.docx' );
+    my $out_html = File::Spec->catfile( $work_dir, 'index.html' );
     my $qr_width = '4.0in';
     my $qrs      = [];
     my $links    = [];
     set_up_qr_dir($qr_dir);
     ensure_dir($work_dir);
     generate_qr_codes_and_links( $addresses, $qr_dir, $qrs, $links );
-    make_doc( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $line_break, $page_break );
+    make_doc( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break );
     print "Open DOCX in Pages.\n";
     print "Manually choose a new font for all of the place names and addresses.\n";
     print "Click Document, Document, Footer to add a footer.\n";
@@ -2018,6 +2019,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
     print "Mess with footers and Sections to get the page numbering to start and stop correctly.\n";
     print "Do any other needed tweaks. Export PDF.\n";
     system( 'open', $out_docx );
+    system( 'open', $out_html );
 }
 
 sub ensure_dir {
@@ -2148,18 +2150,17 @@ sub generate_qr_codes_and_links {
 }
 
 sub make_doc {
-    my ( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $line_break, $page_break ) = @_;
+    my ( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break ) = @_;
 
     # Build a Pandoc md file and an html file for the website
     my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
-    open my $md, '>', $md_path or die "Can't write '$md_path': $!";
-    my $html_path = File::Spec->catfile( $work_dir, 'index.html' );
-    open my $html, '>', $html_path or die "Can't write '$html_path': $!";
+    open my $md,   '>', $md_path  or die "Can't write '$md_path': $!";
+    open my $html, '>', $out_html or die "Can't write '$out_html': $!";
 
     # Website header
     my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
     $year += 1900;
-    my @month_abbrevs = qw(JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC);
+    my @month_abbrevs = qw(Jan Feb Mar April May Jun Jul Aug Sep Oct Nov Dec);
     my $month_abbrev  = $month_abbrevs[$mon];
     $mon += 1;
     for my $unit ( $mon, $mday, $hour, $min, $sec ) { $unit = sprintf( '%02d', $unit ); }
@@ -2171,12 +2172,12 @@ sub make_doc {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wasteland Firebird's Big List of the Best Things On Route 66</title>
     <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/biglist.css">
+    <link rel="stylesheet" href="biglist.css">
 </head>
 <body>
 <h1>Wasteland Firebird's Big List of the Best Things On Route 66</h1>
-<h2>A curious guide to the American Dream, updated twice yearly from the road</h2>
-<h3>Last updated $year-$month_abbrev-$mday</h3>
+<h2>A curious guide to the American Dream, last updated $year $month_abbrev $mday</h2>
+<h2>There is a map version of this list here: <a href="https://www.google.com/maps/d/u/0/edit?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ll=32.242242784459016%2C-106.71410537451172&z=5">Wasteland Firebird's Big Map of the Best Things On Route 66</a></h2>
 <ol>
 |;
 
@@ -2308,7 +2309,7 @@ ${line_break}
 </html>
 |;
 
-    close $html or die "Error closing $html_path: $!";
+    close $html or die "Error closing $out_html: $!";
     close $md   or die "Error closing $md_path: $!";
 
     # Use a DOCX that matches the print on demand template (margins, page size, headers/footers, fonts, etc).
