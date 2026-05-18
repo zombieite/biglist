@@ -2181,7 +2181,7 @@ sub make_doc {
 <h1>Wasteland Firebird's Big List of the Best Things On Route 66</h1>
 <h2>A curious guide to Route 66 and the American Dream, last updated $year $month_abbrev $mday</h2>
 <img src="/pictures/image001.jpg">
-<h3>Purchasable physical copies of this Big List in book form will be available right here, SOON. The book includes lots of opinionated blurbs not included on this page.</h3>
+<h3>Purchasable physical copies of this Big List in book form will be available right here, SOON. The book includes scannable QR codes for each address, and lots of opinionated blurbs.</h3>
 <h3><a href="https://www.youtube.com/playlist?list=PLA_KEM2YJkctJhl8hcghFpyMN1igPFB0p">Wasteland Firebird's Route 66 YouTube playlist is here.</a></h3>
 <h3><a href="https://www.google.com/maps/d/u/0/edit?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ll=32.242242784459016%2C-106.71410537451172&z=5">Wasteland Firebird's Big Map is here.</a></h3>
 <h3>Wasteland Firebird can be contacted at wastelandfirebird at gmail dot com.</h3>
