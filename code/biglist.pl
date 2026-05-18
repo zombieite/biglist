@@ -2172,7 +2172,7 @@ sub make_doc {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wasteland Firebird's Big List of the Best Things On Route 66</title>
     <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="biglist.css">
+    <link rel="stylesheet" href="/biglist.css">
 </head>
 <body>
 <h1>Wasteland Firebird's Big List of the Best Things On Route 66</h1>
