@@ -85,14 +85,14 @@ li {
 
 /* ===== State Colors ===== */
 
-li.IL { background: #e7eef7; } /* faded blue */
+li.IL { background: #e6edf7; } /* cool faded blue */
 li.MO { background: #efe8f6; } /* dusty lavender */
-li.KS { background: #e7f3e8; } /* pale green */
-li.OK { background: #f8eadf; } /* peach */
-li.TX { background: #f6e3e3; } /* faded red */
-li.NM { background: #f3dfc7; } /* desert tan */
-li.AZ { background: #e8d9c9; } /* dusty sandstone */
-li.CA { background: #dde8df; } /* seafoam gray */
+li.KS { background: #e7f3e8; } /* pale prairie green */
+li.OK { background: #f8eadf; } /* faded peach */
+li.TX { background: #f6e3e3; } /* dusty rose */
+li.NM { background: #f3dfc6; } /* warm adobe sand */
+li.AZ { background: #e8d8c7; } /* desert clay */
+li.CA { background: #dfeee8; } /* coastal faded teal */
 
 /* ===== Images ===== */
 img {
