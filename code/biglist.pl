@@ -2019,6 +2019,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
     print "Mess with footers and Sections to get the page numbering to start and stop correctly.\n";
     print "Do any other needed tweaks. Export PDF.\n";
     system( 'open', $out_docx );
+
     #system( 'open', $out_html );
 }
 
