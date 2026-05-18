@@ -402,7 +402,7 @@ sub main {
         },
         {
             name    => "Old Chain of Rocks Bridge",
-            address => "10820 Riverview Dr, St. Louis MO",
+            address => "10820 Riverview Dr, St Louis MO",
             blurb   => qq|Nowadays you don't drive it. But you can go for a walk across it.|,
         },
         {
@@ -427,22 +427,22 @@ sub main {
         },
         {
             name    => "Crown Candy Kitchen",
-            address => "1401 St Louis Ave, St. Louis MO",
+            address => "1401 St Louis Ave, St Louis MO",
             blurb   => qq|This place is all about fat and sugar.|,
         },
         {
             name    => "Chili Mac's Diner",
-            address => "510 Pine St, St. Louis MO",
+            address => "510 Pine St, St Louis MO",
             blurb   => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was this idea that people got into their heads, the idea that god wanted the Europeans to spread out into America. I really don't think that any supernatural being cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make the best country on Earth.|,
         },
         {
-            name    => "Neon Museum of St. Louis",
-            address => "3537 Chouteau Ave, St. Louis MO",
+            name    => "Neon Museum of St Louis",
+            address => "3537 Chouteau Ave, St Louis MO",
             blurb   => qq|When I say the USA is the best country on Earth, you might reply that I'm biased since I was born in the USA. But I've traveled the world and I've spent a lot of time doing my best to overcome my biases. I truly and firmly believe that America has things about it that make it exceptional.|,
         },
         {
             name    => "Ted Drewes Frozen Custard",
-            address => "6726 Chippewa St, St. Louis MO",
+            address => "6726 Chippewa St, St Louis MO",
             blurb   => qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or didn't know. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream.|,
         },
         {
@@ -532,17 +532,17 @@ sub main {
         },
         {
             name    => "Uranus Fudge Factory",
-            address => "14400 State Hwy Z, St. Robert MO",
+            address => "14400 State Hwy Z, St Robert MO",
             blurb   => qq|My notes describe the giant here as the "Mega Mayor Patriot Golfer Muffler Man." I'm not sure I got his name right, but go take a look and tell me that name doesn't fit him. Here's a tip. If you pronounce it YER-uh-nuss you'll ruin all of their jokes.|,
         },
         {
             name    => "Route 66 Diner",
-            address => "126 St. Robert Blvd, St. Robert MO",
+            address => "126 St Robert Blvd, St Robert MO",
             blurb   => qq||,
         },
         {
             name    => "Route 66 Neon Sign Park",
-            address => "133 Reed Pkwy, St. Robert MO",
+            address => "133 Reed Pkwy, St Robert MO",
             blurb   => qq||,
         },
         {
