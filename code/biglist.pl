@@ -2270,7 +2270,7 @@ ${line_break}
         # Website
 
         print $html qq|
-    <li class="state">
+    <li class="$state">
         <div class="place">
             <div class="place-name">
                 $place_name
