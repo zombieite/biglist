@@ -307,7 +307,7 @@ sub main {
         },
         {
             name    => "Illinois Brick Road",
-            address => "4995–4790 Snell Rd, Auburn IL",
+            address => "4995-4790 Snell Rd, Auburn IL",
             blurb   => qq|The road is made of bricks. Old, original Route 66 bricks.|,
         },
         {
@@ -327,7 +327,7 @@ sub main {
         },
         {
             name    => "Turkey Tracks on Route 66",
-            address => "26618–27306 Donaldson Rd, Girard IL",
+            address => "26618-27306 Donaldson Rd, Girard IL",
             blurb   => qq|A bird ran through the wet concrete, and its footprints are still there. Look for a small sign and a white square on the road.|,
         },
         {
@@ -969,7 +969,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         },
         {
             name    => "Lake Overholser Bridge",
-            address => "8703–8709 Overholser Dr, Bethany OK",
+            address => "8703-8709 Overholser Dr, Bethany OK",
             blurb   => qq||,
         },
         {
