@@ -557,7 +557,7 @@ sub main {
         },
         {
             name    => "Munger Moss Motel",
-            address => "1336 U.S. Rt 66, Lebanon MO",
+            address => "1336 US Rt 66, Lebanon MO",
             blurb   => qq|The organization that is restoring the sign is different from the organization that runs the motel, and the motel isn't exactly a motel because it's more like apartments, but they tell me that might be changing, and maybe you can stay here like it's a motel again. I dunno, just go look at the sign.|,
         },
         {
@@ -567,7 +567,7 @@ sub main {
         },
         {
             name    => "Taylor's Dairy Joy",
-            address => "1205 U.S. Rte 66, Lebanon MO",
+            address => "1205 US Rte 66, Lebanon MO",
             blurb   => qq||,
         },
         {
@@ -1004,7 +1004,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         },
         {
             name    => "Lucille's Historic Highway Gas Station",
-            address => "U.S. Route 66, Hydro OK",
+            address => "US Rte 66, Hydro OK",
             blurb   => qq||,
         },
         {
@@ -1050,11 +1050,6 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Restored 1929 Route 66 Gas Station",
             address => "212 First St, McLean TX",
-            blurb   => qq||,
-        },
-        {
-            name    => "Kaiser's Super Service Station",
-            address => "35.21219, -100.73465, TX",
             blurb   => qq||,
         },
         {
@@ -1145,7 +1140,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         },
         {
             name    => "Dream Maker Station Route 66 Souvenir & Gift Shop",
-            address => "307 U.S. Rte 66, Adrian TX",
+            address => "307 US Rte 66, Adrian TX",
             blurb   => qq||,
         },
         {
@@ -1160,7 +1155,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         },
         {
             name    => "World's Largest Flip Flop",
-            address => "602 Route 66, San Jon NM",
+            address => "602 Rte 66, San Jon NM",
             blurb   => qq|A dream is something real that exists only in the mind of a lazy person. The World's Largest Flip Flop was once just a dream. Now it is real.|,
         },
         {
@@ -1175,7 +1170,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         },
         {
             name    => "Del's Restaurant",
-            address => "1202 U.S. Rte 66, Tucumcari NM",
+            address => "1202 US Rte 66, Tucumcari NM",
             blurb   => qq||,
         },
         {
@@ -1235,12 +1230,12 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         },
         {
             name    => "Old Rio Pecos Ranch Truck Terminal",
-            address => "2358 U.S. Rte 66, Santa Rosa NM",
+            address => "2358 US Rte 66, Santa Rosa NM",
             blurb   => qq||,
         },
         {
             name    => "Sun & Sand Restaurant",
-            address => "2050 U.S. Rte 66, Santa Rosa NM",
+            address => "2050 US Rte 66, Santa Rosa NM",
             blurb   => qq|Last time I came through, the most beautiful sign on Route 66 was lying on the ground, destroyed by rust, wind, and entropy. Just one year before, I'd seen it standing, proud and tall. It's ok to cry. Not just for the sign. For all of Route 66. For everyone who's come and gone. For the American Dream that's been all but forgotten.|,
         },
         {
@@ -1255,12 +1250,12 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         },
         {
             name    => "Sal & Inez's Service Station",
-            address => "421 U.S. Rte 66, Moriarty NM",
+            address => "421 US Rte 66, Moriarty NM",
             blurb   => qq||,
         },
         {
             name    => "Country Friends Antiques",
-            address => "1005 Old U.S. Rte 66, Moriarty NM",
+            address => "1005 Old US Rte 66, Moriarty NM",
             blurb   => qq|This place features a rare sputnik-style Roto-Sphere sign on top of the building.|,
         },
         {
@@ -1329,11 +1324,6 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
             blurb   => qq||,
         },
         {
-            name    => "Westward Ho Motel",
-            address => "35.07757, -106.71915, NM",
-            blurb   => qq||,
-        },
-        {
             name    => "Route 66 Visitor Center",
             address => "12300 Central Ave SW, Albuquerque NM",
             blurb   => qq||,
@@ -1370,12 +1360,12 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         },
         {
             name    => "Indian Village Gift Shop",
-            address => "101 U.S. Rte 66, Continental Divide NM",
+            address => "101 US Rte 66, Continental Divide NM",
             blurb   => qq||,
         },
         {
             name    => "Fort Wingate Army Depot",
-            address => "506 U.S. Rte 66, Church Rock NM",
+            address => "506 US Rte 66, Church Rock NM",
             blurb   => qq||,
         },
         {
@@ -1442,7 +1432,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         },
         {
             name    => "Here It Is Jack Rabbit Trading Post",
-            address => "3386 U.S. Rte 66, Joseph City AZ",
+            address => "3386 US Rte 66, Joseph City AZ",
             blurb   => qq|The most iconic old shop on the entire Route.|,
         },
         {
@@ -1853,7 +1843,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
         },
         {
             name    => "The Donut Man",
-            address => "915 E Route 66, Glendora CA",
+            address => "915 E Rte 66, Glendora CA",
             blurb   => qq|My philosophy of life, principle #1:
 I AM CONSCIOUS.
 I know this for sure.|,
