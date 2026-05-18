@@ -57,7 +57,7 @@ ol {
 
 li {
     margin-bottom: 1rem;
-    padding-bottom: 0.8rem;
+    padding: 0.8rem;
     border-bottom: 1px solid #ddd;
 }
 
@@ -82,6 +82,17 @@ li {
     color: #666;
     font-size: 0.95rem;
 }
+
+/* ===== State Colors ===== */
+
+li.IL { background: #f4efe2; }
+li.MO { background: #efe8f6; }
+li.KS { background: #e7f3e8; }
+li.OK { background: #f8eadf; }
+li.TX { background: #f6e3e3; }
+li.NM { background: #f3e6d6; }
+li.AZ { background: #ece4d8; }
+li.CA { background: #e3edf6; }
 
 /* ===== Images ===== */
 img {

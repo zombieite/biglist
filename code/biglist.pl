@@ -1039,7 +1039,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         },
         {
             name    => "U-Drop Inn Cafe",
-            address => "105 E 12th St Shamrock TX,",
+            address => "105 E 12th St, Shamrock TX",
             blurb   => qq|There is a message made of hand-cut plastic letters embedded into the asphalt in front of this building.|,
         },
         {
@@ -1054,7 +1054,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         },
         {
             name    => "Kaiser's Super Service Station",
-            address => "35.21219, -100.73465",
+            address => "35.21219, -100.73465, TX",
             blurb   => qq||,
         },
         {
@@ -1330,7 +1330,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         },
         {
             name    => "Westward Ho Motel",
-            address => "35.07757, -106.71915",
+            address => "35.07757, -106.71915, NM",
             blurb   => qq||,
         },
         {
@@ -2259,11 +2259,18 @@ ${line_break}
         if ( !-f $qr_path ) {
             die "Missing QR file for '$place_number': " . Dumper($qrs);
         }
+        my $state;
+        if ( $address =~ /([A-Z][A-Z])$/ ) {
+            $state = $1;
+        }
+        else {
+            die "Invalid address, expected state at the end of '$address'";
+        }
 
         # Website
 
         print $html qq|
-    <li>
+    <li class="state">
         <div class="place">
             <div class="place-name">
                 $place_name
