@@ -2019,7 +2019,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
     print "Mess with footers and Sections to get the page numbering to start and stop correctly.\n";
     print "Do any other needed tweaks. Export PDF.\n";
     system( 'open', $out_docx );
-    system( 'open', $out_html );
+    #system( 'open', $out_html );
 }
 
 sub ensure_dir {
@@ -2266,7 +2266,7 @@ ${line_break}
                 $place_name
             </div>
             <div class="place-address">
-                <a href="$links->[$place_number]">$address</a>
+                <a href="$links->[$place_number]" target="_blank" rel="noopener noreferrer">$address</a>
             </div>
         </div>
     </li>
