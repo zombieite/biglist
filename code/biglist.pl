@@ -1631,6 +1631,11 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq||,
         },
         {
+            name    => "Pine Breeze Inn",
+            address => "10520 W Rte 66, Flagstaff AZ",
+            blurb   => qq||,
+        },
+        {
             name    => "Old Route 66 Parks Store",
             address => "12963 Old Rte 66 Ste 50340, Parks AZ",
             blurb   => qq||,
@@ -1673,7 +1678,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Ash Fork Route 66 Museum",
             address => "901 Old Rte 66, Ash Fork AZ",
-            blurb   => qq|They have the old Hi-Line Motel sign here.|,
+            blurb   => qq|They might have the old Hi-Line Motel sign here.|,
         },
         {
             name    => "Aztec Motel & Creative Space",
@@ -1688,6 +1693,11 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Route 66 Road Relics",
             address => "22255 W Old Highway 66, Seligman AZ",
+            blurb   => qq||,
+        },
+        {
+            name    => "Delgadillo's Gift Shop",
+            address => "22265 Historic Rte 66, Seligman AZ",
             blurb   => qq||,
         },
         {
@@ -1713,7 +1723,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Frontier Motel Cafe",
             address => "16118 Historic Rte 66, Valentine AZ",
-            blurb   => qq|The best hand-painted sign on Route 66 is the cafe dude with the long arms.|,
+            blurb   => qq|The best hand-painted sign on Route 66 is the dude with the long arms.|,
         },
         {
             name    => "Old 76 Station",
@@ -1723,7 +1733,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Hackberry General Store",
             address => "11255 AZ-66, Kingman AZ",
-            blurb   => qq||,
+            blurb   => qq|Pet the cat's tummy.|,
         },
         {
             name    => "Arcadia Lodge sign",
@@ -1741,14 +1751,14 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq||,
         },
         {
-            name    => "Sirens Cafe & Custom Catering",
+            name    => "Sirens Cafe",
             address => "419 Beale St, Kingman AZ",
             blurb   => qq|There is a small linoleum mosaic embedded into the crosswalk here.|,
         },
         {
             name    => "Hotel Beale sign",
             address => "331 E Andy Devine Ave, Kingman AZ",
-            blurb   => qq|The sign lights up again now, after decades of darkness.|,
+            blurb   => qq|The sign lights up again, after decades of darkness.|,
         },
         {
             name    => "Tin Can Alley",
@@ -1763,7 +1773,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Cool Springs Station",
             address => "8275 Oatman Rd, Golden Valley AZ",
-            blurb   => qq|Large vehicles and vehicles with large trailers, beware the upcoming curvy road known as the Sidewinder. Maybe skip it entirely. But try not to miss Oatman.|,
+            blurb   => qq|Large vehicles and vehicles with large trailers, beware the upcoming curvy road known as the Sidewinder. But try not to miss Oatman.|,
         },
         {
             name    => "Oatman",
@@ -1809,7 +1819,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
         {
             name    => "Roy's Motel & Cafe",
             address => "87520 National Trails Hwy, Amboy CA",
-            blurb   => qq|The most iconic operating gas station on Route 66. They made a cake for The Great Route 66 Centennial Convergence. It had a picture of my face on it. Since they clearly and properly recognize my eminence and genius, I might also permit them to construct a Muffler Man in my image.|,
+            blurb   => qq|The most iconic operating gas station on Route 66. They made a cake for The Great Route 66 Centennial Convergence. It had a picture of my face on it. They clearly recognize my eminence and genius.|,
         },
         {
             name    => "Former Whiting Brothers Gas Station",
@@ -1819,7 +1829,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
         {
             name    => "Ludlow Cafe",
             address => "68315 National Trails Hwy, Ludlow CA",
-            blurb   => qq|I've never made it to this place during business hours, but I'm still looking forward to it.|,
+            blurb   => qq|I've never made it to this place during business hours, but I'm gonna keep trying.|,
         },
         {
             name    => "Whiting Brothers Service and Tony's Spaghetti Building",
@@ -1834,7 +1844,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
         {
             name    => "Sand-Swallowed Abandoned Homes",
             address => "Newberry Rd & Palma Vista Rd, Newberry Springs CA",
-            blurb   => qq|I haven't found these buildings yet, but they tell me you can find them just beyond this intersection. Don't drive in sand of any depth, unless you're prepared to get stuck.|,
+            blurb   => qq|I haven't found these buildings yet, but they tell me you can find them just beyond this intersection. Don't drive in sand of any depth.|,
         },
         {
             name    => "The Barn",
@@ -1912,6 +1922,11 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq||,
         },
         {
+            name    => "Route 66 Motel",
+            address => "195 Main St, Barstow CA",
+            blurb   => qq||,
+        },
+        {
             name    => "Harvey House",
             address => "685 N 1st Ave, Barstow CA",
             blurb   => qq|There is a tiny linoleum mosaic embedded in the asphalt on the road out in front of this place.|,
@@ -1954,7 +1969,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
         {
             name    => "Cucamonga Service Station",
             address => "9670 Foothill Blvd, Rancho Cucamonga CA",
-            blurb   => qq|There might be a custom brick here from Wasteland Firebird and The Great Route 66 Centennial Convergence.|,
+            blurb   => qq|There might be a custom brick here from The Great Route 66 Centennial Convergence.|,
         },
         {
             name    => "The Sycamore Inn",
@@ -2079,7 +2094,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
         {
             name    => "Tail O' the Pup",
             address => "8512 Santa Monica Blvd, West Hollywood CA",
-            blurb   => qq|I discovered this place when I was watching old episodes of The Rockford Files. They stopped here in the first episode. I had to know if it still existed. That led me to Alison Martino's social media community Vintage Los Angeles. She did a report on the place, as it was being restored and moved. I visited it here, in its new location, as soon as it opened. Pay attention, because there is a secret door around here somewhere.|,
+            blurb   => qq|I discovered this place when I was watching old episodes of The Rockford Files. They stopped here in the first episode. I had to know if it still existed. That led me to Alison Martino's social media community Vintage Los Angeles. She did a report on the place, as it was being restored and moved. I visited it here, in its new location, as soon as it opened. Pay attention, because there is a secret door nearby.|,
         },
         {
             name    => "NORMS Restaurant",
