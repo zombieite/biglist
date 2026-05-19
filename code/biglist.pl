@@ -101,11 +101,6 @@ sub main {
             blurb   => qq||,
         },
         {
-            name    => "Art on 66",
-            address => "208 N Water St, Wilmington IL",
-            blurb   => qq||,
-        },
-        {
             name    => "Gemini Giant",
             address => "201 Bridge St, Wilmington IL",
             blurb   => qq|Another Muffler Man. Get out and get a close look at his metal-flake suit.|,
@@ -121,14 +116,14 @@ sub main {
             blurb   => qq||,
         },
         {
-            name    => "80s Car Museum",
-            address => "316 W Waupansie St, Dwight IL",
-            blurb   => qq|In the 80s, we were pretty sure that modern cars would not be loved and preserved like cars from the glory days of the 50s, 60s, and 70s were. Safety and fuel economy were making cars boring. Or at least, that's what we thought. Nowadays, these cars seem quirky and fun compared to the nondescript blobs that silently and cleanly traverse the interstates that parallel Route 66.|,
-        },
-        {
             name    => "Gothic Church Dwight Townhall",
             address => "201 N Franklin St, Dwight IL",
             blurb   => qq||,
+        },
+        {
+            name    => "80s Car Museum",
+            address => "316 W Waupansie St, Dwight IL",
+            blurb   => qq|In the 80s, we were pretty sure that modern cars would not be loved and preserved like cars from the glory days of the 50s, 60s, and 70s were. Safety and fuel economy were making cars boring. Or at least, that's what we thought. Nowadays, these cars seem quirky and fun compared to the nondescript blobs that silently and cleanly traverse the interstates that parallel Route 66.|,
         },
         {
             name    => "Dwight Coin Laundry",
@@ -146,9 +141,14 @@ sub main {
             blurb   => qq||,
         },
         {
+            name    => "Old Log Cabin restaurant",
+            address => "18700 Old Rte 66, Pontiac IL",
+            blurb   => qq|I think you can get a piece of cherry pie here.|,
+        },
+        {
             name    => "Route 66 Association of Illinois",
             address => "110 W Howard St, Pontiac IL",
-            blurb   => qq|Bob Waldmire was a Route 66 artist. His name is one of the names you should learn and remember during this trip. His orange Volkswagen bus is here. His "Land Yacht" school bus is also here, sometimes. In 2024, by sheer chance, I ended up here right on one of the days that the bus was here and the interior was open to the public. I put some video up on YouTube. Search for "Wasteland Firebird Route 66."|,
+            blurb   => qq|Bob Waldmire was a Route 66 artist. His name is one of the names you should learn and remember during this trip. His orange Volkswagen bus is here. His "Land Yacht" school bus is also here, sometimes. In 2024, by sheer chance, I ended up here right on one of the rare days that the bus was here and the interior was open to the public. I put some video up on YouTube. Search for "Wasteland Firebird Route 66."|,
         },
         {
             name    => "Pontiac Oakland Auto Museum",
@@ -161,8 +161,8 @@ sub main {
             blurb   => qq|The first couple of times that I saw this place, I drove right by it. I figured there was no way it could be as good as Buc-ee's. Don't make the same mistake I did.|,
         },
         {
-            name    => "Route 66 of Chenoa Roadside Attraction & Tourist Info",
-            address => "P7RC+C3, Chenoa IL",
+            name    => "Route 66 of Chenoa Roadside Attraction Tourist Info",
+            address => "501 W Cemetery Ave, Chenoa IL",
             blurb   => qq|This is just a little closet full of flyers. But every time I come by, I make sure to stop and populate it with flyers, books, or art. Don't just consume, create. Leave something here for future travelers. There's a little sign in here that says you're supposed to call a number for permission to leave stuff here. I've never called it. Ask forgiveness, not permission.|,
         },
         {
