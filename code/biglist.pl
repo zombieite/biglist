@@ -835,7 +835,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "J.M. Davis Arms & Historical Museum",
             address => "330 N JM Davis Blvd, Claremore OK",
-            blurb   => qq|If you're visiting from some un-American place where you can't have guns, be sure to check this place out. You'll be sick of guns by the time you leave.|,
+            blurb   => qq|If you're visiting from some un-American place where you can't have guns, be sure to check this place out.|,
         },
         {
             name    => "Blue Whale of Catoosa",
@@ -843,8 +843,18 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq|It's a big blue whale. It looks good at night. It might still be under renovation, but you can see it from the road.|,
         },
         {
+            name    => "Desert Hills Motel",
+            address => "5220 E 11th St, Tulsa OK",
+            blurb   => qq||,
+        },
+        {
             name    => "Tally's Good Food Cafe",
             address => "1102 S Yale Ave, Tulsa OK",
+            blurb   => qq||,
+        },
+        {
+            name    => "Coney I-Lander",
+            address => "2838 E 11th St, Tulsa OK",
             blurb   => qq||,
         },
         {
