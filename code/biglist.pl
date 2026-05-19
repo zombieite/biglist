@@ -538,7 +538,7 @@ sub main {
         {
             name    => "John's Modern Cabins",
             address => "11107 Arlington Outer Rd, Newburg MO",
-            blurb   => qq|There are some cool dead ends and dirt roads around here. But I made a rule for myself that I'd only make you go down one dirt road in this book. Adventure awaits you in Arizona.|,
+            blurb   => qq||,
         },
         {
             name    => "Devil's Elbow Bridge",
@@ -1048,11 +1048,6 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
-            name    => "Centre Theatre",
-            address => "110 S Bickford Ave, El Reno OK",
-            blurb   => qq||,
-        },
-        {
             name    => "Johnnie's Grill",
             address => "301 S Rock Island Ave, El Reno OK",
             blurb   => qq|Get the onion burger. But save room for three more.|,
@@ -1175,7 +1170,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "The Big Texan Steak Ranch & Brewery",
             address => "7701 I-40, Amarillo TX",
-            blurb   => qq|Some places are just a gimmick, and that's fine. But this gimmick is also a great motel and the food is some of the best food on the entire Route. If you can stay in Amarillo long enough to eat here twice, do it. Some say The Big Texan is not actually on Route 66. I say the Big Texan is like the Eiffel Tower. If I were passing two blocks away from it, I'd make a point to stop by and check it out.|,
+            blurb   => qq|Some places are just a gimmick, and that's fine. But this gimmick has some of the best food on the Route, and it's a great motel, too. Some say The Big Texan is not actually on Route 66. I say the Big Texan is like the Eiffel Tower. If I happened to be passing two blocks away from it, I'd make a point to stop by.|,
         },
         {
             name    => "Slug Bug Ranch",
@@ -1239,27 +1234,27 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
             blurb   => qq|The best places defy description. The first time I visited, I made a recording of my ten-step philosophy of life via a telephone booth. The second time I visited, I held a tarantula in my hands. The third time I visited, I mentioned that my pocket knife had been stolen, and the owner gifted me one from his huge stash. What is it you're actually supposed to be doing here? I still haven't figured that out.|,
         },
         {
-            name    => "Mama Jo's Pies & Sweets",
+            name    => "Mama Jo's Pies",
             address => "922 E Main St, Vega TX",
             blurb   => qq|I'm always looking for a good piece of cherry pie. That was meant to be taken literally but I guess you can take it figuratively if that amuses you.|,
         },
         {
-            name    => "Midpoint Cafe and Gift Shop",
+            name    => "Midpoint Cafe",
             address => "305 Historic Rte 66, Adrian TX",
             blurb   => qq|You're at the midpoint of Route 66. The two most crucial points in a story are the midpoint (halfway through the story) and the all-is-lost moment (two-thirds of the way through the story). The midpoint and the all-is-lost moment tend to mirror each other. Things seem good now. But the story isn't over. Things are about to take a turn.|,
         },
         {
-            name    => "Dream Maker Station Route 66 Souvenir & Gift Shop",
+            name    => "Dream Maker Station",
             address => "307 US Rte 66, Adrian TX",
             blurb   => qq||,
         },
         {
             name    => "Glenrio TX Ghost Town",
             address => "I-40BL, Hereford TX",
-            blurb   => qq|The first ghost town on the list. See what I mean about the story taking a turn?|,
+            blurb   => qq|See what I mean about the story taking a turn?|,
         },
         {
-            name    => "Russell's Truck & Travel Center",
+            name    => "Russell's Travel Center",
             address => "1583 Frontage Rd 4132, Glenrio NM",
             blurb   => qq|It looks pretty much like a normal gas station, but go inside, and be delighted.|,
         },
@@ -1271,7 +1266,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Palomino Motel",
             address => "1215 E Rte 66 Blvd, Tucumcari NM",
-            blurb   => qq|Tucumcari is the closest you can come to experiencing Route 66 as it was in the old days. Everything in Tucumcari is old and vintage.|,
+            blurb   => qq|Tucumcari is the closest you will come to experiencing Route 66 as it was in the old days.|,
         },
         {
             name    => "Watson's BBQ",
@@ -1329,6 +1324,11 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
             blurb   => qq|Room 118 has a secret hidden behind the mirror. Search for "Room Attack" on Wasteland Firebird's YouTube channel if you want to know more.|,
         },
         {
+            name    => "Richardson Store",
+            address => "Tucumcari, NM",
+            blurb   => qq||,
+        },
+        {
             name    => "Cuervo Ghost Town",
             address => "Cuervo NM",
             blurb   => qq||,
@@ -1376,12 +1376,12 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Bow & Arrow Lodge",
             address => "8300 Central Ave SE, Albuquerque NM",
-            blurb   => qq|The works of Vince Gilligan, set in Albuquerque, ranked: 1. Pluribus (the most important battle humanity has ever fought). 2. Better Call Saul (watch it before Breaking Bad, it's better, and it's a prequel anyway). 3. Breaking Bad.|,
+            blurb   => qq|The works of Vince Gilligan, set in Albuquerque, ranked: 1. Pluribus (the most important battle humanity has ever fought, but you might have trouble deciding which side you're on). 2. Better Call Saul (watch it before Breaking Bad, it's better, and it's a prequel anyway). 3. Breaking Bad.|,
         },
         {
             name    => "Loma Verde Motel sign",
             address => "7503 Central Ave NE, Albuquerque NM",
-            blurb   => qq|I'm not here to show you a good time. I'm here to show you America. Parts of Route 66 are now worse than ghost towns. They are zombie towns. Towns that are still populated, but populated only with zombies.|,
+            blurb   => qq|I'm not here to show you a good time. I'm here to show you America, for better or for worse. Some towns on Route 66 are now worse than ghost towns. They are zombie towns.|,
         },
         {
             name    => "Hotel Zazz",
@@ -1401,7 +1401,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "66 Diner",
             address => "1405 Central Ave NE, Albuquerque NM",
-            blurb   => qq||,
+            blurb   => qq|Sometimes they have cherry pie.|,
         },
         {
             name    => "The Imperial",
@@ -1436,7 +1436,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Route 66 Visitor Center",
             address => "12300 Central Ave SW, Albuquerque NM",
-            blurb   => qq||,
+            blurb   => qq|This site is still under development, but now you can go in. It's getting good. There's a neon sign park out front.|,
         },
         {
             name    => "Budville Trading Post",
@@ -1454,9 +1454,14 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
             blurb   => qq|There is a small linoleum mosaic embedded into the asphalt in front of this place.|,
         },
         {
+            name    => "West Theatre",
+            address => "118 W Santa Fe Ave, Grants NM",
+            blurb   => qq||,
+        },
+        {
             name    => "New Mexico Mining Museum",
             address => "100 Iron Ave, Grants NM",
-            blurb   => qq||,
+            blurb   => qq|Go down the elevator.|,
         },
         {
             name    => "Old Bluewater Motel",
@@ -1484,6 +1489,11 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
             blurb   => qq|Probably not what you're expecting.|,
         },
         {
+            name    => "Blue Spruce Lodge",
+            address => "1119 E Hwy 66, Gallup NM",
+            blurb   => qq||,
+        },
+        {
             name    => "Historic El Rancho Hotel",
             address => "1000 E Hwy 66, Gallup NM",
             blurb   => qq||,
@@ -1501,7 +1511,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Fort Courage",
             address => "Houck AZ",
-            blurb   => qq|The Pancake House that used to be here was destroyed in 2026. Last I visited, the fort building was still here, but who knows what you'll find by the time you read this. We've reached the all-is-lost moment in our story. We're two-thirds of the way through. It's the mirror of the midpoint, back when things still seemed so good. Things don't seem so good, now. We're about to break into Act III, the climax.|,
+            blurb   => qq|The Pancake House that used to be here was destroyed in 2026. Last time I visited, the fort building was still here, but who knows what you'll find by the time you read this. We've reached the all-is-lost moment in our story. We're two-thirds of the way through. It's the mirror of the midpoint, back when things still seemed so good. Things don't seem so good, now. We're about to break into Act III, the climax.|,
         },
         {
             name    => "Dotch Windsor's Painted Desert Trading Post",
@@ -1523,7 +1533,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Knife City Outlet",
             address => "7699 Sun Valley Rd, Sun Valley AZ",
-            blurb   => qq|One time when I visited this place, they had flamethrowers. Last time, the flamethrowers were gone. But you can still ask them to show you all of their weapons that are illegal in New York City.|,
+            blurb   => qq|Last time I visited this place, the flamethrowers were gone. But you can still ask them to show you several types of weapons that are illegal in Chicago and Los Angeles. And most other Western countries.|,
         },
         {
             name    => "El Rancho Restaurant & Motel",
@@ -1558,7 +1568,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "La Posada Hotel",
             address => "303 E 2nd St, Winslow AZ",
-            blurb   => qq||,
+            blurb   => qq|My absolute favorite hotel on Route 66. Quirky, old, and luxurious. Unlike big city hotels, you can park you own car, and you don't need a porter to take your bags to your room. And you can open the gosh-danged windows.|,
         },
         {
             name    => "Route 66 Delta Motel",
@@ -1571,7 +1581,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|This place was recently reopened and it's a lot of fun. I rented a four-person bike. I pedaled as fast as I could through the park, completing the journey in under a minute and terrifying my companions.|,
         },
         {
-            name    => "Meteor Crater Natural Landmark",
+            name    => "Meteor Crater",
             address => "Meteor Crater Rd AZ",
             blurb   => qq||,
         },
@@ -1606,7 +1616,12 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq||,
         },
         {
-            name    => "J. Lawrence Walkup Skydome",
+            name    => "Weatherford Hotel",
+            address => "23 N Leroux St, Flagstaff AZ",
+            blurb   => qq||,
+        },
+        {
+            name    => "J Lawrence Walkup Skydome",
             address => "1705 S San Francisco St, Flagstaff AZ",
             blurb   => qq|There are two Muffler Men here, one on each side. When you've found one, drive around a bit to find the other one.|,
         },
