@@ -163,7 +163,7 @@ sub main {
         {
             name    => "Route 66 of Chenoa Roadside Attraction Tourist Info",
             address => "501 W Cemetery Ave, Chenoa IL",
-            blurb   => qq|This is just a little closet full of flyers. But every time I come by, I make sure to stop and populate it with flyers, books, or art. Don't just consume, create. Leave something here for future travelers. There's a little sign in here that says you're supposed to call a number for permission to leave stuff here. I've never called it. Ask forgiveness, not permission.|,
+            blurb   => qq|This is just a little closet full of flyers. But every time I come by, I make sure to stop and populate it with t-shirts, books, or art. There's a little sign in here that says you're supposed to call a number for permission to leave stuff here. I've never called it.|,
         },
         {
             name    => "Lexington Route 66 Memory Lane",
@@ -173,7 +173,7 @@ sub main {
         {
             name    => "The Shake Shack",
             address => "512 W Main St, Lexington IL",
-            blurb   => qq|I'm pretty sure I had some fried corn nuggets here. Corn nuggets are my favorite bit of semi-obscure American food. If this place is closed, don't worry, you'll have another chance or two to try fried corn nuggets on this trip.|,
+            blurb   => qq|I'm pretty sure I had some fried corn nuggets here. Corn nuggets are my favorite bit of semi-obscure American food. If this place is closed, don't worry, you'll have another chance try fried corn nuggets on this trip.|,
         },
         {
             name    => "Sprague's Super Service Station",
@@ -191,9 +191,9 @@ sub main {
             blurb   => qq|When traveling, you might think you have little need for maple syrup. But think a little harder. Most restaurants give you the fake stuff nowadays. Wouldn't it be good to have your own supply of the good stuff? And what if you run out of coolant or wiper fluid? I'm sure syrup would work fine for that. You can also just buy a really small piece of candy made out of syrup.|,
         },
         {
-            name    => "Arcadia: America's Playable Arcade Museum",
+            name    => "Arcadia America's Playable Arcade Museum",
             address => "107 S Hamilton St, McLean IL",
-            blurb   => qq|I'm an expert at those Ms. Pac Man machines where they flip a switch or swap a chip that makes Ms. Pac Man go extra fast. Be sure to check out the pinball place across the street, too.|,
+            blurb   => qq|I'm an expert at those Ms. Pac Man machines where they flip a switch or swap a chip that makes Ms. Pac Man go extra fast. Be sure to check out their pinball place across the street, too.|,
         },
         {
             name    => "Country-Aire Restaurant",
@@ -211,7 +211,7 @@ sub main {
             blurb   => qq||,
         },
         {
-            name    => "The Mill Museum on Route 66",
+            name    => "The Mill Museum",
             address => "738 S Washington St, Lincoln IL",
             blurb   => qq||,
         },
@@ -236,7 +236,7 @@ sub main {
             blurb   => qq|Go at night. Drive around it. Some gates are sometimes closed, other gates are sometimes open. There is a custom brick here from Wasteland Firebird.|,
         },
         {
-            name    => "Route 66 Hotel & Conference Center",
+            name    => "Route 66 Hotel Conference Center",
             address => "625 E St Joseph St, Springfield IL",
             blurb   => qq|There is a secret hidden behind the mirror in Room 163. Find out more by searching for "Room Attack" on Wasteland Firebird's YouTube channel.|,
         },
@@ -251,7 +251,7 @@ sub main {
             blurb   => qq||,
         },
         {
-            name    => "Pharmacy Gallery & Art Space",
+            name    => "Pharmacy Gallery Art Space",
             address => "623 E Adams St, Springfield IL",
             blurb   => qq|They tell me there's a Bob Waldmire exhibit here, Fridays and Saturdays in 2026.|,
         },
@@ -296,11 +296,6 @@ sub main {
             blurb   => qq|Big Ron the extra-big Muffler Man is here.|,
         },
         {
-            name    => "Sangamo Brewing",
-            address => "109 E Mulberry St, Chatham IL",
-            blurb   => qq||,
-        },
-        {
             name    => "Chatham Railroad Museum",
             address => "100 N State St, Chatham IL",
             blurb   => qq||,
@@ -326,17 +321,12 @@ sub main {
             blurb   => qq||,
         },
         {
-            name    => "Turkey Tracks on Route 66",
+            name    => "Turkey Tracks",
             address => "26618-27306 Donaldson Rd, Girard IL",
             blurb   => qq|A bird ran through the wet concrete, and its footprints are still there. Look for a small sign and a white square on the road.|,
         },
         {
-            name    => "Carlinvilla Motel",
-            address => "18891 State Rte 4, Carlinville IL",
-            blurb   => qq||,
-        },
-        {
-            name    => "Rt 66 Skyview Drive-In",
+            name    => "Skyview Drive-In",
             address => "1500 Old Rte 66 N, Litchfield IL",
             blurb   => qq||,
         },
@@ -351,7 +341,7 @@ sub main {
             blurb   => qq||,
         },
         {
-            name    => "Litchfield Museum & Route 66 Welcome Center",
+            name    => "Litchfield Museum",
             address => "334 Old Rte 66 N, Litchfield IL",
             blurb   => qq||,
         },
@@ -363,7 +353,7 @@ sub main {
         {
             name    => "Henry's Rabbit Ranch",
             address => "1107 Historic Old Rte 66, Staunton IL",
-            blurb   => qq|At some point you're going to figure out that not everything on this list is still open for business. Whether it's open or not is not the point. We're lucky that these places still exist at all.|,
+            blurb   => qq|At some point you're going to figure out that not everything on this list is still open for business. We're just lucky that these places still exist at all.|,
         },
         {
             name    => "DeCamp Station",
@@ -378,7 +368,7 @@ sub main {
         {
             name    => "Route 66 Creamery",
             address => "11 S Old Rte 66, Hamel IL",
-            blurb   => qq|I've stopped here on two separate occasions, and met two completely different sets of employees. But they all had something in common. The employees here the most pure, kind, well-adjusted, hard-working young people I've ever met. Hamel Illinois is America at its best.|,
+            blurb   => qq|I've stopped here on two separate occasions, and met two completely different sets of employees. But they all had something in common. The employees here are the most pure, kind, well-adjusted, hard-working young people I've ever met. Hamel Illinois is America at its best.|,
         },
         {
             name    => "Weezy's",
@@ -423,7 +413,7 @@ sub main {
         {
             name    => "Rusty the Muffler Man",
             address => "614 Niedringhaus Ave, Granite City IL",
-            blurb   => qq||,
+            blurb   => qq|He might not be on your map, but if you go to this address, he's here.|,
         },
         {
             name    => "Crown Candy Kitchen",
@@ -433,17 +423,22 @@ sub main {
         {
             name    => "Chili Mac's Diner",
             address => "510 Pine St, St Louis MO",
-            blurb   => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was this idea that people got into their heads, the idea that god wanted the Europeans to spread out into America. I really don't think that any supernatural being cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make the best country on Earth.|,
+            blurb   => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was this idea that people got into their heads, the idea that god wanted the Europeans to spread out into America. I don't think that any supernatural being really cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make the best country on Earth.|,
         },
         {
             name    => "Neon Museum of St Louis",
             address => "3537 Chouteau Ave, St Louis MO",
-            blurb   => qq|When I say the USA is the best country on Earth, you might reply that I'm biased since I was born in the USA. But I've traveled the world and I've spent a lot of time doing my best to overcome my biases. I truly and firmly believe that America has things about it that make it exceptional.|,
+            blurb   => qq|When I say the USA is the best country on Earth, you might reply that I'm biased since I was born in the USA. But I've traveled the world and I've spent a lot of time doing my best to overcome my biases. I firmly believe that America has things about it that make it truly exceptional.|,
+        },
+        {
+            name    => "Donut Drive In",
+            address => "6525 Chippewa St, St Louis MO",
+            blurb   => qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or didn't know. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream.|,
         },
         {
             name    => "Ted Drewes Frozen Custard",
             address => "6726 Chippewa St, St Louis MO",
-            blurb   => qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or didn't know. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream.|,
+            blurb   => qq||,
         },
         {
             name    => "Wally's",
@@ -471,6 +466,11 @@ sub main {
             blurb   => qq||,
         },
         {
+            name    => "Hoffman's Drive-In",
+            address => "306 S 1st St, Pacific MO",
+            blurb   => qq||,
+        },
+        {
             name    => "Gardenway Motel sign",
             address => "2827 MO-100, Villa Ridge MO",
             blurb   => qq|It's just a sign now. But oh, what a sign it is.|,
@@ -481,9 +481,14 @@ sub main {
             blurb   => qq||,
         },
         {
+            name    => "International Shoe Company Building",
+            address => "160 N Main St, St Clair MO",
+            blurb   => qq||,
+        },
+        {
             name    => "Creative Chainsaw Carvings",
             address => "151 State Rte W, Sullivan MO",
-            blurb   => qq|She's kept this place open in memory of her husband who died many years ago. Ask her about him. You will never forget her story.|,
+            blurb   => qq|Ask her about her dead husband. You will never forget her story.|,
         },
         {
             name    => "Meramec Caverns",
@@ -491,9 +496,14 @@ sub main {
             blurb   => qq|Some people go for the nature stuff. I'm more into the midcentury Americana. But I figured this place was obligatory, so I went. I didn't expect to walk out in tears. Not only is the place gorgeous, but at the end, they project a patriotic short film about America on the cavern walls.|,
         },
         {
+            name    => "Terror On Route 66",
+            address => "1143 N Service Rd W, Sullivan MO",
+            blurb   => qq|I've been meaning to check this place out, but I'm too scared.|,
+        },
+        {
             name    => "Shamrock Court Motel",
             address => "101 Shamrock, Sullivan MO",
-            blurb   => qq|Newly restored by Roamin' Rich Dinkela.|,
+            blurb   => qq|Newly restored by Route 66 hero Roamin' Rich Dinkela.|,
         },
         {
             name    => "Missouri Hick Barbeque",
@@ -506,9 +516,9 @@ sub main {
             blurb   => qq|You can hear the neon sign buzz on and off. This property is now owned by the magnificent steward known as Roamin' Rich Dinkela.|,
         },
         {
-            name    => "Weir on 66 / Rich's Famous Burgers",
+            name    => "Weir on 66 Rich's Famous Burgers",
             address => "102 W Washington St, Cuba MO",
-            blurb   => qq|This building has been many things throughout the years, but what matters is that it's still here. Go in and buy some of whatever it is they're selling these days.|,
+            blurb   => qq|This old building has been many things throughout the years. Go in and buy some of whatever it is they're selling these days.|,
         },
         {
             name    => "Fanning Outpost Rocking Chair",
@@ -521,9 +531,14 @@ sub main {
             blurb   => qq|I'm not claiming this place is open. I'm just claiming it's worth stopping at. Check out those signs.|,
         },
         {
+            name    => "Vernelle's Motel",
+            address => "10887 Arlington Road, Newburg MO",
+            blurb   => qq|Entropy cannot be stopped. We can only delay it for a while.|,
+        },
+        {
             name    => "John's Modern Cabins",
             address => "11107 Arlington Outer Rd, Newburg MO",
-            blurb   => qq|Entropy cannot be stopped. We can only delay it for a while. |,
+            blurb   => qq|There are some cool dead ends and dirt roads around here. But I made a rule for myself that I'd only make you go down one dirt road in this book. Adventure awaits you in Arizona.|,
         },
         {
             name    => "Devil's Elbow Bridge",
@@ -538,7 +553,7 @@ sub main {
         {
             name    => "Route 66 Diner",
             address => "126 St Robert Blvd, St Robert MO",
-            blurb   => qq||,
+            blurb   => qq|I hung some of my art on the wall next to the kids' art. Maybe it's still there.|,
         },
         {
             name    => "Route 66 Neon Sign Park",
@@ -551,6 +566,11 @@ sub main {
             blurb   => qq|It's not just a building. It's the oldest building in the USA.|,
         },
         {
+            name    => "Gascozark Store",
+            address => "30568 State Hwy AB, Richland MO",
+            blurb   => qq||,
+        },
+        {
             name    => "Route 66 Gasconade Bridge",
             address => "Richland MO",
             blurb   => qq||,
@@ -561,9 +581,9 @@ sub main {
             blurb   => qq|The organization that is restoring the sign is different from the organization that runs the motel, and the motel isn't exactly a motel because it's more like apartments, but they tell me that might be changing, and maybe you can stay here like it's a motel again. I dunno, just go look at the sign.|,
         },
         {
-            name    => "Smokin' Jones BBQ / Wrink's Market",
+            name    => "Smokin' Jones BBQ Wrink's Market",
             address => "135 Wrinkle Ave, Lebanon MO",
-            blurb   => qq||,
+            blurb   => qq|You can get a piece of cherry pie here.|,
         },
         {
             name    => "Taylor's Dairy Joy",
@@ -571,19 +591,14 @@ sub main {
             blurb   => qq||,
         },
         {
-            name    => "The Manor House Inn",
+            name    => "The Manor Inn",
             address => "505 E Elm St, Lebanon MO",
-            blurb   => qq||,
-        },
-        {
-            name    => "Route 66 Museum",
-            address => "915 S Jefferson Ave, Lebanon MO",
             blurb   => qq||,
         },
         {
             name    => "Boswell Park Camp Joy",
             address => "51 Drury Ln, Lebanon MO",
-            blurb   => qq|I'm not here to tell you what things are. I'm here to tell you where to go. Ask questions, read plaques, or just drive by and enjoy.|,
+            blurb   => qq|I'm not here to tell you what things are. I'm here to tell you where to go. Ask questions, read the plaques, or just drive by and enjoy.|,
         },
         {
             name    => "Redmon's Candy Factory",
