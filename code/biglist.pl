@@ -606,10 +606,20 @@ sub main {
             blurb   => qq||,
         },
         {
+            name    => "Little Clay House",
+            address => "238 N Clay St, Marshfield MO",
+            blurb   => qq|I haven't actually been to this place, but it looks nice.|,
+        },
+        {
             name    => "Buc-ee's",
             address => "3284 N Mulroy Rd, Springfield MO",
             blurb   => qq|Ah, here we are. Buc-ee's started in Texas but now has many locations. The company has only existed since 1982, but I'm sure that in 2082, future Route travelers will consider this place a magnificent historical landmark.
 Buc-ee's is privately held, so they can focus on customer happiness without worrying about short-term shareholder profits.|,
+        },
+        {
+            name    => "Rest Haven Court",
+            address => "2000 E Kearney St, Springfield MO",
+            blurb   => qq||,
         },
         {
             name    => "Andy's Frozen Custard",
@@ -617,9 +627,14 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
             blurb   => qq||,
         },
         {
+            name    => "Glenstone Court Motel",
+            address => "2023 N Glenstone Ave, Springfield MO",
+            blurb   => qq||,
+        },
+        {
             name    => "Best Western Route 66 Rail Haven",
             address => "203 S Glenstone Ave, Springfield MO",
-            blurb   => qq|They have a gorgeous old sign here.|,
+            blurb   => qq|They have some cool old signs here.|,
         },
         {
             name    => "Steak 'n Shake",
@@ -634,7 +649,7 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
         {
             name    => "History Museum on the Square",
             address => "154 Park Central Square, Springfield MO",
-            blurb   => qq|Some museums on the Route have flat images blown up so big you can see the pixels, and that's all they have. I call these "flat museums." They're funded with multi-million dollar taxpayer-funded grants, while the Route's legacy small businesses are dying. This museum has something better. Here you can find the original telegram from Cyrus Avery declaring on April 30, 1926, that the Route would be known as "66."|,
+            blurb   => qq|Some museums on the Route are just a bunch of flat images blown up so big you can see the pixels. I call these "flat museums." They're funded with multimillion dollar taxpayer-funded grants, while the Route's legacy small businesses are dying. But at this museum, you can find the original telegram from Cyrus Avery on April 30, 1926 declaring that the Route would be known as "66."|,
         },
         {
             name    => "1984 Arcade",
@@ -669,7 +684,7 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
         {
             name    => "Gary's Gay Parita Sinclair",
             address => "21118 Old 66, Ash Grove MO",
-            blurb   => qq||,
+            blurb   => qq|I think there's still a signed copy of my book, Heads Will Rock: A chronicle of postapocalyptic mayhem hidden in this place. It's free for the taking. It's about a postapocalyptic journey up Route 66, to recommission the old destroyed Pontiac Firebird factory in Norwood Ohio.|,
         },
         {
             name    => "Spencer Station",
@@ -679,6 +694,11 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
         {
             name    => "Red Oak II",
             address => "12275 Kafir Rd, Carthage MO",
+            blurb   => qq||,
+        },
+        {
+            name    => "Campbell 66 Express",
+            address => "426 High St, Carthage MO",
             blurb   => qq||,
         },
         {
@@ -793,14 +813,14 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
-            name    => "Vinita Antique Mall on Route 66 & Jefferson Highway",
-            address => "127 S Wilson St, Vinita OK",
-            blurb   => qq||,
-        },
-        {
-            name    => "Hi-Way Cafe and Western Motel",
+            name    => "Hi-Way Cafe Western Motel",
             address => "437918 US-60, Vinita OK",
             blurb   => qq|Big Bill the Muffler Man, the Big Indian, and Big Al the Chef are all here.|,
+        },
+        {
+            name    => "Pryor Creek Bridge",
+            address => "Chelsea OK",
+            blurb   => qq||,
         },
         {
             name    => "Ed Galloway's Totem Pole Park",
