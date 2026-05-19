@@ -865,7 +865,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Ike's Chili",
             address => "1503 E 11th St, Tulsa OK",
-            blurb   => qq||,
+            blurb   => qq|Tulsa is a neon revival town. Try to see the signs at night.|,
         },
         {
             name    => "Buck Atom's Cosmic Curios on 66",
@@ -875,7 +875,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Buck's Vintage",
             address => "1317 E 11th St, Tulsa OK",
-            blurb   => qq|A carefully curated collection of the coolest vintage stuff you'll ever find. Wasteland Firebird placed an engraved brick at the base of Cowboy Bob.|,
+            blurb   => qq|A carefully curated collection of the coolest vintage stuff you'll ever find. Wasteland Firebird has an engraved brick at the base of Cowboy Bob.|,
         },
         {
             name    => "Meadow Gold Mack",
@@ -890,7 +890,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Cyrus Avery Centennial Plaza",
             address => "Southwest Blvd, Tulsa OK",
-            blurb   => qq||,
+            blurb   => qq|I rarely say this. But, what a sculpture.|,
         },
         {
             name    => "Route 66 Neon Sign Park",
@@ -910,7 +910,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "The Roller Dome",
             address => "9661 New Sapulpa Rd, Sapulpa OK",
-            blurb   => qq||,
+            blurb   => qq|There is a gorgeous old hand-painted sign out front.|,
         },
         {
             name    => "Happy Burger",
@@ -933,19 +933,24 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
+            name    => "Tee Pee Drive-in",
+            address => "13166 W Ozark Trail, Sapulpa OK",
+            blurb   => qq||,
+        },
+        {
             name    => "J's Country Kitchen",
             address => "31 Oak St, Kellyville OK",
             blurb   => qq||,
         },
         {
-            name    => "Bristow Train Depot and Museum",
+            name    => "Bristow Train Depot Museum",
             address => "1 Railroad Pl, Bristow OK",
             blurb   => qq||,
         },
         {
             name    => "Rock Cafe",
             address => "114 W Main St, Stroud OK",
-            blurb   => qq||,
+            blurb   => qq|Stroud is a neon revival town. Try to look at the signs at night.|,
         },
         {
             name    => "Route 66 Spirit of America Museum",
@@ -963,9 +968,14 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
+            name    => "Lincoln Motel",
+            address => "740 E 1st St, Chandler OK",
+            blurb   => qq||,
+        },
+        {
             name    => "McJerry's Route 66 Gallery",
             address => "306 Manvel Ave, Chandler OK",
-            blurb   => qq|I think Jerry McClanahan might have written some little guide book for Route 66, but the real reason to stop here is his amazing painting 666 EXPRESS.|,
+            blurb   => qq|I think Jerry McClanahan wrote some kind of guide book for Route 66, but the real reason to stop here is his amazing painting 666 EXPRESS.|,
         },
         {
             name    => "Westfall Phillips 66 Station",
@@ -980,7 +990,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "John's Place Museum",
             address => "13441 OK-66, Arcadia OK",
-            blurb   => qq|I haven't made it here yet, but I've heard good things about it.|,
+            blurb   => qq||,
         },
         {
             name    => "Chicken Shack",
@@ -1013,6 +1023,11 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
+            name    => "Western Motel",
+            address => "7600 NW 39th Expy, Bethany OK",
+            blurb   => qq||,
+        },
+        {
             name    => "Lake Overholser Bridge",
             address => "8703-8709 Overholser Dr, Bethany OK",
             blurb   => qq||,
@@ -1023,14 +1038,34 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
-            name    => "Yukon Mill & Grain Co.",
+            name    => "Yukon Mill Grain Co",
             address => "Yukon OK",
             blurb   => qq||,
         },
         {
+            name    => "Ranger Motel",
+            address => "1201 SE 27th St, El Reno OK",
+            blurb   => qq||,
+        },
+        {
+            name    => "Centre Theatre",
+            address => "110 S Bickford Ave, El Reno OK",
+            blurb   => qq||,
+        },
+        {
+            name    => "Johnnie's Grill",
+            address => "301 S Rock Island Ave, El Reno OK",
+            blurb   => qq|Get the onion burger. But save room for three more.|,
+        },
+        {
+            name    => "Robert's Grill",
+            address => "300 S Bickford Ave, El Reno OK",
+            blurb   => qq|Get the onion burger. But save room for two more.|,
+        },
+        {
             name    => "Sid's Diner",
             address => "300 S Choctaw Ave, El Reno OK",
-            blurb   => qq|Get the onion burger. If this place is busy, closed, or just too hip for you, try Jobe's down the street.|,
+            blurb   => qq|Get the onion burger. But save room for one more.|,
         },
         {
             name    => "Jobe's Country Boy Drive-In",
@@ -1045,6 +1080,11 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Bridgeport Bridge",
             address => "US-281, Hinton OK",
+            blurb   => qq||,
+        },
+        {
+            name    => "Hinton Junctions Courts and Cafe",
+            address => "16153 Old 66 Rd, Hinton OK",
             blurb   => qq||,
         },
         {
@@ -1063,6 +1103,16 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq|There never was, and never will be, another century like the Twentieth. One day, historians will speak of "The Twentieth Century" the way we today speak of "The Renaissance," or "The Enlightenment."|,
         },
         {
+            name    => "Cotton Boll Motel sign",
+            address => "605 Old US Hwy 66, Canute OK",
+            blurb   => qq||,
+        },
+        {
+            name    => "United Supermarkets",
+            address => "2700 W 3rd St, Elk City OK",
+            blurb   => qq|A modern supermarket that honors the beauty of mid-Twentieth Century design.|,
+        },
+        {
             name    => "National Route 66 & Transportation Museum",
             address => "2717 W 3rd St, Elk City OK",
             blurb   => qq|It's a weird museum. But weird is good, right?|,
@@ -1075,7 +1125,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Sam's Town on 66",
             address => "401 W Roger Miller Blvd, Erick OK",
-            blurb   => qq|When we were here, a dirty-encrusted man came down the street, handed us bags of fresh pecans still in their shells, then walked away. Maybe that was Sam?|,
+            blurb   => qq|When we were here, a dirt-encrusted man came down the street, handed us bags of fresh pecans still in their shells, then walked away. Maybe that was Sam?|,
         },
         {
             name    => "West Winds Motel",
@@ -1088,13 +1138,28 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq|There is a message made of hand-cut plastic letters embedded into the asphalt in front of this building.|,
         },
         {
-            name    => "Devil's Rope Barbed Wire Museum",
-            address => "100 Kingsley St, McLean TX",
+            name    => "Restored 1929 Route 66 Gas Station",
+            address => "212 First St, McLean TX",
             blurb   => qq||,
         },
         {
-            name    => "Restored 1929 Route 66 Gas Station",
-            address => "212 First St, McLean TX",
+            name    => "Cactus Inn",
+            address => "101 Pine St, McLean TX",
+            blurb   => qq||,
+        },
+        {
+            name    => "Red River Steakhouse",
+            address => "101 US Rte 66, McLean TX",
+            blurb   => qq||,
+        },
+        {
+            name    => "Alanreed",
+            address => "Alanreed TX",
+            blurb   => qq||,
+        },
+        {
+            name    => "Jericho Gap",
+            address => "5989 State Hwy 70, Clarendon TX",
             blurb   => qq||,
         },
         {
