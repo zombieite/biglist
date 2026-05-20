@@ -1282,7 +1282,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Roadrunner Lodge Motel",
             address => "1023 E Rte 66 Blvd, Tucumcari NM",
-            blurb   => qq|Does Tucumcari need and deserve a mass infusion of cash? Yes, but the money should only be used for preservation. Nothing new should be added.|,
+            blurb   => qq||,
         },
         {
             name    => "TeePee Curios",
@@ -1292,7 +1292,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Blue Swallow Motel",
             address => "815 E Rte 66 Blvd, Tucumcari NM",
-            blurb   => qq||,
+            blurb   => qq|Does Tucumcari need and deserve a mass infusion of cash? Yes, but the money should only be used for preservation. Nothing new should be added.|,
         },
         {
             name    => "Motel Safari",
