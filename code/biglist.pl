@@ -99,7 +99,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Blues Brothers Copmobile",
             address => "2410 S Chicago St, Joliet IL",
-            blurb => qq|My favorite scene in The Blues Brothers is the one where they park their car at the end of a narrow alley, in a tiny electrical closet just a few inches wider than the car itself. This was originally supposed to be an explanation of how the car got its supernatural powers. I always saw it as a humorous but accurate depiction of the hassles of city parking. If you have no idea what scene I'm talking about, that could be because it was cut from some versions of the film.|,
+            blurb   => qq|My favorite scene in The Blues Brothers is when they park their car at the end of a narrow alley, in a tiny electrical closet just a few inches wider than the car itself. This was originally supposed to be an explanation of how the car got its supernatural powers. I always saw it as a humorous but accurate depiction of the hassles of city parking. If you have no idea what scene I'm talking about, that could be because it was cut from some versions of the film.|,
         },
         {
             name    => "Gemini Giant",
