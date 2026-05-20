@@ -1442,7 +1442,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Budville Trading Post",
             address => "HC 77 Box 1A, Seama NM",
-            blurb   => qq|There is a small linoleum mosaic embedded into the asphalt in front of this place.|,
+            blurb   => qq|There is a small linoleum mosaic embedded into the asphalt.|,
         },
         {
             name    => "Villa de Cubero Trading Post",
@@ -1452,7 +1452,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Ruins of Whiting Brothers Gas Station",
             address => "San Fidel NM",
-            blurb   => qq|There is a small linoleum mosaic embedded into the asphalt in front of this place.|,
+            blurb   => qq|There is a small linoleum mosaic embedded into the asphalt.|,
         },
         {
             name    => "West Theatre",
