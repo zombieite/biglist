@@ -36,7 +36,7 @@ sub main {
             blurb   => qq|Most people who travel Route 66 will only travel it once. So pay attention to the story that the road tells you.|,
         },
         {
-            name    => "Chicago Athletic Association Unbound Collection by Hyatt",
+            name    => "Chicago Athletic Association",
             address => "12 S Michigan Ave, Chicago IL",
             blurb   => qq|A cool, luxurious, renovated old hotel that has retained some of its sports club roots.|,
         },
@@ -46,9 +46,9 @@ sub main {
             blurb   => qq|Monet's every stroke contains frivolity. He used to say, "I like to paint as a bird sings." Viewing a Monet is an active process. You can't properly appreciate a Monet while seated. You have to approach the painting, then step back, then look away, then look back. A work by Monet is a three dimensional object, just as much a sculpture as a painting. Van Gogh was a better artist, but Monet had more fun.|,
         },
         {
-            name    => "Historic Route 66 signs and plaque",
+            name    => "Historic Route 66 sign",
             address => "E Adams St & S Michigan Ave, Chicago IL",
-            blurb   => qq|As you listen to the story of the road, you're also writing your own story. And you're the main character! Stand up tall, proud, and curious. You've been waiting your whole life for this day. A good story can change you. A good story can change the world. So write us a good story.|,
+            blurb   => qq|As you listen to the story of the road, you're also writing your own story. And you're the main character! Stand up tall, proud, and curious. You've been waiting your whole life for this. A good story can change you. A good story can change the world.|,
         },
         {
             name    => "Lou Mitchell's",
@@ -58,7 +58,7 @@ sub main {
         {
             name    => "Lulu's Hot Dogs",
             address => "1000 S Leavitt St, Chicago IL",
-            blurb   => qq|You won't be able to eat everything you see on the Route. I still haven't eaten here. Whether you eat at these places or not, stop in, say hello, and drop a tip in the jar. The food itself doesn't always matter. I put places on this list because they are beautiful, quirky, old, luxurious, or delicious. They don't have to be all of those things at once.|,
+            blurb   => qq|You won't be able to eat everything you see on the Route. I still haven't eaten here. Whether you eat at these places or not, stop in, say hello, and drop a tip in the jar. The food itself doesn't always matter. I put places on this list because they're beautiful, quirky, old, luxurious, or delicious. They don't have to be all of those things at once.|,
         },
         {
             name    => "Steak 'n Egger",
@@ -73,7 +73,7 @@ sub main {
         {
             name    => "Cigars & Stripes BBQ Lounge",
             address => "6715 Ogden Ave, Berwyn IL",
-            blurb   => qq|There is a "Muffler Man" here, the first of many. It's important that you learn what a Muffler Man is. These are giant, human-shaped fiberglass sculptures. They dotted the landscape of midcentury America. They sometimes held mufflers in their hands. Some are old, some are new. Wait till you see Atlanta, Illinois and Tulsa, Oklahoma. |,
+            blurb   => qq|There is a "Muffler Man" here, the first of many. It's important that you learn what a Muffler Man is. These are giant, human-shaped fiberglass sculptures. They dotted the landscape of mid-Twentieth century America. They sometimes held mufflers in their hands. Some are old, some are new. Wait till you see Atlanta Illinois and Tulsa Oklahoma.|,
         },
         {
             name    => "Dell Rhea's Chicken Basket",
@@ -88,7 +88,8 @@ sub main {
         {
             name    => "Old Joliet Prison",
             address => "1125 Collins St, Joliet IL",
-            blurb   => qq|We can't talk about Joliet Prison without talking about The Blues Brothers. That film is an archive of Americana. The music in that film spanned the entire Twentieth Century. Cab Calloway started making music in 1927, one year after Route 66 came into being. Due to swift advances in music and communication technology, the Twentieth Century spawned a new genre of music in every single decade.|,
+            blurb   =>
+qq|We can't talk about Joliet Prison without talking about The Blues Brothers. That film is an archive of Americana. The music in that film spanned the entire Twentieth Century. Cab Calloway started making music in 1927, the year Angel Delgadillo was born, and one year after Route 66 came into being. Due to swift advances in music and communication technology, the Twentieth Century spawned a new genre of music every single decade. When was the last time you heard a truly new genre of music?|,
         },
         {
             name    => "Rialto Square Theatre",
@@ -98,7 +99,7 @@ sub main {
         {
             name    => "Blues Brothers Copmobile",
             address => "2410 S Chicago St, Joliet IL",
-            blurb   => qq||,
+            blurb => qq|My favorite scene in The Blues Brothers is the one where they park their car at the end of a narrow alley, in a tiny electrical closet just a few inches wider than the car itself. This was originally supposed to be an explanation of how the car got its supernatural powers. I always saw it as a humorous but accurate depiction of the hassles of city parking. If you have no idea what scene I'm talking about, that could be because it was cut from some versions of the film.|,
         },
         {
             name    => "Gemini Giant",
