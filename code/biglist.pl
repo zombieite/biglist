@@ -1590,7 +1590,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Two Guns",
             address => "AZ",
-            blurb   => qq|The first time I visited this place, it was for a group photo shoot. I ended up taking sexy photos of a woman who later went on to indirectly cause the shooting death of a movie director. No one has ever seen these photos. If any tabloid is interested in making me rich, get in touch. If you think you saw these photos in my YouTube video, oh no, no you didn't. You saw the ones that were safe for YouTube.|,
+            blurb   => qq|The first time I visited this place, it was for a group photo shoot. I ended up taking sexy photos of a woman who later went on to indirectly cause the shooting death of a movie director. No one has ever seen these photos. If any tabloid is interested in making me rich, get in touch. If you think you saw these photos in my YouTube video, oh no, you didn't. You saw the ones that were safe for YouTube.|,
         },
         {
             name    => "Twin Arrows Trading Post Ruins",
