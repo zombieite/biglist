@@ -124,7 +124,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "80s Car Museum",
             address => "316 W Waupansie St, Dwight IL",
-            blurb   => qq|In the 80s, we were pretty sure that modern cars would not be loved and preserved like the cars from the glory days of the 50s, 60s, and 70s were. Safety and fuel economy were making cars boring. Or at least, that's what we thought. Nowadays, these cars seem quirky and fun compared to the nondescript blobs that silently and cleanly traverse the interstates that parallel Route 66.|,
+            blurb   => qq|In the 80s, we were pretty sure that modern cars would not be loved and preserved like the cars from the glory days of the 50s, 60s, and 70s. Safety and fuel economy were making cars boring. Or at least, that's what we thought. Nowadays, these cars seem quirky and fun compared to the nondescript blobs that silently and cleanly traverse the interstates that parallel Route 66.|,
         },
         {
             name    => "Dwight Coin Laundry",
