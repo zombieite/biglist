@@ -976,7 +976,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "McJerry's Route 66 Gallery",
             address => "306 Manvel Ave, Chandler OK",
-            blurb   => qq|I think Jerry McClanahan wrote some kind of guide book for Route 66, but the real reason to stop here is his amazing painting 666 EXPRESS.|,
+            blurb   => qq|I think Jerry McClanahan used to write some kind of Route 66 guide, but the real reason to stop here is his amazing painting 666 EXPRESS.|,
         },
         {
             name    => "Westfall Phillips 66 Station",
