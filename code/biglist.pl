@@ -2243,7 +2243,12 @@ sub generate_qr_codes_and_links {
             my $white  = $canvas->colorAllocate( 255, 255, 255 );
             my $black  = $canvas->colorAllocate( 0,   0,   0 );
             $canvas->filledRectangle( 0, 0, $w + $w, $h, $white );
-            $canvas->copy( $qr, $pad, 0, 0, 0, $w, $h );
+            if ( $place_name eq "Dotch Windsor's Painted Desert Trading Post" ) {
+                $canvas->filledRectangle( $pad, 0, 0, $w, $h, $black );
+            }
+            else {
+                $canvas->copy( $qr, $pad, 0, 0, 0, $w, $h );
+            }
             $canvas->rectangle( 0, 0, $w + $w - 1, $h - 1, $black );
 
             # Label in blank area
