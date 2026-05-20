@@ -1595,7 +1595,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Twin Arrows Trading Post Ruins",
             address => "East of Flagstaff AZ",
-            blurb   => qq|There's only one arrow here now. Someone should make a perfect replica and surreptitiously install it in the middle of the night.|,
+            blurb   => qq|There's only one arrow here now. Someone should make a perfect replica and surreptitiously install it in the middle of the night. Or just put the original one back. The rumor is, it's still out there somewhere.|,
         },
         {
             name    => "Walnut Canyon Bridge",
