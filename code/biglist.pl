@@ -1951,7 +1951,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
         {
             name    => "Santa Fe Trading Company",
             address => "15464 7th St, Victorville CA",
-            blurb   => qq|This has been a family-owned business since forever. It used to be a gas station, then it was a candy store, now it's... whatever this is. They make their own pomegranate jelly, if that helps.|,
+            blurb   => qq|This has been a family-owned business since forever. It used to be a gas station, then it was a candy store, now it's something else entirely. They make their own pomegranate jelly, if that helps.|,
         },
         {
             name    => "First Original McDonald's Museum",
