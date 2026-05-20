@@ -1272,7 +1272,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Watson's BBQ",
             address => "502 S Lake St, Tucumcari NM",
-            blurb   => qq||,
+            blurb   => qq|I don't know if this place is still open, but it's pretty fun to look at from the outside, too.|,
         },
         {
             name    => "Del's Restaurant",
