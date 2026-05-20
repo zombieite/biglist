@@ -194,7 +194,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Arcadia America's Playable Arcade Museum",
             address => "107 S Hamilton St, McLean IL",
-            blurb   => qq|I'm an expert at those Ms. Pac Man machines where they flip a switch or swap a chip that makes Ms. Pac Man go extra fast. Be sure to check out their pinball place across the street, too.|,
+            blurb   => qq|I'm an expert at playing those Ms. Pac Man machines where they flip a switch, or swap a chip, that makes Ms. Pac Man go extra fast. Be sure to check out their pinball place across the street, too.|,
         },
         {
             name    => "Country-Aire Restaurant",
