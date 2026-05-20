@@ -2243,7 +2243,9 @@ sub generate_qr_codes_and_links {
             my $white  = $canvas->colorAllocate( 255, 255, 255 );
             my $black  = $canvas->colorAllocate( 0,   0,   0 );
             $canvas->filledRectangle( 0, 0, $w + $w, $h, $white );
-            if ( $place_name in( "Dotch Windsor's Painted Desert Trading Post", "Road Runner's Retreat" ) ) {
+            if (   ( $place_name eq "Dotch Windsor's Painted Desert Trading Post" )
+                || ( $place_name eq "Road Runner's Retreat" ) )
+            {
                 $canvas->filledRectangle( $pad, 0, $w, $h, $black );
             }
             else {
