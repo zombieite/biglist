@@ -2244,7 +2244,7 @@ sub generate_qr_codes_and_links {
             my $black  = $canvas->colorAllocate( 0,   0,   0 );
             $canvas->filledRectangle( 0, 0, $w + $w, $h, $white );
             if ( $place_name eq "Dotch Windsor's Painted Desert Trading Post" ) {
-                $canvas->filledRectangle( $pad, 0, 0, $w, $h, $black );
+                $canvas->filledRectangle( 0, $pad, 0, 0, $w, $h, $black );
             }
             else {
                 $canvas->copy( $qr, $pad, 0, 0, 0, $w, $h );
