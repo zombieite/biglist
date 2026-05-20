@@ -1519,7 +1519,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
             name    => "Dotch Windsor's Painted Desert Trading Post",
             address => "Chambers AZ",
             blurb   =>
-qq|Take exit 320, head east a bit, then take the dirt road north half a mile. Stop at gate that has a tiny sign that says Painted Desert Trading Post. There is a lock with a code on it. You can call the number on the sign to get the code, you will need to text them a photo of your id. Enter the code into lock and hit the unlock button. Go through the gate and close it behind you. Immediately turn left, go west 2.6 miles. When you get to the Trading Post, you can go in, but make sure to keep all gates closed when you leave.
+qq|Take exit 320, head east a bit, then take the dirt road north half a mile. Stop at gate that has a tiny sign that says Painted Desert Trading Post. There is a lock with a code on it. You can call the number on the sign to get the code, you will need to text them a photo of your id. Enter the code into the lock and hit the unlock button. Go through the gate and close it behind you. Immediately turn left, go west 2.6 miles. When you get to the Trading Post, you can go in, but make sure to keep all gates closed when you leave.
 |,
         },
         {
