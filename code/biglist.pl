@@ -144,7 +144,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Old Log Cabin restaurant",
             address => "18700 Old Rte 66, Pontiac IL",
-            blurb   => qq|I think you can get a piece of cherry pie here.|,
+            blurb   => qq|I think you can get a piece of cherry pie here. I'm always looking for a good piece of cherry pie. That was meant to be taken literally but I guess you can take it figuratively if that amuses you.|,
         },
         {
             name    => "Route 66 Association of Illinois",
@@ -1237,7 +1237,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Mama Jo's Pies",
             address => "922 E Main St, Vega TX",
-            blurb   => qq|I'm always looking for a good piece of cherry pie. That was meant to be taken literally but I guess you can take it figuratively if that amuses you.|,
+            blurb   => qq|They have cherry pies here.|,
         },
         {
             name    => "Midpoint Cafe",
