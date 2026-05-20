@@ -2076,7 +2076,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
         {
             name    => "Tesla Diner",
             address => "7001 Santa Monica Blvd, Los Angeles CA",
-            blurb   => qq|Retrofuturistic like nothing you've ever seen before.|,
+            blurb   => qq|Retrofuturistic like nothing you've ever seen.|,
         },
         {
             name    => "The Formosa",
