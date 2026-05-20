@@ -781,7 +781,7 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
             name    => "Dairy King",
             address => "100 N Main St, Commerce OK",
             blurb   =>
-qq|The current owners took over this place in 1980 and I don't think their prices have been updated since. Last time I was here, the lady accidentally charged me \$2.50 for an \$8.50 order. When I pointed out the error, she used a calculator to determine the amount I still had left to pay. But if I'm ever lucky enough to reach her age, I'll be satisfied if I have half of her mental acuity. Her elderly son gets up every day at 3am to run 10 miles, and he rides around in the only car ever offered with a factory flame job: a Chrysler PT Cruiser.|,
+qq|The current owners took over this place in 1980 and I don't think their prices have changed since. Last time I was here, the lady accidentally charged me \$2.50 for an \$8.50 order. When I pointed out the error, she used a calculator to determine the amount I still had left to pay. But if I'm ever lucky enough to reach her age, I'll be satisfied if I have half of her mental acuity. Her elderly son gets up every day at 3am to run 10 miles, and he rides around in the only car ever offered with a factory flame job: a Chrysler PT Cruiser.|,
         },
         {
             name    => "Waylan's Ku-Ku",
