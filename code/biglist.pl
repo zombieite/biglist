@@ -149,7 +149,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Route 66 Association of Illinois",
             address => "110 W Howard St, Pontiac IL",
-            blurb   => qq|Bob Waldmire was a Route 66 artist. His name is one of the names you should learn and remember during this trip. His orange Volkswagen bus is here. His "Land Yacht" school bus is also here, sometimes. In 2024, by sheer chance, I ended up here right on one of the rare days that the bus was here and the interior was open to the public. I put some video up on YouTube. Search for "Wasteland Firebird Route 66."|,
+            blurb   => qq|Bob Waldmire was a Route 66 artist. His name is one of the names you should learn and remember during this trip. His orange Volkswagen bus is here. His "Land Yacht" school bus is also here, sometimes. In 2024, by sheer chance, I ended up here right on one of the rare days that the bus was here and the interior was open to the public. I put some video of the Land Yacht up on YouTube. Search for "Wasteland Firebird Route 66."|,
         },
         {
             name    => "Pontiac Oakland Auto Museum",
