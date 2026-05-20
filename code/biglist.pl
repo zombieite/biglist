@@ -1267,7 +1267,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Palomino Motel",
             address => "1215 E Rte 66 Blvd, Tucumcari NM",
-            blurb   => qq|Tucumcari is the closest you will come to experiencing Route 66 as it was in the old days.|,
+            blurb   => qq|Tucumcari is the closest you will come to experiencing Route 66 as it was in the old days. It's not just a neon revival town. Some of those old signs are still buzzing, unrestored.|,
         },
         {
             name    => "Watson's BBQ",
@@ -1649,7 +1649,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Rod's Steak House",
             address => "301 E Historic Rte 66, Williams AZ",
-            blurb   => qq||,
+            blurb   => qq|Williams is a neon revival town. Try to get a look at its signs at night.|,
         },
         {
             name    => "Pete's Route 66 Gas Station Museum",
