@@ -2330,7 +2330,7 @@ sub make_doc {
     print $md "In 1987, Angel Delgadillo saved Route 66.${line_break}In 2006, Pixar's Cars saved Route 66.${line_break}2026 is the Centennial of Route 66.${line_break}Who will save it now, if not you and me?${line_break}";
     print $md $page_break;
 
-    # Introduction pages
+    # Introduction
     print $md qq|
 Prepare to be inspired
 ${line_break}
@@ -2342,17 +2342,25 @@ Say it with me. "Semiquincentennial." Do any three-year-olds know that word? How
 ${line_break}
 Semi means half, quin means five, cent means hundred, ennial means years. The United States of America has now existed for half of 500 years.
 ${line_break}
-I was hoping for another Freedom Train, a Wagon Train Pilgrimage, NYC's Operation Sail, TV shows, special edition coins, special edition cars, fireworks, air shows, car shows, parades, and red-white-and-blue everything. A few of those things are happening, but something has definitely changed in the last fifty years. The reverence is gone.
+I was hoping for another Freedom Train, a Wagon Train Pilgrimage, New York City's Operation Sail, TV shows, special edition coins, special edition cars, fireworks, air shows, car shows, parades, and red-white-and-blue everything. A few of those things are happening, but something has definitely changed in the last fifty years. The reverence is gone.
 ${line_break}
 When I discovered that Route 66 would have its Centennial in the same year as America's Semiquincentennial, I knew that I had to do something to bring that reverence back.
 ${line_break}
 I traveled Route 66 four times. I made a lot of YouTube videos. I took a lot of notes. I set up a free Route 66 tour I called The Great Route 66 Centennial Convergence. I made flyers, t-shirts, and keychains based on my hand-drawn art. I commissioned miniature "Muffler Man" action figures of myself. I promoted the event so much that I was kicked off of Facebook forever for being a "spammer."
 ${line_break}
-And I created the first edition of this book. Like the t-shirts, keychains, and action figures, the first edition was never for sale. It was free for Convergence participants.
+And I created the "2026 Centennial Edition" of this book. Like the t-shirts, keychains, and action figures, the first edition was never for sale. It was free for Convergence participants.
 ${line_break}
-The Great Route 66 Centennial Convergence came to an end on April 30, 2026. But people kept asking for copies of the book. So here it is, with plenty of updates. You can buy this book at wastelandfirebird.com. You might still manage to get a copy of this book for free, if you look hard enough. Be sure to check the Route 66 of Chenoa IL Roadside Attraction Tourist Info booth. You never know what cool things people might leave there.
+The Great Route 66 Centennial Convergence came to an end on April 30, 2026. But people kept asking for copies of the book. So here it is, the 2026 Centennial Second Edition, with plenty of updates. You can now buy this book at wastelandfirebird.com. If people enjoy it, I'll release a new edition every year. Maybe twice a year.
 ${line_break}
-Route 66 has always represented the American Dream. If we save Route 66, we save the American Dream. If we save the American Dream, we save America. If we save America, we save the world. Because the American Dream is not just America's dream. It's everyone's dream.
+You might still manage to get a copy of this book for free, if you look hard enough. Be sure to check the Route 66 of Chenoa IL Roadside Attraction Tourist Info booth. You never know what cool stuff people might leave there.
+${line_break}
+Route 66 goes from Chicago to LA. It represents the idea of going West. Americans have always held out hope that things would be better out West. The Europeans got to the Americas in the first place by heading west.
+${line_break}
+"Washington [DC] is not a place to live in. The rents are high, the food is bad, the dust is disgusting and the morals are deplorable. Go West, young man, go West and grow up with the country." - Horace Greely
+${line_break}
+"If [Americans] attained Paradise, they would move on if they heard of a better place farther west." - John Murray
+${line_break}
+If we save Route 66, we save the American Dream. If we save the American Dream, we save America. If we save America, we save the world. Because the American Dream is not just America's dream. It's everyone's dream.
 ${line_break}
 |;
     print $md $page_break;
@@ -2361,21 +2369,19 @@ ${line_break}
     print $md qq|
 How to use this book
 ${line_break}
-You can use this book on its own, or in conjunction with other guides.
+You can use this book on its own, or in conjunction with other guides. The locations in this book are in order from east to west, because that's the direction of America's story. Driving west-to-east on Route 66 is like watching a movie backwards. But this book will work just as well backwards as it will forwards.
 ${line_break}
-I barely include any images. I barely include any descriptions. That's intentional. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're supposed to be getting into it.
+I don't include any images. I don't include any descriptions. That's intentional. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're supposed to be getting into it.
 ${line_break}
-This book is a list of addresses and QR codes that represent online directions to each of my favorite places on Route 66. You can enter each address manually into your navigation app. Or, you can scan the QR codes with your phone by pointing the phone's camera at them. If you visit every place in this book, you will be approximately following Route 66.
+This book is a list of addresses and QR codes that represent online directions to each of my favorite places on Route 66. You can enter each address manually into your navigation app. Or, you can scan the QR codes with your phone by pointing your phone's camera at them. If you visit every place in this book, you will approximately follow Route 66 from one end to the other.
 ${line_break}
-If you want to follow Route 66 more exactly, be aware that there never was a single "Route 66." There have always been many "alignments" (alternate routes). And nowadays, much of what used to be known as "Route 66" consists of potholed roads, dirt roads, private roads, government roads, and dead ends.
+If you want to follow Route 66 more exactly, be aware that there never was a single Route 66. There have always been many "alignments" (alternate routes). And nowadays, much of what used to be known as Route 66 consists of closed roads, potholed roads, dirt roads, private roads, military bases, and dead ends.
 ${line_break}
-If you're using nothing but this book, you could explore the Route in a week or two. But I'd recommend taking at least three weeks. If you want to explore every inch of every route that was ever known as "Route 66," you'd better give yourself several months.
-${line_break}
-This book is laid out east-to-west. That's the direction America's story goes. Route 66 is the story of America. Driving west-to-east on Route 66 is like watching a movie backwards.
+I'd recommend taking three weeks to do your Route 66 trip. If you want to explore every inch of every route that was ever known as "Route 66," you'd better give yourself several months.
 ${line_break}
 Many businesses along the Route have custom rubber stamps. I've left an empty space beside all of the QR codes for these stamps. You could also use those spaces for notes, signatures, stickers, or just big checkmarks. 
 ${line_break}
-Be aware that some of the "passport" books you'll find on the Route require small businesses to pay thousands of dollars for the privilege of being advertised in those books. No one paid to be in this book. This book is nothing more than a list of places and people that I love.
+Be aware that some of the "passport" books you'll find on the Route require small businesses to pay thousands of dollars for the privilege of being advertised in them. No one paid to be in this book. This book is nothing more than a list of places and people that I love.
 ${line_break}
 |;
     print $md $page_break;
