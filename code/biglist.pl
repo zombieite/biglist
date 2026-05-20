@@ -1993,63 +1993,63 @@ I know this for sure.|,
         {
             name    => "Windmill Denny's",
             address => "7 E Huntington Dr, Arcadia CA",
-            blurb   => qq|My philosophy of life, principle #2:
+            blurb   => qq|Principle #2:
 HAPPINESS IS GOOD.
 I know this for sure, too.|,
         },
         {
             name    => "Saga Motor Hotel",
             address => "1633 E Colorado Blvd, Pasadena CA",
-            blurb   => qq|My philosophy of life, principle #3:
+            blurb   => qq|Principle #3:
 I CAN USUALLY TRUST MY SENSES.
 I have to either believe this, or choose not to function.|,
         },
         {
             name    => "Shakers",
             address => "601 Fair Oaks Ave, South Pasadena CA",
-            blurb   => qq|My philosophy of life, principle #4:
+            blurb   => qq|Principle #4:
 THE LAWS OF NATURE ARE CONSISTENT.
 I have to either believe this, or choose not to function.|,
         },
         {
             name    => "Fair Oaks Pharmacy & Soda Fountain",
             address => "1526 Mission St, South Pasadena CA",
-            blurb   => qq|My philosophy of life, principle #5:
+            blurb   => qq|Principle #5:
 THE LAWS OF HUMAN NATURE ARE CONSISTENT.
 This implies that we can figure out some rules of ethics, virtue, and morality.|,
         },
         {
             name    => "Galco's Old World Grocery",
             address => "5702 York Blvd, Los Angeles CA",
-            blurb   => qq|My philosophy of life, principle #6:
+            blurb   => qq|Principle #6:
 REASON IS HOW WE ACQUIRE KNOWLEDGE.
 Deductive logic, like math, and inductive reasoning, like science, are how we understand the universe and how we understand ourselves.|,
         },
         {
             name    => "Highland Park Bowl",
             address => "5621 N Figueroa St, Los Angeles CA",
-            blurb   => qq|My philosophy of life, principle #7:
+            blurb   => qq|Principle #7:
 FREEDOM IS HOW WE ACHIEVE HAPPINESS.
 Most people agree that freedom makes them happy.|,
         },
         {
             name    => "La Fuente Restaurant",
             address => "5552 N Figueroa St, Los Angeles CA",
-            blurb   => qq|My philosophy of life, principle #8:
+            blurb   => qq|Principle #8:
 ECONOMIC FREEDOM IS HOW WE ACHIEVE PROSPERITY.
 Capitalism works. I define capitalism as "economic freedom," not "cronyist plutocracy." I assure you, I hate cronyist plutocracy as much as anyone. Capitalism doesn't exist to hold poor people down. It exists to let brilliant people do brilliant things.|,
         },
         {
             name    => "Cielito Lindo",
             address => "E-23 Olvera St, Los Angeles CA",
-            blurb   => qq|My philosophy of life, principle #9:
+            blurb   => qq|Principle #9:
 FREEDOM IS A POSITIVE-SUM GAME.
 If two people agree to some sort of exchange, or relationship, whether it's financial, or emotional, they do it because they both believe it will benefit them. Most of the time, they are both right. They do both benefit. That means that every transaction that happens makes the world a slightly better place.|,
         },
         {
             name    => "Million Dollar Theater",
             address => "307 S Broadway, Los Angeles CA",
-            blurb   => qq|My philosophy of life, principle #10:
+            blurb   => qq|Principle #10:
 CREATE VALUE.
 It took me years to figure out a way to summarize my entire philosophy in a way that it would fit on a bumper sticker. If you gain nothing else from my existence in this universe, please take these two words with you and keep them handy in your mind. Steal these words, copy these words, say these words. Create value.|,
         },
