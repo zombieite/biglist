@@ -1570,7 +1570,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "La Posada Hotel",
             address => "303 E 2nd St, Winslow AZ",
-            blurb   => qq|My absolute favorite hotel on Route 66. Quirky, old, and luxurious. Unlike big city hotels, you can park you own car, and you don't need a porter to take your bags to your room. And you can open the gosh-danged windows.|,
+            blurb   => qq|My absolute favorite hotel on Route 66. Quirky, old, and luxurious. Unlike big city hotels, you can park you own car. You don't need a porter to take your bags to your room. And you can open the gosh-danged windows.|,
         },
         {
             name    => "Route 66 Delta Motel",
