@@ -554,7 +554,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Route 66 Diner",
             address => "126 St Robert Blvd, St Robert MO",
-            blurb   => qq|I hung some of my art on the wall next to the kids' art. Maybe it's still there.|,
+            blurb   => qq|I hung some of my art on the wall here, next to the kids' art. Maybe it's still there.|,
         },
         {
             name    => "Route 66 Neon Sign Park",
