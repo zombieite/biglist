@@ -524,7 +524,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Fanning Outpost Rocking Chair",
             address => "5957 State Hwy ZZ, Cuba MO",
-            blurb   => qq|Say hi to Fluffy the cat for me. If you pet her long enough, she'll climb into your lap.|,
+            blurb   => qq|Say hi to Fluffy the cat. If you pet her long enough, she'll climb into your lap.|,
         },
         {
             name    => "Mule Trading Post",
