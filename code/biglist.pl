@@ -419,7 +419,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Crown Candy Kitchen",
             address => "1401 St Louis Ave, St Louis MO",
-            blurb   => qq|This place is all about fat and sugar.|,
+            blurb   => qq|If we see the journey down Route 66 as a story, we're breaking into Act II. The hero accepts the call to adventure! Not all of this journey will be fun and games. Sometimes you'll have to go through a bad part of town to get to a good part of town. Are you ready for adventure? The Crown Candy Kitchen is all about fat and sugar.|,
         },
         {
             name    => "Chili Mac's Diner",
@@ -745,7 +745,7 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
         {
             name    => "Gearhead Curios",
             address => "520 Main St, Galena KS",
-            blurb   => qq|If we see the journey down Route 66 as a story, we're one-third of the way through. Breaking into Act II. The hero accepts the call to adventure! Things are about to get weird. Route 66 is not really a road anymore. Nowadays, Route 66 is a collective project to preserve, restore, and revive the art, architecture, and history of midcentury America. Aaron Perry from Gearhead Curios understands this far better than most.|,
+            blurb   => qq|Things are about to get weird. Route 66 is not really a road anymore. Nowadays, Route 66 is a collective project to preserve, restore, and revive the art, architecture, and history of midcentury America. Aaron Perry from Gearhead Curios understands this far better than most.|,
         },
         {
             name    => "Galena Mining & Historical Museum",
