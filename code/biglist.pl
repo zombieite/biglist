@@ -1808,7 +1808,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|Anyone can spray paint a bridge overpass. Only a true genius can hand-carve two multi-ton lions out of marble, transport and install them with no one noticing, leave people confused, and make one of them disappear for the entire year of 2019 for some reason.|,
         },
         {
-            name    => "Road Runner's Retreat sign",
+            name    => "Road Runner's Retreat",
             address => "Chambless CA",
             blurb   =>
 qq|This one is out of order for a reason. If you've navigated the road closures and construction detours and made it to Guardian Lion East, you can probably find the Road Runner's Retreat sign. Head back the way you came, five miles east on 66. Do not make the left onto Kelbaker Rd. Instead, drive around the road closed signs. The road is in great condition all the way to the Retreat sign. Those road closed signs should really be moved back a couple miles. Beyond the Retreat sign, road conditions are anyone's guess. Recently restored, this sign even lights up sometimes in the evenings.|,
@@ -2243,7 +2243,7 @@ sub generate_qr_codes_and_links {
             my $white  = $canvas->colorAllocate( 255, 255, 255 );
             my $black  = $canvas->colorAllocate( 0,   0,   0 );
             $canvas->filledRectangle( 0, 0, $w + $w, $h, $white );
-            if ( $place_name eq "Dotch Windsor's Painted Desert Trading Post" ) {
+            if ( $place_name in( "Dotch Windsor's Painted Desert Trading Post", "Road Runner's Retreat" ) ) {
                 $canvas->filledRectangle( $pad, 0, $w, $h, $black );
             }
             else {
