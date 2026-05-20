@@ -164,7 +164,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Route 66 of Chenoa Roadside Attraction Tourist Info",
             address => "501 W Cemetery Ave, Chenoa IL",
-            blurb   => qq|This is just a little closet full of flyers. But every time I come by, I make sure to stop and populate it with t-shirts, books, or art. There's a little sign in here that says you're supposed to call a number for permission to leave stuff here. I've never called it.|,
+            blurb   => qq|Normally, this is just a little closet full of flyers. But every time I come by, I populate it with t-shirts, books, or art. There's a little sign that says you're supposed to call a number for permission to leave stuff here. I've never called it.|,
         },
         {
             name    => "Lexington Route 66 Memory Lane",
