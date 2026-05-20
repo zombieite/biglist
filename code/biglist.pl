@@ -434,7 +434,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Donut Drive In",
             address => "6525 Chippewa St, St Louis MO",
-            blurb   => qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or didn't know. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream.|,
+            blurb   => qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or who your parents were. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream.|,
         },
         {
             name    => "Ted Drewes Frozen Custard",
