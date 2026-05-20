@@ -2374,9 +2374,11 @@ You can use this book on its own, or in conjunction with other guides. The locat
 ${line_break}
 I don't include any images. I don't include any descriptions. That's intentional. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're supposed to be getting into it.
 ${line_break}
+There will be errors in this book. Please email them to wastelandfirebird\@gmail.com. Don't follow your phone's directions into the middle of nowhere. When visited in order, most of these locations will be fairly close to one another. For most of this trip, you should be, at most, a couple of miles away from an interstate highway. The beautiful part is that the places you visit will feel much more remote than that. If you follow the old Route, you'll often forget that the interstate is even there.
+${line_break}
 This book is a list of addresses and QR codes that represent online directions to each of my favorite places on Route 66. You can enter each address manually into your navigation app. Or, you can scan the QR codes with your phone by pointing your phone's camera at them. If you visit every place in this book, you will approximately follow Route 66 from one end to the other.
 ${line_break}
-If you want to follow Route 66 more exactly, be aware that there never was a single Route 66. There have always been many "alignments" (alternate routes). And nowadays, much of what used to be known as Route 66 consists of closed roads, potholed roads, dirt roads, private roads, military bases, and dead ends.
+If you want to follow Route 66 more exactly, be aware that there never was a single Route 66. There have always been many "alignments" (alternate routes). Nowadays, much of what used to be known as Route 66 consists of closed roads, potholed roads, dirt roads, private roads, military bases, and dead ends. In a few places, you have no choice but to take the interstate.
 ${line_break}
 I'd recommend taking three weeks to do your Route 66 trip. If you want to explore every inch of every route that was ever known as "Route 66," you'd better give yourself several months.
 ${line_break}
