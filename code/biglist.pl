@@ -2044,7 +2044,7 @@ Capitalism works. I define capitalism as "economic freedom," not "cronyist pluto
             address => "E-23 Olvera St, Los Angeles CA",
             blurb   => qq|Principle #9:
 FREEDOM IS A POSITIVE-SUM GAME.
-If two people agree to some sort of exchange, or relationship, whether it's financial, or emotional, they do it because they both believe it will benefit them. Most of the time, they are both right. They do both benefit. That means that every transaction that happens makes the world a slightly better place.|,
+If two people agree to participate in some type of financial or emotional transaction, they do it because they both feel like it will benefit them. It's not that one of them is right, and one of them is wrong. They are both right. They both benefit. Therefore, every transaction makes the world a slightly better place.|,
         },
         {
             name    => "Million Dollar Theater",
