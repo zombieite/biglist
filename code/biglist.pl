@@ -289,7 +289,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Cozy Dog",
             address => "2935 S 6th St, Springfield IL",
-            blurb   => qq|This place is still owned by the Waldmire family. Bob Waldmire's works are all over the walls. You might even find a book or a flyer by Wasteland Firebird on the flyer rack.|,
+            blurb   => qq|This place is still owned by the Waldmire family. Bob Waldmire's works are all over the walls. You might even find something by Wasteland Firebird on the flyer rack.|,
         },
         {
             name    => "Route 66 Motorheads Bar and Grill",
