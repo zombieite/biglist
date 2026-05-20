@@ -765,7 +765,7 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
         {
             name    => "Baxter Springs Heritage Center & Museum",
             address => "740 East Ave, Baxter Springs KS",
-            blurb   => qq|I haven't actually checked this place out yet, but I've seen photos of a freaky painting of a gunfight that lives here. I gotta see this one in person sometime.|,
+            blurb   => qq|I haven't actually checked this place out yet, but I've seen photos of a freaky painting of a gunfight that lives here. I gotta see this one in person.|,
         },
         {
             name    => "Route 66 Visitors Center",
