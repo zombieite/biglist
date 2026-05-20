@@ -1512,7 +1512,8 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Fort Courage",
             address => "Houck AZ",
-            blurb   => qq|The Pancake House that used to be here was destroyed in 2026. Last time I visited, the fort building was still here, but who knows what you'll find by the time you read this. We've reached the all-is-lost moment in our story. We're two-thirds of the way through. It's the mirror of the midpoint, back when things still seemed so good. Things don't seem so good, now. We're about to break into Act III, the climax.|,
+            blurb   =>
+              qq|The Pancake House that used to be here was destroyed in 2026. Last time I visited, the fort building inspired by the TV show F-Troop was still here, but who knows what you'll find by the time you read this. We've reached the all-is-lost moment in our story. We're two-thirds of the way through. It's the mirror of the midpoint, back when things still seemed so good. Things don't seem so good, now. We're about to break into Act III, the climax. Let's hope things get better.|,
         },
         {
             name    => "Dotch Windsor's Painted Desert Trading Post",
