@@ -1521,6 +1521,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
             blurb   =>
 qq|Take exit 320, head east a bit, then take the dirt road north half a mile. Stop at the gate that has a tiny sign that says Painted Desert Trading Post. There is a lock with a code on it. You can call the number on the sign to get the code, you will need to text them a photo of your id. Enter the code into the lock and hit the unlock button. Go through the gate and close it behind you. Immediately turn left, go west 2.6 miles. When you get to the Trading Post, you can go in, but make sure to keep all gates closed when you leave.
 |,
+            hide_qr => 1,
         },
         {
             name    => "Petrified Forest National Park",
@@ -1812,6 +1813,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             address => "Chambless CA",
             blurb   =>
 qq|This one is out of order for a reason. If you've navigated the road closures and construction detours and made it to Guardian Lion East, you can probably find the Road Runner's Retreat sign. Head back the way you came, five miles east on 66. Do not make the left onto Kelbaker Rd. Instead, drive around the road closed signs. The road is in great condition all the way to the Retreat sign. Those road closed signs should really be moved back a couple miles. Beyond the Retreat sign, road conditions are anyone's guess. Recently restored, this sign even lights up sometimes in the evenings.|,
+            hide_qr => 1,
         },
         {
             name    => "Guardian Lion West",
@@ -2186,6 +2188,7 @@ sub generate_qr_codes_and_links {
     for my $address_hashref (@$addresses) {
         my $place_name = $address_hashref->{name};
         my $address    = $address_hashref->{address};
+        my $hide_qr    = $address_hashref->{hide_qr};
         chomp $address;
 
         # Google maps results are better when you always give the place name, too
@@ -2243,9 +2246,7 @@ sub generate_qr_codes_and_links {
             my $white  = $canvas->colorAllocate( 255, 255, 255 );
             my $black  = $canvas->colorAllocate( 0,   0,   0 );
             $canvas->filledRectangle( 0, 0, $w + $w, $h, $white );
-            if (   ( $place_name eq "Dotch Windsor's Painted Desert Trading Post" )
-                || ( $place_name eq "Road Runner's Retreat" ) )
-            {
+            if ($hide_qr) {
                 $canvas->filledRectangle( $pad, 0, $w, $h, $black );
             }
             else {
