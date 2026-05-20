@@ -189,7 +189,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Funks Grove Pure Maple Sirup Farm",
             address => "Funks Grove Township IL",
-            blurb   => qq|When traveling, you might think you have little need for maple syrup. But think a little harder. Most restaurants give you the fake stuff nowadays. Wouldn't it be good to have your own supply of the good stuff? And what if you run out of wiper fluid? I'm sure syrup would work fine for that. You can also just buy a really small piece of candy made out of syrup.|,
+            blurb   => qq|When traveling, you might think you have little need for maple syrup. But think a little harder. Most restaurants give you the fake stuff nowadays. Wouldn't it be good to have your own supply of the good stuff? And what if you run out of coolant or wiper fluid? I'm sure maple syrup would work fine for that. You can also just buy a really small piece of candy made out of syrup.|,
         },
         {
             name    => "Arcadia America's Playable Arcade Museum",
