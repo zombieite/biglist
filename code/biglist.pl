@@ -1625,7 +1625,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "J Lawrence Walkup Skydome",
             address => "1705 S San Francisco St, Flagstaff AZ",
-            blurb   => qq|There are two Muffler Men here, one on each side. When you've found one, drive around a bit to find the other one.|,
+            blurb   => qq|There are two Muffler Men here, one on each side.|,
         },
         {
             name    => "Galaxy Diner",
