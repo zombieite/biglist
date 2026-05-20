@@ -1826,7 +1826,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
         {
             name    => "Former Whiting Brothers Gas Station",
             address => "68517 County Rd 66, Ludlow CA",
-            blurb   => qq|People used to live and work in these buildings. They lived entire lives here.|,
+            blurb   => qq|People used to live and work in these buildings. They lived their entire lives here.|,
         },
         {
             name    => "Ludlow Cafe",
