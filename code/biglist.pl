@@ -26,17 +26,21 @@ sub main {
     ensure_dir($work_dir);
     generate_qr_codes_and_links( $addresses, $qr_dir, $qrs, $links, 0 );
     make_doc( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break );
+    print "Make sure all QR codes work as desired.\n";
     print "Open DOCX in Pages. Save as a Pages doc to work on it.\n";
     print "Highlight all text. Under Format, Body, Style, Font, choose Crimson Text 13.\n";
-    print "Highlight all text. Gear icon, character spacing -1%.";
-    print "Highlight all text. Highlight all text. Spacing, Lines, 0.9.";
-    print "Highlight all text. Highlight all text. Spacing after paragraph, 7pt.";
+    print "Highlight all text. Gear icon, character spacing -1%.\n";
+    print "Highlight all text. Highlight all text. Spacing, Lines, 0.9.\n";
+    print "Highlight all text. Highlight all text. Spacing after paragraph, 7pt.\n";
     print "Highlight all text. Fix justification to be both left and right. Update the Body style so it sticks (if Update option is not present, try hover, right arrow, Redefine From Selection?).\n";
     print "Highlight title on title page. Gear icon, all caps, font Futura Bold 18, justification centered, line spacing 0.7, character spacing -1%, no need to make it a style.\n";
     print "Highlight by Wasteland Firebird stuff, center justify it, no need to make it a style.\n";
-    print "Move copyright stuff down to bottom of page and left justify it.";
-    print "Update one of the location titles, set it to the style Title, choose font Futura Medium 16, character spacing -1%. Make all other locations match its style.";
-    print "Update one of the addresses, set it to the style Subtitle, choose font Futura Medium 11. Make all other addresses match its style.";
+    print "Move copyright stuff down to bottom of page.\n";
+    print "For Prepare To Be Inspired and How To Use This Book, make them bigger and center them.\n";
+    print "Make sure QR codes are showing up on the correct side of each page. Possibly add a blank page, or make them start on the opposite page.\n";
+    print "Update one of the location titles, set it to the style Title, choose font Futura Medium 16, character spacing -1%. Make all other locations match its style.\n";
+    print "Update one of the addresses, set it to the style Subtitle, choose font Futura Medium 11. Make all other addresses match its style.\n";
+    print "Add italics where needed.\n";
     print "Add photos to the beginning, midpoint, and end.\n";
     print "Click Document, Document, Footer to add a footer.\n";
     print "Click Document, Section, uncheck Left and Right are Different.\n";
@@ -140,7 +144,7 @@ sub generate_qr_codes_and_links {
             my $black  = $canvas->colorAllocate( 0,   0,   0 );
             $canvas->filledRectangle( 0, 0, $w + $w, $h, $white );
             if ($hide_qr) {
-                $canvas->filledRectangle( $pad, 0, $w, $h, $black );
+                $canvas->filledRectangle( $pad, 0, $pad + $w - 1, $h - 1, $black );
             }
             else {
                 $canvas->copy( $qr, $pad, 0, 0, 0, $w, $h );
@@ -246,7 +250,9 @@ Say it with me. "Semiquincentennial." Do any three-year-olds know that word? How
 ${line_break}
 Semi means half, quin means five, cent means hundred, ennial means years. The United States of America has now existed for half of 500 years.
 ${line_break}
-I was hoping for another Freedom Train, a Wagon Train Pilgrimage, New York City's Operation Sail, TV shows, special edition coins, special edition cars, fireworks, air shows, car shows, parades, and red-white-and-blue everything. A few of those things are happening, but something has definitely changed in the last fifty years. The reverence is gone.
+I was hoping for another Freedom Train, a Wagon Train Pilgrimage, New York City's Operation Sail, TV shows, special edition coins, special edition cars, fireworks, air shows, car shows, parades, and red-white-and-blue everything.
+${line_break}
+A few of those things are happening, but something has changed in the last fifty years. The reverence is gone.
 ${line_break}
 When I discovered that Route 66 would have its Centennial in the same year as America's Semiquincentennial, I knew that I had to do something to bring that reverence back.
 ${line_break}
