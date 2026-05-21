@@ -130,14 +130,18 @@ sub generate_qr_codes_and_links {
             # getting past the midpoint of the book, we want to switch the alternation.
             # That's because we add an extra unnumbered bonus midpoint page with a photo.
             # 0 = start on left side, 1 = start on right side.
+            #
+            # But wait that's really too complicated. Why not just add 2 bonus pages?
             if (   ( ( $count % 2 == $side_to_start_on ) && ( !$past_midpoint ) )
                 || ( ( $count % 2 == !$side_to_start_on ) && ($past_midpoint) ) )
             {
                 $pad = $w;
             }
-            if ( $place_name eq 'Midpoint Cafe and Gift Shop' ) {
-                $past_midpoint = 1;
-            }
+
+            # Why not just add 2 bonus pages?
+            #if ( $place_name eq 'Midpoint Cafe' ) {
+            #    $past_midpoint = 1;
+            #}
 
             my $canvas = GD::Image->new( $w + $w, $h );
             my $white  = $canvas->colorAllocate( 255, 255, 255 );
