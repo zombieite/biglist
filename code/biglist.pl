@@ -1126,7 +1126,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "West Winds Motel",
             address => "617 W Roger Miller Blvd, Erick OK",
-            blurb   => qq||,
+            blurb   => qq|They tell me that the neon sign has been restored, and it lights up again.|,
         },
         {
             name    => "U-Drop Inn Cafe",
