@@ -33,12 +33,12 @@ sub main {
     print "Highlight all text. Highlight all text. Spacing, Lines, 0.9.\n";
     print "Highlight all text. Highlight all text. Spacing after paragraph, 7pt.\n";
     print "Highlight all text. Fix justification to be both left and right. Update the Body style so it sticks (if Update option is not present, try hover, right arrow, Redefine From Selection?).\n";
-    print "Highlight title on title page. Gear icon, all caps, font Futura Bold 18, justification centered, line spacing 0.7, character spacing -1%, no need to make it a style.\n";
+    print "Highlight title on title page. Gear icon, all caps, font Futura Bold 18, justification centered, line spacing 0.8, character spacing -1%, no need to make it a style.\n";
     print "Highlight by Wasteland Firebird stuff, center justify it, no need to make it a style.\n";
     print "Move copyright stuff down to bottom of page.\n";
     print "For Prepare To Be Inspired and How To Use This Book, make them bigger and center them.\n";
     print "Make sure QR codes are showing up on the correct side of each page. Possibly add a blank page, or make them start on the opposite page.\n";
-    print "Update one of the location titles, set it to the style Title, choose font Futura Medium 16, character spacing -1%. Make all other locations match its style.\n";
+    print "Update one of the location titles, set it to the style Title, choose font Futura Medium 16, character spacing -1%, line spacing 0.8, after paragraph 5pt. Make all other locations match its style.\n";
     print "Update one of the addresses, set it to the style Subtitle, choose font Futura Medium 11. Make all other addresses match its style.\n";
     print "Add italics where needed.\n";
     print "Add photos to the beginning, midpoint, and end.\n";
