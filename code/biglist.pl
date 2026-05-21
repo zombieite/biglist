@@ -26,8 +26,18 @@ sub main {
     ensure_dir($work_dir);
     generate_qr_codes_and_links( $addresses, $qr_dir, $qrs, $links );
     make_doc( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break );
-    print "Open DOCX in Pages.\n";
-    print "Manually choose a new font for all of the place names and addresses.\n";
+    print "Open DOCX in Pages. Save as a Pages doc to work on it.\n";
+    print "Highlight all text. Under Format, Body, Style, Font, choose Crimson Text 13.\n";
+    print "Highlight all text. Gear icon, character spacing -1%.";
+    print "Highlight all text. Highlight all text. Spacing, Lines, 0.9.";
+    print "Highlight all text. Highlight all text. Spacing after paragraph, 7pt.";
+    print "Highlight all text. Fix justification to be both left and right. Update the Body style so it sticks (if Update option is not present, try hover, right arrow, Redefine From Selection?).\n";
+    print "Highlight title on title page. Gear icon, all caps, font Futura Bold 18, justification centered, line spacing 0.7, character spacing -1%, no need to make it a style.\n";
+    print "Highlight by Wasteland Firebird stuff, center justify it, no need to make it a style.\n";
+    print "Move copyright stuff down to bottom of page and left justify it.";
+    print "Update one of the location titles, set it to the style Subtitle, choose font Futura Medium 18. Make all other locations match its style.";
+    print "Update one of the addresses, set it to the style Heading, choose font Futura Medium 12, set spacings to 0. Make all other addresses match its style.";
+    print "Add photos to the beginning, midpoint, and end.\n";
     print "Click Document, Document, Footer to add a footer.\n";
     print "Click Document, Section, uncheck Left and Right are Different.\n";
     print "Click Document, Section, uncheck Match Previous Section.\n";
@@ -36,11 +46,8 @@ sub main {
     print "Click Document, Section, Page Number, Start At.\n";
     print "Add new sections for every state. Update the footer with the state name. You should only need to update it once for the entire section. Make page numbering continue from previous section.";
     print "At Midpoint, add a new section break and restart page numbering as above, fixing the start number. Afterward, go back to using Continue From Previous Section.\n";
-    print "Under Format, Body, Style, Font, choose Garamond. There is a gear icon also, bring character spacing in by 1%.";
-    print "Fix justification to be both left and right.\n";
-    print "Add photos to the beginning, midpoint, and end.\n";
     print "Mess with footers and Sections to get the page numbering to start and stop correctly.\n";
-    print "Do any other needed tweaks. Export PDF.\n";
+    print "Export PDF.\n";
 
     #system( 'open', $out_docx );
 
@@ -205,12 +212,12 @@ sub make_doc {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wasteland Firebird's Big List of the Best Things On Route 66</title>
+    <title>WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66</title>
     <link rel="icon" href="/favicon.png">
     <link rel="stylesheet" href="/biglist.css">
 </head>
 <body>
-<h1>Wasteland Firebird's Big List of the Best Things On Route 66</h1>
+<h1>WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66</h1>
 <h2>A curious guide to Route 66 and the American Dream, last updated $year $month_abbrev $mday</h2>
 <img src="/pictures/image001.jpg">
 <h3>Purchasable physical copies of this list in book form will be available right here, SOON. The book includes scannable QR codes for each address, and lots of opinionated blurbs.</h3>
@@ -221,7 +228,7 @@ sub make_doc {
 |;
 
     # Title page
-    print $md "Wasteland Firebird's Big List${line_break}of the Best Things On Route 66${line_break}by Wasteland Firebird (John Binns)${line_break}2026 Centennial Second Edition${line_break}";
+    print $md "WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66${line_break}Wasteland Firebird (John Binns)${line_break}2026 Centennial Second Edition${line_break}";
     print $md $page_break;
 
     # Copyright page
@@ -234,7 +241,7 @@ sub make_doc {
 
     # Introduction
     print $md qq|
-Prepare to be inspired
+PREPARE TO BE INSPIRED
 ${line_break}
 On July 4, 1976, I wasn't even four years old. But, that year, I learned a big word. Bicentennial. Everyone was saying it so much. How could I not have learned it? "Bicentennial." It was spoken with such obvious reverence that my young ears paid attention.
 ${line_break}
@@ -248,28 +255,33 @@ I was hoping for another Freedom Train, a Wagon Train Pilgrimage, New York City'
 ${line_break}
 When I discovered that Route 66 would have its Centennial in the same year as America's Semiquincentennial, I knew that I had to do something to bring that reverence back.
 ${line_break}
-I traveled Route 66 four times. I made a lot of YouTube videos. I took a lot of notes. I set up a free Route 66 tour I called The Great Route 66 Centennial Convergence. I made flyers, t-shirts, and keychains based on my hand-drawn art. I commissioned miniature "Muffler Man" action figures of myself. I promoted the event so much that I was kicked off of Facebook forever for being a "spammer."
+I traveled Route 66 four times. I made a lot of YouTube videos. I took a lot of notes. I set up a free Route 66 tour I called The Great Route 66 Centennial Convergence. I made flyers, t-shirts, patches, and keychains based on my hand-drawn art. I commissioned miniature "Muffler Man" action figures of myself. I promoted the event so much that I was kicked off of Facebook forever for being a "spammer."
 ${line_break}
-And I created the "2026 Centennial Edition" of this book. Like the t-shirts, keychains, and action figures, the first edition was never for sale. It was free for Convergence participants.
+And I created the first edition of this book. Like the t-shirts, patches, keychains, and action figures, the first edition was never for sale. It was free for Convergence participants.
 ${line_break}
-The Great Route 66 Centennial Convergence came to an end on April 30, 2026. But people kept asking for copies of the book. So here it is, the 2026 Centennial Second Edition, with plenty of updates. You can now buy this book at wastelandfirebird.com. If people enjoy it, I'll release a new edition every year. Maybe twice a year.
+The Great Route 66 Centennial Convergence came to an end on April 30, 2026. But people kept asking for copies of the book. So here it is, the 2026 Centennial Second Edition, with plenty of updates. You can now buy this book at wastelandfirebird.com.
 ${line_break}
 You might still manage to get a copy of this book for free, if you look hard enough. Be sure to check the Route 66 of Chenoa IL Roadside Attraction Tourist Info booth. You never know what cool stuff people might leave there.
 ${line_break}
 Route 66 goes from Chicago to LA. It represents the idea of going West. Americans have always held out hope that things would be better out West. The Europeans got to the Americas in the first place by heading west.
-${line_break}
-"Washington [DC] is not a place to live in. The rents are high, the food is bad, the dust is disgusting and the morals are deplorable. Go West, young man, go West and grow up with the country." - Horace Greely
-${line_break}
-"If [Americans] attained Paradise, they would move on if they heard of a better place farther west." - John Murray
 ${line_break}
 If we save Route 66, we save the American Dream. If we save the American Dream, we save America. If we save America, we save the world. Because the American Dream is not just America's dream. It's everyone's dream.
 ${line_break}
 |;
     print $md $page_break;
 
+    print $md qq|
+"Washington [DC] is not a place to live in. The rents are high, the food is bad, the dust is disgusting and the morals are deplorable. Go West, young man, go West and grow up with the country." - Horace Greely
+${line_break}
+"If [Americans] attained Paradise, they would move on if they heard of a better place farther west." - John Murray
+${line_break}
+|;
+
+    print $md $page_break;
+
     # How to use this book
     print $md qq|
-How to use this book
+HOW TO USE THIS BOOK
 ${line_break}
 You can use this book on its own, or in conjunction with other guides. The locations in this book are in order from east to west, because that's the direction of America's story. Driving west-to-east on Route 66 is like watching a movie backwards. But this book will work just as well backwards as it will forwards.
 ${line_break}
