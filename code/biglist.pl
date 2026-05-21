@@ -37,20 +37,22 @@ sub main {
     print "Highlight by Wasteland Firebird stuff, center justify it, no need to make it a style.\n";
     print "Move copyright stuff down to bottom of page.\n";
     print "For Prepare To Be Inspired and How To Use This Book, make them bigger and center them.\n";
+    print "Click Document, Document, Footer to add a footer.\n";
+    print "Click Document, Section, uncheck Match Previous Section.\n";
+    print "Click Document, Section, make sure Left And Right Pages Are Different is checked.\n";
+    print "In the document itself, click where you want page numbering to start/restart, then click Insert, Section Break.\n";
+    print "Go to the footer and click it and Insert Page Number, ignoring the wrong start number.\n";
+    print "Click Document, Section, Page Number, Start At, and adjust start number.\n";
+    print "Insert page numbers on both sides, adjust Format, Header And Footer, make right page right-justified. Don't update the style or it will update for both sides.\n";
+    print "Insert page numbers on both sides, adjust Format, Header And Footer, pick a font, Impact, add a middot separator.\n";
+    print "Add new sections for every state. Update the footer with the state name. You should only need to update it once for the entire section. Make page numbering continue from previous section.";
+    print "At Midpoint, where pages are skipped, add a new section break and restart page numbering as above, fixing the start number. Afterward, go back to using Continue From Previous Section.\n";
+    print "Mess with footers and Sections to get the page numbering to start and stop correctly.\n";
     print "Make sure QR codes are showing up on the correct side of each page. Possibly add a blank page, or make them start on the opposite page.\n";
     print "Update one of the location titles, set it to the style Title, choose font Futura Medium 16, character spacing -1%, line spacing 0.8, after paragraph 5pt. Make all other locations match its style.\n";
     print "Update one of the addresses, set it to the style Subtitle, choose font Futura Medium 11. Make all other addresses match its style.\n";
-    print "Add italics where needed.\n";
     print "Add photos to the beginning, midpoint, and end.\n";
-    print "Click Document, Document, Footer to add a footer.\n";
-    print "Click Document, Section, uncheck Left and Right are Different.\n";
-    print "Click Document, Section, uncheck Match Previous Section.\n";
-    print "In the document itself, click where you want to insert a section break (where you want page numbering to start/restart), then click Insert, Section Break.\n";
-    print "Go to the footer and click it and Insert Page Number, ignoring the wrong start number.\n";
-    print "Click Document, Section, Page Number, Start At.\n";
-    print "Add new sections for every state. Update the footer with the state name. You should only need to update it once for the entire section. Make page numbering continue from previous section.";
-    print "At Midpoint, add a new section break and restart page numbering as above, fixing the start number. Afterward, go back to using Continue From Previous Section.\n";
-    print "Mess with footers and Sections to get the page numbering to start and stop correctly.\n";
+    print "Add italics where needed.\n";
     print "Export PDF.\n";
 
     #system( 'open', $out_docx );
@@ -1355,7 +1357,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "McJerry's Route 66 Gallery",
             address => "306 Manvel Ave, Chandler OK",
-            blurb   => qq|I think Jerry McClanahan used to write some kind of Route 66 guide, but the real reason to stop here is his amazing painting 666 EXPRESS.|,
+            blurb   => qq|I think Jerry McClanahan wrote some kind of Route 66 guide, but the real reason to stop here is his amazing painting 666 EXPRESS.|,
         },
         {
             name    => "Westfall Phillips 66 Station",
@@ -1969,7 +1971,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         },
         {
             name    => "Two Guns",
-            address => "AZ",
+            address => "Two Guns AZ",
             blurb   => qq|The first time I visited this place, it was for a group photo shoot. I ended up taking sexy photos of a woman who later went on to indirectly cause a noteworthy shooting death on a movie set. No one has ever seen these photos. If any tabloid is interested in making me rich, get in touch. If you think you saw these photos in my YouTube video, oh no, you didn't. You saw the ones that were safe for YouTube.|,
         },
         {
@@ -2267,12 +2269,12 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
         {
             name    => "Liberty Sculpture Park",
             address => "37570 Yermo Rd, Yermo CA",
-            blurb   => qq|Communism simply doesn't work. Capitalism creates inequality, but overall, it works best for everyone. World GDP sat still for all of human history. Then capitalism came along and made that graph look like a hockey stick.|,
+            blurb   => qq|Communism simply doesn't work.|,
         },
         {
             name    => "EddieWorld",
             address => "36017 Calico Rd, Yermo CA",
-            blurb   => qq||,
+            blurb   => qq|Capitalism creates inequality, but overall, it works best for everyone. World GDP sat still for all of human history. Then capitalism came along and made that graph look like a hockey stick.|,
         },
         {
             name    => "Thrift & More",
