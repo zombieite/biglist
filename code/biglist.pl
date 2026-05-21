@@ -41,7 +41,8 @@ sub main {
     print "Add photos to the beginning, midpoint, and end.\n";
     print "Mess with footers and Sections to get the page numbering to start and stop correctly.\n";
     print "Do any other needed tweaks. Export PDF.\n";
-    system( 'open', $out_docx );
+
+    #system( 'open', $out_docx );
 
     #system( 'open', $out_html );
 }
