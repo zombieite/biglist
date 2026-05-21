@@ -24,7 +24,7 @@ sub main {
     my $links      = [];
     set_up_qr_dir($qr_dir);
     ensure_dir($work_dir);
-    generate_qr_codes_and_links( $addresses, $qr_dir, $qrs, $links );
+    generate_qr_codes_and_links( $addresses, $qr_dir, $qrs, $links, 0 );
     make_doc( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break );
     print "Open DOCX in Pages. Save as a Pages doc to work on it.\n";
     print "Highlight all text. Under Format, Body, Style, Font, choose Crimson Text 13.\n";
@@ -35,8 +35,8 @@ sub main {
     print "Highlight title on title page. Gear icon, all caps, font Futura Bold 18, justification centered, line spacing 0.7, character spacing -1%, no need to make it a style.\n";
     print "Highlight by Wasteland Firebird stuff, center justify it, no need to make it a style.\n";
     print "Move copyright stuff down to bottom of page and left justify it.";
-    print "Update one of the location titles, set it to the style Subtitle, choose font Futura Medium 18. Make all other locations match its style.";
-    print "Update one of the addresses, set it to the style Heading, choose font Futura Medium 12, set spacings to 0. Make all other addresses match its style.";
+    print "Update one of the location titles, set it to the style Title, choose font Futura Medium 16, character spacing -1%. Make all other locations match its style.";
+    print "Update one of the addresses, set it to the style Subtitle, choose font Futura Medium 11. Make all other addresses match its style.";
     print "Add photos to the beginning, midpoint, and end.\n";
     print "Click Document, Document, Footer to add a footer.\n";
     print "Click Document, Section, uncheck Left and Right are Different.\n";
@@ -80,7 +80,7 @@ sub ensure_dir {
 }
 
 sub generate_qr_codes_and_links {
-    my ( $addresses, $output_dir, $qrs, $links ) = @_;
+    my ( $addresses, $output_dir, $qrs, $links, $side_to_start_on ) = @_;
     my $count         = 0;
     my $past_midpoint = 0;
     for my $address_hashref (@$addresses) {
@@ -125,14 +125,9 @@ sub generate_qr_codes_and_links {
             # Sometimes the locations start on the right side, sometimes the left. And,
             # getting past the midpoint of the book, we want to switch the alternation.
             # That's because we add an extra unnumbered bonus midpoint page with a photo.
-            my $LEFT_SIDE        = 0;
-            my $RIGHT_SIDE       = 1;
-            my $side_to_start_on = $RIGHT_SIDE;    # adjust as needed
-            if (                                   #
-                ( ( $count % 2 == $side_to_start_on ) && ( !$past_midpoint ) )
-                ||                                 #
-                ( ( $count % 2 == !$side_to_start_on ) && ($past_midpoint) )
-              )
+            # 0 = start on left side, 1 = start on right side.
+            if (   ( ( $count % 2 == $side_to_start_on ) && ( !$past_midpoint ) )
+                || ( ( $count % 2 == !$side_to_start_on ) && ($past_midpoint) ) )
             {
                 $pad = $w;
             }
@@ -283,21 +278,21 @@ ${line_break}
     print $md qq|
 HOW TO USE THIS BOOK
 ${line_break}
-You can use this book on its own, or in conjunction with other guides. The locations in this book are in order from east to west, because that's the direction of America's story. Driving west-to-east on Route 66 is like watching a movie backwards. But this book will work just as well backwards as it will forwards.
+This book is a list of addresses and QR codes that represent online directions to each of my favorite places on Route 66. You can enter each address manually into your navigation app. Or, you can scan the QR codes with your phone by pointing your phone's camera at them. If you visit every place in this book, you will approximately follow Route 66 all the way from Chicago to Santa Monica.
+${line_break}
+You can use this book on its own, or in conjunction with other guides. The locations in this book are in order from east to west, because that's the direction of America's story. Driving west-to-east on Route 66 is like watching a movie backwards. But this book will work backwards just as well as it will work forwards.
 ${line_break}
 I don't include any images. I don't include any descriptions. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're supposed to be getting into it.
 ${line_break}
-There will be errors in this book. Please email them to wastelandfirebird\@gmail.com. Don't follow your phone's directions into the middle of nowhere. When visited in order, most of these locations will be fairly close to one another. For most of this trip, you should be, at most, a couple of miles away from an interstate highway. The beautiful part is that the places you visit will feel much more remote than that. If you follow the old Route, you'll often forget that the interstate is even there.
+There will be errors in this book. Please email them to wastelandfirebird\@gmail.com. Don't follow your phone's directions into the middle of nowhere. When visited in order, most of these locations will be fairly close to one another. For most of this trip, you should be just a mile or two away from a major interstate highway.
 ${line_break}
-This book is a list of addresses and QR codes that represent online directions to each of my favorite places on Route 66. You can enter each address manually into your navigation app. Or, you can scan the QR codes with your phone by pointing your phone's camera at them. If you visit every place in this book, you will approximately follow Route 66 from one end to the other.
+The beautiful part of this journey is that the places you visit will feel much more remote than that. You'll often forget that the interstate is even there.
 ${line_break}
-If you want to follow Route 66 more exactly, be aware that there never was a single Route 66. There have always been many "alignments" (alternate routes). Nowadays, much of what used to be known as Route 66 consists of closed roads, potholed roads, dirt roads, private roads, military bases, and dead ends. In a few places, you have no choice but to take the interstate.
+Many businesses along the Route have custom rubber stamps. I've left an empty space beside all of the QR codes for these stamps. You could also use those spaces for signatures, stickers, or just big checkmarks. 
 ${line_break}
-I'd recommend taking three weeks to do your Route 66 trip. If you want to explore every inch of every route that was ever known as "Route 66," you'd better give yourself several months.
+Be aware that some of the "passport" books you'll find on the Route require small businesses to pay thousands of dollars for the privilege of being advertised in them.
 ${line_break}
-Many businesses along the Route have custom rubber stamps. I've left an empty space beside all of the QR codes for these stamps. You could also use those spaces for notes, signatures, stickers, or just big checkmarks. 
-${line_break}
-Be aware that some of the "passport" books you'll find on the Route require small businesses to pay thousands of dollars for the privilege of being advertised in them. No one paid to be in this book. This book is nothing more than a list of places and people that I love.
+No one paid to be in this book. This book is nothing more than a list of places and people that I love.
 ${line_break}
 |;
     print $md $page_break;
