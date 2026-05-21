@@ -47,11 +47,6 @@ sub main {
 }
 main();
 
-sub ensure_dir {
-    my ($d) = @_;
-    -d $d or mkdir $d or die "Can't mkdir $d: $!";
-}
-
 sub set_up_qr_dir {
     my ($output_dir) = @_;
     unless ( -d $output_dir ) {
@@ -69,6 +64,11 @@ sub set_up_qr_dir {
         unlink($path) or warn "Couldn't delete $path: $!";
     }
     closedir($dh);
+}
+
+sub ensure_dir {
+    my ($d) = @_;
+    -d $d or mkdir $d or die "Can't mkdir $d: $!";
 }
 
 sub generate_qr_codes_and_links {
