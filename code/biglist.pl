@@ -1247,7 +1247,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Toynbee Tile",
             address => "E 6th St & S Boston Ave, Tulsa OK",
-            blurb   => qq|Cross in the crosswalks, looking down at the ground. There is a small linoleum mosaic embedded in the asphalt. Mosaics like these have been mysteriously appearing in cities around the world since the early 80s. I'd make a documentary about them, but someone already did. It's called Resurrect Dead: The Mystery of the Toynbee Tiles.|,
+            blurb   => qq|Cross in the crosswalks, looking down at the ground. There is a small linoleum "Toynbee Tile" mosaic embedded in the asphalt. Mosaics like these have been mysteriously appearing in cities around the world since the early 80s. I'd make a documentary about them, but someone already did. It's called Resurrect Dead: The Mystery of the Toynbee Tiles.|,
         },
         {
             name    => "Cyrus Avery Centennial Plaza",
@@ -1492,7 +1492,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "U-Drop Inn Cafe",
             address => "105 E 12th St, Shamrock TX",
-            blurb   => qq|There is a message made of hand-cut plastic letters embedded into the asphalt in front of this building.|,
+            blurb   => qq||,
         },
         {
             name    => "Restored 1929 Route 66 Gas Station",
@@ -1588,7 +1588,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
             name    => "Cadillac Ranch",
             address => "13651 I-40 Frontage Rd, Amarillo TX",
             blurb   => qq|If you see nothing else on Route 66, see this. Bring spray paint. You're allowed to paint the cars.
-There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
+There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near the entrance.|,
         },
         {
             name    => "Milburn-Price Culture Museum",
@@ -1803,7 +1803,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Budville Trading Post",
             address => "HC 77 Box 1A, Seama NM",
-            blurb   => qq|There is a small linoleum mosaic embedded into the asphalt.|,
+            blurb   => qq||,
         },
         {
             name    => "Villa de Cubero Trading Post",
@@ -1813,7 +1813,7 @@ There is a small linoleum mosaic embedded into the asphalt near the entrance.|,
         {
             name    => "Ruins of Whiting Brothers Gas Station",
             address => "San Fidel NM",
-            blurb   => qq|There is a small linoleum mosaic embedded into the asphalt.|,
+            blurb   => qq||,
         },
         {
             name    => "West Theatre",
@@ -2117,7 +2117,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Sirens Cafe",
             address => "419 Beale St, Kingman AZ",
-            blurb   => qq|There is a small linoleum mosaic embedded into the crosswalk here.|,
+            blurb   => qq||,
         },
         {
             name    => "Hotel Beale sign",
@@ -2294,7 +2294,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
         {
             name    => "Harvey House",
             address => "685 N 1st Ave, Barstow CA",
-            blurb   => qq|There is a tiny linoleum mosaic embedded in the asphalt on the road out in front of this place.|,
+            blurb   => qq||,
         },
         {
             name    => "Elmer's Bottle Tree Ranch",
@@ -2484,7 +2484,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
         {
             name    => "Santa Monica Pier",
             address => "Santa Monica CA",
-            blurb   => qq|There is a small linoleum mosaic embedded in the asphalt at the crosswalk. The 66-To-Cali shack is the end of your journey.|,
+            blurb   => qq|There is a small linoleum "Toynbee Tile" mosaic embedded in the asphalt at the crosswalk. The 66-To-Cali shack is the end of your journey.|,
         },
     ];
 }
