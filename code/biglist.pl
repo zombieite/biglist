@@ -14,7 +14,368 @@ sub main {
     # md breaks that can be understood by pandoc and translated into docx breaks
     my $line_break = "  \n";
     my $page_break = "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
-    my $addresses  = [
+    my $addresses  = get_locations();
+    my $work_dir   = './data';
+    my $qr_dir     = File::Spec->catfile( $work_dir, 'qr_codes/' );
+    my $out_docx   = File::Spec->catfile( $work_dir, 'wasteland_firebirds_big_list-base.docx' );
+    my $out_html   = File::Spec->catfile( $work_dir, 'index.html' );
+    my $qr_width   = '4.0in';
+    my $qrs        = [];
+    my $links      = [];
+    set_up_qr_dir($qr_dir);
+    ensure_dir($work_dir);
+    generate_qr_codes_and_links( $addresses, $qr_dir, $qrs, $links );
+    make_doc( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break );
+    print "Open DOCX in Pages.\n";
+    print "Manually choose a new font for all of the place names and addresses.\n";
+    print "Click Document, Document, Footer to add a footer.\n";
+    print "Click Document, Section, uncheck Left and Right are Different.\n";
+    print "Click Document, Section, uncheck Match Previous Section.\n";
+    print "In the document itself, click where you want to insert a section break (where you want page numbering to start/restart), then click Insert, Section Break.\n";
+    print "Go to the footer and click it and Insert Page Number, ignoring the wrong start number.\n";
+    print "Click Document, Section, Page Number, Start At.\n";
+    print "Add new sections for every state. Update the footer with the state name. You should only need to update it once for the entire section. Make page numbering continue from previous section.";
+    print "At Midpoint, add a new section break and restart page numbering as above, fixing the start number. Afterward, go back to using Continue From Previous Section.\n";
+    print "Under Format, Body, Style, Font, choose Garamond. There is a gear icon also, bring character spacing in by 1%.";
+    print "Fix justification to be both left and right.\n";
+    print "Add photos to the beginning, midpoint, and end.\n";
+    print "Mess with footers and Sections to get the page numbering to start and stop correctly.\n";
+    print "Do any other needed tweaks. Export PDF.\n";
+    system( 'open', $out_docx );
+
+    #system( 'open', $out_html );
+}
+main();
+
+sub ensure_dir {
+    my ($d) = @_;
+    -d $d or mkdir $d or die "Can't mkdir $d: $!";
+}
+
+sub set_up_qr_dir {
+    my ($output_dir) = @_;
+    unless ( -d $output_dir ) {
+        make_path($output_dir)
+          or die "Failed to create directory $output_dir: $!";
+    }
+
+    # clean out old QR codes if present
+    mkdir $output_dir;
+    opendir( my $dh, $output_dir ) or die "Can't open $output_dir: $!";
+    while ( my $file = readdir($dh) ) {
+        next if $file eq '.' or $file eq '..';
+        my $path = "$output_dir/$file";
+        next if -d $path;    # skip subdirectories
+        unlink($path) or warn "Couldn't delete $path: $!";
+    }
+    closedir($dh);
+}
+
+sub generate_qr_codes_and_links {
+    my ( $addresses, $output_dir, $qrs, $links ) = @_;
+    my $count         = 0;
+    my $past_midpoint = 0;
+    for my $address_hashref (@$addresses) {
+        my $place_name = $address_hashref->{name};
+        my $address    = $address_hashref->{address};
+        my $hide_qr    = $address_hashref->{hide_qr};
+        chomp $address;
+
+        # Google maps results are better when you always give the place name, too
+        #if ( $address !~ /^[0-9]/ ) {
+        $address = "$place_name, $address";
+
+        #}
+        $count++;
+
+        # Create the Google Maps URL
+        my $query    = uri_escape_utf8($address);
+        my $maps_url = "https://www.google.com/maps/search/?api=1&query=$query";
+
+        # Generate the QR codes, Ecc => 1 is Error Correction Level L (Low), ModuleSize controls the pixel size of the blocks
+        my $qrobj = GD::Barcode::QRcode->new( $maps_url, { Ecc => 1, ModuleSize => 4 } );
+        print "$maps_url\n";
+        if ($qrobj) {
+
+            # Create a safe filename
+            my $safe_name = $address;
+            $safe_name =~ s/[^a-zA-Z0-9_\- ]//g;
+            $safe_name =~ s/ /_/g;
+
+            # Limit length to avoid filesystem errors
+            $safe_name = substr( $safe_name, 0, 30 );
+            my $filename = sprintf( "%03d_%s.png", $count, $safe_name );
+            my $filepath = "$output_dir/$filename";
+            open my $img_fh, '>', $filepath or die "Could not open '$filepath' for writing: $!";
+            binmode $img_fh;
+
+            # Adding some padding to left or right side, alternating
+            my $qr = $qrobj->plot();
+            my ( $w, $h ) = $qr->getBounds();
+            my $pad = 0;
+
+            # Sometimes the locations start on the right side, sometimes the left. And,
+            # getting past the midpoint of the book, we want to switch the alternation.
+            # That's because we add an extra unnumbered bonus midpoint page with a photo.
+            my $LEFT_SIDE        = 0;
+            my $RIGHT_SIDE       = 1;
+            my $side_to_start_on = $RIGHT_SIDE;    # adjust as needed
+            if (                                   #
+                ( ( $count % 2 == $side_to_start_on ) && ( !$past_midpoint ) )
+                ||                                 #
+                ( ( $count % 2 == !$side_to_start_on ) && ($past_midpoint) )
+              )
+            {
+                $pad = $w;
+            }
+            if ( $place_name eq 'Midpoint Cafe and Gift Shop' ) {
+                $past_midpoint = 1;
+            }
+
+            my $canvas = GD::Image->new( $w + $w, $h );
+            my $white  = $canvas->colorAllocate( 255, 255, 255 );
+            my $black  = $canvas->colorAllocate( 0,   0,   0 );
+            $canvas->filledRectangle( 0, 0, $w + $w, $h, $white );
+            if ($hide_qr) {
+                $canvas->filledRectangle( $pad, 0, $w, $h, $black );
+            }
+            else {
+                $canvas->copy( $qr, $pad, 0, 0, 0, $w, $h );
+            }
+            $canvas->rectangle( 0, 0, $w + $w - 1, $h - 1, $black );
+
+            # Label in blank area
+            my $text = "STAMP / STICKER / SIGNATURE";
+            my $font = gdTinyFont;
+            my $text_x;
+            if ( $pad == 0 ) {
+
+                # QR on left, blank area on right
+                $text_x = $w + 5;
+            }
+            else {
+                # QR on right, blank area on left
+                $text_x = 5;
+            }
+            my $text_y = 5;
+            $canvas->string( $font, $text_x, $text_y, $text, $black );
+
+            # Draw a little arrow
+            my $arrow_x = $text_x + ( length($text) * 5 ) + 3;
+            my $arrow_y = $text_y + 1;
+
+            # shaft
+            $canvas->line( $arrow_x + 2, $arrow_y, $arrow_x + 2, $arrow_y + 4, $black );
+
+            # arrowhead
+            $canvas->line( $arrow_x,     $arrow_y + 3, $arrow_x + 2, $arrow_y + 5, $black );
+            $canvas->line( $arrow_x + 4, $arrow_y + 3, $arrow_x + 2, $arrow_y + 5, $black );
+
+            print $img_fh $canvas->png();
+            close $img_fh;
+            push( @$qrs,   $filename );
+            push( @$links, $maps_url );
+        }
+        else {
+            die "[$count] Error generating QR code for: $address\n";
+        }
+    }
+    return $qrs;
+}
+
+sub make_doc {
+    my ( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break ) = @_;
+
+    # Build a Pandoc md file and an html file for the website
+    my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
+    open my $md,   '>', $md_path  or die "Can't write '$md_path': $!";
+    open my $html, '>', $out_html or die "Can't write '$out_html': $!";
+
+    # Website header
+    my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
+    $year += 1900;
+    my @month_abbrevs = qw(Jan Feb Mar April May Jun Jul Aug Sep Oct Nov Dec);
+    my $month_abbrev  = $month_abbrevs[$mon];
+    $mon += 1;
+    for my $unit ( $mon, $mday, $hour, $min, $sec ) { $unit = sprintf( '%02d', $unit ); }
+    print $html qq|
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasteland Firebird's Big List of the Best Things On Route 66</title>
+    <link rel="icon" href="/favicon.png">
+    <link rel="stylesheet" href="/biglist.css">
+</head>
+<body>
+<h1>Wasteland Firebird's Big List of the Best Things On Route 66</h1>
+<h2>A curious guide to Route 66 and the American Dream, last updated $year $month_abbrev $mday</h2>
+<img src="/pictures/image001.jpg">
+<h3>Purchasable physical copies of this list in book form will be available right here, SOON. The book includes scannable QR codes for each address, and lots of opinionated blurbs.</h3>
+<h3><a href="https://www.youtube.com/playlist?list=PLA_KEM2YJkctJhl8hcghFpyMN1igPFB0p">Wasteland Firebird's Route 66 YouTube playlist is here.</a></h3>
+<h3><a href="https://www.google.com/maps/d/u/0/edit?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ll=32.242242784459016%2C-106.71410537451172&z=5">Wasteland Firebird's Big Map is here.</a></h3>
+<h3>Wasteland Firebird can be contacted at wastelandfirebird at gmail dot com.</h3>
+<ol>
+|;
+
+    # Title page
+    print $md "Wasteland Firebird's Big List${line_break}of the Best Things On Route 66${line_break}by Wasteland Firebird (John Binns)${line_break}2026 Centennial Second Edition${line_break}";
+    print $md $page_break;
+
+    # Copyright page
+    print $md "Copyright © 2026 John Binns${line_break}All rights reserved${line_break}wastelandfirebird\@gmail.com${line_break}youtube.com/wastelandfirebird${line_break}wastelandfirebird.com${line_break}";
+    print $md $page_break;
+
+    # Dedication page
+    print $md "In 1987, Angel Delgadillo saved Route 66.${line_break}In 2006, Pixar's Cars saved Route 66.${line_break}2026 is the Centennial of Route 66.${line_break}Who will save it now, if not you and me?${line_break}";
+    print $md $page_break;
+
+    # Introduction
+    print $md qq|
+Prepare to be inspired
+${line_break}
+On July 4, 1976, I wasn't even four years old. But, that year, I learned a big word. Bicentennial. Everyone was saying it so much. How could I not have learned it? "Bicentennial." It was spoken with such obvious reverence that my young ears paid attention.
+${line_break}
+Fifty years later, I am the one speaking reverence to young ears. Are you paying attention?
+${line_break}
+Say it with me. "Semiquincentennial." Do any three-year-olds know that word? How many adults know it? Semiquincentennial.
+${line_break}
+Semi means half, quin means five, cent means hundred, ennial means years. The United States of America has now existed for half of 500 years.
+${line_break}
+I was hoping for another Freedom Train, a Wagon Train Pilgrimage, New York City's Operation Sail, TV shows, special edition coins, special edition cars, fireworks, air shows, car shows, parades, and red-white-and-blue everything. A few of those things are happening, but something has definitely changed in the last fifty years. The reverence is gone.
+${line_break}
+When I discovered that Route 66 would have its Centennial in the same year as America's Semiquincentennial, I knew that I had to do something to bring that reverence back.
+${line_break}
+I traveled Route 66 four times. I made a lot of YouTube videos. I took a lot of notes. I set up a free Route 66 tour I called The Great Route 66 Centennial Convergence. I made flyers, t-shirts, and keychains based on my hand-drawn art. I commissioned miniature "Muffler Man" action figures of myself. I promoted the event so much that I was kicked off of Facebook forever for being a "spammer."
+${line_break}
+And I created the "2026 Centennial Edition" of this book. Like the t-shirts, keychains, and action figures, the first edition was never for sale. It was free for Convergence participants.
+${line_break}
+The Great Route 66 Centennial Convergence came to an end on April 30, 2026. But people kept asking for copies of the book. So here it is, the 2026 Centennial Second Edition, with plenty of updates. You can now buy this book at wastelandfirebird.com. If people enjoy it, I'll release a new edition every year. Maybe twice a year.
+${line_break}
+You might still manage to get a copy of this book for free, if you look hard enough. Be sure to check the Route 66 of Chenoa IL Roadside Attraction Tourist Info booth. You never know what cool stuff people might leave there.
+${line_break}
+Route 66 goes from Chicago to LA. It represents the idea of going West. Americans have always held out hope that things would be better out West. The Europeans got to the Americas in the first place by heading west.
+${line_break}
+"Washington [DC] is not a place to live in. The rents are high, the food is bad, the dust is disgusting and the morals are deplorable. Go West, young man, go West and grow up with the country." - Horace Greely
+${line_break}
+"If [Americans] attained Paradise, they would move on if they heard of a better place farther west." - John Murray
+${line_break}
+If we save Route 66, we save the American Dream. If we save the American Dream, we save America. If we save America, we save the world. Because the American Dream is not just America's dream. It's everyone's dream.
+${line_break}
+|;
+    print $md $page_break;
+
+    # How to use this book
+    print $md qq|
+How to use this book
+${line_break}
+You can use this book on its own, or in conjunction with other guides. The locations in this book are in order from east to west, because that's the direction of America's story. Driving west-to-east on Route 66 is like watching a movie backwards. But this book will work just as well backwards as it will forwards.
+${line_break}
+I don't include any images. I don't include any descriptions. That's intentional. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're supposed to be getting into it.
+${line_break}
+There will be errors in this book. Please email them to wastelandfirebird\@gmail.com. Don't follow your phone's directions into the middle of nowhere. When visited in order, most of these locations will be fairly close to one another. For most of this trip, you should be, at most, a couple of miles away from an interstate highway. The beautiful part is that the places you visit will feel much more remote than that. If you follow the old Route, you'll often forget that the interstate is even there.
+${line_break}
+This book is a list of addresses and QR codes that represent online directions to each of my favorite places on Route 66. You can enter each address manually into your navigation app. Or, you can scan the QR codes with your phone by pointing your phone's camera at them. If you visit every place in this book, you will approximately follow Route 66 from one end to the other.
+${line_break}
+If you want to follow Route 66 more exactly, be aware that there never was a single Route 66. There have always been many "alignments" (alternate routes). Nowadays, much of what used to be known as Route 66 consists of closed roads, potholed roads, dirt roads, private roads, military bases, and dead ends. In a few places, you have no choice but to take the interstate.
+${line_break}
+I'd recommend taking three weeks to do your Route 66 trip. If you want to explore every inch of every route that was ever known as "Route 66," you'd better give yourself several months.
+${line_break}
+Many businesses along the Route have custom rubber stamps. I've left an empty space beside all of the QR codes for these stamps. You could also use those spaces for notes, signatures, stickers, or just big checkmarks. 
+${line_break}
+Be aware that some of the "passport" books you'll find on the Route require small businesses to pay thousands of dollars for the privilege of being advertised in them. No one paid to be in this book. This book is nothing more than a list of places and people that I love.
+${line_break}
+|;
+    print $md $page_break;
+
+    my $place_number = 0;    # Use this as zero-based array index for now
+    for my $address_hashref (@$addresses) {
+        my $place_name = $address_hashref->{name};
+        my $address    = $address_hashref->{address};
+        my $blurb      = $address_hashref->{blurb};
+        my $qr_path    = File::Spec->catfile( $qr_dir, $qrs->[$place_number] );
+        if ( !-f $qr_path ) {
+            die "Missing QR file for '$place_number': " . Dumper($qrs);
+        }
+        my $state;
+        if ( $address =~ /([A-Z][A-Z])$/ ) {
+            $state = $1;
+        }
+        else {
+            die "Invalid address, expected state at the end of '$address'";
+        }
+
+        # Website
+
+        print $html qq|
+    <li class="$state">
+        <div class="place">
+            <div class="place-name">
+                $place_name
+            </div>
+            <div class="place-address">
+                <a href="$links->[$place_number]" target="_blank" rel="noopener noreferrer">$address</a>
+            </div>
+        </div>
+    </li>
+|;
+
+        $place_number++;    # Now that we have incremented this, we can use it below as a human-readable counter starting at one
+
+        # Book
+
+        # Address (as plain paragraph). If you want it to be, say, a big bold title},
+        # define a style in reference.docx and use it via a pandoc Lua filter.
+        print $md "$place_name\n";
+        print $md $line_break;
+        print $md "$address\n";
+
+        # Pandoc supports attribute syntax: {width=...}
+        print $md "![]($qr_path){width=$qr_width}\n";
+        print $md $line_break;
+        if ($blurb) {
+            print $md "$blurb\n";
+            print $md $line_break;
+        }
+
+        # Here's where we insert the bonus midpoint page that causes the QR codes to change their alternation pattern above
+        if ( $place_name eq 'Midpoint Cafe and Gift Shop' ) {
+            print $md $page_break;
+            print $md "Midpoint bonus page!\n";
+        }
+
+        # Page break
+        print $md $page_break;
+    }
+
+    # Conclusion
+    print $md qq|
+Create value. Create value for people who pay you. That's work. Create value for people who don't pay you. That's kindness. Create value for people you like. That's friendship. Create value for people you don't like. That's self-preservation. Most of all, create value for yourself. That's happiness.
+${line_break}
+|;
+    print $md $page_break;
+
+    print $html qq|
+</ol>
+<img src="/pictures/image-wf.jpg">
+</body>
+</html>
+|;
+
+    close $html or die "Error closing $out_html: $!";
+    close $md   or die "Error closing $md_path: $!";
+
+    # Use a DOCX that matches the print on demand template (margins, page size, headers/footers, fonts, etc).
+    # Pandoc will use this as a reference.
+    my $reference_docx = './data/wasteland_firebirds_big_list-template.docx';
+    my @cmd            = ( 'pandoc', $md_path, '-o', $out_docx, '--reference-doc=' . $reference_docx, );
+    print "Running:\n  " . join( ' ', map { /\s/ ? qq("$_") : $_ } @cmd ) . "\n";
+    system(@cmd) == 0 or die "pandoc failed";
+}
+
+sub get_locations {
+    return [
         {
             name    => "Navy Pier",
             address => "600 E Grand Ave, Chicago IL",
@@ -2126,361 +2487,5 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
             blurb   => qq|There is a small linoleum mosaic embedded in the asphalt at the crosswalk. The 66-To-Cali shack is the end of your journey.|,
         },
     ];
-    my $work_dir = './data';
-    my $qr_dir   = File::Spec->catfile( $work_dir, 'qr_codes/' );
-    my $out_docx = File::Spec->catfile( $work_dir, 'wasteland_firebirds_big_list-base.docx' );
-    my $out_html = File::Spec->catfile( $work_dir, 'index.html' );
-    my $qr_width = '4.0in';
-    my $qrs      = [];
-    my $links    = [];
-    set_up_qr_dir($qr_dir);
-    ensure_dir($work_dir);
-    generate_qr_codes_and_links( $addresses, $qr_dir, $qrs, $links );
-    make_doc( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break );
-    print "Open DOCX in Pages.\n";
-    print "Manually choose a new font for all of the place names and addresses.\n";
-    print "Click Document, Document, Footer to add a footer.\n";
-    print "Click Document, Section, uncheck Left and Right are Different.\n";
-    print "Click Document, Section, uncheck Match Previous Section.\n";
-    print "In the document itself, click where you want to insert a section break (where you want page numbering to start/restart), then click Insert, Section Break.\n";
-    print "Go to the footer and click it and Insert Page Number, ignoring the wrong start number.\n";
-    print "Click Document, Section, Page Number, Start At.\n";
-    print "Add new sections for every state. Update the footer with the state name. You should only need to update it once for the entire section. Make page numbering continue from previous section.";
-    print "At Midpoint, add a new section break and restart page numbering as above, fixing the start number. Afterward, go back to using Continue From Previous Section.\n";
-    print "Under Format, Body, Style, Font, choose Garamond. There is a gear icon also, bring character spacing in by 1%.";
-    print "Fix justification to be both left and right.\n";
-    print "Add photos to the beginning, midpoint, and end.\n";
-    print "Mess with footers and Sections to get the page numbering to start and stop correctly.\n";
-    print "Do any other needed tweaks. Export PDF.\n";
-    system( 'open', $out_docx );
-
-    #system( 'open', $out_html );
 }
 
-sub ensure_dir {
-    my ($d) = @_;
-    -d $d or mkdir $d or die "Can't mkdir $d: $!";
-}
-
-sub set_up_qr_dir {
-    my ($output_dir) = @_;
-    unless ( -d $output_dir ) {
-        make_path($output_dir)
-          or die "Failed to create directory $output_dir: $!";
-    }
-
-    # clean out old QR codes if present
-    mkdir $output_dir;
-    opendir( my $dh, $output_dir ) or die "Can't open $output_dir: $!";
-    while ( my $file = readdir($dh) ) {
-        next if $file eq '.' or $file eq '..';
-        my $path = "$output_dir/$file";
-        next if -d $path;    # skip subdirectories
-        unlink($path) or warn "Couldn't delete $path: $!";
-    }
-    closedir($dh);
-}
-
-sub generate_qr_codes_and_links {
-    my ( $addresses, $output_dir, $qrs, $links ) = @_;
-    my $count         = 0;
-    my $past_midpoint = 0;
-    for my $address_hashref (@$addresses) {
-        my $place_name = $address_hashref->{name};
-        my $address    = $address_hashref->{address};
-        my $hide_qr    = $address_hashref->{hide_qr};
-        chomp $address;
-
-        # Google maps results are better when you always give the place name, too
-        #if ( $address !~ /^[0-9]/ ) {
-        $address = "$place_name, $address";
-
-        #}
-        $count++;
-
-        # Create the Google Maps URL
-        my $query    = uri_escape_utf8($address);
-        my $maps_url = "https://www.google.com/maps/search/?api=1&query=$query";
-
-        # Generate the QR codes, Ecc => 1 is Error Correction Level L (Low), ModuleSize controls the pixel size of the blocks
-        my $qrobj = GD::Barcode::QRcode->new( $maps_url, { Ecc => 1, ModuleSize => 4 } );
-        print "$maps_url\n";
-        if ($qrobj) {
-
-            # Create a safe filename
-            my $safe_name = $address;
-            $safe_name =~ s/[^a-zA-Z0-9_\- ]//g;
-            $safe_name =~ s/ /_/g;
-
-            # Limit length to avoid filesystem errors
-            $safe_name = substr( $safe_name, 0, 30 );
-            my $filename = sprintf( "%03d_%s.png", $count, $safe_name );
-            my $filepath = "$output_dir/$filename";
-            open my $img_fh, '>', $filepath or die "Could not open '$filepath' for writing: $!";
-            binmode $img_fh;
-
-            # Adding some padding to left or right side, alternating
-            my $qr = $qrobj->plot();
-            my ( $w, $h ) = $qr->getBounds();
-            my $pad = 0;
-
-            # Sometimes the locations start on the right side, sometimes the left. And,
-            # getting past the midpoint of the book, we want to switch the alternation.
-            # That's because we add an extra unnumbered bonus midpoint page with a photo.
-            my $LEFT_SIDE        = 0;
-            my $RIGHT_SIDE       = 1;
-            my $side_to_start_on = $RIGHT_SIDE;    # adjust as needed
-            if (                                   #
-                ( ( $count % 2 == $side_to_start_on ) && ( !$past_midpoint ) )
-                ||                                 #
-                ( ( $count % 2 == !$side_to_start_on ) && ($past_midpoint) )
-              )
-            {
-                $pad = $w;
-            }
-            if ( $place_name eq 'Midpoint Cafe and Gift Shop' ) {
-                $past_midpoint = 1;
-            }
-
-            my $canvas = GD::Image->new( $w + $w, $h );
-            my $white  = $canvas->colorAllocate( 255, 255, 255 );
-            my $black  = $canvas->colorAllocate( 0,   0,   0 );
-            $canvas->filledRectangle( 0, 0, $w + $w, $h, $white );
-            if ($hide_qr) {
-                $canvas->filledRectangle( $pad, 0, $w, $h, $black );
-            }
-            else {
-                $canvas->copy( $qr, $pad, 0, 0, 0, $w, $h );
-            }
-            $canvas->rectangle( 0, 0, $w + $w - 1, $h - 1, $black );
-
-            # Label in blank area
-            my $text = "STAMP / STICKER / SIGNATURE";
-            my $font = gdTinyFont;
-            my $text_x;
-            if ( $pad == 0 ) {
-
-                # QR on left, blank area on right
-                $text_x = $w + 5;
-            }
-            else {
-                # QR on right, blank area on left
-                $text_x = 5;
-            }
-            my $text_y = 5;
-            $canvas->string( $font, $text_x, $text_y, $text, $black );
-
-            # Draw a little arrow
-            my $arrow_x = $text_x + ( length($text) * 5 ) + 3;
-            my $arrow_y = $text_y + 1;
-
-            # shaft
-            $canvas->line( $arrow_x + 2, $arrow_y, $arrow_x + 2, $arrow_y + 4, $black );
-
-            # arrowhead
-            $canvas->line( $arrow_x,     $arrow_y + 3, $arrow_x + 2, $arrow_y + 5, $black );
-            $canvas->line( $arrow_x + 4, $arrow_y + 3, $arrow_x + 2, $arrow_y + 5, $black );
-
-            print $img_fh $canvas->png();
-            close $img_fh;
-            push( @$qrs,   $filename );
-            push( @$links, $maps_url );
-        }
-        else {
-            die "[$count] Error generating QR code for: $address\n";
-        }
-    }
-    return $qrs;
-}
-
-sub make_doc {
-    my ( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break ) = @_;
-
-    # Build a Pandoc md file and an html file for the website
-    my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
-    open my $md,   '>', $md_path  or die "Can't write '$md_path': $!";
-    open my $html, '>', $out_html or die "Can't write '$out_html': $!";
-
-    # Website header
-    my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
-    $year += 1900;
-    my @month_abbrevs = qw(Jan Feb Mar April May Jun Jul Aug Sep Oct Nov Dec);
-    my $month_abbrev  = $month_abbrevs[$mon];
-    $mon += 1;
-    for my $unit ( $mon, $mday, $hour, $min, $sec ) { $unit = sprintf( '%02d', $unit ); }
-    print $html qq|
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wasteland Firebird's Big List of the Best Things On Route 66</title>
-    <link rel="icon" href="/favicon.png">
-    <link rel="stylesheet" href="/biglist.css">
-</head>
-<body>
-<h1>Wasteland Firebird's Big List of the Best Things On Route 66</h1>
-<h2>A curious guide to Route 66 and the American Dream, last updated $year $month_abbrev $mday</h2>
-<img src="/pictures/image001.jpg">
-<h3>Purchasable physical copies of this list in book form will be available right here, SOON. The book includes scannable QR codes for each address, and lots of opinionated blurbs.</h3>
-<h3><a href="https://www.youtube.com/playlist?list=PLA_KEM2YJkctJhl8hcghFpyMN1igPFB0p">Wasteland Firebird's Route 66 YouTube playlist is here.</a></h3>
-<h3><a href="https://www.google.com/maps/d/u/0/edit?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ll=32.242242784459016%2C-106.71410537451172&z=5">Wasteland Firebird's Big Map is here.</a></h3>
-<h3>Wasteland Firebird can be contacted at wastelandfirebird at gmail dot com.</h3>
-<ol>
-|;
-
-    # Title page
-    print $md "Wasteland Firebird's Big List${line_break}of the Best Things On Route 66${line_break}by Wasteland Firebird (John Binns)${line_break}2026 Centennial Second Edition${line_break}";
-    print $md $page_break;
-
-    # Copyright page
-    print $md "Copyright © 2026 John Binns${line_break}All rights reserved${line_break}wastelandfirebird\@gmail.com${line_break}youtube.com/wastelandfirebird${line_break}wastelandfirebird.com${line_break}";
-    print $md $page_break;
-
-    # Dedication page
-    print $md "In 1987, Angel Delgadillo saved Route 66.${line_break}In 2006, Pixar's Cars saved Route 66.${line_break}2026 is the Centennial of Route 66.${line_break}Who will save it now, if not you and me?${line_break}";
-    print $md $page_break;
-
-    # Introduction
-    print $md qq|
-Prepare to be inspired
-${line_break}
-On July 4, 1976, I wasn't even four years old. But, that year, I learned a big word. Bicentennial. Everyone was saying it so much. How could I not have learned it? "Bicentennial." It was spoken with such obvious reverence that my young ears paid attention.
-${line_break}
-Fifty years later, I am the one speaking reverence to young ears. Are you paying attention?
-${line_break}
-Say it with me. "Semiquincentennial." Do any three-year-olds know that word? How many adults know it? Semiquincentennial.
-${line_break}
-Semi means half, quin means five, cent means hundred, ennial means years. The United States of America has now existed for half of 500 years.
-${line_break}
-I was hoping for another Freedom Train, a Wagon Train Pilgrimage, New York City's Operation Sail, TV shows, special edition coins, special edition cars, fireworks, air shows, car shows, parades, and red-white-and-blue everything. A few of those things are happening, but something has definitely changed in the last fifty years. The reverence is gone.
-${line_break}
-When I discovered that Route 66 would have its Centennial in the same year as America's Semiquincentennial, I knew that I had to do something to bring that reverence back.
-${line_break}
-I traveled Route 66 four times. I made a lot of YouTube videos. I took a lot of notes. I set up a free Route 66 tour I called The Great Route 66 Centennial Convergence. I made flyers, t-shirts, and keychains based on my hand-drawn art. I commissioned miniature "Muffler Man" action figures of myself. I promoted the event so much that I was kicked off of Facebook forever for being a "spammer."
-${line_break}
-And I created the "2026 Centennial Edition" of this book. Like the t-shirts, keychains, and action figures, the first edition was never for sale. It was free for Convergence participants.
-${line_break}
-The Great Route 66 Centennial Convergence came to an end on April 30, 2026. But people kept asking for copies of the book. So here it is, the 2026 Centennial Second Edition, with plenty of updates. You can now buy this book at wastelandfirebird.com. If people enjoy it, I'll release a new edition every year. Maybe twice a year.
-${line_break}
-You might still manage to get a copy of this book for free, if you look hard enough. Be sure to check the Route 66 of Chenoa IL Roadside Attraction Tourist Info booth. You never know what cool stuff people might leave there.
-${line_break}
-Route 66 goes from Chicago to LA. It represents the idea of going West. Americans have always held out hope that things would be better out West. The Europeans got to the Americas in the first place by heading west.
-${line_break}
-"Washington [DC] is not a place to live in. The rents are high, the food is bad, the dust is disgusting and the morals are deplorable. Go West, young man, go West and grow up with the country." - Horace Greely
-${line_break}
-"If [Americans] attained Paradise, they would move on if they heard of a better place farther west." - John Murray
-${line_break}
-If we save Route 66, we save the American Dream. If we save the American Dream, we save America. If we save America, we save the world. Because the American Dream is not just America's dream. It's everyone's dream.
-${line_break}
-|;
-    print $md $page_break;
-
-    # How to use this book
-    print $md qq|
-How to use this book
-${line_break}
-You can use this book on its own, or in conjunction with other guides. The locations in this book are in order from east to west, because that's the direction of America's story. Driving west-to-east on Route 66 is like watching a movie backwards. But this book will work just as well backwards as it will forwards.
-${line_break}
-I don't include any images. I don't include any descriptions. That's intentional. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're supposed to be getting into it.
-${line_break}
-There will be errors in this book. Please email them to wastelandfirebird\@gmail.com. Don't follow your phone's directions into the middle of nowhere. When visited in order, most of these locations will be fairly close to one another. For most of this trip, you should be, at most, a couple of miles away from an interstate highway. The beautiful part is that the places you visit will feel much more remote than that. If you follow the old Route, you'll often forget that the interstate is even there.
-${line_break}
-This book is a list of addresses and QR codes that represent online directions to each of my favorite places on Route 66. You can enter each address manually into your navigation app. Or, you can scan the QR codes with your phone by pointing your phone's camera at them. If you visit every place in this book, you will approximately follow Route 66 from one end to the other.
-${line_break}
-If you want to follow Route 66 more exactly, be aware that there never was a single Route 66. There have always been many "alignments" (alternate routes). Nowadays, much of what used to be known as Route 66 consists of closed roads, potholed roads, dirt roads, private roads, military bases, and dead ends. In a few places, you have no choice but to take the interstate.
-${line_break}
-I'd recommend taking three weeks to do your Route 66 trip. If you want to explore every inch of every route that was ever known as "Route 66," you'd better give yourself several months.
-${line_break}
-Many businesses along the Route have custom rubber stamps. I've left an empty space beside all of the QR codes for these stamps. You could also use those spaces for notes, signatures, stickers, or just big checkmarks. 
-${line_break}
-Be aware that some of the "passport" books you'll find on the Route require small businesses to pay thousands of dollars for the privilege of being advertised in them. No one paid to be in this book. This book is nothing more than a list of places and people that I love.
-${line_break}
-|;
-    print $md $page_break;
-
-    my $place_number = 0;    # Use this as zero-based array index for now
-    for my $address_hashref (@$addresses) {
-        my $place_name = $address_hashref->{name};
-        my $address    = $address_hashref->{address};
-        my $blurb      = $address_hashref->{blurb};
-        my $qr_path    = File::Spec->catfile( $qr_dir, $qrs->[$place_number] );
-        if ( !-f $qr_path ) {
-            die "Missing QR file for '$place_number': " . Dumper($qrs);
-        }
-        my $state;
-        if ( $address =~ /([A-Z][A-Z])$/ ) {
-            $state = $1;
-        }
-        else {
-            die "Invalid address, expected state at the end of '$address'";
-        }
-
-        # Website
-
-        print $html qq|
-    <li class="$state">
-        <div class="place">
-            <div class="place-name">
-                $place_name
-            </div>
-            <div class="place-address">
-                <a href="$links->[$place_number]" target="_blank" rel="noopener noreferrer">$address</a>
-            </div>
-        </div>
-    </li>
-|;
-
-        $place_number++;    # Now that we have incremented this, we can use it below as a human-readable counter starting at one
-
-        # Book
-
-        # Address (as plain paragraph). If you want it to be, say, a big bold title},
-        # define a style in reference.docx and use it via a pandoc Lua filter.
-        print $md "$place_name\n";
-        print $md $line_break;
-        print $md "$address\n";
-
-        # Pandoc supports attribute syntax: {width=...}
-        print $md "![]($qr_path){width=$qr_width}\n";
-        print $md $line_break;
-        if ($blurb) {
-            print $md "$blurb\n";
-            print $md $line_break;
-        }
-
-        # Here's where we insert the bonus midpoint page that causes the QR codes to change their alternation pattern above
-        if ( $place_name eq 'Midpoint Cafe and Gift Shop' ) {
-            print $md $page_break;
-            print $md "Midpoint bonus page!\n";
-        }
-
-        # Page break
-        print $md $page_break;
-    }
-
-    # Conclusion
-    print $md qq|
-Create value. Create value for people who pay you. That's work. Create value for people who don't pay you. That's kindness. Create value for people you like. That's friendship. Create value for people you don't like. That's self-preservation. Most of all, create value for yourself. That's happiness.
-${line_break}
-|;
-    print $md $page_break;
-
-    print $html qq|
-</ol>
-<img src="/pictures/image-wf.jpg">
-</body>
-</html>
-|;
-
-    close $html or die "Error closing $out_html: $!";
-    close $md   or die "Error closing $md_path: $!";
-
-    # Use a DOCX that matches the print on demand template (margins, page size, headers/footers, fonts, etc).
-    # Pandoc will use this as a reference.
-    my $reference_docx = './data/wasteland_firebirds_big_list-template.docx';
-    my @cmd            = ( 'pandoc', $md_path, '-o', $out_docx, '--reference-doc=' . $reference_docx, );
-    print "Running:\n  " . join( ' ', map { /\s/ ? qq("$_") : $_ } @cmd ) . "\n";
-    system(@cmd) == 0 or die "pandoc failed";
-}
-main();
