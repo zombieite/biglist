@@ -285,7 +285,7 @@ HOW TO USE THIS BOOK
 ${line_break}
 You can use this book on its own, or in conjunction with other guides. The locations in this book are in order from east to west, because that's the direction of America's story. Driving west-to-east on Route 66 is like watching a movie backwards. But this book will work just as well backwards as it will forwards.
 ${line_break}
-I don't include any images. I don't include any descriptions. That's intentional. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're supposed to be getting into it.
+I don't include any images. I don't include any descriptions. You're not supposed to be looking at this book. You're supposed to be looking around you. You're not supposed to know what you're getting into. You're supposed to be getting into it.
 ${line_break}
 There will be errors in this book. Please email them to wastelandfirebird\@gmail.com. Don't follow your phone's directions into the middle of nowhere. When visited in order, most of these locations will be fairly close to one another. For most of this trip, you should be, at most, a couple of miles away from an interstate highway. The beautiful part is that the places you visit will feel much more remote than that. If you follow the old Route, you'll often forget that the interstate is even there.
 ${line_break}
