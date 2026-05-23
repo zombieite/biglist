@@ -1486,12 +1486,14 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Cotton Boll Motel sign",
             address => "605 Old US Hwy 66, Canute OK",
-            blurb   => qq||,
+            blurb   =>
+qq|Here's a list of some stuff that was either discovered, invented, perfected, or widely adopted in the twentieth century. Antibiotics, anesthesia, surgery, contraception, clean water, indoor plumbing, biotechnology, Norman Borlaug's miracle strains of wheat, batteries, light bulbs, air conditioning and refrigeration, washing machines, nuclear power, solar power, telephones, mobile phones, photography, radio, movies, television, computers, internet, cars, airplanes, and space travel.|,
         },
         {
             name    => "United Supermarkets",
             address => "2700 W 3rd St, Elk City OK",
-            blurb   => qq|A modern supermarket that honors the beauty of mid-Twentieth Century design.|,
+            blurb   =>
+qq|Keep in mind that all of this happened despite two world wars, the Great Depression, and the worldwide threat of Soviet and Chinese communist expansion during the Cold War. In just a hundred years we figured out more stuff than we had figured out in the entire hundred thousand years that preceded it. Sure there was fire and the wheel. Agriculture and domestication. Spoken language and written language and the printing press. But that ain't much to figure out in a hundred thousand years.|,
         },
         {
             name    => "National Route 66 & Transportation Museum",
@@ -1956,7 +1958,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "La Posada Hotel",
             address => "303 E 2nd St, Winslow AZ",
-            blurb   => qq|My absolute favorite hotel on Route 66. Quirky, old, and luxurious. Unlike big city hotels, you can park you own car. You don't need a porter to take your bags to your room. And you can open the gosh-danged windows.|,
+            blurb   => qq|My absolute favorite hotel on Route 66. Quirky, old, and luxurious. Unlike big city hotels, you can park you own car. You don't need a porter to take your bags to your room. And you can open the gosh-danged windows. That's what I call luxury.|,
         },
         {
             name    => "Route 66 Delta Motel",
@@ -2231,9 +2233,10 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq|This place is beloved by weird German tourists because of the 1987 film Bagdad Cafe. That film is about weird German tourists finding their home-away-from-home at this place. Owner Andrea Pruett slept on a mattress on the floor here while rain dripped through the leaky roof. She did this to keep the place alive for you and me. She's no longer with us. Leave a tip in the jar.|,
         },
         {
-            name    => "Sand-Swallowed Abandoned Homes",
-            address => "Newberry Rd & Palma Vista Rd, Newberry Springs CA",
-            blurb   => qq|I haven't found these buildings yet, but they tell me you can find them just beyond this intersection. Don't drive in sand of any depth.|,
+            name             => "Sand-Swallowed Abandoned Homes",
+            address          => "Newberry Rd & Palma Vista Rd, Newberry Springs CA",
+            blurb            => qq|I haven't found these buildings yet, but they tell me you can find them just beyond this intersection. Don't drive in sand of any depth.|,
+            url_address_only => 1,
         },
         {
             name    => "The Barn",
