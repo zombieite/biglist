@@ -53,6 +53,7 @@ sub main {
     print "Update one of the addresses, set it to the style Subtitle, choose font Futura Medium 11. Make all other addresses match its style.\n";
     print "Add photos to the beginning, midpoint, and end.\n";
     print "Add italics where needed.\n";
+    print "Check all QR codes. To replace one, click Format, Image, Replace.\n";
     print "Export PDF.\n";
 
     #system( 'open', $out_docx );
