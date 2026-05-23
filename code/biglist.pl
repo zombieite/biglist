@@ -95,11 +95,11 @@ sub generate_qr_codes_and_links {
         my $hide_qr    = $address_hashref->{hide_qr};
         chomp $address;
 
-        # Google maps results are better when you always give the place name, too
-        #if ( $address !~ /^[0-9]/ ) {
-        $address = "$place_name, $address";
+        # Google maps results are usually better when you give the place name. But not always.
+        if ( !$address_hashref->{url_address_only} ) {
+            $address = "$place_name, $address";
+        }
 
-        #}
         $count++;
 
         # Create the Google Maps URL
@@ -793,9 +793,10 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name    => "Rusty the Muffler Man",
-            address => "614 Niedringhaus Ave, Granite City IL",
-            blurb   => qq|He might not be on your map, but if you go to this address, he's here.|,
+            name             => "Rusty the Muffler Man",
+            address          => "614 Niedringhaus Ave, Granite City IL",
+            blurb            => qq|Rusty the Muffler Man is here. He might not be on your map, but if you go to this address, he's here.|,
+            url_address_only => 1,
         },
         {
             name    => "Crown Candy Kitchen",
