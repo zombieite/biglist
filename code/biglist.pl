@@ -1080,9 +1080,10 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
             blurb   => qq||,
         },
         {
-            name    => "Campbell 66 Express",
-            address => "426 High St, Carthage MO",
-            blurb   => qq||,
+            name             => "Campbell 66 Express",
+            address          => "426 High St, Carthage MO",
+            blurb            => qq||,
+            url_address_only => 1,
         },
         {
             name    => "Boots Court Motel",
