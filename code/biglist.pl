@@ -1269,7 +1269,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         },
         {
             name             => "Toynbee Tile",
-            address          => "600 S Boston Ave",
+            address          => "600 S Boston Ave, Tulsa OK",
             blurb            => qq|Cross in the crosswalks, looking down at the ground. There is a small linoleum "Toynbee Tile" mosaic embedded in the asphalt. Mosaics like these have been mysteriously appearing in cities around the world since the early 80s. I'd make a documentary about them, but someone already did. It's called Resurrect Dead: The Mystery of the Toynbee Tiles.|,
             url_address_only => 1,
         },
