@@ -1474,8 +1474,8 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
-            name    => "The Big Astronaut",
-            address => "N Broadway St, Weatherford OK",
+            name    => "Major Tom Astronaut",
+            address => "201 W Main St, Weatherford OK",
             blurb   => qq|In the Twentieth Century, we traveled by horses, cars, airplanes, and space rockets, all in the same century. My grandfather saw it all. By the time we got to the moon landing, he refused to believe it was real. He wasn't a conspiracy theorist. His brain just couldn't grasp that such a thing was possible.|,
         },
         {
