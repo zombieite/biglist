@@ -53,6 +53,7 @@ sub main {
     print "Update one of the addresses, set it to the style Subtitle, choose font Futura Medium 11. Make all other addresses match its style.\n";
     print "Add photos to the beginning, midpoint, and end.\n";
     print "Add italics where needed.\n";
+    print "Add paragraph breaks where needed.\n";
     print "Check all QR codes. To replace one, click Format, Image, Replace.\n";
     print "Export PDF.\n";
 
@@ -226,7 +227,11 @@ sub make_doc {
 <h1>WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66</h1>
 <h2>A curious guide to Route 66 and the American Dream, last updated $year $month_abbrev $mday</h2>
 <img src="/pictures/image001.jpg">
-<h3>Purchasable physical copies of this list in book form will be available right here, SOON. The book includes scannable QR codes for each address, and lots of opinionated blurbs.</h3>
+<h3>Purchasable physical copies of this list in book form will be available right here, SOON.</h3>
+<h3>Wasteland Firebird's Big List of the 416 Best Things On Route 66 is like no other Route 66 guide. This book doesn't set out to map the Route itself. This book is a carefully curated list of addresses, one address per page. Each page has a QR code that opens up Google Maps directions to that address. Dead simple. No app needed!</h3>
+<h3>Wasteland Firebird has traveled the Route five times, adding and subtracting items from this list along the way. None of the businesses in this book paid to appear in it. This book is solely a list of places that are beautiful, quirky, old, luxurious, or delicious. There is no cruft here. Every page is worth at least a brief stop. Some of the entries are new discoveries that have never before been seen in connection with Route 66, such as "Room Attack" and "Toynbee Tiles."</h3>
+<h3>The previous edition of this book served as the guide for The Great Route 66 Centennial Convergence, held in April 2026. So many people asked for copies of the book that Wasteland Firebird quickly ran out. As soon as the trip was complete, he released this new updated edition. </h3>
+<h3>This book is more than just a guide. It's more than just a list of addresses. Many pages contain reviews, memories of previous journeys, or musings about the American Dream. This book tells you a story about Route 66, while you're out there writing you're own.</h3>
 <h3><a href="https://www.youtube.com/playlist?list=PLA_KEM2YJkctJhl8hcghFpyMN1igPFB0p">Wasteland Firebird's Route 66 YouTube playlist is here.</a></h3>
 <h3><a href="https://www.google.com/maps/d/u/0/edit?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ll=32.242242784459016%2C-106.71410537451172&z=5">Wasteland Firebird's Big Map is here.</a></h3>
 <h3>Wasteland Firebird can be contacted at wastelandfirebird at gmail dot com.</h3>
@@ -817,7 +822,8 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Donut Drive In",
             address => "6525 Chippewa St, St Louis MO",
-            blurb   => qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or who your parents were. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream.|,
+            blurb   =>
+qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or who your parents were. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream. Over time, the founding principles of the United States forged the world's first self-organizing meritocracy.|,
         },
         {
             name    => "Ted Drewes Frozen Custard",
@@ -872,7 +878,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Creative Chainsaw Carvings",
             address => "151 State Rte W, Sullivan MO",
-            blurb   => qq|Ask her about her dead husband. You will never forget her story.|,
+            blurb   => qq|Ask her about her late husband. You will never forget her story.|,
         },
         {
             name    => "Meramec Caverns",
@@ -1558,7 +1564,7 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
         {
             name    => "The Big Texan Steak Ranch & Brewery",
             address => "7701 I-40, Amarillo TX",
-            blurb   => qq|Some places are just a gimmick, and that's fine. But this gimmick has some of the best food on the Route, and it's a great motel, too. Some say The Big Texan is not actually on Route 66. I say the Big Texan is like the Eiffel Tower. If I happened to be passing two blocks away from it, I'd make a point to stop by.|,
+            blurb   => qq|Some places are just a gimmick, and that's fine. But this gimmick has some of the best food on the Route, and it's a great motel, too. Some say The Big Texan is not actually on Route 66. I say The Big Texan is like the Eiffel Tower. If I happened to be passing two blocks away from it, I'd make a point to stop by.|,
         },
         {
             name    => "Slug Bug Ranch",
@@ -2168,7 +2174,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Oatman",
             address => "Oatman AZ",
-            blurb   => qq|The first time I drove through this town, I had no idea what it was or why it was here. Somehow, for some reason, I had been teleported back in time to The Old West.|,
+            blurb   => qq|The first time I drove through this town, I had no idea what it was or why it was here. Somehow, for some reason, I had been teleported back in time to the Old West.|,
         },
         {
             name    => "Claypool & Co building",
@@ -2235,7 +2241,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
         {
             name             => "Sand-Swallowed Abandoned Homes",
             address          => "Newberry Rd & Palma Vista Rd, Newberry Springs CA",
-            blurb            => qq|I haven't found these buildings yet, but they tell me you can find them just beyond this intersection. Don't drive in sand of any depth.|,
+            blurb            => qq|I haven't found these buildings yet, but they tell me you can find them just beyond this intersection. Don't drive in sand.|,
             url_address_only => 1,
         },
         {
@@ -2441,7 +2447,7 @@ If two people agree to participate in some type of financial or emotional transa
             address => "307 S Broadway, Los Angeles CA",
             blurb   => qq|Principle #10:
 CREATE VALUE.
-It took me years to figure out a way to summarize my entire philosophy in a way that it would fit on a bumper sticker. If you gain nothing else from my existence in this universe, please take these two words with you and keep them handy in your mind. Steal these words, copy these words, say these words. Create value.|,
+It took me years to figure out a way to summarize my entire philosophy in a way that it would fit on a bumper sticker. If you gain nothing else from my existence in this universe, please take these two words with you and keep them handy in your mind. Steal these words, copy these words, say these words. "Create value."|,
         },
         {
             name    => "Clifton's building",
