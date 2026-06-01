@@ -222,6 +222,7 @@ sub make_doc {
     <title>WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66</title>
     <link rel="icon" href="/favicon.png">
     <link rel="stylesheet" href="/biglist.css">
+    <link rel="canonical" href="https://wastelandfirebird.com/">
 </head>
 <body>
 <h1>WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66</h1>
