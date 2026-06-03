@@ -235,7 +235,7 @@ sub make_doc {
 <h3>This book is more than just a guide. It's more than just a list of addresses. Many pages contain reviews, memories of previous journeys, or musings about the American Dream. This book will tell you a story about Route 66, while you're out there writing your own.</h3>
 <h3><a href="https://www.youtube.com/playlist?list=PLA_KEM2YJkctJhl8hcghFpyMN1igPFB0p">Wasteland Firebird's Route 66 YouTube playlist is here.</a></h3>
 <h3><a href="https://www.google.com/maps/d/u/0/edit?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ll=32.242242784459016%2C-106.71410537451172&z=5">Wasteland Firebird's Big Map is here.</a></h3>
-<h3>Wasteland Firebird can be contacted at wastelandfirebird at gmail dot com.</h3>
+<h3>Wasteland Firebird can be contacted at <a href="mailto:wastelandfirebird@gmail.com">wastelandfirebird@gmail.com</a>.</h3>
 <h3>What follows is the list of addresses that appear in the book.</h3>
 <ol>
 |;
