@@ -1136,7 +1136,7 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
         },
         {
             name    => "Gearhead Curios",
-            address => "520 Main St, Galena KS",
+            address => "520 S Main St, Galena KS",
             blurb   => qq|Things are about to get weird. Route 66 is not just a road anymore. Nowadays, Route 66 is a collective project to preserve, restore, and revive the art, architecture, and history of mid-Twentieth century America. Aaron Perry from Gearhead Curios understands this far better than most.|,
         },
         {
