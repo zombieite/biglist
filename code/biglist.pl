@@ -592,7 +592,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         },
         {
             name    => "American Giants Museum",
-            address => "100 SW St, Atlanta IL",
+            address => "100 SW Arch St, Atlanta IL",
             blurb   => qq|Not all of Route 66 is crumbling. Some of it is being revived. This place is a museum of Muffler People. Joel Baker is another name you should know. He's been obsessed with these giants for his entire life. He researches, finds, buys, restores, and sells them. And he makes YouTube videos about the whole process. Some of the giants at this museum belong to him.|,
         },
         {
