@@ -1049,9 +1049,10 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
             blurb   => qq||,
         },
         {
-            name    => "Rogue Barber Co",
-            address => "639 W Walnut St, Springfield MO",
-            blurb   => qq|It's a historic building. If you don't have any hair on your head, go in and get something waxed.|,
+            name             => "Rogue Barber Co",
+            address          => "639 W Walnut St, Springfield MO",
+            blurb            => qq|It's a historic building. If you don't have any hair on your head, go in and get something waxed.|,
+            url_address_only => 1,
         },
         {
             name    => "College Street Cafe",
