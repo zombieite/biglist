@@ -1227,7 +1227,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq|It's closed now, but I did get some good corn nuggets here once.|,
         },
         {
-            name    => "J.M. Davis Arms & Historical Museum",
+            name    => "JM Davis Arms Historical Museum",
             address => "330 N JM Davis Blvd, Claremore OK",
             blurb   => qq|If you're visiting from some un-American place where you can't have guns, be sure to check this place out.|,
         },
