@@ -1496,7 +1496,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
             name    => "Cotton Boll Motel sign",
             address => "605 Old US Hwy 66, Canute OK",
             blurb   =>
-qq|Here's a list of some stuff that was either discovered, invented, perfected, or widely adopted in the twentieth century. Antibiotics, anesthesia, surgery, contraception, clean water, indoor plumbing, biotechnology, Norman Borlaug's miracle strains of wheat, batteries, light bulbs, air conditioning and refrigeration, washing machines, nuclear power, solar power, telephones, mobile phones, photography, radio, movies, television, computers, internet, cars, airplanes, and space travel.|,
+qq|Here's a list of some stuff that was either discovered, invented, perfected, or widely adopted in the Twentieth Century. Antibiotics, anesthesia, surgery, contraception, clean water, indoor plumbing, biotechnology, Norman Borlaug's miracle strains of wheat, batteries, light bulbs, air conditioning and refrigeration, washing machines, nuclear power, solar power, telephones, mobile phones, photography, radio, movies, television, computers, internet, cars, airplanes, and space travel.|,
         },
         {
             name    => "United Supermarkets",
