@@ -87,12 +87,12 @@ li {
 
 li.IL { background: #e6edf7; } /* cool faded blue */
 li.MO { background: #efe8f6; } /* dusty lavender */
-li.KS { background: #e7f3e8; } /* pale prairie green */
+li.KS { background: #dfeeec; } /* pale prairie green */
 li.OK { background: #f8eadf; } /* faded peach */
 li.TX { background: #f6e3e3; } /* dusty rose */
 li.NM { background: #f5e1c6; } /* warm adobe sand */
 li.AZ { background: #e5d5c6; } /* desert clay */
-li.CA { background: #dfeeec; } /* coastal faded teal */
+li.CA { background: #e7f3e8; } /* coastal faded teal */
 
 /* ===== Images ===== */
 img {
