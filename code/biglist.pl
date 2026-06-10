@@ -387,7 +387,6 @@ ${line_break}
     print $html qq|
 </ol>
 <img src="/pictures/beauty.jpg">
-<iframe src="https://www.google.com/maps/d/embed?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ehbc=2E312F" style="width:100%; aspect-ratio:2/1"></iframe>
 </body>
 </html>
 |;
