@@ -228,7 +228,7 @@ sub make_doc {
 <h1>WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66</h1>
 <h2>A curious guide to Route 66 and the American Dream, last updated $year $month_abbrev $mday</h2>
 <img src="/pictures/cover.jpg">
-<h1><a href="https://www.lulu.com/account/projects/zmep9ym">Book is available now!</a></h1>
+<h1><a href="https://www.lulu.com/shop/john-binns/wasteland-firebirds-big-list-of-the-416-best-things-on-route-66/paperback/product-zmep9ym.html?page=1&pageSize=4">Book is available now!</a></h1>
 <h3>Wasteland Firebird's Big List of the Best Things On Route 66 is like no other Route 66 guide. This book doesn't set out to map the Route itself. This book is a carefully curated list of addresses, one address per page. Each page has a QR code that opens up Google Maps directions to that address. No app needed!</h3>
 <h3>Wasteland Firebird has traveled the Route five times, adding and subtracting items from this list along the way. None of the businesses in this book paid to appear in it. This book is solely a list of places that are beautiful, quirky, old, luxurious, or delicious. Every place in this book is worth at least a brief stop. Some of the entries are new discoveries that have never before been seen in connection with Route 66, such as "Room Attack" and "Toynbee Tiles."</h3>
 <h3>The previous edition of this book served as the guide for The Great Route 66 Centennial Convergence, held in April 2026. So many people asked for copies of the book that we quickly ran out. As soon as the trip was complete, we released this new updated edition. </h3>
