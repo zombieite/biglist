@@ -2232,7 +2232,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq|I've never made it to this place during business hours, but I'm gonna keep trying.|,
         },
         {
-            name    => "Whiting Brothers Service and Tony's Spaghetti Building",
+            name    => "Whiting Brothers Service and Tony's Spaghetti building",
             address => "46756 National Trails Hwy, Newberry Springs CA",
             blurb   => qq|Attachment leads to suffering.|,
         },
