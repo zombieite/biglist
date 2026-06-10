@@ -501,7 +501,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name    => "The Shop on Route 66",
+            name    => "Shop on Route 66",
             address => "315 N Center St, Gardner IL",
             blurb   => qq||,
         },
@@ -561,7 +561,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq|Entropy cannot be stopped. The Route is crumbling before our eyes. There are some nostalgic signs here. But this section used to be covered in beautiful trees. Now it's just a bare stretch of road. I got some video of this spot with all of its trees back in 2024, you can find it on my YouTube channel.|,
         },
         {
-            name    => "The Shake Shack",
+            name    => "Shake Shack",
             address => "512 W Main St, Lexington IL",
             blurb   => qq|I'm pretty sure I had some fried corn nuggets here. Corn nuggets are my favorite bit of semi-obscure American food. If this place is closed, don't worry, you'll have another chance try fried corn nuggets on this trip.|,
         },
@@ -601,7 +601,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name    => "The Mill Museum",
+            name    => "Mill Museum",
             address => "738 S Washington St, Lincoln IL",
             blurb   => qq||,
         },
@@ -611,7 +611,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name    => "The Old Station",
+            name    => "Old Station",
             address => "117 Elm St, Williamsville IL",
             blurb   => qq||,
         },
@@ -726,7 +726,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name    => "The Ariston Cafe",
+            name    => "Ariston Cafe",
             address => "413 Old Rte 66 N, Litchfield IL",
             blurb   => qq||,
         },
@@ -838,7 +838,7 @@ qq|America was the first country on Earth where your social class didn't matter.
             blurb   => qq||,
         },
         {
-            name    => "The Malt Shop",
+            name    => "Malt Shop",
             address => "1751 Smizer Station Rd, Fenton MO",
             blurb   => qq|Don't ever just order a milkshake. Always ask for a malt. For some reason malts are slowly being forgotten. They're harder to find now. The "malt" is just powdered barley extract but it adds a great bit of flavor.|,
         },
@@ -983,7 +983,7 @@ qq|America was the first country on Earth where your social class didn't matter.
             blurb   => qq||,
         },
         {
-            name    => "The Manor Inn",
+            name    => "Manor Inn",
             address => "505 E Elm St, Lebanon MO",
             blurb   => qq||,
         },
@@ -1252,7 +1252,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
-            name    => "The Campbell Hotel",
+            name    => "Campbell Hotel",
             address => "2636 E 11th St, Tulsa OK",
             blurb   => qq||,
         },
@@ -1303,7 +1303,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
-            name    => "The Roller Dome",
+            name    => "Roller Dome",
             address => "9661 New Sapulpa Rd, Sapulpa OK",
             blurb   => qq|There is a gorgeous old hand-painted sign out front.|,
         },
@@ -1488,7 +1488,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq|In the Twentieth Century, we traveled by horses, cars, airplanes, and space rockets, all in the same century. My grandfather saw it all. By the time we got to the moon landing, he refused to believe it was real. He wasn't a conspiracy theorist. His brain just couldn't grasp that such a thing was possible.|,
         },
         {
-            name    => "The Glancy Motel",
+            name    => "Glancy Motel",
             address => "217 W Gary Blvd, Clinton OK",
             blurb   => qq|There never was, and never will be, another century like the Twentieth. One day, historians will speak of "The Twentieth Century" the way we today speak of "The Renaissance," or "The Enlightenment."|,
         },
@@ -1565,7 +1565,7 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
             blurb   => qq|If you want to try something weird and American, something that even a lot of Americans haven't tried, look for a Chick-O-Stick. Peanut butter and toasted coconut, no chocolate. Fresh ones are better, so buy them from a high-traffic business like Buc-ee's. If they're crunchy, they're fresh. If they're chewy or sticky, they're stale.|,
         },
         {
-            name    => "The Big Texan Steak Ranch & Brewery",
+            name    => "Big Texan Steak Ranch & Brewery",
             address => "7701 I-40, Amarillo TX",
             blurb   => qq|Some places are just a gimmick, and that's fine. But this gimmick has some of the best food on the Route, and it's a great motel, too. Some say The Big Texan is not actually on Route 66. I say The Big Texan is like the Eiffel Tower. If I happened to be passing two blocks away from it, I'd make a point to stop by.|,
         },
@@ -1605,7 +1605,7 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
             blurb   => qq||,
         },
         {
-            name    => "The Handle Bar and Grill",
+            name    => "Handle Bar and Grill",
             address => "3514 SW 6th Ave, Amarillo TX",
             blurb   => qq||,
         },
@@ -2253,7 +2253,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq|Like Roy's Cafe, The Barn always treats me like the celebrity that I am. I'm sure they'll be nice to you peons, too.|,
         },
         {
-            name    => "The Russian House",
+            name    => "Russian House",
             address => "35421 County Rd 66, Daggett CA",
             blurb   => qq||,
         },
@@ -2373,7 +2373,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq|There might be a custom brick here from The Great Route 66 Centennial Convergence.|,
         },
         {
-            name    => "The Sycamore Inn",
+            name    => "Sycamore Inn",
             address => "8318 Foothill Blvd, Rancho Cucamonga CA",
             blurb   => qq||,
         },
@@ -2383,7 +2383,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq|This place has a strict dress code and no mobile phones are allowed. I hope my leather jacket covered in paint marker art summarizing my entire philosophy of life in ten simple principles is ok.|,
         },
         {
-            name    => "The Donut Man",
+            name    => "Donut Man",
             address => "915 E Rte 66, Glendora CA",
             blurb   => qq|My philosophy of life, principle #1:
 I AM CONSCIOUS.
@@ -2458,12 +2458,12 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
             blurb   => qq|This spot is described as the "real" end of Route 66. But for a climax to our Route 66 story, I think we can do better. Keep going, it's about to get good.|,
         },
         {
-            name    => "The Orpheum Theatre",
+            name    => "Orpheum Theatre",
             address => "842 S Broadway, Los Angeles CA",
             blurb   => qq||,
         },
         {
-            name    => "The United Theater on Broadway",
+            name    => "United Theater on Broadway",
             address => "929 S Broadway, Los Angeles CA",
             blurb   => qq||,
         },
