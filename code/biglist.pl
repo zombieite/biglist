@@ -237,7 +237,7 @@ sub make_doc {
 <h3><a href="https://www.google.com/maps/d/u/0/edit?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ll=32.175316365813835%2C-106.71410537451172&z=5">Wasteland Firebird's Big Map is here.</a></h3>
 <h3><a href="https://www.instagram.com/p/DY0ZPatE5_l/">Wasteland Firebird's next USA tour dates are here.</a></h3>
 <h3>Wasteland Firebird can be contacted at <a href="mailto:wastelandfirebird\@gmail.com">wastelandfirebird\@gmail.com</a>.</h3>
-<h3>What follows is the list of addresses that appear in the book.</h3>
+<h3>What follows is the list of addresses that are scheduled to appear in the next edition of this book.</h3>
 <ol>
 |;
 
