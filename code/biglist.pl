@@ -226,7 +226,7 @@ sub make_doc {
 </head>
 <body>
 <h1>WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66</h1>
-<h2>A curious guide to Route 66 and the American Dream, last updated $year $month_abbrev $mday</h2>
+<h2>A curious guide to Route 66 and the American Dream, updated $year $month_abbrev $mday</h2>
 <img src="/pictures/cover.jpg">
 <h1><a href="https://www.lulu.com/shop/john-binns/wasteland-firebirds-big-list-of-the-416-best-things-on-route-66/paperback/product-zmep9ym.html?page=1&pageSize=4">Book is available now! Click here to buy!</a></h1>
 <h3>Wasteland Firebird's Big List of the Best Things On Route 66 is like no other Route 66 guide. This book doesn't set out to map the Route itself. This book is a carefully curated list of addresses, one address per page. Each page has a QR code that opens up Google Maps directions to that address. No app needed!</h3>
