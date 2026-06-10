@@ -386,7 +386,7 @@ ${line_break}
 
     print $html qq|
 </ol>
-<img src="/pictures/wf.jpg">
+<img src="/pictures/beauty.jpg">
 </body>
 </html>
 |;
