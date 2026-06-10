@@ -2242,7 +2242,7 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq|This place is beloved by weird German tourists because of the 1987 film Bagdad Cafe. That film is about weird German tourists finding their home-away-from-home at this place. Owner Andrea Pruett slept on a mattress on the floor here while rain dripped through the leaky roof. She did this to keep the place alive for you and me. She's no longer with us. Leave a tip in the jar.|,
         },
         {
-            name             => "Sand-Swallowed Abandoned Homes",
+            name             => "Sand-swallowed abandoned homes",
             address          => "Newberry Rd & Palma Vista Rd, Newberry Springs CA",
             blurb            => qq|I haven't found these buildings yet, but they tell me you can find them just beyond this intersection. Don't drive in sand.|,
             url_address_only => 1,
