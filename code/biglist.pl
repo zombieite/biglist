@@ -12,20 +12,24 @@ use Data::Dumper;
 sub main {
 
     # md breaks that can be understood by pandoc and translated into docx breaks
-    my $line_break = "  \n";
-    my $page_break = "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
-    my $addresses  = get_locations();
-    my $work_dir   = './generated';
-    my $qr_dir     = File::Spec->catfile( $work_dir, 'qr_codes/' );
-    my $out_docx   = File::Spec->catfile( $work_dir, 'wasteland_firebirds_big_list-base.docx' );
-    my $out_html   = File::Spec->catfile( $work_dir, 'index.html' );
-    my $qr_width   = '4.0in';
-    my $qrs        = [];
-    my $links      = [];
+    my $line_break          = "  \n";
+    my $page_break          = "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
+    my $addresses           = get_locations();
+    my $input_dir           = './data';
+    my $output_dir          = './generated';
+    my $oversize_output_dir = './generated/oversize';
+    my $website_dir         = './website';
+    my $qr_dir              = File::Spec->catfile( $oversize_output_dir, 'qr_codes/' );
+    my $out_docx            = File::Spec->catfile( $output_dir,          'wasteland_firebirds_big_list-base.docx' );
+    my $out_html            = File::Spec->catfile( $website_dir,         'index.html' );
+    my $qr_width            = '4.0in';
+    my $qrs                 = [];
+    my $links               = [];
     set_up_qr_dir($qr_dir);
-    ensure_dir($work_dir);
+    ensure_dir($output_dir);
+    ensure_dir($oversize_output_dir);
     generate_qr_codes_and_links( $addresses, $qr_dir, $qrs, $links, 0 );
-    make_doc( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break );
+    make_doc( $addresses, $qrs, $links, $output_dir, $oversize_output_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break );
     print "Make sure all QR codes work as desired.\n";
     print "Open DOCX in Pages. Save as a Pages doc to work on it.\n";
     print "Highlight all text. Under Format, Body, Style, Font, choose Crimson Text 13.\n";
@@ -199,10 +203,10 @@ sub generate_qr_codes_and_links {
 }
 
 sub make_doc {
-    my ( $addresses, $qrs, $links, $work_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break ) = @_;
+    my ( $addresses, $qrs, $links, $output_dir, $oversize_output_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break ) = @_;
 
     # Build a Pandoc md file and an html file for the website
-    my $md_path = File::Spec->catfile( $work_dir, 'book.md' );
+    my $md_path = File::Spec->catfile( $output_dir, 'book.md' );
     open my $md,   '>', $md_path  or die "Can't write '$md_path': $!";
     open my $html, '>', $out_html or die "Can't write '$out_html': $!";
 
@@ -223,11 +227,91 @@ sub make_doc {
     <link rel="icon" href="/favicon.png">
     <link rel="stylesheet" href="/biglist.css">
     <link rel="canonical" href="https://wastelandfirebird.com/">
+	<style>
+/* ===== Base ===== */
+html {
+    font-size: 18px;
+}
+body {
+    margin: 0;
+    padding: 2rem;
+    background: #fdfcf8;
+    color: #222;
+    font-family: Futura, "Avenir Next", Avenir, sans-serif;
+    line-height: 1.5;
+}
+/* ===== Headings ===== */
+h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+	text-transform: uppercase;
+    margin: 0;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: #666;
+    margin: 0;
+}
+h3 {
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: #666;
+}
+/* ===== Links ===== */
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* ===== Route 66 List ===== */
+ol {
+    padding-left: 2.5rem;
+    margin: 0;
+}
+li {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-bottom: 1px solid #ddd;
+}
+/* ===== Row Layout ===== */
+.place {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: baseline;
+}
+.place-name {
+    font-weight: 600;
+}
+.place-address {
+    color: #666;
+    font-size: 0.95rem;
+}
+/* ===== State Colors ===== */
+li.IL { background: #e7e7f3; } /* cool faded blue */
+li.MO { background: #f0e7f5; } /* dusty lavender */
+li.KS { background: #dfeaec; } /* pale prairie green */
+li.OK { background: #f8eae0; } /* faded peach */
+li.TX { background: #f6e3e3; } /* dusty rose */
+li.NM { background: #fae6cb; } /* warm adobe sand */
+li.AZ { background: #eadacb; } /* desert clay */
+li.CA { background: #e7f3e8; } /* coastal faded teal */
+/* ===== Images ===== */
+img {
+	width: 100%;
+}
+	</style>
 </head>
 <body>
 <h1>WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66</h1>
 <h2>A curious guide to Route 66 and the American Dream, updated $year $month_abbrev $mday</h2>
-<img src="/pictures/cover.jpg">
+<img src="pictures/cover.jpg">
 <h1><a href="https://www.lulu.com/shop/john-binns/wasteland-firebirds-big-list-of-the-416-best-things-on-route-66/paperback/product-zmep9ym.html?page=1&pageSize=4">Book is available now! Click here to buy!</a></h1>
 <h3>Wasteland Firebird's Big List of the Best Things On Route 66 is like no other Route 66 guide. This book doesn't set out to map the Route itself. This book is a carefully curated list of addresses, one address per page. Each page has a QR code that opens up Google Maps directions to that address. No app needed!</h3>
 <h3>Wasteland Firebird has traveled the Route five times, adding and subtracting items from this list along the way. None of the businesses in this book paid to appear in it. This book is solely a list of places that are beautiful, quirky, old, luxurious, or delicious. Every place in this book is worth at least a brief stop. Some of the entries are new discoveries that have never before been seen in connection with Route 66, such as "Room Attack" and "Toynbee Tiles."</h3>
@@ -387,7 +471,7 @@ ${line_break}
 
     print $html qq|
 </ol>
-<img src="/pictures/beauty.jpg">
+<img src="pictures/beauty.jpg">
 </body>
 </html>
 |;
