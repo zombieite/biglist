@@ -305,7 +305,7 @@ li.CA { background: #e7f3e8; } /* coastal faded teal */
 /* ===== Crazy Letter Colors ===== */
 .c1 { color: #cc0000; }
 .c2 { color: #006600; }
-.c3 { color: #0000ff; }
+.c3 { color: #0000cc; }
 .c4 { color: #000000; }
 /* ===== Images ===== */
 img {
