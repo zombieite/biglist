@@ -15,7 +15,7 @@ sub main {
     my $line_break = "  \n";
     my $page_break = "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
     my $addresses  = get_locations();
-    my $work_dir   = './data';
+    my $work_dir   = './generated';
     my $qr_dir     = File::Spec->catfile( $work_dir, 'qr_codes/' );
     my $out_docx   = File::Spec->catfile( $work_dir, 'wasteland_firebirds_big_list-base.docx' );
     my $out_html   = File::Spec->catfile( $work_dir, 'index.html' );
