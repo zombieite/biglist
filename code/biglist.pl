@@ -19,8 +19,8 @@ sub main {
     my $output_dir          = './generated';
     my $oversize_output_dir = './generated/oversize';
     my $website_dir         = './website';
-    my $qr_dir              = File::Spec->catfile( $oversize_output_dir, 'qr_codes/' );
-    my $out_docx            = File::Spec->catfile( $output_dir,          'wasteland_firebirds_big_list-base.docx' );
+    my $qr_dir              = File::Spec->catfile( $oversize_output_dir, 'qr_codes' );
+    my $out_docx            = File::Spec->catfile( $oversize_output_dir, 'wasteland_firebirds_big_list-base.docx' );
     my $out_html            = File::Spec->catfile( $website_dir,         'index.html' );
     my $qr_width            = '4.0in';
     my $qrs                 = [];
