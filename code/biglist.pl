@@ -304,7 +304,7 @@ li.AZ { background: #eadacb; } /* desert clay */
 li.CA { background: #e7f3e8; } /* coastal faded teal */
 /* ===== Crazy Letter Colors ===== */
 .c1 { color: #ff0000; }
-.c2 { color: #009900; }
+.c2 { color: #006600; }
 .c3 { color: #0000ff; }
 .c4 { color: #000000; }
 /* ===== Images ===== */
