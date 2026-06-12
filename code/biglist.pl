@@ -325,12 +325,12 @@ img {
 <h3>This book is more than just a guide. It's more than just a list of addresses. Many pages contain reviews, memories of previous journeys, or musings about the American Dream. This book will tell you a story about Route 66, while you're out there writing your own.</h3>
 <h3><a href="https://www.youtube.com/playlist?list=PLA_KEM2YJkctJhl8hcghFpyMN1igPFB0p">Wasteland Firebird's Route 66 YouTube playlist</a></h3>
 <h3><a href="https://www.google.com/maps/d/u/0/edit?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ll=32.175316365813835%2C-106.71410537451172&z=5">Wasteland Firebird's Big Map</a></h3>
-<h3><a href=" https://www.lulu.com/shop/john-binns-and-steve-scholz-and-marky-make-up/heads-will-rock/paperback/product-r2vrpv.html?page=1&pageSize=4">Heads Will Rock: A chronical of postapocalyptic mayhem</a></h3>
+<h3><a href=" https://www.lulu.com/shop/john-binns-and-steve-scholz-and-marky-make-up/heads-will-rock/paperback/product-r2vrpv.html?page=1&pageSize=4">Heads Will Rock: A chronicle of postapocalyptic mayhem</a></h3>
 <h3><a href="https://www.reddit.com/user/WastelandFirebird/">Reddit</a></h3>
 <h3><a href="https://wastelandfirebird.substack.com/"></a>Substack</h3>
 <h3><a href="https://www.paypal.com/paypalme/wastelandfirebird">PayPal</a></h3>
 <h3><a href="https://www.patreon.com/c/wastelandfirebird"></a>Patreon</h3>
-<h3><a href="https://www.tiktok.com/@wastelandfirebird"></a>TikTok</h3>
+<h3><a href="https://www.tiktok.com/\@wastelandfirebird"></a>TikTok</h3>
 <h3><a href="https://www.instagram.com/p/DY0ZPatE5_l/">Wasteland Firebird's next USA tour dates</a></h3>
 <h3>Wasteland Firebird can be contacted at <a href="mailto:wastelandfirebird\@gmail.com">wastelandfirebird\@gmail.com</a>.</h3>
 <h3>What follows is the list of addresses that are scheduled to appear in the next edition of this book.</h3>
