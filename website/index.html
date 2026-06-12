@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="/biglist.css">
     <link rel="canonical" href="https://wastelandfirebird.com/">
 	<style>
-/* ===== Base ===== */
 html {
     font-size: 18px;
 }
@@ -21,7 +20,6 @@ body {
     font-family: Futura, "Avenir Next", Avenir, sans-serif;
     line-height: 1.5;
 }
-/* ===== Headings ===== */
 h1 {
     font-size: 2.4rem;
     font-weight: 600;
@@ -41,16 +39,10 @@ h3 {
     font-weight: 200;
     color: #666;
 }
-/* ===== Links ===== */
-
 a {
     color: inherit;
     text-decoration: underline;
 }
-a:hover {
-    text-decoration: underline;
-}
-/* ===== Route 66 List ===== */
 ol {
     padding-left: 2.5rem;
     margin: 0;
@@ -60,8 +52,12 @@ li {
     padding: 0.8rem;
     border-bottom: 1px solid #ddd;
 }
-/* ===== Row Layout ===== */
-
+.place {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    align-items: baseline;
+}
 .place-name {
     font-weight: 600;
 }
@@ -69,7 +65,6 @@ li {
     color: #666;
     font-size: 0.95rem;
 }
-/* ===== State Colors ===== */
 li.IL { background: #e7e7f3; } /* cool faded blue */
 li.MO { background: #f0e7f5; } /* dusty lavender */
 li.KS { background: #dfeaec; } /* pale prairie green */
@@ -78,12 +73,10 @@ li.TX { background: #f6e3e3; } /* dusty rose */
 li.NM { background: #fae6cb; } /* warm adobe sand */
 li.AZ { background: #eadacb; } /* desert clay */
 li.CA { background: #e7f3e8; } /* coastal faded teal */
-/* ===== Crazy Letter Colors ===== */
 .c1 { color: #bb0000; }
 .c2 { color: #006600; }
 .c3 { color: #0000aa; }
 .c4 { color: #000000; }
-/* ===== Images ===== */
 img {
 	width: 100%;
 }
