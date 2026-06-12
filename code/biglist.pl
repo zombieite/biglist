@@ -329,8 +329,8 @@ img {
 <a href="https://www.patreon.com/c/wastelandfirebird">Patreon</a> &middot; 
 <a href="https://www.tiktok.com/\@wastelandfirebird">TikTok</a> &middot; 
 <a href="mailto:wastelandfirebird\@gmail.com">wastelandfirebird\@gmail.com</a> &middot; 
-<a href=" https://www.lulu.com/shop/john-binns-and-steve-scholz-and-marky-make-up/heads-will-rock/paperback/product-r2vrpv.html?page=1&pageSize=4">Heads Will Rock: A chronicle of postapocalyptic mayhem</a></h3>
-<h3><a href="https://www.instagram.com/p/DY0ZPatE5_l/">Wasteland Firebird's next USA tour dates</a></h3>
+<a href=" https://www.lulu.com/shop/john-binns-and-steve-scholz-and-marky-make-up/heads-will-rock/paperback/product-r2vrpv.html?page=1&pageSize=4">Heads Will Rock: A chronicle of postapocalyptic mayhem</a> &middot; 
+<a href="https://www.instagram.com/p/DY0ZPatE5_l/">Wasteland Firebird's next USA tour dates</a></h3>
 <h3><a href="https://www.google.com/maps/d/u/0/edit?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ll=32.175316365813835%2C-106.71410537451172&z=5">Wasteland Firebird's Big Map of the Best Things On Route 66</a></h3>
 <ol>
 |;
