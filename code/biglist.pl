@@ -279,7 +279,6 @@ li {
     align-items: baseline;
 }
 .place-name {
-	text-decoration: none;
     font-weight: 600;
 }
 .place-address {
@@ -427,7 +426,7 @@ ${line_break}
     <li class="$state">
         <div class="place">
             <div class="place-name">
-                <a href="$links->[$place_number]" target="_blank" rel="noopener noreferrer">$place_name</a>
+                $place_name
             </div>
             <div class="place-address">
                 <a href="$links->[$place_number]" target="_blank" rel="noopener noreferrer">$address</a>
