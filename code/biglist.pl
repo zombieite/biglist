@@ -323,9 +323,15 @@ img {
 <h3>Wasteland Firebird has traveled the Route five times, adding and subtracting items from this list along the way. None of the businesses in this book paid to appear in it. This book is solely a list of places that are beautiful, quirky, old, luxurious, or delicious. Every place in this book is worth at least a brief stop. Some of the entries are new discoveries that have never before been seen in connection with Route 66, such as "Room Attack" and "Toynbee Tiles."</h3>
 <h3>The previous edition of this book served as the guide for The Great Route 66 Centennial Convergence, held in April 2026. So many people asked for the book that we quickly ran out of our free copies. As soon as the trip was complete, we released this new updated edition for sale.</h3>
 <h3>This book is more than just a guide. It's more than just a list of addresses. Many pages contain reviews, memories of previous journeys, or musings about the American Dream. This book will tell you a story about Route 66, while you're out there writing your own.</h3>
-<h3><a href="https://www.youtube.com/playlist?list=PLA_KEM2YJkctJhl8hcghFpyMN1igPFB0p">Wasteland Firebird's Route 66 YouTube playlist is here.</a></h3>
-<h3><a href="https://www.google.com/maps/d/u/0/edit?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ll=32.175316365813835%2C-106.71410537451172&z=5">Wasteland Firebird's Big Map is here.</a></h3>
-<h3><a href="https://www.instagram.com/p/DY0ZPatE5_l/">Wasteland Firebird's next USA tour dates are here.</a></h3>
+<h3><a href="https://www.youtube.com/playlist?list=PLA_KEM2YJkctJhl8hcghFpyMN1igPFB0p">Wasteland Firebird's Route 66 YouTube playlist</a></h3>
+<h3><a href="https://www.google.com/maps/d/u/0/edit?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ll=32.175316365813835%2C-106.71410537451172&z=5">Wasteland Firebird's Big Map</a></h3>
+<h3><a href=" https://www.lulu.com/shop/john-binns-and-steve-scholz-and-marky-make-up/heads-will-rock/paperback/product-r2vrpv.html?page=1&pageSize=4">Heads Will Rock: A chronical of postapocalyptic mayhem</a></h3>
+<h3><a href="https://www.reddit.com/user/WastelandFirebird/">Reddit</a></h3>
+<h3><a href="https://wastelandfirebird.substack.com/"></a>Substack</h3>
+<h3><a href="https://www.paypal.com/paypalme/wastelandfirebird">PayPal</a></h3>
+<h3><a href="https://www.patreon.com/c/wastelandfirebird"></a>Patreon</h3>
+<h3><a href="https://www.tiktok.com/@wastelandfirebird"></a>TikTok</h3>
+<h3><a href="https://www.instagram.com/p/DY0ZPatE5_l/">Wasteland Firebird's next USA tour dates</a></h3>
 <h3>Wasteland Firebird can be contacted at <a href="mailto:wastelandfirebird\@gmail.com">wastelandfirebird\@gmail.com</a>.</h3>
 <h3>What follows is the list of addresses that are scheduled to appear in the next edition of this book.</h3>
 <ol>
@@ -1259,7 +1265,7 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
         {
             name    => "Dallas' Dairyette",
             address => "103 N Main St, Quapaw OK",
-            blurb   => qq|In my video "Route 66 from Carthage to Catoosa, April 16, 2025," I asked six middle-school students if they'd ever heard of the American Dream. They all said no. I hope that was because they're like fish who don't know that they're swimming in something called "water." Even so, we must teach the next generation not to take prosperity for granted. Poverty and suffering is humanity's default state. Wealth and happiness is a rare exception in human history.|,
+            blurb   => qq|In my video "Route 66 from Carthage to Catoosa, April 16, 2025," I asked six middle-school students if they'd ever heard of the American Dream. They all said no. I hope that was because they're like fish who don't know that they're swimming in something called "water." Even so, we must teach the next generation not to take prosperity for granted. Poverty and suffering is humanity's natural state. Wealth and happiness is a rare exception in human history.|,
         },
         {
             name    => "Dairy King",
