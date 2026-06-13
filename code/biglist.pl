@@ -2499,36 +2499,36 @@ THE LAWS OF HUMAN NATURE ARE CONSISTENT.
 This implies that we can figure out some rules of ethics, virtue, and morality.|,
         },
         {
-            name    => "Galco's Old World Grocery",
-            address => "5702 York Blvd, Los Angeles CA",
+            name    => "Highland Park Bowl",
+            address => "5621 N Figueroa St, Los Angeles CA",
             blurb   => qq|Principle #6:
 REASON IS HOW WE ACQUIRE KNOWLEDGE.
 Deductive logic, like math, and inductive reasoning, like science, are how we understand the universe and how we understand ourselves.|,
         },
         {
-            name    => "Highland Park Bowl",
-            address => "5621 N Figueroa St, Los Angeles CA",
+            name    => "La Fuente Restaurant",
+            address => "5552 N Figueroa St, Los Angeles CA",
             blurb   => qq|Principle #7:
 FREEDOM IS HOW WE ACHIEVE HAPPINESS.
 Most people agree that freedom makes them happy.|,
         },
         {
-            name    => "La Fuente Restaurant",
-            address => "5552 N Figueroa St, Los Angeles CA",
+            name    => "Cielito Lindo",
+            address => "E-23 Olvera St, Los Angeles CA",
             blurb   => qq|Principle #8:
 ECONOMIC FREEDOM IS HOW WE ACHIEVE PROSPERITY.
 Capitalism works. I define capitalism as "economic freedom," not "cronyist plutocracy." I assure you, I hate cronyist plutocracy as much as anyone. Capitalism doesn't exist to hold poor people down. It exists to let brilliant people do brilliant things.|,
         },
         {
-            name    => "Cielito Lindo",
-            address => "E-23 Olvera St, Los Angeles CA",
+            name    => "Million Dollar Theater",
+            address => "307 S Broadway, Los Angeles CA",
             blurb   => qq|Principle #9:
 FREEDOM IS A POSITIVE-SUM GAME.
 If two people agree to participate in some type of financial or emotional transaction, they do it because they both feel like it will benefit them. It's not that one of them is right, and one of them is wrong. They are both right. They both benefit. Therefore, every transaction makes the world a slightly better place.|,
         },
         {
-            name    => "Million Dollar Theater",
-            address => "307 S Broadway, Los Angeles CA",
+            name    => "Grand Central Market",
+            address => "317 S Broadway, Los Angeles CA",
             blurb   => qq|Principle #10:
 CREATE VALUE.
 It took me years to figure out a way to summarize my entire philosophy in a way that it would fit on a bumper sticker. If you gain nothing else from my existence in this universe, please take these two words with you and keep them handy in your mind. Steal these words, copy these words, say these words. "Create value."|,
