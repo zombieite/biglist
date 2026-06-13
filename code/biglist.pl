@@ -1064,11 +1064,6 @@ qq|America was the first country on Earth where your social class didn't matter.
             blurb   => qq|You can get a piece of cherry pie here.|,
         },
         {
-            name    => "Taylor's Dairy Joy",
-            address => "1205 US Rte 66, Lebanon MO",
-            blurb   => qq||,
-        },
-        {
             name    => "Manor Inn",
             address => "505 E Elm St, Lebanon MO",
             blurb   => qq||,
