@@ -483,7 +483,7 @@ ${line_break}
 |;
 
     print $html_forward $html_header;
-    print $html_forward qq|<h3><b>Chicago to LA</b> &middot; <a href="backward.html">LA to Chicago</a></h3>|;
+    print $html_forward qq|<h3><style="color:black;">Chicago to LA</style> &middot; <a href="backward.html">LA to Chicago</a></h3>|;
     for my $html_row (@html_rows) {
         print $html_forward $html_row;
     }
@@ -491,7 +491,7 @@ ${line_break}
     close $html_forward or die "Error closing $out_html_forward: $!";
 
     print $html_backward $html_header;
-    print $html_backward qq|<h3><a href="/">Chicago to LA</a> &middot; <b>LA to Chicago</b></h3>|;
+    print $html_backward qq|<h3><a href="/">Chicago to LA</a> &middot; <style="color:black;">LA to Chicago</style></h3>|;
     for my $html_row ( reverse @html_rows ) {
         print $html_backward $html_row;
     }
