@@ -211,7 +211,7 @@ sub make_docs {
     open my $md,            '>', $md_path           or die "Can't write '$md_path': $!";
     open my $html_forward,  '>', $out_html_forward  or die "Can't write '$out_html_forward': $!";
     open my $html_backward, '>', $out_html_backward or die "Can't write '$out_html_backward': $!";
-    my @website_rows;
+    my @html_rows;
 
     # Website header
     my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
@@ -426,7 +426,7 @@ ${line_break}
         # Website
 
         push(
-            @website_rows, qq|
+            @html_rows, qq|
     <li class="$state">
         <div class="place">
             <div class="place-name">
