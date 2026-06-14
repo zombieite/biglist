@@ -211,6 +211,7 @@ sub make_docs {
     open my $md,            '>', $md_path           or die "Can't write '$md_path': $!";
     open my $html_forward,  '>', $out_html_forward  or die "Can't write '$out_html_forward': $!";
     open my $html_backward, '>', $out_html_backward or die "Can't write '$out_html_backward': $!";
+    my @website_rows;
 
     # Website header
     my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
@@ -219,8 +220,8 @@ sub make_docs {
     my $month_abbrev  = $month_abbrevs[$mon];
     $mon += 1;
     for my $unit ( $mon, $mday, $hour, $min, $sec ) { $unit = sprintf( '%02d', $unit ); }
-    my $book_link = "https://www.lulu.com/shop/john-binns/wasteland-firebirds-big-list-of-the-416-best-things-on-route-66/paperback/product-zmep9ym.html?page=1&pageSize=4";
-    print $html_forward qq|
+    my $book_link   = "https://www.lulu.com/shop/john-binns/wasteland-firebirds-big-list-of-the-416-best-things-on-route-66/paperback/product-zmep9ym.html?page=1&pageSize=4";
+    my $html_header = qq|
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -424,7 +425,8 @@ ${line_break}
 
         # Website
 
-        print $html_forward qq|
+        push(
+            @website_rows, qq|
     <li class="$state">
         <div class="place">
             <div class="place-name">
@@ -435,7 +437,8 @@ ${line_break}
             </div>
         </div>
     </li>
-|;
+|
+        );
 
         $place_number++;    # Now that we have incremented this, we can use it below as a human-readable counter starting at one
 
@@ -472,16 +475,28 @@ ${line_break}
 |;
     print $md $page_break;
 
-    print $html_forward qq|
+    my $html_footer qq|
 </ol>
 <img src="pictures/beauty.jpg">
 </body>
 </html>
 |;
 
-    close $html_forward  or die "Error closing $out_html_forward: $!";
+    print $html_forward $html_header;
+    for my $html_row (@html_rows) {
+        print $html_forward $html_row;
+    }
+    print $html_forward $html_footer;
+    close $html_forward or die "Error closing $out_html_forward: $!";
+
+    print $html_backward $html_header;
+    for my $html_row ( reverse @html_rows ) {
+        print $html_backward $html_row;
+    }
+    print $html_backward $html_footer;
     close $html_backward or die "Error closing $out_html_backward: $!";
-    close $md            or die "Error closing $md_path: $!";
+
+    close $md or die "Error closing $md_path: $!";
 
     # Use a DOCX that matches the print on demand template (margins, page size, headers/footers, fonts, etc).
     # Pandoc will use this as a reference.
