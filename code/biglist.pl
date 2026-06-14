@@ -230,7 +230,6 @@ sub make_docs {
     <title>WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66</title>
     <link rel="icon" href="/favicon.png">
     <link rel="stylesheet" href="/biglist.css">
-    <link rel="canonical" href="https://wastelandfirebird.com/">
 	<style>
 html {
     font-size: 18px;
