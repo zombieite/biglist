@@ -1646,7 +1646,7 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
             blurb   => qq|If you want to try something weird and American, something that even a lot of Americans haven't tried, look for a Chick-O-Stick. Peanut butter and toasted coconut, no chocolate. Fresh ones are better, so buy them from a high-traffic business like Buc-ee's. If they're crunchy, they're fresh. If they're chewy or sticky, they're stale.|,
         },
         {
-            name    => "Big Texan Steak Ranch & Brewery",
+            name    => "Big Texan Steak Ranch",
             address => "7701 I-40, Amarillo TX",
             blurb   => qq|Some places are just a gimmick, and that's fine. But this gimmick has some of the best food on the Route, and it's a great motel, too. Some say The Big Texan is not actually on Route 66. I say The Big Texan is like the Eiffel Tower. If I happened to be passing two blocks away from it, I'd make a point to stop by.|,
         },
@@ -1654,6 +1654,11 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
             name    => "Slug Bug Ranch",
             address => "1415 Sunrise Dr, Amarillo TX",
             blurb   => qq|A miniature version of the Cadillac Ranch. Bring some spray paint. You're allowed to paint the cars.|,
+        },
+        {
+            name    => "Cattleman's Club",
+            address => "3803 E Amarillo Blvd, Amarillo TX",
+            blurb   => qq||,
         },
         {
             name    => "Texas Route 66 Visitor Center",
