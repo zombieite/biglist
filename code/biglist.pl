@@ -475,7 +475,7 @@ ${line_break}
 |;
     print $md $page_break;
 
-    my $html_footer qq|
+    my $html_footer = qq|
 </ol>
 <img src="pictures/beauty.jpg">
 </body>
