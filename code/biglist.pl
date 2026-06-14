@@ -21,7 +21,8 @@ sub main {
     my $website_dir         = './website';
     my $qr_dir              = File::Spec->catfile( $oversize_output_dir, 'qr_codes' );
     my $out_docx            = File::Spec->catfile( $oversize_output_dir, 'wasteland_firebirds_big_list-base.docx' );
-    my $out_html            = File::Spec->catfile( $website_dir,         'index.html' );
+    my $out_html_forward    = File::Spec->catfile( $website_dir,         'index.html' );
+    my $out_html_backward   = File::Spec->catfile( $website_dir,         'backward.html' );
     my $qr_width            = '4.0in';
     my $qrs                 = [];
     my $links               = [];
@@ -29,7 +30,7 @@ sub main {
     ensure_dir($output_dir);
     ensure_dir($oversize_output_dir);
     generate_qr_codes_and_links( $addresses, $qr_dir, $qrs, $links, 0 );
-    make_doc( $addresses, $qrs, $links, $output_dir, $oversize_output_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break );
+    make_docs( $addresses, $qrs, $links, $output_dir, $oversize_output_dir, $qr_dir, $qr_width, $out_docx, $out_html_forward, $out_html_backward, $line_break, $page_break );
     print "Make sure all QR codes work as desired.\n";
     print "Open DOCX in Pages. Save as a Pages doc to work on it.\n";
     print "Highlight all text. Under Format, Body, Style, Font, choose Crimson Text 13.\n";
@@ -202,13 +203,14 @@ sub generate_qr_codes_and_links {
     return $qrs;
 }
 
-sub make_doc {
-    my ( $addresses, $qrs, $links, $output_dir, $oversize_output_dir, $qr_dir, $qr_width, $out_docx, $out_html, $line_break, $page_break ) = @_;
+sub make_docs {
+    my ( $addresses, $qrs, $links, $output_dir, $oversize_output_dir, $qr_dir, $qr_width, $out_docx, $out_html_forward, $out_html_backward, $line_break, $page_break ) = @_;
 
     # Build a Pandoc md file and an html file for the website
     my $md_path = File::Spec->catfile( $output_dir, 'book.md' );
-    open my $md,   '>', $md_path  or die "Can't write '$md_path': $!";
-    open my $html, '>', $out_html or die "Can't write '$out_html': $!";
+    open my $md,            '>', $md_path           or die "Can't write '$md_path': $!";
+    open my $html_forward,  '>', $out_html_forward  or die "Can't write '$out_html_forward': $!";
+    open my $html_backward, '>', $out_html_backward or die "Can't write '$out_html_backward': $!";
 
     # Website header
     my ( $sec, $min, $hour, $mday, $mon, $year, $wday, $yday, $isdst ) = localtime(time);
@@ -218,7 +220,7 @@ sub make_doc {
     $mon += 1;
     for my $unit ( $mon, $mday, $hour, $min, $sec ) { $unit = sprintf( '%02d', $unit ); }
     my $book_link = "https://www.lulu.com/shop/john-binns/wasteland-firebirds-big-list-of-the-416-best-things-on-route-66/paperback/product-zmep9ym.html?page=1&pageSize=4";
-    print $html qq|
+    print $html_forward qq|
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -422,7 +424,7 @@ ${line_break}
 
         # Website
 
-        print $html qq|
+        print $html_forward qq|
     <li class="$state">
         <div class="place">
             <div class="place-name">
@@ -470,7 +472,7 @@ ${line_break}
 |;
     print $md $page_break;
 
-    print $html qq|
+    print $html_forward qq|
 </ol>
 <img src="pictures/beauty.jpg">
 </body>
