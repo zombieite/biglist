@@ -479,8 +479,9 @@ ${line_break}
 </html>
 |;
 
-    close $html or die "Error closing $out_html: $!";
-    close $md   or die "Error closing $md_path: $!";
+    close $html_forward  or die "Error closing $out_html_forward: $!";
+    close $html_backward or die "Error closing $out_html_backward: $!";
+    close $md            or die "Error closing $md_path: $!";
 
     # Use a DOCX that matches the print on demand template (margins, page size, headers/footers, fonts, etc).
     # Pandoc will use this as a reference.
