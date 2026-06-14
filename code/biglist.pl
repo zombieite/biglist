@@ -325,7 +325,6 @@ img {
 <a class="c2" href="https://www.google.com/maps/d/u/0/edit?mid=1AhAphxJ0eg_DRkiHp21btHCNyuxCCT4&ll=32.175316365813835%2C-106.71410537451172&z=5">Wasteland Firebird's Big Map of the Best Things On Route 66</a>
 </h2>
 <br>
-<ol>
 |;
 
     # Title page
@@ -475,7 +474,6 @@ ${line_break}
     print $md $page_break;
 
     my $html_footer = qq|
-</ol>
 <img src="pictures/beauty.jpg">
 </body>
 </html>
@@ -483,17 +481,21 @@ ${line_break}
 
     print $html_forward $html_header;
     print $html_forward qq|<h3><span style="color:#000;">Chicago to LA</span> &middot; <a href="backward.html">LA to Chicago</a></h3>|;
+    print $html_forward "<ol>\n";
     for my $html_row (@html_rows) {
         print $html_forward $html_row;
     }
+    print $html_forward "</ol>\n";
     print $html_forward $html_footer;
     close $html_forward or die "Error closing $out_html_forward: $!";
 
     print $html_backward $html_header;
     print $html_backward qq|<h3><a href="/">Chicago to LA</a> &middot; <span style="color:#000;">LA to Chicago</span></h3>|;
+    print $html_backward "<ol>\n";
     for my $html_row ( reverse @html_rows ) {
         print $html_backward $html_row;
     }
+    print $html_backward "</ol>\n";
     print $html_backward $html_footer;
     close $html_backward or die "Error closing $out_html_backward: $!";
 
