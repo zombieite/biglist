@@ -491,7 +491,7 @@ ${line_break}
     close $html_forward or die "Error closing $out_html_forward: $!";
 
     print $html_backward $html_header;
-    print $html_forward qq|<h3><a href="/">Chicago to LA</a> &middot; LA to Chicago</h3>|;
+    print $html_backward qq|<h3><a href="/">Chicago to LA</a> &middot; LA to Chicago</h3>|;
     for my $html_row ( reverse @html_rows ) {
         print $html_backward $html_row;
     }
