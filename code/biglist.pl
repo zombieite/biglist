@@ -229,7 +229,6 @@ sub make_docs {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66</title>
     <link rel="icon" href="/favicon.png">
-    <link rel="stylesheet" href="/biglist.css">
 	<style>
 html {
     font-size: 18px;
