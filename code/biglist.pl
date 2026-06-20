@@ -1469,6 +1469,11 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
+            name    => "Route 66 Interpretive Center",
+            address => "400 E 1st St, Chandler OK",
+            blurb   => qq|They tell me there's a Muffler Superhero here now.|,
+        },
+        {
             name    => "McJerry's Route 66 Gallery",
             address => "306 Manvel Ave, Chandler OK",
             blurb   => qq|I think Jerry McClanahan wrote some kind of Route 66 guide, but the real reason to stop here is his amazing painting 666 EXPRESS.|,
