@@ -309,7 +309,7 @@ img {
 <a href="$book_link"><img src="pictures/cover.jpg"></a>
 <h1><a href="$book_link"><span class="c4">This</span> <span class="c1">Book</span> <span class="c2">is</span> <span class="c3">available</span> <span class="c4">now</span><span class="c1">!</span> <span class="c2">Click</span> <span class="c3">here</span> <span class="c4">to</span> <span class="c1">buy</span><span class="c2">!</span></a></h1>
 <h3>Wasteland Firebird's Big List of the Best Things On Route 66 is like no other Route 66 guide. This book doesn't set out to map the Route itself. This book is a carefully curated list of addresses, one address per page. Each page has a QR code that opens up Google Maps directions to that address. No app needed! Many pages contain reviews, memories of previous journeys, or musings about the American Dream.</h3>
-<h3>Wasteland Firebird has traveled the Route five times, adding and subtracting items from this list along the way. None of the businesses in this book paid to appear in it. This book is solely a list of places that are beautiful, quirky, old, luxurious, or delicious. Every place in this book is worth at least a brief stop. Some of the entries are new discoveries that have never before been seen in connection with Route 66, such as "Room Attack" and "Toynbee Tiles."</h3>
+<h3>Wasteland Firebird has traveled the Route five times, adding and subtracting items from this list along the way. None of the businesses in this book paid to appear in it. This book is solely a list of places that are beautiful, old, quirky, luxurious, or delicious. Every place in this book is worth at least a brief stop. Some of the entries are new discoveries that have never before been seen in connection with Route 66, such as "Room Attack" and "Toynbee Tiles."</h3>
 <h3>The previous edition of this book served as the guide for The Great Route 66 Centennial Convergence, held in April 2026. So many people asked for the book that we quickly ran out of our free copies. As soon as the trip was complete, we released this new updated edition for sale.</h3>
 <h2>
 <a class="c1" href="https://www.youtube.com/playlist?list=PLA_KEM2YJkctJhl8hcghFpyMN1igPFB0p">YouTube</a> &middot; 
@@ -1138,11 +1138,6 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
             name    => "Gillioz Theatre",
             address => "325 Park Central E, Springfield MO",
             blurb   => qq||,
-        },
-        {
-            name    => "History Museum on the Square",
-            address => "154 Park Central Square, Springfield MO",
-            blurb   => qq|Some museums on the Route are just a bunch of flat images blown up so big you can see the pixels. I call these "flat museums." They're funded with multimillion dollar taxpayer-funded grants, while the Route's legacy small businesses are dying. But at this museum, you can find the original telegram from Cyrus Avery on April 30, 1926 declaring that the Route would be known as "66."|,
         },
         {
             name    => "1984 Arcade",
