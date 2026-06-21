@@ -1655,6 +1655,12 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
             blurb   => qq||,
         },
         {
+            name             => "Scary pedestrian underpass",
+            address          => "504 N 4th St, Sayre OK",
+            blurb            => qq||,
+            url_address_only => 1,
+        },
+        {
             name    => "Sandhill Curiosity Shop",
             address => "201 S Sheb Wooley Ave, Erick OK",
             blurb   => qq|Harley Russell is here. He was the human inspiration for the vehicular character Tow Mater from Pixar's Cars. They had to make a few changes to his personality, because it was a movie for kids.|,
