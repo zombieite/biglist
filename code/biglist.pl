@@ -1992,11 +1992,6 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq||,
         },
         {
-            name    => "Earl's Family Restaurant",
-            address => "1400 E Hwy 66, Gallup NM",
-            blurb   => qq|Probably not what you're expecting.|,
-        },
-        {
             name    => "Blue Spruce Lodge",
             address => "1119 E Hwy 66, Gallup NM",
             blurb   => qq||,
