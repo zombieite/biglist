@@ -945,11 +945,6 @@ qq|America was the first country on Earth where your social class didn't matter.
             blurb   => qq|Don't ever just order a milkshake. Always ask for a malt. For some reason malts are slowly being forgotten. They're harder to find now. The "malt" is just powdered barley extract but it adds a great bit of flavor.|,
         },
         {
-            name    => "Route 66 State Park",
-            address => "97 N Outer Rd, Eureka MO",
-            blurb   => qq||,
-        },
-        {
             name    => "Campbell's Service",
             address => "18625 Historic Rte 66, Pacific MO",
             blurb   => qq||,
