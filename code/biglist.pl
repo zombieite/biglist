@@ -918,10 +918,16 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq|When I say the USA is the best country on Earth, you might reply that I'm biased since I was born in the USA. But I've traveled the world and I've spent a lot of time doing my best to overcome my biases. I firmly believe that America has things about it that make it truly exceptional.|,
         },
         {
-            name    => "Donut Drive In",
-            address => "6525 Chippewa St, St Louis MO",
+            name    => "Auto Seat Covers sign",
+            address => "4017 Gravois Ave, St Louis MO",
             blurb   =>
 qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or who your parents were. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream. Over time, the founding principles of the United States forged the world's first self-organizing meritocracy.|,
+            url_address_only => 1,
+        },
+        {
+            name    => "Donut Drive In",
+            address => "6525 Chippewa St, St Louis MO",
+            blurb   => qq||,
         },
         {
             name    => "Ted Drewes Frozen Custard",
