@@ -2594,11 +2594,6 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
             blurb   => qq||,
         },
         {
-            name    => "Irv's Burgers",
-            address => "7998 Santa Monica Blvd, West Hollywood CA",
-            blurb   => qq||,
-        },
-        {
             name    => "Barney's Beanery",
             address => "8447 Santa Monica Blvd, West Hollywood CA",
             blurb   => qq||,
