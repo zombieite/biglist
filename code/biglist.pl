@@ -834,7 +834,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Henry's Rabbit Ranch",
             address => "1107 Historic Old Rte 66, Staunton IL",
-            blurb   => qq|At some point you're going to figure out that not everything on this list is still open for business. We're just lucky that these places still exist at all.|,
+            blurb   => qq|There are no rabbits here anymore, but it still has some funky stuff sitting around. This place went on sale recently. I actually tried to buy it but someone else got to it first.|,
         },
         {
             name    => "DeCamp Station",
@@ -901,6 +901,11 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             name    => "Crown Candy Kitchen",
             address => "1401 St Louis Ave, St Louis MO",
             blurb   => qq|If we see the journey down Route 66 as a story, we're breaking into Act II. The hero accepts the call to adventure! Not all of this journey will be fun and games. Sometimes you'll have to go through a bad part of town to get to a good part of town. Are you ready for adventure? The Crown Candy Kitchen is all about fat and sugar.|,
+        },
+        {
+            name    => "City Museum",
+            address => "750 N 16th St, St Louis MO",
+            blurb   => qq|I haven't been here yet, but the photos are wild so I'm gonna check it out as soon as I can.|,
         },
         {
             name    => "Chili Mac's Diner",
