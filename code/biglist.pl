@@ -1025,6 +1025,11 @@ qq|America was the first country on Earth where your social class didn't matter.
             blurb   => qq|I'm not claiming this place is open. I'm just claiming it's worth stopping at. Check out those signs.|,
         },
         {
+            name    => "Phelps County Historical Society",
+            address => "305 W 3rd St, Rolla MO",
+            blurb   => qq||,
+        },
+        {
             name    => "Vernelle's Motel",
             address => "10887 Arlington Road, Newburg MO",
             blurb   => qq|Entropy cannot be stopped. We can only delay it for a while.|,
