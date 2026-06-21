@@ -1100,6 +1100,12 @@ qq|America was the first country on Earth where your social class didn't matter.
             blurb   => qq||,
         },
         {
+            name             => "1920s Ford dealership",
+            address          => "105 W Jefferson Ave, Conway MO",
+            blurb            => qq||,
+            url_address_only => 1,
+        },
+        {
             name    => "Little Clay House",
             address => "238 N Clay St, Marshfield MO",
             blurb   => qq|I haven't actually been to this place, but it looks nice.|,
@@ -1432,6 +1438,11 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "J's Country Kitchen",
             address => "31 Oak St, Kellyville OK",
+            blurb   => qq||,
+        },
+        {
+            name    => "Chrysler Plymouth Sign",
+            address => "401 OK-66, Bristow OK",
             blurb   => qq||,
         },
         {
