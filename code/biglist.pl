@@ -1015,6 +1015,11 @@ qq|America was the first country on Earth where your social class didn't matter.
             blurb   => qq|Say hi to Fluffy the cat. If you pet her long enough, she'll climb into your lap.|,
         },
         {
+            name    => "St James SLSF Railroad Depot",
+            address => "116 W Springfield St, St James MO",
+            blurb   => qq||,
+        },
+        {
             name    => "Mule Trading Post",
             address => "11160 Dillon Outer Rd, Rolla MO",
             blurb   => qq|I'm not claiming this place is open. I'm just claiming it's worth stopping at. Check out those signs.|,
