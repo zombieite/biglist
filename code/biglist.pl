@@ -767,11 +767,6 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name    => "Pinky Elephant with Martini",
-            address => "2723 S 6th St, Springfield IL",
-            blurb   => qq|For some reason, Route 66 has a fascination with pink elephants. This isn't the only one.|,
-        },
-        {
             name    => "Cozy Dog",
             address => "2935 S 6th St, Springfield IL",
             blurb   => qq|This place is still owned by the Waldmire family. Bob Waldmire's works are all over the walls. You might even find something by Wasteland Firebird on the flyer rack.|,
@@ -849,7 +844,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Pink Elephant Antique Mall",
             address => "908 Veterans Memorial Dr, Livingston IL",
-            blurb   => qq|I told you there'd be more pink elephants. There's a wild collection of Muffler People and other Muffler Species here. Maybe even some Muffler Aliens.|,
+            blurb   => qq|There's a wild collection of Muffler People and other Muffler Species here. Maybe even some Muffler Aliens.|,
         },
         {
             name    => "Route 66 Creamery",
