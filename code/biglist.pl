@@ -1513,6 +1513,11 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
+            name    => "Seaba Station Motorcycle Museum",
+            address => "336992 E OK-66, Warwick OK",
+            blurb   => qq||,
+        },
+        {
             name    => "Threatt Filling Station",
             address => "21940 OK-66, Luther OK",
             blurb   => qq||,
@@ -1643,6 +1648,11 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
             name    => "National Route 66 & Transportation Museum",
             address => "2717 W 3rd St, Elk City OK",
             blurb   => qq|It's a weird museum. But weird is good, right?|,
+        },
+        {
+            name    => "Western Motel",
+            address => "315 N E Hwy 66, Sayre OK",
+            blurb   => qq||,
         },
         {
             name    => "Sandhill Curiosity Shop",
