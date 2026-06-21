@@ -1111,6 +1111,11 @@ qq|America was the first country on Earth where your social class didn't matter.
             blurb   => qq|I haven't actually been to this place, but it looks nice.|,
         },
         {
+            name    => "Joe's Route 66 Diner",
+            address => "201 E Chestnut St, Strafford MO",
+            blurb   => qq|I haven't actually gotten food from this place, but last I checked, it doesn't even have a sign out front. I can only assume it's so good, they don't need to advertise.|,
+        },
+        {
             name    => "Buc-ee's",
             address => "3284 N Mulroy Rd, Springfield MO",
             blurb   => qq|Ah, here we are. Buc-ee's started in Texas but now has many locations. The company has only existed since 1982, but I'm sure that in 2082, future Route travelers will consider this place a magnificent historical landmark.
