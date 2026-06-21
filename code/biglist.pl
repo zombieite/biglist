@@ -1456,6 +1456,12 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
+            name             => "Hicks Filling Station",
+            address          => "503 Main St, Depew OK",
+            blurb            => qq||,
+            url_address_only => 1,
+        },
+        {
             name    => "Rock Cafe",
             address => "114 W Main St, Stroud OK",
             blurb   => qq|Stroud is a neon revival town. Try to look at the signs at night.|,
