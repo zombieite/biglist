@@ -1477,9 +1477,10 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
-            name    => "Farmers Bank Building",
-            address => "229 N Broadway, Davenport OK",
-            blurb   => qq||,
+            name             => "Farmers Bank Building",
+            address          => "229 N Broadway, Davenport OK",
+            blurb            => qq||,
+            url_address_only => 1,
         },
         {
             name    => "Route 66 Bowl",
