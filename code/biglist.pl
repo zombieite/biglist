@@ -1474,7 +1474,12 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Skyliner Motel",
             address => "717 W Main St, Stroud OK",
-            blurb   => qq|During The Great Route 66 Centennial Convergence, we sold out this place for the first time since its recent renovation.|,
+            blurb   => qq||,
+        },
+        {
+            name    => "Farmers Bank Building",
+            address => "229 N Broadway, Davenport OK",
+            blurb   => qq||,
         },
         {
             name    => "Route 66 Bowl",
