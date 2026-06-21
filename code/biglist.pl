@@ -732,11 +732,6 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq|Go at night. Drive around it. Some gates are sometimes closed, other gates are sometimes open. There is a custom brick here from Wasteland Firebird.|,
         },
         {
-            name    => "Route 66 Hotel Conference Center",
-            address => "625 E St Joseph St, Springfield IL",
-            blurb   => qq|There is a secret hidden behind the mirror in Room 163. Find out more by searching for "Room Attack" on Wasteland Firebird's YouTube channel.|,
-        },
-        {
             name    => "Shea's Filling Station",
             address => "2075 N Peoria Rd, Springfield IL",
             blurb   => qq||,
@@ -750,11 +745,6 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             name    => "Pharmacy Gallery Art Space",
             address => "623 E Adams St, Springfield IL",
             blurb   => qq|They tell me there's a Bob Waldmire exhibit here, Fridays and Saturdays in 2026.|,
-        },
-        {
-            name    => "Springfield Southeast High School",
-            address => "2350 E Ash St, Springfield IL",
-            blurb   => qq|Go here to find the Spartan Viking Muffler Man.|,
         },
         {
             name    => "Mel-O-Cream Donuts",
