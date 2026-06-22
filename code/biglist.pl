@@ -1696,6 +1696,11 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
             blurb   => qq|Why is it leaning? I dunno, it was probably aliens.|,
         },
         {
+            name    => "The Grill",
+            address => "407 Front St, Groom TX",
+            blurb   => qq||,
+        },
+        {
             name    => "Buc-ee's",
             address => "9900 E I-40, Amarillo TX",
             blurb   => qq|If you want to try something weird and American, something that even a lot of Americans haven't tried, look for a Chick-O-Stick. Peanut butter and toasted coconut, no chocolate. Fresh ones are better, so buy them from a high-traffic business like Buc-ee's. If they're crunchy, they're fresh. If they're chewy or sticky, they're stale.|,
