@@ -1467,11 +1467,6 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq|Stroud is a neon revival town. Try to look at the signs at night.|,
         },
         {
-            name    => "Route 66 Spirit of America Museum",
-            address => "220 W Main St, Stroud OK",
-            blurb   => qq|If you've been searching for the American Dream, you just found it.|,
-        },
-        {
             name    => "Skyliner Motel",
             address => "717 W Main St, Stroud OK",
             blurb   => qq||,
@@ -1585,21 +1580,16 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Johnnie's Grill",
             address => "301 S Rock Island Ave, El Reno OK",
-            blurb   => qq|Get the onion burger. But save room for three more.|,
+            blurb   => qq|Get the onion burger. But save room for two more.|,
         },
         {
             name    => "Robert's Grill",
             address => "300 S Bickford Ave, El Reno OK",
-            blurb   => qq|Get the onion burger. But save room for two more.|,
+            blurb   => qq|Get the onion burger. But save room for one more.|,
         },
         {
             name    => "Sid's Diner",
             address => "300 S Choctaw Ave, El Reno OK",
-            blurb   => qq|Get the onion burger. But save room for one more.|,
-        },
-        {
-            name    => "Jobe's Country Boy Drive-In",
-            address => "1220 Sunset Dr, El Reno OK",
             blurb   => qq|Get the onion burger.|,
         },
         {
