@@ -1508,11 +1508,6 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq||,
         },
         {
-            name    => "Seaba Station Motorcycle Museum",
-            address => "336992 E OK-66, Warwick OK",
-            blurb   => qq||,
-        },
-        {
             name    => "Threatt Filling Station",
             address => "21940 OK-66, Luther OK",
             blurb   => qq||,
