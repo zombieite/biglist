@@ -1347,7 +1347,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Blue Whale of Catoosa",
             address => "2600 OK-66, Catoosa OK",
-            blurb   => qq|It's a big blue whale. It looks good at night. It might still be under renovation, but you can see it from the road.|,
+            blurb   => qq|It's a big blue whale. It looks good at night.|,
         },
         {
             name    => "Desert Hills Motel",
