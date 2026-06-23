@@ -1930,7 +1930,7 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
         {
             name    => "Bow & Arrow Lodge",
             address => "8300 Central Ave SE, Albuquerque NM",
-            blurb   => qq|The works of Vince Gilligan, set in Albuquerque, ranked: 1. Pluribus (the most important battle humanity has ever fought, but you might have trouble deciding which side you're on). 2. Better Call Saul (watch it before Breaking Bad, it's better, and it's a prequel anyway). 3. Breaking Bad.|,
+            blurb   => qq||,
         },
         {
             name    => "Loma Verde Motel sign",
@@ -1971,6 +1971,11 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             name    => "Dog House Drive In",
             address => "1216 Central Ave NW, Albuquerque NM",
             blurb   => qq||,
+        },
+        {
+            name    => "Hotel Chaco",
+            address => "2000 Bellamah Ave NW, Albuquerque NM",
+            blurb   => qq|The works of Vince Gilligan, set in Albuquerque, ranked: 1. Pluribus (the most important battle humanity has ever fought, but you might have trouble deciding which side you're on). 2. Better Call Saul (watch it before Breaking Bad, it's better, and it's a prequel anyway). 3. Breaking Bad.|,
         },
         {
             name    => "El Vado Motel",
