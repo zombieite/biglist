@@ -1887,9 +1887,10 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq||,
         },
         {
-            name    => "RESTAURANT sign",
-            address => "2277 US Rte 66, Santa Rosa NM",
-            blurb   => qq||,
+            name             => "RESTAURANT sign",
+            address          => "2277 US Rte 66, Santa Rosa NM",
+            blurb            => qq||,
+            url_address_only => 1,
         },
         {
             name    => "Sun & Sand Restaurant",
