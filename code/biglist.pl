@@ -1988,6 +1988,12 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq||,
         },
         {
+            name             => "Route 66 lowrider-style sign",
+            address          => "7800 Central Ave SW, Albuquerque NM",
+            blurb            => qq||,
+            url_address_only => 1,
+        },
+        {
             name    => "Route 66 Visitor Center",
             address => "12300 Central Ave SW, Albuquerque NM",
             blurb   => qq|This site is still under development, but now you can go in. It's getting good. There's a neon sign park out front.|,
