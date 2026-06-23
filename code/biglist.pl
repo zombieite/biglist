@@ -1035,9 +1035,10 @@ qq|America was the first country on Earth where your social class didn't matter.
             blurb   => qq||,
         },
         {
-            name    => "Totem Pole Antiques sign",
-            address => "1417 Martin Springs Dr, Rolla MO",
-            blurb   => qq||,
+            name             => "Totem Pole Antiques sign",
+            address          => "1417 Martin Springs Dr, Rolla MO",
+            blurb            => qq||,
+            url_address_only => 1,
         },
         {
             name    => "Vernelle's Motel",
