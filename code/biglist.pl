@@ -2493,11 +2493,6 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq||,
         },
         {
-            name    => "Calico Ghost Town",
-            address => "Calico CA",
-            blurb   => qq||,
-        },
-        {
             name    => "Skyline Drive-In Theater",
             address => "31175 Old Hwy 58, Barstow CA",
             blurb   => qq||,
@@ -2508,13 +2503,13 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq|It's just a McDonalds, but the dining rooms are made of real train cars.|,
         },
         {
-            name    => "Mojave River Valley Museum",
-            address => "270 E Virginia Way, Barstow CA",
+            name    => "Cactus Motel",
+            address => "916 E Main St, Barstow CA",
             blurb   => qq||,
         },
         {
-            name    => "Route 66 Motel",
-            address => "195 Main St, Barstow CA",
+            name    => "Mojave River Valley Museum",
+            address => "270 E Virginia Way, Barstow CA",
             blurb   => qq||,
         },
         {
