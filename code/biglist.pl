@@ -576,6 +576,11 @@ sub get_locations {
             blurb   => qq|There is a "Muffler Man" here, the first of many. It's important that you learn what a Muffler Man is. These are giant, human-shaped fiberglass sculptures. They dotted the landscape of mid-Twentieth century America. They sometimes held mufflers in their hands. Some are old, some are new. Wait till you see Atlanta Illinois and Tulsa Oklahoma.|,
         },
         {
+            name    => "Berwyn's Toy & Trains",
+            address => "7025 Ogden Ave, Berwyn IL",
+            blurb   => qq||,
+        },
+        {
             name    => "Dell Rhea's Chicken Basket",
             address => "645 Joliet Rd, Willowbrook IL",
             blurb   => qq|See what I mean, when I say you can't eat everything you see? How many restaurants have we passed already, six? Go in and leave them a tip anyway.|,
