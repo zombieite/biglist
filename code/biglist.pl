@@ -2024,6 +2024,12 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq||,
         },
         {
+            name             => "DINER sign",
+            address          => "1029 US Rte 66, Grants NM",
+            blurb            => qq||,
+            url_address_only => 1,
+        },
+        {
             name    => "West Theatre",
             address => "118 W Santa Fe Ave, Grants NM",
             blurb   => qq||,
