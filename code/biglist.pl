@@ -2513,11 +2513,6 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq||,
         },
         {
-            name    => "Mojave River Valley Museum",
-            address => "270 E Virginia Way, Barstow CA",
-            blurb   => qq||,
-        },
-        {
             name    => "Harvey House",
             address => "685 N 1st Ave, Barstow CA",
             blurb   => qq||,
