@@ -2354,9 +2354,10 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|The first time I drove through this town, I had no idea what it was or why it was here. Somehow, for some reason, I had been teleported back in time to the Old West.|,
         },
         {
-            name    => "66 Motel",
-            address => "91 Desnok St, Needles CA",
-            blurb   => qq||,
+            name             => "66 Motel",
+            address          => "91 Desnok St, Needles CA",
+            blurb            => qq||,
+            url_address_only => 1,
         },
         {
             name    => "Claypool & Co building",
