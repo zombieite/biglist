@@ -1887,6 +1887,11 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq||,
         },
         {
+            name    => "RESTAURANT sign",
+            address => "2277 US Rte 66, Santa Rosa NM",
+            blurb   => qq||,
+        },
+        {
             name    => "Sun & Sand Restaurant",
             address => "2050 US Rte 66, Santa Rosa NM",
             blurb   => qq|Last time I came through, the most beautiful sign on Route 66 was lying on the ground, destroyed by rust, wind, and entropy. Just one year before, I'd seen it standing, proud and tall. It's ok to cry. Not just for the sign. For all of Route 66. For everyone who's come and gone. For the American Dream that's been all but forgotten.|,
