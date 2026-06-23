@@ -308,7 +308,7 @@ img {
 <h2>A curious guide to Route 66 and the American Dream, updated $year $month_abbrev $mday</h2>
 <a href="$book_link"><img src="pictures/cover.jpg"></a>
 <h1><a href="$book_link"><span class="c4">This</span> <span class="c1">Book</span> <span class="c2">is</span> <span class="c3">available</span> <span class="c4">now</span><span class="c1">!</span> <span class="c2">Click</span> <span class="c3">here</span> <span class="c4">to</span> <span class="c1">buy</span><span class="c2">!</span></a></h1>
-<h3>Wasteland Firebird's Big List of the Best Things On Route 66 is like no other Route 66 guide. This book doesn't set out to map the Route itself. This book is a carefully curated list of addresses, one address per page. Each page has a QR code that opens up Google Maps directions to that address. No app needed! Many pages contain reviews, memories of previous journeys, or musings about the American Dream.</h3>
+<h3>Wasteland Firebird's Big List of the Best Things On Route 66 is like no other Route 66 guide. This book doesn't set out to map the Route itself. This book is a carefully curated list of addresses, one address per page. Each page has a QR code that opens up Google Maps directions to that address. No app needed! Many pages contain descriptions, reviews, recommendations, memories of previous journeys, or musings about the American Dream.</h3>
 <h3>Wasteland Firebird has traveled the Route five times, adding and subtracting items from this list along the way. None of the businesses in this book paid to appear in it. This book is solely a list of places that are beautiful, old, quirky, luxurious, or delicious. Every place in this book is worth at least a brief stop. Some of the entries are new discoveries that have never before been seen in connection with Route 66, such as "Room Attack" and "Toynbee Tiles."</h3>
 <h3>The previous edition of this book served as the guide for The Great Route 66 Centennial Convergence, held in April 2026. So many people asked for the book that we quickly ran out of our free copies. As soon as the trip was complete, we released this new updated edition for sale.</h3>
 <h2>
@@ -1960,7 +1960,7 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
         {
             name    => "The Imperial",
             address => "701 Central Ave NE, Albuquerque NM",
-            blurb   => qq|This is the place to stay when in Albuquerque.|,
+            blurb   => qq||,
         },
         {
             name    => "Kimo Theatre",
@@ -2002,6 +2002,11 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             name    => "Route 66 Visitor Center",
             address => "12300 Central Ave SW, Albuquerque NM",
             blurb   => qq|This site is still under development, but now you can go in. It's getting good. There's a neon sign park out front.|,
+        },
+        {
+            name    => "Owl Rock",
+            address => "2851 Old Rte 66 Rd, New Laguna NM",
+            blurb   => qq||,
         },
         {
             name    => "Budville Trading Post",
