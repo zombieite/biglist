@@ -1807,6 +1807,11 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq|A dream is something real that exists only in the mind of a lazy person. The World's Largest Flip Flop was once just a dream. Now it is real.|,
         },
         {
+            name    => "Cedar Hill Grocery Store",
+            address => "2549 US Rte 66, San Jon NM",
+            blurb   => qq||,
+        },
+        {
             name    => "Palomino Motel",
             address => "1215 E Rte 66 Blvd, Tucumcari NM",
             blurb   => qq|Tucumcari is the closest you will come to experiencing Route 66 as it was in the old days. It's not just a neon revival town. Some of those old signs are still buzzing, unrestored.|,
