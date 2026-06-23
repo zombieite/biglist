@@ -546,6 +546,11 @@ sub get_locations {
             blurb   => qq|As you listen to the story of the road, you're also writing your own story. And you're the main character! Stand up tall, proud, and curious. You've been waiting your whole life for this. A good story can change you. A good story can change the world.|,
         },
         {
+            name    => "Berghoff Restaurant",
+            address => "17 W Adams St, Chicago IL",
+            blurb   => qq||,
+        },
+        {
             name    => "Lou Mitchell's",
             address => "565 W Jackson Blvd, Chicago IL",
             blurb   => qq|Route 66 is more than just a road. It's more than just a fun vacation. Route 66 represents the idea of going West in search of a better life. Route 66 represents the American Dream.|,
