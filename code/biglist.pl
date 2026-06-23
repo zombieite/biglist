@@ -807,6 +807,11 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq|A bird ran through the wet concrete, and its footprints are still there. Look for a small sign and a white square on the road.|,
         },
         {
+            name    => "St George Room",
+            address => "120 N Side Square, Carlinville IL",
+            blurb   => qq||,
+        },
+        {
             name    => "Skyview Drive-In",
             address => "1500 Old Rte 66 N, Litchfield IL",
             blurb   => qq||,
@@ -2378,6 +2383,11 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             name    => "Goffs Schoolhouse",
             address => "37198 Lanfair Rd, Essex CA",
             blurb   => qq||,
+        },
+        {
+            name    => "Mojave National Preserve South Entrance",
+            address => "Kelbaker Rd, CA",
+            blurb   => qq|This destination is mainly included to keep you off of some closed sections of Route 66.|,
         },
         {
             name    => "Guardian Lion East",
