@@ -1035,6 +1035,11 @@ qq|America was the first country on Earth where your social class didn't matter.
             blurb   => qq||,
         },
         {
+            name    => "Totem Pole Antiques sign",
+            address => "1417 Martin Springs Dr, Rolla MO",
+            blurb   => qq||,
+        },
+        {
             name    => "Vernelle's Motel",
             address => "10887 Arlington Road, Newburg MO",
             blurb   => qq|Entropy cannot be stopped. We can only delay it for a while.|,
