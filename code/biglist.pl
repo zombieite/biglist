@@ -2508,6 +2508,11 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq||,
         },
         {
+            name    => "Village Cafe",
+            address => "205 E Main St, Barstow CA",
+            blurb   => qq||,
+        },
+        {
             name    => "Mojave River Valley Museum",
             address => "270 E Virginia Way, Barstow CA",
             blurb   => qq||,
