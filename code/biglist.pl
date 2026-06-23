@@ -1918,6 +1918,11 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq|This place features a rare sputnik-style Roto-Sphere sign on top of the building.|,
         },
         {
+            name    => "Midway Trading Post",
+            address => "Edgewood NM",
+            blurb   => qq||,
+        },
+        {
             name    => "Tinkertown Museum",
             address => "121 Sandia Crest Rd, Sandia Park NM",
             blurb   => qq|One man built this place while the rest of us were watching television.|,
