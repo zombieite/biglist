@@ -1817,11 +1817,6 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq|Tucumcari is the closest you will come to experiencing Route 66 as it was in the old days. It's not just a neon revival town. Some of those old signs are still buzzing, unrestored.|,
         },
         {
-            name    => "Watson's BBQ",
-            address => "502 S Lake St, Tucumcari NM",
-            blurb   => qq|I don't know if this place is still open, but it's pretty fun to look at from the outside, too.|,
-        },
-        {
             name    => "Del's Restaurant",
             address => "1202 US Rte 66, Tucumcari NM",
             blurb   => qq||,
