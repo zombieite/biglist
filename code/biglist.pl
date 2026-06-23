@@ -2314,6 +2314,11 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|Pet the cat's tummy.|,
         },
         {
+            name    => "Hill Top Motel",
+            address => "1901 E Andy Devine Ave, Kingman AZ",
+            blurb   => qq||,
+        },
+        {
             name    => "Arcadia Lodge sign",
             address => "909 E Andy Devine Ave, Kingman AZ",
             blurb   => qq||,
