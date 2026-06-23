@@ -2493,11 +2493,6 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq||,
         },
         {
-            name    => "Skyline Drive-In Theater",
-            address => "31175 Old Hwy 58, Barstow CA",
-            blurb   => qq||,
-        },
-        {
             name    => "Barstow Train McDonald's",
             address => "1611 E Main St, Barstow CA",
             blurb   => qq|It's just a McDonalds, but the dining rooms are made of real train cars.|,
