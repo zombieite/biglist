@@ -2386,7 +2386,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         },
         {
             name    => "Mojave National Preserve Kelbaker Rd South Entrance",
-            address => "Needles Freeway and Kelbaker Rd, CA",
+            address => "Kelbaker Rd, CA",
             blurb   => qq|This destination is mainly included to keep you off of some closed sections of Route 66.|,
         },
         {
