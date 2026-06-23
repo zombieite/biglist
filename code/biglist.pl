@@ -2289,6 +2289,11 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq||,
         },
         {
+            name    => "Grand Canyon Caverns",
+            address => "Peach Springs AZ",
+            blurb   => qq||,
+        },
+        {
             name    => "Frontier Motel Cafe",
             address => "16118 Historic Rte 66, Valentine AZ",
             blurb   => qq|The best hand-painted sign on Route 66 is the dude with the long arms.|,
