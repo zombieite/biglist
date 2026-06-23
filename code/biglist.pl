@@ -2422,11 +2422,6 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq|I've never made it to this place during business hours, but I'm gonna keep trying.|,
         },
         {
-            name    => "Whiting Brothers Service and Tony's Spaghetti building",
-            address => "46756 National Trails Hwy, Newberry Springs CA",
-            blurb   => qq|Attachment leads to suffering.|,
-        },
-        {
             name    => "Bagdad Cafe",
             address => "46548 National Trails Hwy, Newberry Springs CA",
             blurb   => qq|This place is beloved by weird German tourists because of the 1987 film Bagdad Cafe. That film is about weird German tourists finding their home-away-from-home at this place. Owner Andrea Pruett slept on a mattress on the floor here while rain dripped through the leaky roof. She did this to keep the place alive for you and me. She's no longer with us. Leave a tip in the jar.|,
@@ -2442,23 +2437,8 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq||,
         },
         {
-            name    => "Desert Market",
-            address => "35596 Santa Fe St, Daggett CA",
-            blurb   => qq||,
-        },
-        {
             name    => "Daggett Garage",
             address => "35565 Santa Fe St, Daggett CA",
-            blurb   => qq||,
-        },
-        {
-            name    => "Daggett Historical Museum",
-            address => "33703 2nd St, Daggett CA",
-            blurb   => qq||,
-        },
-        {
-            name    => "Penny's Diner",
-            address => "35450 Yermo Rd, Yermo CA",
             blurb   => qq||,
         },
         {
@@ -2485,11 +2465,6 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             name    => "Original Del Taco Location",
             address => "38434 E Yermo Rd, Yermo CA",
             blurb   => qq||,
-        },
-        {
-            name    => "Barstow Train McDonald's",
-            address => "1611 E Main St, Barstow CA",
-            blurb   => qq|It's just a McDonalds, but the dining rooms are made of real train cars.|,
         },
         {
             name    => "Cactus Motel",
