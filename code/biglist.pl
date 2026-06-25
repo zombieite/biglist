@@ -1793,14 +1793,19 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
 There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near the entrance.|,
         },
         {
+            name    => "Mama Jo's Pies",
+            address => "922 E Main St, Vega TX",
+            blurb   => qq|They have cherry pies here.|,
+        },
+        {
             name    => "Milburn-Price Culture Museum",
             address => "1005 Coke St, Vega TX",
             blurb   => qq|The best places defy description. The first time I visited, I made a recording of my ten-step philosophy of life via a telephone booth. The second time I visited, I held a tarantula in my hands. The third time I visited, I mentioned that my pocket knife had been stolen, and the owner gifted me one from his huge stash. What is it you're actually supposed to be doing here? I still haven't figured that out.|,
         },
         {
-            name    => "Mama Jo's Pies",
-            address => "922 E Main St, Vega TX",
-            blurb   => qq|They have cherry pies here.|,
+            name    => "Roadrunner Drive-in sign",
+            address => "1108 US Rte 66, Vega TX",
+            blurb   => qq||,
         },
         {
             name    => "Midpoint Cafe",
