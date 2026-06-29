@@ -762,7 +762,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name    => "Ace Sign Co.",
+            name    => "Ace Sign Co",
             address => "2540 S 1st St, Springfield IL",
             blurb   => qq|This place is pretty nondescript on the outside. They really do make signs here. But there's also a sign museum. I still need to visit this place when it's open.|,
         },
