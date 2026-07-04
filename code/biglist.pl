@@ -2402,6 +2402,11 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq||,
         },
         {
+            name    => "El Garces Hotel",
+            address => "950 Front St, Needles CA",
+            blurb   => qq||,
+        },
+        {
             name    => "Wagon Wheel Restaurant",
             address => "2420 Needles Hwy, Needles CA",
             blurb   => qq||,
