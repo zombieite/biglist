@@ -797,11 +797,6 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq|The road is made of bricks. Old, original Route 66 bricks.|,
         },
         {
-            name    => "Sly Fox Bookstore",
-            address => "123 N Springfield St, Virden IL",
-            blurb   => qq||,
-        },
-        {
             name    => "Doc's Just Off 66",
             address => "133 S 2nd St, Girard IL",
             blurb   => qq||,
