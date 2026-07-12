@@ -1245,11 +1245,6 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
             blurb   => qq||,
         },
         {
-            name    => "Granny Shaffer's Restaurant",
-            address => "2728 N Rangeline Rd, Joplin MO",
-            blurb   => qq||,
-        },
-        {
             name    => "Royale Cinema Lounge",
             address => "715 E Broadway St, Joplin MO",
             blurb   => qq||,
