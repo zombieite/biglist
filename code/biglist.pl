@@ -2036,7 +2036,7 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq||,
         },
         {
-            name    => "San José de la Laguna Mission Church",
+            name    => "St Joseph Church",
             address => "1 Friar Rd, Laguna NM",
             blurb   => qq||,
         },
