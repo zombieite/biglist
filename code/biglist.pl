@@ -2036,6 +2036,11 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq||,
         },
         {
+            name    => "San José de la Laguna Mission Church",
+            address => "1 Friar Rd, Laguna NM",
+            blurb   => qq||,
+        },
+        {
             name    => "Budville Trading Post",
             address => "HC 77 Box 1A, Seama NM",
             blurb   => qq||,
