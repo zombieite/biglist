@@ -597,6 +597,11 @@ sub get_locations {
 qq|We can't talk about Joliet Prison without talking about The Blues Brothers. That film is an archive of Americana. The music in that film spanned the entire Twentieth Century. Cab Calloway started making music in 1927, the year Angel Delgadillo was born, and one year after Route 66 came into being. Due to swift advances in music and communication technology, the Twentieth Century spawned a new genre of music every single decade. When was the last time you heard a truly new genre of music?|,
         },
         {
+            name    => "First Dairy Queen",
+            address => "501 N Chicago St, Joliet IL",
+            blurb   => qq||,
+        },
+        {
             name    => "Rialto Square Theatre",
             address => "102 N Chicago St, Joliet IL",
             blurb   => qq|Look at all the light bulbs on these old theaters.|,
