@@ -1824,11 +1824,6 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq|See what I mean about the story taking a turn?|,
         },
         {
-            name    => "Russell's Travel Center",
-            address => "1583 Frontage Rd 4132, Glenrio NM",
-            blurb   => qq|It looks pretty much like a normal gas station, but go inside, and be delighted.|,
-        },
-        {
             name    => "World's Largest Flip Flop",
             address => "602 Rte 66, San Jon NM",
             blurb   => qq|A dream is something real that exists only in the mind of a lazy person. The World's Largest Flip Flop was once just a dream. Now it is real.|,
