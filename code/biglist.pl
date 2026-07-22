@@ -1091,6 +1091,11 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
+            name    => "Boswell Park",
+            address => "679 W Elm St, Lebanon MO",
+            blurb   => qq||,
+        },
+        {
             name    => "Redmon's Candy Factory",
             address => "330 Pine St, Phillipsburg MO",
             blurb   => qq||,
