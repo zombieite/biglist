@@ -2372,6 +2372,11 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|The first time I drove through this town, I had no idea what it was or why it was here. Somehow, for some reason, I had been teleported back in time to the Old West.|,
         },
         {
+            name    => "Silver Dollar Chuck Wagon",
+            address => "12907 Oatman-Topock Hwy, Topock AZ",
+            blurb   => qq||,
+        },
+        {
             name             => "66 Motel",
             address          => "91 Desnok St, Needles CA",
             blurb            => qq||,
