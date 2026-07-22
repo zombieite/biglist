@@ -2099,6 +2099,11 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq||,
         },
         {
+            name    => "Herman's Garage",
+            address => "Thoreau NM",
+            blurb   => qq||,
+        },
+        {
             name    => "Indian Village Gift Shop",
             address => "101 US Rte 66, Continental Divide NM",
             blurb   => qq||,
