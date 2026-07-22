@@ -2147,6 +2147,11 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq||,
         },
         {
+            name    => "Pow Wow Trading Post",
+            address => "752 Navajo Blvd, Holbrook AZ",
+            blurb   => qq||,
+        },
+        {
             name    => "Wigwam Motel",
             address => "811 W Hopi Dr, Holbrook AZ",
             blurb   => qq|You gotta reserve these funky hotels early. I've never found one with a vacancy upon arrival.|,
