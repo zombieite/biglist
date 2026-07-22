@@ -844,7 +844,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Henry's Rabbit Ranch",
             address => "1107 Historic Old Rte 66, Staunton IL",
-            blurb   => qq|There are no rabbits here anymore, but it still has some funky stuff sitting around. This place went on sale recently. I actually tried to buy it but someone else got to it first.|,
+            blurb   => qq|There are no rabbits here anymore, but it still has some funky stuff sitting around.|,
         },
         {
             name    => "DeCamp Station",
