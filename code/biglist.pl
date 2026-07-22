@@ -2257,6 +2257,11 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|They might have the old Hi-Line Motel sign here.|,
         },
         {
+            name    => "Crookton Overpass",
+            address => "Seligman AZ",
+            blurb   => qq||,
+        },
+        {
             name    => "Aztec Motel & Creative Space",
             address => "22200 Historic Rte 66, Seligman AZ",
             blurb   => qq||,
