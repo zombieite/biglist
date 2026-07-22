@@ -2172,11 +2172,6 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|My absolute favorite hotel on Route 66. Quirky, old, and luxurious. Unlike big city hotels, you can park you own car. You don't need a porter to take your bags to your room. And you can open the gosh-danged windows. That's what I call luxury.|,
         },
         {
-            name    => "Route 66 Delta Motel",
-            address => "2141 W 3rd St, Winslow AZ",
-            blurb   => qq||,
-        },
-        {
             name    => "Meteor City Trading Post",
             address => "40440 Interstate 40 WB, Winslow AZ",
             blurb   => qq|This place was recently reopened and it's a lot of fun. I rented a four-person bike. I pedaled as fast as I could through the park, completing the journey in under a minute and terrifying my companions.|,
