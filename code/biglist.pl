@@ -892,11 +892,6 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name    => "Old Chain of Rocks Bridge",
-            address => "10820 Riverview Dr, St Louis MO",
-            blurb   => qq|Nowadays you don't drive it. But you can go for a walk across it.|,
-        },
-        {
             name    => "O'Brien Tire & Auto Care",
             address => "3924 Nameoki Rd, Granite City IL",
             blurb   => qq|Earl the Mechanic Muffler Man is here. And when was the last time you had your oil changed?|,
