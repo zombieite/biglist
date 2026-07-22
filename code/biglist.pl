@@ -2077,6 +2077,12 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq|Go down the elevator.|,
         },
         {
+            name             => "Lux sign",
+            address          => "1016 W Santa Fe Ave, Grants NM",
+            blurb            => qq||,
+            url_address_only => 1,
+        },
+        {
             name    => "Old Bluewater Motel",
             address => "2331 NM-122, Bluewater NM",
             blurb   => qq||,
