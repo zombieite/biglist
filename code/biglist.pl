@@ -2568,6 +2568,11 @@ I know this for sure.|,
             url_address_only => 1,
         },
         {
+            name    => "Oak Park Motel",
+            address => "925 E Huntington Dr, Monrovia CA",
+            blurb   => qq||,
+        },
+        {
             name    => "Windmill Denny's",
             address => "7 E Huntington Dr, Arcadia CA",
             blurb   => qq|Principle #2:
