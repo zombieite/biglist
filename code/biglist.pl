@@ -2056,6 +2056,11 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq||,
         },
         {
+            name    => "Santa Maria Mission",
+            address => "904 Pueblo Rd, Acoma NM",
+            blurb   => qq||,
+        },
+        {
             name             => "DINER sign",
             address          => "1029 US Rte 66, Grants NM",
             blurb            => qq||,
