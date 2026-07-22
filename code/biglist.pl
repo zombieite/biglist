@@ -1602,12 +1602,14 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Hinton Junctions Courts and Cafe",
             address => "16153 Old 66 Rd, Hinton OK",
-            blurb   => qq||,
+            blurb   =>
+qq|Here's a list of some stuff that was either discovered, invented, perfected, or widely adopted in the Twentieth Century. Antibiotics, anesthesia, surgery, contraception, clean water, indoor plumbing, biotechnology, Norman Borlaug's miracle strains of wheat, batteries, light bulbs, air conditioning and refrigeration, washing machines, nuclear power, solar power, telephones, mobile phones, photography, radio, movies, television, computers, internet, cars, airplanes, and space travel.|,
         },
         {
             name    => "Lucille's Historic Highway Gas Station",
             address => "US Rte 66, Hydro OK",
-            blurb   => qq||,
+            blurb   =>
+qq|Keep in mind that all of this happened despite two world wars, the Great Depression, and the worldwide threat of Soviet and Chinese communist expansion during the Cold War. In just a hundred years we figured out more stuff than we had figured out in the entire hundred thousand years that preceded it. Sure there was fire and the wheel. Agriculture and domestication. Spoken language and written language and the printing press. But that ain't much to figure out in a hundred thousand years.|,
         },
         {
             name    => "Major Tom Astronaut",
@@ -1620,16 +1622,19 @@ qq|The current owners took over this place in 1980 and I don't think their price
             blurb   => qq|There never was, and never will be, another century like the Twentieth. One day, historians will speak of "The Twentieth Century" the way we today speak of "The Renaissance," or "The Enlightenment."|,
         },
         {
+            name    => "Oklahoma Route 66 Museum",
+            address => "2229 W Gary Blvd, Clinton OK",
+            blurb   => qq|They tell me the old Glancy Motel sign is going to be moved to this spot soon.|,
+        },
+        {
             name    => "Cotton Boll Motel sign",
             address => "605 Old US Hwy 66, Canute OK",
-            blurb   =>
-qq|Here's a list of some stuff that was either discovered, invented, perfected, or widely adopted in the Twentieth Century. Antibiotics, anesthesia, surgery, contraception, clean water, indoor plumbing, biotechnology, Norman Borlaug's miracle strains of wheat, batteries, light bulbs, air conditioning and refrigeration, washing machines, nuclear power, solar power, telephones, mobile phones, photography, radio, movies, television, computers, internet, cars, airplanes, and space travel.|,
+            blurb   => qq||,
         },
         {
             name    => "United Supermarkets",
             address => "2700 W 3rd St, Elk City OK",
-            blurb   =>
-qq|Keep in mind that all of this happened despite two world wars, the Great Depression, and the worldwide threat of Soviet and Chinese communist expansion during the Cold War. In just a hundred years we figured out more stuff than we had figured out in the entire hundred thousand years that preceded it. Sure there was fire and the wheel. Agriculture and domestication. Spoken language and written language and the printing press. But that ain't much to figure out in a hundred thousand years.|,
+            blurb   => qq||,
         },
         {
             name    => "National Route 66 & Transportation Museum",
