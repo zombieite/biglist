@@ -925,24 +925,18 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Chili Mac's Diner",
             address => "510 Pine St, St Louis MO",
-            blurb   => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was the idea that God wanted the Europeans to spread out into America. I don't think that any supernatural being really cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make the best country on Earth.|,
+            blurb   => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was the idea that God wanted the Europeans to spread out into America. I don't think that any supernatural being really cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make this the best country on Earth.|,
         },
         {
-            name    => "Neon Museum of St Louis",
-            address => "3537 Chouteau Ave, St Louis MO",
-            blurb   => qq|When I say the USA is the best country on Earth, you might reply that I'm biased since I was born in the USA. But I've traveled the world and I've spent a lot of time doing my best to overcome my biases. I firmly believe that America has things about it that make it truly exceptional.|,
-        },
-        {
-            name    => "Auto Seat Covers sign",
-            address => "4017 Gravois Ave, St Louis MO",
-            blurb   =>
-qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or who your parents were. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream. Over time, the founding principles of the United States forged the world's first self-organizing meritocracy.|,
+            name             => "Auto Seat Covers sign",
+            address          => "4017 Gravois Ave, St Louis MO",
+            blurb            => qq|When I say America is the best country on Earth, you might reply that I'm biased since I was born in America. But I've traveled the world and I've spent a lot of time trying to overcome my biases. I firmly believe that America has things about it that make it truly exceptional.|,
             url_address_only => 1,
         },
         {
             name    => "Donut Drive In",
             address => "6525 Chippewa St, St Louis MO",
-            blurb   => qq||,
+            blurb   => qq|America was the first country on Earth where your social class didn't matter. It didn't matter who you knew or who your parents were. All that mattered was what you were capable of. If you were hard-working, creative, passionate, skilled, talented, good at marketing, good at networking, able to see things through, and willing to risk it all, you'd almost certainly succeed. That's the American Dream. America was the world's first self-organizing meritocracy.|,
         },
         {
             name    => "Ted Drewes Frozen Custard",
@@ -1083,7 +1077,7 @@ qq|America was the first country on Earth where your social class didn't matter.
         {
             name    => "Old Stagecoach Stop",
             address => "106 N Lynn St, Waynesville MO",
-            blurb   => qq|It's not just a building. It's the oldest building in the USA.|,
+            blurb   => qq||,
         },
         {
             name    => "Gascozark Store",
