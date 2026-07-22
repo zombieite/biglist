@@ -944,11 +944,6 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name    => "Malt Shop",
-            address => "1751 Smizer Station Rd, Fenton MO",
-            blurb   => qq|Don't ever just order a milkshake. Always ask for a malt. For some reason malts are slowly being forgotten. They're harder to find now. The "malt" is just powdered barley extract but it adds a great bit of flavor.|,
-        },
-        {
             name    => "Campbell's Service",
             address => "18625 Historic Rte 66, Pacific MO",
             blurb   => qq||,
