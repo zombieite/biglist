@@ -2252,11 +2252,6 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq||,
         },
         {
-            name    => "Cruiser's Route 66 Cafe",
-            address => "233 W Rte 66, Williams AZ",
-            blurb   => qq||,
-        },
-        {
             name    => "Arizona 9 Motor Hotel",
             address => "315 W Rte 66, Williams AZ",
             blurb   => qq||,
