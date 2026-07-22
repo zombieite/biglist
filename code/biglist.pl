@@ -2187,11 +2187,6 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|There's only one arrow here now. Someone should make a perfect replica and surreptitiously install it in the middle of the night. Or just put the original one back. The rumor is, it's still out there somewhere.|,
         },
         {
-            name    => "Walnut Canyon Bridge",
-            address => "Townsend-Winona Rd, Winona AZ",
-            blurb   => qq||,
-        },
-        {
             name    => "Americana Motor Hotel",
             address => "2650 E Rte 66, Flagstaff AZ",
             blurb   => qq||,
