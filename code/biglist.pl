@@ -859,7 +859,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Route 66 Creamery",
             address => "11 S Old Rte 66, Hamel IL",
-            blurb   => qq|I've stopped here on two separate occasions, and met two completely different sets of employees. But they all had something in common. The employees here are the most pure, kind, well-adjusted, hard-working young people I've ever met. Hamel Illinois is America at its best.|,
+            blurb   => qq|The employees here are the most pure, kind, well-adjusted, hard-working young people I've ever met. Hamel Illinois is America at its best.|,
         },
         {
             name    => "Weezy's",
