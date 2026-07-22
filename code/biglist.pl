@@ -2562,6 +2562,11 @@ I AM CONSCIOUS.
 I know this for sure.|,
         },
         {
+            name    => "Azusa Foothill Drive In Theater sign",
+            address => "680 US Route 66, Azusa CA",
+            blurb   => qq||,
+        },
+        {
             name    => "Windmill Denny's",
             address => "7 E Huntington Dr, Arcadia CA",
             blurb   => qq|Principle #2:
