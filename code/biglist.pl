@@ -2109,6 +2109,11 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             blurb   => qq||,
         },
         {
+            name    => "Fort Wingate",
+            address => "506 US Rte 66, Church Rock NM",
+            blurb   => qq||,
+        },
+        {
             name    => "Blue Spruce Lodge",
             address => "1119 E Hwy 66, Gallup NM",
             blurb   => qq||,
