@@ -2110,7 +2110,7 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
         },
         {
             name    => "Fort Wingate Army Depot",
-            address => "506 US Rte 66, Church Rock NM",
+            address => "506 US Route 66, Church Rock NM",
             blurb   => qq||,
         },
         {
