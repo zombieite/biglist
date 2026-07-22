@@ -757,11 +757,6 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name    => "Pharmacy Gallery Art Space",
-            address => "623 E Adams St, Springfield IL",
-            blurb   => qq|They tell me there's a Bob Waldmire exhibit here, Fridays and Saturdays in 2026.|,
-        },
-        {
             name    => "Mel-O-Cream Donuts",
             address => "217 E Laurel St, Springfield IL",
             blurb   => qq||,
@@ -829,11 +824,6 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Skyview Drive-In",
             address => "1500 Old Rte 66 N, Litchfield IL",
-            blurb   => qq||,
-        },
-        {
-            name    => "Niehaus Cycle Sales",
-            address => "718 Old Rte 66 N, Litchfield IL",
             blurb   => qq||,
         },
         {
@@ -2552,14 +2542,12 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
         {
             name    => "Magic Lamp Inn Restaurant",
             address => "8189 Foothill Blvd, Rancho Cucamonga CA",
-            blurb   => qq|This place has a strict dress code and no mobile phones are allowed. I hope my leather jacket covered in paint marker art summarizing my entire philosophy of life in ten simple principles is ok.|,
+            blurb   => qq|This place has a strict dress code and no mobile phones are allowed.|,
         },
         {
             name    => "Donut Man",
             address => "915 E Rte 66, Glendora CA",
-            blurb   => qq|My philosophy of life, principle #1:
-I AM CONSCIOUS.
-I know this for sure.|,
+            blurb   => qq||,
         },
         {
             name             => "Azusa Foothill Drive In Theater sign",
@@ -2570,7 +2558,9 @@ I know this for sure.|,
         {
             name    => "Oak Park Motel",
             address => "925 E Huntington Dr, Monrovia CA",
-            blurb   => qq||,
+            blurb   => qq|My philosophy of life, principle #1:
+I AM CONSCIOUS.
+I know this for sure.|,
         },
         {
             name    => "Windmill Denny's",
