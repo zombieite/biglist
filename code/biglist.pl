@@ -920,11 +920,6 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "City Museum",
             address => "750 N 16th St, St Louis MO",
-            blurb   => qq|I haven't been here yet, but the photos are wild so I'm gonna check it out as soon as I can.|,
-        },
-        {
-            name    => "Chili Mac's Diner",
-            address => "510 Pine St, St Louis MO",
             blurb   => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was the idea that God wanted the Europeans to spread out into America. I don't think that any supernatural being really cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make this the best country on Earth.|,
         },
         {
