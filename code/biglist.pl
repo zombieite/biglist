@@ -1107,6 +1107,11 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             url_address_only => 1,
         },
         {
+            name    => "Rt 66 Old Cabins Historic Site",
+            address => "16 Deerfield Dr, Niangua MO",
+            blurb   => qq||,
+        },
+        {
             name    => "Little Clay House",
             address => "238 N Clay St, Marshfield MO",
             blurb   => qq|I haven't actually been to this place, but it looks nice.|,
