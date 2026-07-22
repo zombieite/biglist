@@ -1086,14 +1086,9 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq|You can get a piece of cherry pie here.|,
         },
         {
-            name    => "Manor Inn",
-            address => "505 E Elm St, Lebanon MO",
+            name    => "Route 66 Museum",
+            address => "915 S Jefferson Ave, Lebanon MO",
             blurb   => qq||,
-        },
-        {
-            name    => "Boswell Park Camp Joy",
-            address => "51 Drury Ln, Lebanon MO",
-            blurb   => qq|I'm not here to tell you what things are. I'm here to tell you where to go. Ask questions, read the plaques, or just drive by and enjoy.|,
         },
         {
             name    => "Redmon's Candy Factory",
