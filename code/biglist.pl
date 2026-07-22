@@ -1112,9 +1112,10 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name    => "Little Clay House",
-            address => "238 N Clay St, Marshfield MO",
-            blurb   => qq|I haven't actually been to this place, but it looks nice.|,
+            name             => "1880 Building",
+            address          => "111 S Clay St, Marshfield MO",
+            blurb            => qq||,
+            url_address_only => 1,
         },
         {
             name    => "Joe's Route 66 Diner",
