@@ -2177,11 +2177,6 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|This place was recently reopened and it's a lot of fun. I rented a four-person bike. I pedaled as fast as I could through the park, completing the journey in under a minute and terrifying my companions.|,
         },
         {
-            name    => "Meteor Crater",
-            address => "Meteor Crater Rd AZ",
-            blurb   => qq||,
-        },
-        {
             name    => "Two Guns",
             address => "Two Guns AZ",
             blurb   => qq|The first time I visited this place, it was for a group photo shoot. I ended up taking sexy photos of a woman who later went on to indirectly cause a noteworthy shooting death on a movie set. No one has ever seen these photos. If any tabloid is interested in making me rich, get in touch. If you think you saw these photos in my YouTube video, oh no, you didn't. You saw the ones that were safe for YouTube.|,
