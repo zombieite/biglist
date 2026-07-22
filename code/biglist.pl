@@ -2237,11 +2237,6 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|Williams is a neon revival town. Try to get a look at its signs at night.|,
         },
         {
-            name    => "Pete's Route 66 Gas Station Museum",
-            address => "101 E Rte 66, Williams AZ",
-            blurb   => qq||,
-        },
-        {
             name    => "Historic Grand Canyon Hotel",
             address => "145 Historic Rte 66, Williams AZ",
             blurb   => qq||,
