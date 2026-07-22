@@ -1387,7 +1387,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name             => "Toynbee Tile",
             address          => "600 S Boston Ave, Tulsa OK",
-            blurb            => qq|Cross in the crosswalks, looking down at the ground. There is a small linoleum "Toynbee Tile" mosaic embedded in the asphalt. Mosaics like these have been mysteriously appearing in cities around the world since the early 80s. I'd make a documentary about them, but someone already did. It's called Resurrect Dead: The Mystery of the Toynbee Tiles.|,
+            blurb            => qq|Cross in the crosswalks, looking down at the ground. There is a small linoleum Toynbee Tile mosaic embedded in the asphalt. Mosaics like these have been mysteriously appearing in cities around the world since the early 80s. I'd make a documentary about them, but someone already did. It's called Resurrect Dead: The Mystery of the Toynbee Tiles.|,
             url_address_only => 1,
         },
         {
@@ -1769,7 +1769,7 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
             name    => "Cadillac Ranch",
             address => "13651 I-40 Frontage Rd, Amarillo TX",
             blurb   => qq|If you see nothing else on Route 66, see this. Bring spray paint. You're allowed to paint the cars.
-There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near the entrance.|,
+There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the entrance.|,
         },
         {
             name    => "Mama Jo's Pies",
@@ -2344,7 +2344,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Sirens Cafe",
             address => "419 Beale St, Kingman AZ",
-            blurb   => qq||,
+            blurb   => qq|There is a small linoleum Toynbee Tile mosaic embedded in the asphalt at the crosswalk.|,
         },
         {
             name    => "Hotel Beale sign",
@@ -2672,7 +2672,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
         {
             name    => "Santa Monica Pier",
             address => "Santa Monica CA",
-            blurb   => qq|There is a small linoleum "Toynbee Tile" mosaic embedded in the asphalt at the crosswalk. The 66-To-Cali shack is the end of your journey.|,
+            blurb   => qq|There is a small linoleum Toynbee Tile mosaic embedded in the asphalt at the crosswalk. The 66-To-Cali shack is the end of your journey.|,
         },
     ];
 }
