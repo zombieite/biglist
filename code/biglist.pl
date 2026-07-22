@@ -2449,9 +2449,9 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq||,
         },
         {
-            name    => "Chakwala wash",
+            name    => "Chakwala Wash",
             address => "Essex CA",
-            blurb   => qq|This is included to keep you away from some closed road sections.|,
+            blurb   => qq|This is included just to keep you away from some closed road sections.|,
         },
         {
             name    => "Guardian Lion East",
