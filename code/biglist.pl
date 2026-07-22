@@ -2670,6 +2670,11 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
             blurb   => qq|The last great diner on Route 66.|,
         },
         {
+            name    => "Goodwill Donation Center",
+            address => "524 Santa Monica Blvd, Santa Monica CA",
+            blurb   => qq|If you'll be flying out of LA, you can stop off here to donate anything you can't fit into your luggage. There are some garage doors out back with bins you can dump your stuff into.|,
+        },
+        {
             name    => "Cal Mar Hotel Suites",
             address => "220 California Ave, Santa Monica CA",
             blurb   => qq|I have stayed in this midcentury masterpiece at least a dozen times. I highly recommend it.|,
