@@ -2083,6 +2083,12 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
             url_address_only => 1,
         },
         {
+            name             => "Charlie's Service",
+            address          => "1310 W Santa Fe Ave, Grants NM",
+            blurb            => qq||,
+            url_address_only => 1,
+        },
+        {
             name    => "Old Bluewater Motel",
             address => "2331 NM-122, Bluewater NM",
             blurb   => qq||,
