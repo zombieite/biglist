@@ -2159,22 +2159,12 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Geronimo Trading Post",
             address => "5372 Geronimo Rd, Joseph City AZ",
-            blurb   => qq||,
+            blurb   => qq|This place has the world's biggest piece of petrified wood just sitting out there in the parking lot. You can try to steal it, if you want.|,
         },
         {
             name    => "Here It Is Jack Rabbit Trading Post",
             address => "3386 US Rte 66, Joseph City AZ",
             blurb   => qq|The most iconic old shop on the entire Route.|,
-        },
-        {
-            name    => "Falcon Restaurant & Lounge",
-            address => "1113 E 3rd St, Winslow AZ",
-            blurb   => qq||,
-        },
-        {
-            name    => "Earl's Route 66 Motor Court",
-            address => "512 E 3rd St, Winslow AZ",
-            blurb   => qq||,
         },
         {
             name    => "La Posada Hotel",
