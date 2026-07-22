@@ -984,6 +984,12 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq|Newly restored by Route 66 hero Roamin' Rich Dinkela.|,
         },
         {
+            name             => "Old Bourbon Hotel",
+            address          => "251 E Pine St, Bourbon MO",
+            blurb            => qq||,
+            url_address_only => 1,
+        },
+        {
             name    => "Missouri Hick Barbeque",
             address => "913 E Washington Blvd, Cuba MO",
             blurb   => qq||,
