@@ -2105,7 +2105,7 @@ There is a small linoleum "Toynbee Tile" mosaic embedded into the asphalt near t
         },
         {
             name    => "Indian Village Gift Shop",
-            address => "101 US Rte 66, Continental Divide NM",
+            address => "101 US Route 66, Continental Divide NM",
             blurb   => qq||,
         },
         {
