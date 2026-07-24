@@ -516,6 +516,11 @@ sub get_locations {
             blurb   => qq|The new official beginning of Route 66. Some say it's ridiculous. The road itself never began here. I say it's perfect. The opening image of a story should be a bookend, a mirror for the closing image of the story. The story of Route 66 ends at a pier. Now it begins at a pier, too. Maybe someday I'll set up a little shack here, and sell this book from it.|,
         },
         {
+            name    => "Sable Hotel",
+            address => "900 E Grand Ave, Chicago IL",
+            blurb   => qq||,
+        },
+        {
             name    => "Billy Goat Tavern",
             address => "Lower 430 North, N Michigan Ave, Chicago IL",
             blurb   => qq||,
