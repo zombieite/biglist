@@ -513,12 +513,12 @@ sub get_locations {
         {
             name    => "Navy Pier",
             address => "600 E Grand Ave, Chicago IL",
-            blurb   => qq|The new official beginning of Route 66. Some say it's ridiculous. The road itself never began here. I say it's perfect. The opening image of a story should be a bookend, a mirror for the closing image of the story. The story of Route 66 ends at a pier. Now it begins at a pier, too. Maybe someday I'll set up a little shack here, and sell this book from it.|,
+            blurb   => qq|The new official beginning of Route 66. Some say it's ridiculous. The road itself never began here. I say it's perfect. The opening image of a story should be a bookend, a mirror for the closing image of the story. The story of Route 66 ends at a pier. Now it begins at a pier, too.|,
         },
         {
             name    => "Sable Hotel",
             address => "900 E Grand Ave, Chicago IL",
-            blurb   => qq||,
+            blurb   => qq|You can stay right on the Navy Pier, with convenient parking.|,
         },
         {
             name    => "Billy Goat Tavern",
@@ -533,7 +533,7 @@ sub get_locations {
         {
             name    => "Cloud Gate mirrored bean sculpture",
             address => "201 E Randolph St, Chicago IL",
-            blurb   => qq|Most people who travel Route 66 will only travel it once. So pay attention to the story that the road tells you.|,
+            blurb   => qq||,
         },
         {
             name    => "Chicago Athletic Association",
@@ -548,17 +548,17 @@ sub get_locations {
         {
             name    => "Historic Route 66 sign",
             address => "E Adams St & S Michigan Ave, Chicago IL",
-            blurb   => qq|As you listen to the story of the road, you're also writing your own story. And you're the main character! Stand up tall, proud, and curious. You've been waiting your whole life for this. A good story can change you. A good story can change the world.|,
+            blurb   => qq|You've been waiting your whole life for this. Most people who travel Route 66 will only travel it once. So pay attention to the story that the road tells you. A good story can change you. A good story can change the world.|,
         },
         {
             name    => "Berghoff Restaurant",
             address => "17 W Adams St, Chicago IL",
-            blurb   => qq||,
+            blurb   => qq|Route 66 is more than just a road. It's more than just a fun vacation. Route 66 represents the idea of going West in search of a better life. Route 66 represents the American Dream.|,
         },
         {
             name    => "Lou Mitchell's",
             address => "565 W Jackson Blvd, Chicago IL",
-            blurb   => qq|Route 66 is more than just a road. It's more than just a fun vacation. Route 66 represents the idea of going West in search of a better life. Route 66 represents the American Dream.|,
+            blurb   => qq||,
         },
         {
             name    => "Lulu's Hot Dogs",
@@ -578,7 +578,7 @@ sub get_locations {
         {
             name    => "Cigars & Stripes BBQ Lounge",
             address => "6715 Ogden Ave, Berwyn IL",
-            blurb   => qq|There is a "Muffler Man" here, the first of many. It's important that you learn what a Muffler Man is. These are giant, human-shaped fiberglass sculptures. They dotted the landscape of mid-Twentieth century America. They sometimes held mufflers in their hands. Some are old, some are new. Wait till you see Atlanta Illinois and Tulsa Oklahoma.|,
+            blurb   => qq|There is a "Muffler Man" here, the first of many. A Muffler Man is a giant, human-shaped fiberglass sculpture. They dotted the landscape of mid-Twentieth century America. They sometimes held mufflers in their hands. Some are old, some are new. Wait till you see Atlanta Illinois and Tulsa Oklahoma.|,
         },
         {
             name    => "Berwyn's Toy & Trains",
