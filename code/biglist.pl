@@ -2578,8 +2578,8 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             url_address_only => 1,
         },
         {
-            name    => "Oak Park Motel",
-            address => "925 E Huntington Dr, Monrovia CA",
+            name    => "Aztec Hotel",
+            address => "301 W Foothill Blvd, Monrovia CA",
             blurb   => qq|My philosophy of life, principle #1:
 I AM CONSCIOUS.
 I know this for sure.|,
