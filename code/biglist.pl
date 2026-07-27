@@ -2572,70 +2572,65 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq||,
         },
         {
-            name             => "Azusa Foothill Drive In Theater sign",
-            address          => "680 US Route 66, Azusa CA",
-            blurb            => qq||,
+            name    => "Azusa Foothill Drive In Theater sign",
+            address => "680 US Route 66, Azusa CA",
+            blurb   => qq|My philosophy of life, principle #1:
+I AM CONSCIOUS.
+I know this for sure.|,
             url_address_only => 1,
         },
         {
             name    => "Aztec Hotel",
             address => "301 W Foothill Blvd, Monrovia CA",
-            blurb   => qq|My philosophy of life, principle #1:
-I AM CONSCIOUS.
-I know this for sure.|,
-        },
-        {
-            name    => "Windmill Denny's",
-            address => "7 E Huntington Dr, Arcadia CA",
             blurb   => qq|Principle #2:
 HAPPINESS IS GOOD.
 I know this for sure, too.|,
         },
         {
-            name    => "Saga Motor Hotel",
-            address => "1633 E Colorado Blvd, Pasadena CA",
+            name    => "Windmill Denny's",
+            address => "7 E Huntington Dr, Arcadia CA",
             blurb   => qq|Principle #3:
 I CAN USUALLY TRUST MY SENSES.
 I have to either believe this, or choose not to function.|,
         },
         {
-            name    => "Shakers",
-            address => "601 Fair Oaks Ave, South Pasadena CA",
+            name    => "Saga Motor Hotel",
+            address => "1633 E Colorado Blvd, Pasadena CA",
             blurb   => qq|Principle #4:
 THE LAWS OF NATURE ARE CONSISTENT.
 I have to either believe this, or choose not to function.|,
         },
         {
-            name    => "Fair Oaks Pharmacy & Soda Fountain",
-            address => "1526 Mission St, South Pasadena CA",
+            name    => "Shakers",
+            address => "601 Fair Oaks Ave, South Pasadena CA",
             blurb   => qq|Principle #5:
 THE LAWS OF HUMAN NATURE ARE CONSISTENT.
 This implies that we can figure out some rules of ethics, virtue, and morality.|,
         },
         {
-            name    => "Highland Park Bowl",
-            address => "5621 N Figueroa St, Los Angeles CA",
+            name    => "Fair Oaks Pharmacy & Soda Fountain",
+            address => "1526 Mission St, South Pasadena CA",
             blurb   => qq|Principle #6:
 REASON IS HOW WE ACQUIRE KNOWLEDGE.
 Deductive logic, like math, and inductive reasoning, like science, are how we understand the universe and how we understand ourselves.|,
         },
         {
-            name    => "La Fuente Restaurant",
-            address => "5552 N Figueroa St, Los Angeles CA",
+            name    => "Highland Park Bowl",
+            address => "5621 N Figueroa St, Los Angeles CA",
             blurb   => qq|Principle #7:
 FREEDOM IS HOW WE ACHIEVE HAPPINESS.
 Most people agree that freedom makes them happy.|,
         },
         {
-            name    => "Cielito Lindo",
-            address => "E-23 Olvera St, Los Angeles CA",
+            name    => "La Fuente Restaurant",
+            address => "5552 N Figueroa St, Los Angeles CA",
             blurb   => qq|Principle #8:
 ECONOMIC FREEDOM IS HOW WE ACHIEVE PROSPERITY.
 Capitalism works. I define capitalism as "economic freedom," not "cronyist plutocracy." I assure you, I hate cronyist plutocracy as much as anyone. Capitalism doesn't exist to hold poor people down. It exists to let brilliant people do brilliant things.|,
         },
         {
-            name    => "Million Dollar Theater",
-            address => "307 S Broadway, Los Angeles CA",
+            name    => "Cielito Lindo",
+            address => "E-23 Olvera St, Los Angeles CA",
             blurb   => qq|Principle #9:
 FREEDOM IS A POSITIVE-SUM GAME.
 If two people agree to participate in some type of financial or emotional transaction, they do it because they both feel like it will benefit them. It's not that one of them is right, and one of them is wrong. They are both right. They both benefit. Therefore, every transaction makes the world a slightly better place.|,
