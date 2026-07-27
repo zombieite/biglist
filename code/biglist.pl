@@ -2209,6 +2209,11 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq||,
         },
         {
+            name    => "Hotel Monte Vista",
+            address => "100 N San Francisco St, Flagstaff AZ",
+            blurb   => qq||,
+        },
+        {
             name    => "Flagstaff Visitor Center",
             address => "1 E Rte 66, Flagstaff AZ",
             blurb   => qq||,
@@ -2645,7 +2650,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
         {
             name    => "Clifton's building",
             address => "648 S Broadway, Los Angeles CA",
-            blurb   => qq|This spot is described as the "real" end of Route 66. But for a climax to our Route 66 story, I think we can do better. Keep going, it's about to get good.|,
+            blurb   => qq|This spot is described as the "real" end of Route 66. But for a climax to our Route 66 story, we can do better. Keep going, it's about to get good.|,
         },
         {
             name    => "Orpheum Theatre",
@@ -2690,7 +2695,7 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
         {
             name    => "Goodwill Donation Center",
             address => "524 Santa Monica Blvd, Santa Monica CA",
-            blurb   => qq|If you'll be flying out of LA, you can stop off here to donate anything you can't fit into your luggage. There are some garage doors out back with bins you can dump your stuff into.|,
+            blurb   => qq|If you'll be flying out of LA, you can stop off here to donate anything you can't fit into your luggage.|,
         },
         {
             name    => "Cal Mar Hotel Suites",
