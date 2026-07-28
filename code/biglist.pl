@@ -1855,6 +1855,11 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
             blurb   => qq||,
         },
         {
+            name    => "Odeon Theatre",
+            address => "123 S 2nd St, Tucumcari NM",
+            blurb   => qq||,
+        },
+        {
             name    => "Tucumcari Historical Museum",
             address => "416 S Adams St, Tucumcari NM",
             blurb   => qq||,
