@@ -912,10 +912,9 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name             => "Lincoln Muffler Man",
-            address          => "849 Niedringhaus Ave, Granite City IL",
-            blurb            => qq||,
-            url_address_only => 1,
+            name    => "Lincoln Muffler Man",
+            address => "849 Niedringhaus Ave, Granite City IL",
+            blurb   => qq||,
         },
         {
             name             => "Rusty the Muffler Man",
