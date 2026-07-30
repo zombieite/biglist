@@ -897,10 +897,9 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name             => "Railroad worker muffler man",
-            address          => "Delmar Ave & E 20th St, Granite City IL",
-            blurb            => qq||,
-            url_address_only => 1,
+            name    => "Conductor Muffler Man",
+            address => "1947 Delmar Ave, Granite City IL",
+            blurb   => qq||,
         },
         {
             name    => "Fireman Muffler Man",
