@@ -908,9 +908,15 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
+            name             => "Lincoln Muffler Man",
+            address          => "849 Niedringhaus Ave, Granite City IL",
+            blurb            => qq||,
+            url_address_only => 1,
+        },
+        {
             name             => "Rusty the Muffler Man",
             address          => "614 Niedringhaus Ave, Granite City IL",
-            blurb            => qq|Rusty the Muffler Man is here. He might not be on your map, but if you go to this address, he's here.|,
+            blurb            => qq||,
             url_address_only => 1,
         },
         {
