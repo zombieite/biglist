@@ -903,6 +903,11 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             url_address_only => 1,
         },
         {
+            name    => "Fireman Muffler Man",
+            address => "1904 State St, Granite City IL",
+            blurb   => qq||,
+        },
+        {
             name    => "It's Electric Neon Sign Park",
             address => "1300 19th St, Granite City IL",
             blurb   => qq||,
