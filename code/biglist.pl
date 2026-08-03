@@ -1236,6 +1236,11 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
             blurb   => qq||,
         },
         {
+            name    => "Pancake Hut",
+            address => "301 S Garrison Ave, Carthage MO",
+            blurb   => qq||,
+        },
+        {
             name    => "66 Drive In",
             address => "17231 Old 66 Blvd, Carthage MO",
             blurb   => qq||,
