@@ -2693,6 +2693,11 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
             blurb   => qq|The best car museum on Earth.|,
         },
         {
+            name    => "Johnie's Coffee Shop",
+            address => "6101 Wilshire Blvd, Los Angeles CA",
+            blurb   => qq||,
+        },
+        {
             name    => "Barney's Beanery",
             address => "8447 Santa Monica Blvd, West Hollywood CA",
             blurb   => qq||,
