@@ -2179,6 +2179,11 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|Last time I visited this place, the flamethrowers were gone. But you can still ask them to show you several types of weapons that are illegal in Chicago and Los Angeles. And most other Western countries.|,
         },
         {
+            name    => "Sahara Inn",
+            address => "2402 Navajo Blvd, Holbrook AZ",
+            blurb   => qq||,
+        },
+        {
             name    => "El Rancho Restaurant & Motel",
             address => "867 Navajo Blvd, Holbrook AZ",
             blurb   => qq||,
