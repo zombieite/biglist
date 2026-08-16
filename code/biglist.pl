@@ -777,11 +777,6 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq|This place is pretty nondescript on the outside. They really do make signs here. But there's also a sign museum. I still need to visit this place when it's open.|,
         },
         {
-            name    => "Charlie Parker's Diner",
-            address => "700 W North St, Springfield IL",
-            blurb   => qq||,
-        },
-        {
             name    => "Lauterbach Muffler Man",
             address => "1569 Wabash Ave, Springfield IL",
             blurb   => qq||,
