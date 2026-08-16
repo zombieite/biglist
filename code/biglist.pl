@@ -732,6 +732,11 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
+            name    => "Pioneer's Rest Motel",
+            address => "Broadwell IL",
+            blurb   => qq||,
+        },
+        {
             name    => "Wild Hare Cafe",
             address => "104 Governor Oglesby St, Elkhart IL",
             blurb   => qq||,
