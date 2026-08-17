@@ -1644,7 +1644,7 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
         {
             name    => "Oklahoma Route 66 Museum",
             address => "2229 W Gary Blvd, Clinton OK",
-            blurb   => qq|They tell me the old Glancy Motel sign is going to be moved to this spot.|,
+            blurb   => qq|They tell me the old Glancy Motel sign might be here.|,
         },
         {
             name    => "Cotton Boll Motel sign",
