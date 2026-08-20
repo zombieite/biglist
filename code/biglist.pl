@@ -1885,11 +1885,6 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
             blurb   => qq||,
         },
         {
-            name    => "Blake's Lotaburger",
-            address => "2523 S 1st St, Tucumcari NM",
-            blurb   => qq||,
-        },
-        {
             name    => "Ranch House Cafe",
             address => "1017 W Tucumcari Blvd, Tucumcari NM",
             blurb   => qq||,
@@ -1964,6 +1959,11 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
             name    => "Tinkertown Museum",
             address => "121 Sandia Crest Rd, Sandia Park NM",
             blurb   => qq|One man built this place while the rest of us were watching television.|,
+        },
+        {
+            name    => "Blake's Lotaburger",
+            address => "12345 Central Ave NE, Albuquerque NM",
+            blurb   => qq||,
         },
         {
             name    => "Bow & Arrow Lodge",
