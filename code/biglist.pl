@@ -1971,11 +1971,6 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
             blurb   => qq||,
         },
         {
-            name    => "Loma Verde Motel sign",
-            address => "7503 Central Ave NE, Albuquerque NM",
-            blurb   => qq|I'm not here to show you a good time. I'm here to show you America, for better or for worse. Some towns on Route 66 are now worse than ghost towns. They are zombie towns.|,
-        },
-        {
             name    => "Hotel Zazz",
             address => "3711 Central Ave NE, Albuquerque NM",
             blurb   => qq||,
