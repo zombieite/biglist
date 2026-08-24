@@ -304,7 +304,7 @@ img {
 	</style>
 </head>
 <body>
-<h1>WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66</h1>
+<h1>WASTELAND FIREBIRD'S BIG LIST OF THE @$addresses BEST THINGS ON ROUTE 66</h1>
 <h2>A curious guide to Route 66 and the American Dream, updated $year $month_abbrev $mday</h2>
 <a href="$book_link"><img src="pictures/cover.jpg"></a>
 <h1><a href="$book_link"><span class="c4">This</span> <span class="c1">Book</span> <span class="c2">is</span> <span class="c3">available</span> <span class="c4">now</span><span class="c1">!</span> <span class="c2">Click</span> <span class="c3">here</span> <span class="c4">to</span> <span class="c1">buy</span><span class="c2">!</span></a></h1>
