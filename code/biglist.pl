@@ -728,7 +728,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         },
         {
             name    => "Museum of Route 66",
-            address => "508 Broadway St, Lincoln IL 62656",
+            address => "508 Broadway St, Lincoln IL",
             blurb   => qq||,
         },
         {
