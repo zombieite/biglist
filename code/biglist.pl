@@ -425,16 +425,11 @@ ${line_break}
 
         push(
             @html_rows, qq|
-    <li class="$state">
-        <div class="place">
-            <div class="place-name">
-                $place_name
-            </div>
-            <div class="place-address">
-                <a href="$links->[$place_number]" target="_blank" rel="noopener noreferrer">$address</a>
-            </div>
-        </div>
-    </li>
+<li class="$state"><div class="place"><div class="place-name">
+$place_name
+</div><div class="place-address">
+<a href="$links->[$place_number]" target="_blank" rel="noopener noreferrer">$address</a>
+</div></div></li>
 |
         );
 
