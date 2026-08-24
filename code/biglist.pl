@@ -722,9 +722,10 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq|Not all of Route 66 is crumbling. Some of it is being revived. This place is a museum of Muffler People. Joel Baker is another name you should know. He's been obsessed with these giants for his entire life. He researches, finds, buys, restores, and sells them. And he makes YouTube videos about the whole process. Some of the giants at this museum belong to him.|,
         },
         {
-            name    => "Hot Dog Muffler Man",
-            address => "107 SW Arch St, Atlanta, IL",
-            blurb   => qq||,
+            name             => "Hot Dog Muffler Man",
+            address          => "107 SW Arch St, Atlanta, IL",
+            blurb            => qq||,
+            url_address_only => 1,
         },
         {
             name    => "Museum of Route 66",
