@@ -723,7 +723,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         },
         {
             name    => "Hot Dog Muffler Man",
-            address => "112 SW Arch St, Atlanta IL",
+            address => "107 SW Arch St, Atlanta, IL",
             blurb   => qq||,
         },
         {
