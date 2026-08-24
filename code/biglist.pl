@@ -228,7 +228,7 @@ sub make_docs {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WASTELAND FIREBIRD'S BIG LIST OF THE BEST THINGS ON ROUTE 66</title>
+    <title>WASTELAND FIREBIRD'S BIG LIST OF THE $number_of_best_things BEST THINGS ON ROUTE 66</title>
     <link rel="icon" href="/favicon.png">
 	<style>
 html {
