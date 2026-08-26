@@ -1533,7 +1533,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         },
         {
             name    => "Seaba Station",
-            address => "336992 E OK-66, Warwick OK",
+            address => "336992 OK-66, Warwick OK",
             blurb   => qq||,
         },
         {
