@@ -1019,7 +1019,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name    => "Wagon Wheel Motel",
             address => "901 E Washington Blvd, Cuba MO",
-            blurb   => qq|You can hear the neon sign buzz on and off. This property is now owned by the magnificent steward known as Roamin' Rich Dinkela.|,
+            blurb   => qq|You can hear the neon sign buzz on and off. Last time I was here, a tornado siren went off. I had no idea how worried I should be, so I looked into it. Your odds of dying in a tornado are pretty similar to your odds of getting struck by lightning.|,
         },
         {
             name    => "Weir on 66 Rich's Famous Burgers",
