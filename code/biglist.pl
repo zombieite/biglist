@@ -1664,13 +1664,13 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
             blurb   => qq|It's a weird museum. But weird is good, right?|,
         },
         {
-            name    => "Western Motel",
-            address => "315 N E Hwy 66, Sayre OK",
+            name    => "Timber Creek Bridge",
+            address => "Sayre OK",
             blurb   => qq||,
         },
         {
-            name    => "Timber Creek Bridge",
-            address => "Sayre OK",
+            name    => "Western Motel",
+            address => "315 N E Hwy 66, Sayre OK",
             blurb   => qq||,
         },
         {
