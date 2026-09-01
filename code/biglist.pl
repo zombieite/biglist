@@ -1669,6 +1669,11 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
             blurb   => qq||,
         },
         {
+            name    => "Timber Creek Bridge",
+            address => "Sayre OK",
+            blurb   => qq||,
+        },
+        {
             name             => "Scary pedestrian underpass",
             address          => "504 N 4th St, Sayre OK",
             blurb            => qq||,
