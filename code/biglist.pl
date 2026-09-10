@@ -2035,7 +2035,7 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
         {
             name             => "Route 66 lowrider-style sign",
             address          => "7800 Central Ave SW, Albuquerque NM",
-            blurb            => qq||,
+            blurb            => qq|Every Sunday on Central Ave, there's a low rider car show.|,
             url_address_only => 1,
         },
         {
