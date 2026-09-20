@@ -532,11 +532,6 @@ sub get_locations {
             blurb   => qq||,
         },
         {
-            name    => "Chicago Athletic Association",
-            address => "12 S Michigan Ave, Chicago IL",
-            blurb   => qq|A cool, luxurious, renovated old hotel that has retained some of its sports club roots.|,
-        },
-        {
             name    => "Art Institute of Chicago",
             address => "111 S Michigan Ave, Chicago IL",
             blurb   => qq|Monet's every stroke contains frivolity. He used to say, "I like to paint as a bird sings." Viewing a Monet is an active process. You can't properly appreciate a Monet while seated. You have to approach the painting, then step back, then look away, then look back. A work by Monet is a three dimensional object, just as much a sculpture as a painting. Van Gogh was a better artist, but Monet had more fun.|,
