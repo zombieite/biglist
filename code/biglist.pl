@@ -15,10 +15,10 @@ sub main {
     my $line_break          = "  \n";
     my $page_break          = "```{=openxml}\n<w:p><w:r><w:br w:type=\"page\"/></w:r></w:p>\n```\n\n";
     my $addresses           = get_locations();
-    my $input_dir           = './data';
-    my $output_dir          = './generated';
-    my $oversize_output_dir = './generated/oversize';
-    my $website_dir         = './website';
+    my $input_dir           = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/biglist/data';
+    my $output_dir          = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/biglist/generated';
+    my $oversize_output_dir = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/biglist/generated/oversize';
+    my $website_dir         = '/Users/firebird/Desktop/local/txt/original/nonfiction/route_66/biglist/website';
     my $qr_dir              = File::Spec->catfile( $oversize_output_dir, 'qr_codes' );
     my $out_docx            = File::Spec->catfile( $oversize_output_dir, 'wasteland_firebirds_big_list-base.docx' );
     my $out_html_forward    = File::Spec->catfile( $website_dir,         'index.html' );
@@ -2536,6 +2536,11 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
         {
             name    => "Village Cafe",
             address => "205 E Main St, Barstow CA",
+            blurb   => qq||,
+        },
+        {
+            name    => "Route 66 Motel",
+            address => "195 Main St, Barstow CA",
             blurb   => qq||,
         },
         {
