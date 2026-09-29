@@ -2539,13 +2539,13 @@ qq|This one is out of order for a reason. If you've navigated the road closures 
             blurb   => qq||,
         },
         {
-            name    => "Route 66 Motel",
-            address => "195 Main St, Barstow CA",
+            name    => "Harvey House",
+            address => "685 N 1st Ave, Barstow CA",
             blurb   => qq||,
         },
         {
-            name    => "Harvey House",
-            address => "685 N 1st Ave, Barstow CA",
+            name    => "Route 66 Motel",
+            address => "195 Main St, Barstow CA",
             blurb   => qq||,
         },
         {
