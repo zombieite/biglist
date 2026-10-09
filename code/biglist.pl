@@ -1222,8 +1222,8 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
             blurb   => qq||,
         },
         {
-            name    => "Red Oak II",
-            address => "12275 Kafir Rd, Carthage MO",
+            name    => "Red Oak",
+            address => "10917 County Loop 122, Carthage MO",
             blurb   => qq||,
         },
         {
