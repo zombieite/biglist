@@ -1207,6 +1207,11 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
             blurb   => qq||,
         },
         {
+            name    => "1902 General Store",
+            address => "1396 S Farm Rd 45, Bois D'Arc MO",
+            blurb   => qq||,
+        },
+        {
             name    => "Gary's Gay Parita Sinclair",
             address => "21118 Old 66, Ash Grove MO",
             blurb   => qq|I think there's still a signed copy of my book, Heads Will Rock: A chronicle of postapocalyptic mayhem hidden in this place. It's free for the taking. It's about a postapocalyptic journey up Route 66, to recommission the old destroyed Pontiac Firebird factory in Norwood Ohio.|,
