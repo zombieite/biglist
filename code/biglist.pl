@@ -542,6 +542,11 @@ sub get_locations {
             blurb   => qq|You've been waiting your whole life for this. Most people who travel Route 66 will only travel it once. So pay attention to the story that the road tells you. A good story can change you. A good story can change the world.|,
         },
         {
+            name    => "Central Camera Company",
+            address => "230 S Wabash Ave, Chicago IL",
+            blurb   => qq||,
+        },
+        {
             name    => "Berghoff Restaurant",
             address => "17 W Adams St, Chicago IL",
             blurb   => qq|Route 66 is more than just a road. It's more than just a fun vacation. Route 66 represents the idea of going West in search of a better life. Route 66 represents the American Dream.|,
