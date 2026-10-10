@@ -537,8 +537,8 @@ sub get_locations {
             blurb   => qq|Monet's every stroke contains frivolity. He used to say, "I like to paint as a bird sings." Viewing a Monet is an active process. You can't properly appreciate a Monet while seated. You have to approach the painting, then step back, then look away, then look back. A work by Monet is a three dimensional object, just as much a sculpture as a painting. Van Gogh was a better artist, but Monet had more fun.|,
         },
         {
-            name    => "Historic Route 66 sign",
-            address => "E Adams St & S Michigan Ave, Chicago IL",
+            name    => "Chicago Route 66 Start of the Trail Sign",
+            address => "122 S Michigan Ave, Chicago IL",
             blurb   => qq|You've been waiting your whole life for this. Most people who travel Route 66 will only travel it once. So pay attention to the story that the road tells you. A good story can change you. A good story can change the world.|,
         },
         {
