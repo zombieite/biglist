@@ -30,7 +30,7 @@ sub main {
     ensure_dir($output_dir);
     ensure_dir($oversize_output_dir);
     generate_qr_codes_and_links( $addresses, $qr_dir, $qrs, $links, 0 );
-    make_docs( $addresses, $qrs, $links, $output_dir, $oversize_output_dir, $qr_dir, $qr_width, $out_docx, $out_html_forward, $out_html_backward, $line_break, $page_break );
+    make_docs( $addresses, $qrs, $links, $input_dir, $output_dir, $oversize_output_dir, $qr_dir, $qr_width, $out_docx, $out_html_forward, $out_html_backward, $line_break, $page_break );
     print "Make sure all QR codes work as desired.\n";
     print "Open DOCX in Pages. Save as a Pages doc to work on it.\n";
     print "Highlight all text. Under Format, Body, Style, Font, choose Crimson Text 13.\n";
@@ -204,7 +204,7 @@ sub generate_qr_codes_and_links {
 }
 
 sub make_docs {
-    my ( $addresses, $qrs, $links, $output_dir, $oversize_output_dir, $qr_dir, $qr_width, $out_docx, $out_html_forward, $out_html_backward, $line_break, $page_break ) = @_;
+    my ( $addresses, $qrs, $links, $input_dir, $output_dir, $oversize_output_dir, $qr_dir, $qr_width, $out_docx, $out_html_forward, $out_html_backward, $line_break, $page_break ) = @_;
 
     # Build a Pandoc md file and an html file for the website
     my $md_path = File::Spec->catfile( $output_dir, 'book.md' );
@@ -228,7 +228,7 @@ sub make_docs {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WASTELAND FIREBIRD'S BIG LIST OF THE $number_of_best_things BEST THINGS ON ROUTE 66</title>
+    <title>THE EASIEST AND BEST GUIDE TO ROUTE 66</title>
     <link rel="icon" href="/favicon.png">
 	<style>
 html {
@@ -498,7 +498,7 @@ ${line_break}
 
     # Use a DOCX that matches the print on demand template (margins, page size, headers/footers, fonts, etc).
     # Pandoc will use this as a reference.
-    my $reference_docx = './data/wasteland_firebirds_big_list-template.docx';
+    my $reference_docx = File::Spec->catfile( $input_dir, 'wasteland_firebirds_big_list-template.docx' );
     my @cmd            = ( 'pandoc', $md_path, '-o', $out_docx, '--reference-doc=' . $reference_docx, );
     print "Running:\n  " . join( ' ', map { /\s/ ? qq("$_") : $_ } @cmd ) . "\n";
     system(@cmd) == 0 or die "pandoc failed";
