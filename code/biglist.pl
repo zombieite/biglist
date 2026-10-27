@@ -1134,6 +1134,11 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
+            name             => "Marshfield Route 66 Plaza",
+            address          => "359 Banning St, Marshfield MO",
+            blurb            => qq||,
+        },
+        {
             name             => "1880 Building",
             address          => "111 S Clay St, Marshfield MO",
             blurb            => qq||,
