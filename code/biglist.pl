@@ -608,6 +608,11 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq|Look at all the light bulbs on these old theaters.|,
         },
         {
+            name    => "Harrah's Joliet",
+            address => "151 N Joliet St, Joliet IL",
+            blurb   => qq|Room 221 has a "Room Attack" painting of the Blues Brothers behind the abstract picture hanging on the wall. The top of the frame is hanging by a simple pair of hooks. It can be lifted off the hooks, but before you will be able to do that, the bottom of the frame must be separated from the wall. The bottom has T-shaped anchors that must be rotated 90° with a narrow pair of pliers to enable the bottom of the frame to be separated from the wall.|,
+        },
+        {
             name    => "Blues Brothers Copmobile",
             address => "2410 S Chicago St, Joliet IL",
             blurb   => qq|My favorite scene in The Blues Brothers is when they park their car at the end of a narrow alley, in a tiny electrical closet just a few inches wider than the car itself. This was originally supposed to be an explanation of how the car got its supernatural powers. I always saw it as a humorous but accurate depiction of the hassles of city parking. If you have no idea what scene I'm talking about, that could be because it was cut from some versions of the film.|,
