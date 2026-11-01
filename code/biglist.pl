@@ -1661,11 +1661,6 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
             blurb   => qq||,
         },
         {
-            name    => "United Supermarkets",
-            address => "2700 W 3rd St, Elk City OK",
-            blurb   => qq||,
-        },
-        {
             name    => "National Route 66 & Transportation Museum",
             address => "2717 W 3rd St, Elk City OK",
             blurb   => qq|It's a weird museum. But weird is good, right?|,
