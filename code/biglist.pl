@@ -1727,11 +1727,6 @@ qq|Keep in mind that all of this happened despite two world wars, the Great Depr
             blurb   => qq||,
         },
         {
-            name    => "Jericho Gap",
-            address => "5989 State Hwy 70, Clarendon TX",
-            blurb   => qq||,
-        },
-        {
             name    => "Leaning Tower of Texas",
             address => "Groom TX",
             blurb   => qq|Why is it leaning? I dunno, it was probably aliens.|,
