@@ -1142,6 +1142,11 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb            => qq||,
         },
         {
+            name             => "VL Classics",
+            address          => "2963 Evergreen Rd, Strafford MO",
+            blurb            => qq||,
+        },
+        {
             name    => "Joe's Route 66 Diner",
             address => "201 E Chestnut St, Strafford MO",
             blurb   => qq|I haven't actually gotten food from this place, but last I checked, it doesn't even have a sign out front. I can only assume it's so good, they don't need to advertise.|,
