@@ -2020,11 +2020,6 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
             blurb   => qq||,
         },
         {
-            name    => "Golden Pride",
-            address => "5231 Central Ave NW, Albuquerque NM",
-            blurb   => qq||,
-        },
-        {
             name    => "Western View Steak Diner & House",
             address => "6411 Central Ave NW, Albuquerque NM",
             blurb   => qq||,
