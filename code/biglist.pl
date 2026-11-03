@@ -2071,12 +2071,6 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
             blurb   => qq||,
         },
         {
-            name             => "DINER sign",
-            address          => "1029 US Rte 66, Grants NM",
-            blurb            => qq||,
-            url_address_only => 1,
-        },
-        {
             name    => "West Theatre",
             address => "118 W Santa Fe Ave, Grants NM",
             blurb   => qq||,
@@ -2085,18 +2079,6 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
             name    => "New Mexico Mining Museum",
             address => "100 Iron Ave, Grants NM",
             blurb   => qq|Go down the elevator.|,
-        },
-        {
-            name             => "Lux sign",
-            address          => "1016 W Santa Fe Ave, Grants NM",
-            blurb            => qq||,
-            url_address_only => 1,
-        },
-        {
-            name             => "Charlie's Service",
-            address          => "1310 W Santa Fe Ave, Grants NM",
-            blurb            => qq||,
-            url_address_only => 1,
         },
         {
             name    => "Old Bluewater Motel",
