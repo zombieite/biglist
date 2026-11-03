@@ -1144,7 +1144,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name             => "VL Classics",
             address          => "2963 Evergreen Rd, Strafford MO",
-            blurb            => qq||,
+            blurb            => qq|A cool old car dealer.|,
         },
         {
             name    => "Joe's Route 66 Diner",
