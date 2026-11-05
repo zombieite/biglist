@@ -999,11 +999,6 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq|Some people go for the nature stuff. I'm more into the midcentury Americana. But I figured this place was obligatory, so I went. I didn't expect to walk out in tears. Not only is the place gorgeous, but at the end, they project a patriotic short film about America on the cavern walls.|,
         },
         {
-            name    => "Terror On Route 66",
-            address => "1143 N Service Rd W, Sullivan MO",
-            blurb   => qq|I've been meaning to check this place out, but I'm too scared.|,
-        },
-        {
             name    => "Shamrock Court Motel",
             address => "101 Shamrock, Sullivan MO",
             blurb   => qq|Newly restored by Route 66 hero Roamin' Rich Dinkela.|,
