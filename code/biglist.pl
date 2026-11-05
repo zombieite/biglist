@@ -2416,7 +2416,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq||,
         },
         {
-            name    => "El Garces Hotel",
+            name    => "El Garces",
             address => "950 Front St, Needles CA",
             blurb   => qq||,
         },
