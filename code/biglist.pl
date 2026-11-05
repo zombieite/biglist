@@ -933,14 +933,9 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq|If we see the journey down Route 66 as a story, we're breaking into Act II. The hero accepts the call to adventure! Not all of this journey will be fun and games. Sometimes you'll have to go through a bad part of town to get to a good part of town. Are you ready for adventure? The Crown Candy Kitchen is all about fat and sugar.|,
         },
         {
-            name    => "City Museum",
-            address => "750 N 16th St, St Louis MO",
-            blurb   => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was the idea that God wanted the Europeans to spread out into America. I don't think that any supernatural being really cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make this the best country on Earth.|,
-        },
-        {
             name             => "Auto Seat Covers sign",
             address          => "4017 Gravois Ave, St Louis MO",
-            blurb            => qq|When I say America is the best country on Earth, you might reply that I'm biased since I was born in America. But I've traveled the world and I've spent a lot of time trying to overcome my biases. I firmly believe that America has things about it that make it truly exceptional.|,
+            blurb            => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was the idea that God wanted the Europeans to spread out into America. I don't think that any supernatural being really cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make this the best country on Earth. When I say America is the best country on Earth, you might reply that I'm biased since I was born in America. But I've traveled the world and I've spent a lot of time trying to overcome my biases. I firmly believe that America has things about it that make it truly exceptional.|,
             url_address_only => 1,
         },
         {
