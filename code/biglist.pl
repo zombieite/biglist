@@ -2673,19 +2673,14 @@ It took me years to figure out a way to summarize my entire philosophy in a way 
             url_address_only => 1,
         },
         {
-            name    => "Barney's Beanery",
-            address => "8447 Santa Monica Blvd, West Hollywood CA",
-            blurb   => qq||,
+            name    => "NORMS Restaurant",
+            address => "470 N La Cienega Blvd, West Hollywood CA",
+            blurb   => qq|This is the oldest NORMS diner.|,
         },
         {
             name    => "Tail O' the Pup",
             address => "8512 Santa Monica Blvd, West Hollywood CA",
             blurb   => qq|I discovered this place when I was watching old episodes of The Rockford Files. They stopped here in the first episode. I had to know if it still existed. That led me to Alison Martino's social media community Vintage Los Angeles. She did a report on the place, as it was being restored and moved. I visited it here, in its new location, as soon as it opened. Pay attention, because there is a secret door nearby.|,
-        },
-        {
-            name    => "NORMS Restaurant",
-            address => "470 N La Cienega Blvd, West Hollywood CA",
-            blurb   => qq|This is the oldest NORMS diner.|,
         },
         {
             name    => "Edelweiss Chocolates",
