@@ -2506,11 +2506,6 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
             blurb   => qq||,
         },
         {
-            name    => "Original Del Taco Location",
-            address => "38434 E Yermo Rd, Yermo CA",
-            blurb   => qq||,
-        },
-        {
             name    => "Harvey House",
             address => "685 N 1st Ave, Barstow CA",
             blurb   => qq||,
