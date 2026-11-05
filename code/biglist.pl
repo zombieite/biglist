@@ -935,7 +935,7 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
         {
             name             => "Auto Seat Covers sign",
             address          => "4017 Gravois Ave, St Louis MO",
-            blurb            => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was the idea that God wanted the Europeans to spread out into America. I don't think that any supernatural being really cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make this the best country on Earth. When I say America is the best country on Earth, you might reply that I'm biased since I was born in America. But I've traveled the world and I've spent a lot of time trying to overcome my biases. I firmly believe that America has things about it that make it truly exceptional.|,
+            blurb            => qq|The St. Louis Arch is known as "The Gateway to the West." Manifest Destiny was the idea that God wanted the Europeans to spread out into America. I don't think that any supernatural being really cared where Europeans ended up living. And there were some people living here already. The Europeans did some bad things to those people. But ultimately, we all came together to make this the best country on Earth.|,
             url_address_only => 1,
         },
         {
