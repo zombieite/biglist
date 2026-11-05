@@ -2392,7 +2392,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Arizona Route 66 Museum",
             address => "120 W Andy Devine Ave, Kingman AZ",
-            blurb   => qq||,
+            blurb   => qq|This museum is in an old power generation building.|,
         },
         {
             name    => "Cool Springs Station",
