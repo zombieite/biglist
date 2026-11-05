@@ -2399,6 +2399,11 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
             blurb   => qq||,
         },
         {
+            name    => "Pirate Cove Resort",
+            address => "100 Park Moabi Rd, Needles CA",
+            blurb   => qq||,
+        },
+        {
             name             => "66 Motel",
             address          => "91 Desnok St, Needles CA",
             blurb            => qq||,
