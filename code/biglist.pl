@@ -1521,7 +1521,7 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Route 66 Interpretive Center",
             address => "400 E 1st St, Chandler OK",
-            blurb   => qq|They tell me there's a Muffler Superhero here now.|,
+            blurb   => qq|There's a Muffler Superhero here. The Interpretive Center has beds you can take a nap on.|,
         },
         {
             name    => "McJerry's Route 66 Gallery",
@@ -1536,17 +1536,17 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Seaba Station",
             address => "336992 OK-66, Warwick OK",
-            blurb   => qq||,
+            blurb   => qq|This place might be closed, but the building itself is still worth checking out.|,
         },
         {
             name    => "Threatt Filling Station",
             address => "21940 OK-66, Luther OK",
-            blurb   => qq||,
+            blurb   => qq|This gas station was a successful black-owned business that was founded before the civil rights era.|,
         },
         {
             name    => "John's Place Museum",
             address => "13441 OK-66, Arcadia OK",
-            blurb   => qq||,
+            blurb   => qq|This guy makes weird stuff and lets you mess around with it.|,
         },
         {
             name    => "Chicken Shack",
@@ -2395,8 +2395,8 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|The first time I drove through this town, I had no idea what it was or why it was here. Somehow, for some reason, I had been teleported back in time to the Old West.|,
         },
         {
-            name    => "Silver Dollar Chuck Wagon",
-            address => "12907 Oatman-Topock Hwy, Topock AZ",
+            name    => "Hotel Topock66",
+            address => "14999 Historic Rte 66, Topock AZ",
             blurb   => qq||,
         },
         {
