@@ -2073,7 +2073,7 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
         {
             name    => "West Theatre",
             address => "118 W Santa Fe Ave, Grants NM",
-            blurb   => qq||,
+            blurb   => qq|This town is full of beautiful old signs that are difficult to keep updated and mapped. So just take a look around.|,
         },
         {
             name    => "New Mexico Mining Museum",
