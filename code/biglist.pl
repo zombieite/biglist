@@ -2426,11 +2426,6 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq||,
         },
         {
-            name    => "Rio Del Sol Inn",
-            address => "1111 Pashard St, Needles CA",
-            blurb   => qq||,
-        },
-        {
             name    => "Goffs Schoolhouse",
             address => "37198 Lanfair Rd, Essex CA",
             blurb   => qq||,
