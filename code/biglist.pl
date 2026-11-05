@@ -907,13 +907,13 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name    => "Fireman Muffler Man",
-            address => "1904 State St, Granite City IL",
+            name    => "It's Electric Neon Sign Park",
+            address => "1300 19th St, Granite City IL",
             blurb   => qq||,
         },
         {
-            name    => "It's Electric Neon Sign Park",
-            address => "1300 19th St, Granite City IL",
+            name    => "Fireman Muffler Man",
+            address => "1904 State St, Granite City IL",
             blurb   => qq||,
         },
         {
@@ -2377,7 +2377,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Hotel Beale sign",
             address => "331 E Andy Devine Ave, Kingman AZ",
-            blurb   => qq|The sign lights up again, after decades of darkness.|,
+            blurb   => qq||,
         },
         {
             name    => "Tin Can Alley",
