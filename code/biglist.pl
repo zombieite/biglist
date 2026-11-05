@@ -127,7 +127,8 @@ sub generate_qr_codes_and_links {
             $safe_name = substr( $safe_name, 0, 30 );
             my $filename = sprintf( "%03d_%s.png", $count, $safe_name );
             my $filepath = "$output_dir/$filename";
-            open my $img_fh, '>', $filepath or die "Could not open '$filepath' for writing: $!";
+            open my $img_fh, '>', $filepath
+              or die "Could not open '$filepath' for writing: $!";
             binmode $img_fh;
 
             # Adding some padding to left or right side, alternating
@@ -208,9 +209,11 @@ sub make_docs {
 
     # Build a Pandoc md file and an html file for the website
     my $md_path = File::Spec->catfile( $output_dir, 'book.md' );
-    open my $md,            '>', $md_path           or die "Can't write '$md_path': $!";
-    open my $html_forward,  '>', $out_html_forward  or die "Can't write '$out_html_forward': $!";
-    open my $html_backward, '>', $out_html_backward or die "Can't write '$out_html_backward': $!";
+    open my $md, '>', $md_path or die "Can't write '$md_path': $!";
+    open my $html_forward, '>', $out_html_forward
+      or die "Can't write '$out_html_forward': $!";
+    open my $html_backward, '>', $out_html_backward
+      or die "Can't write '$out_html_backward': $!";
     my @html_rows;
 
     # Website header
@@ -220,7 +223,9 @@ sub make_docs {
     my @month_abbrevs = qw(Jan Feb Mar April May Jun Jul Aug Sep Oct Nov Dec);
     my $month_abbrev  = $month_abbrevs[$mon];
     $mon += 1;
-    for my $unit ( $mon, $mday, $hour, $min, $sec ) { $unit = sprintf( '%02d', $unit ); }
+    for my $unit ( $mon, $mday, $hour, $min, $sec ) {
+        $unit = sprintf( '%02d', $unit );
+    }
     my $book_link   = "https://www.lulu.com/shop/john-binns/wasteland-firebirds-big-list-of-the-416-best-things-on-route-66/paperback/product-zmep9ym.html?page=1&pageSize=4";
     my $html_header = qq|
 <!DOCTYPE html>
@@ -592,8 +597,7 @@ sub get_locations {
         {
             name    => "Old Joliet Prison",
             address => "1125 Collins St, Joliet IL",
-            blurb   =>
-qq|We can't talk about Joliet Prison without talking about The Blues Brothers. That film is an archive of Americana. The music in that film spanned the entire Twentieth Century. Cab Calloway started making music in 1927, the year Angel Delgadillo was born, and one year after Route 66 came into being. Due to swift advances in music and communication technology, the Twentieth Century spawned a new genre of music every single decade. When was the last time you heard a truly new genre of music?|,
+            blurb   => qq|We can't talk about Joliet Prison without talking about The Blues Brothers. That film is an archive of Americana. The music in that film spanned the entire Twentieth Century. Cab Calloway started making music in 1927, the year Angel Delgadillo was born, and one year after Route 66 came into being. Due to swift advances in music and communication technology, the Twentieth Century spawned a new genre of music every single decade. When was the last time you heard a truly new genre of music?|,
         },
         {
             name    => "First Dairy Queen",
@@ -1127,14 +1131,14 @@ qq|We can't talk about Joliet Prison without talking about The Blues Brothers. T
             blurb   => qq||,
         },
         {
-            name             => "Marshfield Route 66 Plaza",
-            address          => "359 Banning St, Marshfield MO",
-            blurb            => qq||,
+            name    => "Marshfield Route 66 Plaza",
+            address => "359 Banning St, Marshfield MO",
+            blurb   => qq||,
         },
         {
-            name             => "VL Classics",
-            address          => "2963 Evergreen Rd, Strafford MO",
-            blurb            => qq|A cool old car dealer.|,
+            name    => "VL Classics",
+            address => "2963 Evergreen Rd, Strafford MO",
+            blurb   => qq|A cool old car dealer.|,
         },
         {
             name    => "Joe's Route 66 Diner",
@@ -1312,8 +1316,7 @@ Buc-ee's is privately held, so they can focus on customer happiness without worr
         {
             name    => "Dairy King",
             address => "100 N Main St, Commerce OK",
-            blurb   =>
-qq|The current owners took over this place in 1980 and I don't think their prices have changed since. Last time I was here, the lady accidentally charged me \$2.50 for an \$8.50 order. When I pointed out the error, she used a calculator to determine the amount I still had left to pay. But if I'm ever lucky enough to reach her age, I'll be satisfied if I have half of her mental acuity. Her elderly son gets up every day at 3am to run 10 miles, and he rides around in the only car ever offered with a factory flame job: a Chrysler PT Cruiser.|,
+            blurb   => qq|The current owners took over this place in 1980 and I don't think their prices have changed since. Last time I was here, the lady accidentally charged me \$2.50 for an \$8.50 order. When I pointed out the error, she used a calculator to determine the amount I still had left to pay. But if I'm ever lucky enough to reach her age, I'll be satisfied if I have half of her mental acuity. Her elderly son gets up every day at 3am to run 10 miles, and he rides around in the only car ever offered with a factory flame job: a Chrysler PT Cruiser.|,
         },
         {
             name    => "Waylan's Ku-Ku",
@@ -1631,14 +1634,12 @@ qq|The current owners took over this place in 1980 and I don't think their price
         {
             name    => "Hinton Junctions Courts and Cafe",
             address => "16153 Old 66 Rd, Hinton OK",
-            blurb   =>
-qq|Here's a list of some stuff that was either discovered, invented, perfected, or widely adopted in the Twentieth Century. Antibiotics, anesthesia, surgery, contraception, clean water, indoor plumbing, biotechnology, Norman Borlaug's miracle strains of wheat, batteries, light bulbs, air conditioning and refrigeration, washing machines, nuclear power, solar power, telephones, mobile phones, photography, radio, movies, television, computers, internet, cars, airplanes, and space travel.|,
+            blurb   => qq|Here's a list of some stuff that was either discovered, invented, perfected, or widely adopted in the Twentieth Century. Antibiotics, anesthesia, surgery, contraception, clean water, indoor plumbing, biotechnology, Norman Borlaug's miracle strains of wheat, batteries, light bulbs, air conditioning and refrigeration, washing machines, nuclear power, solar power, telephones, mobile phones, photography, radio, movies, television, computers, internet, cars, airplanes, and space travel.|,
         },
         {
             name    => "Lucille's Historic Highway Gas Station",
             address => "US Rte 66, Hydro OK",
-            blurb   =>
-qq|Keep in mind that all of this happened despite two world wars, the Great Depression, and the worldwide threat of Soviet and Chinese communist expansion during the Cold War. In just a hundred years we figured out more stuff than we had figured out in the entire hundred thousand years that preceded it. Sure there was fire and the wheel. Agriculture and domestication. Spoken language and written language and the printing press. But that ain't much to figure out in a hundred thousand years.|,
+            blurb   => qq|Keep in mind that all of this happened despite two world wars, the Great Depression, and the worldwide threat of Soviet and Chinese communist expansion during the Cold War. In just a hundred years we figured out more stuff than we had figured out in the entire hundred thousand years that preceded it. Sure there was fire and the wheel. Agriculture and domestication. Spoken language and written language and the printing press. But that ain't much to figure out in a hundred thousand years.|,
         },
         {
             name    => "Major Tom Astronaut",
@@ -2118,14 +2119,12 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
         {
             name    => "Fort Courage",
             address => "Houck AZ",
-            blurb   =>
-              qq|The Pancake House that used to be here was destroyed in 2026. Last time I visited, the fort building inspired by the TV show F-Troop was still here, but who knows what you'll find by the time you read this. We've reached the all-is-lost moment in our story. We're two-thirds of the way through. It's the mirror of the midpoint, back when things still seemed so good. Things don't seem so good, now. We're about to break into Act III, the climax. Let's hope things get better.|,
+            blurb   => qq|The Pancake House that used to be here was destroyed in 2026. Last time I visited, the fort building inspired by the TV show F-Troop was still here, but who knows what you'll find by the time you read this. We've reached the all-is-lost moment in our story. We're two-thirds of the way through. It's the mirror of the midpoint, back when things still seemed so good. Things don't seem so good, now. We're about to break into Act III, the climax. Let's hope things get better.|,
         },
         {
             name    => "Dotch Windsor's Painted Desert Trading Post",
             address => "Chambers AZ",
-            blurb   =>
-qq|Take exit 320, head east a bit, then take the dirt road north half a mile. Stop at the gate that has a tiny sign that says Painted Desert Trading Post. There is a lock with a code on it. You can call the number on the sign to get the code, you will need to text them a photo of your id. Enter the code into the lock and hit the unlock button. Go through the gate and close it behind you. Immediately turn left, go west 2.6 miles. When you get to the Trading Post, you can go in, but make sure to keep all gates closed when you leave.
+            blurb   => qq|Take exit 320, head east a bit, then take the dirt road north half a mile. Stop at the gate that has a tiny sign that says Painted Desert Trading Post. There is a lock with a code on it. You can call the number on the sign to get the code, you will need to text them a photo of your id. Enter the code into the lock and hit the unlock button. Go through the gate and close it behind you. Immediately turn left, go west 2.6 miles. When you get to the Trading Post, you can go in, but make sure to keep all gates closed when you leave.
 |,
             hide_qr => 1,
         },
@@ -2438,8 +2437,7 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
         {
             name    => "Road Runner's Retreat",
             address => "Chambless CA",
-            blurb   =>
-qq|This one is out of order for a reason. If you've navigated the road closures and construction detours and made it to Guardian Lion East, you can probably find the Road Runner's Retreat sign. Head back the way you came, five miles east on 66. Do not make the left onto Kelbaker Rd. Instead, drive around the road closed signs. The road is in great condition all the way to the Retreat sign. Those road closed signs should really be moved back a couple miles. Beyond the Retreat sign, road conditions are anyone's guess. Recently restored, this sign even lights up sometimes in the evenings.|,
+            blurb   => qq|This one is out of order for a reason. If you've navigated the road closures and construction detours and made it to Guardian Lion East, you can probably find the Road Runner's Retreat sign. Head back the way you came, five miles east on 66. Do not make the left onto Kelbaker Rd. Instead, drive around the road closed signs. The road is in great condition all the way to the Retreat sign. Those road closed signs should really be moved back a couple miles. Beyond the Retreat sign, road conditions are anyone's guess. Recently restored, this sign even lights up sometimes in the evenings.|,
             hide_qr => 1,
         },
         {
