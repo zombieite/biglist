@@ -2390,6 +2390,11 @@ qq|Take exit 320, head east a bit, then take the dirt road north half a mile. St
             blurb   => qq|The 70s electric Citicars are an odd choice, but if they'd been 57 Chevys, they'd just blend into the background.|,
         },
         {
+            name    => "Arizona Route 66 Museum",
+            address => "120 W Andy Devine Ave, Kingman AZ",
+            blurb   => qq||,
+        },
+        {
             name    => "Cool Springs Station",
             address => "8275 Oatman Rd, Golden Valley AZ",
             blurb   => qq|Large vehicles and vehicles with large trailers, beware the upcoming curvy road known as the Sidewinder. But try not to miss Oatman.|,
