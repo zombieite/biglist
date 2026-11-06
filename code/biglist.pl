@@ -2425,11 +2425,6 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
             blurb   => qq||,
         },
         {
-            name    => "Chakwala Wash",
-            address => "Essex CA",
-            blurb   => qq|This is included just to keep you away from some closed road sections.|,
-        },
-        {
             name    => "Guardian Lion East",
             address => "National Trails Hwy, Amboy CA",
             blurb   => qq|Anyone can spray paint a bridge overpass. Only a true genius can hand-carve two multi-ton lions out of marble, transport and install them with no one noticing, leave people confused, and make one of them disappear for the entire year of 2019 for some reason.|,
