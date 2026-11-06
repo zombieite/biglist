@@ -2491,7 +2491,7 @@ There is a small linoleum Toynbee Tile mosaic embedded into the asphalt near the
             blurb   => qq|Capitalism creates inequality, but overall, it works best for everyone. World GDP sat still for all of human history. Then capitalism came along and made that graph look like a hockey stick.|,
         },
         {
-            name    => "Barstow Harvey House",
+            name    => "Harvey House Barstow",
             address => "685 N 1st Ave, Barstow CA",
             blurb   => qq||,
         },
